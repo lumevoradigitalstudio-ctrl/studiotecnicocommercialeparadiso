@@ -1,0 +1,15 @@
+{
+  "name": "pizzeria-autopilota",
+  "version": "1.0.0",
+  "description": "Sistema automatico per pizzeria d'asporto: tessera punti, campagne WhatsApp, recensioni, magazzino e report serale.",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "engines": { "node": ">=22.5" },
+  "scripts": {
+    "start": "node --no-warnings src/server.js",
+    "test": "node --no-warnings --test test/*.test.js"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4"
+  }
+}

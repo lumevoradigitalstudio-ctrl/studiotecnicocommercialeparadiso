@@ -1,0 +1,46 @@
+{
+  "nomePizzeria": "Pizzeria Paradiso",
+  "indirizzo": "Via Roma 1, Città",
+  "urlPubblico": "http://localhost:3000",
+  "linkApp": "https://link-della-tua-app.it",
+  "linkRecensioneGoogle": "https://g.page/r/IL-TUO-CODICE/review",
+  "telefonoTitolare": "393331234567",
+  "fusoOrario": "Europe/Rome",
+
+  "tessera": {
+    "puntiPerPizza": 1,
+    "puntiPerPremio": 10,
+    "premio": "una pizza margherita in omaggio",
+    "regaloBenvenuto": "una bibita in omaggio al prossimo ritiro"
+  },
+
+  "automazioni": {
+    "recensione": { "attiva": true, "oreDopoRitiro": 1, "nonPiuDiUnaOgniGiorni": 90 },
+    "clientiPersi": { "attiva": true, "giorniSenzaOrdini": 21, "pausaGiorni": 30,
+      "testo": "Ciao {nome}! È un po' che non ti vediamo da {pizzeria} 🍕 Questo weekend per te -15% sul ritiro: mostra questo messaggio alla cassa." },
+    "compleanno": { "attiva": true, "ora": 10,
+      "testo": "Tanti auguri {nome}! 🎉 Oggi da {pizzeria} la pizza te la offriamo noi: mostra questo messaggio al ritiro (valido 7 giorni)." },
+    "promoSettimanale": { "attiva": true, "giorno": 5, "ora": 17,
+      "testo": "Ciao {nome}, stasera è venerdì pizza! 🍕 Ordina dall'app e salti la fila: {linkApp}" },
+    "giorniLenti": { "attiva": true, "giorni": [2, 3], "ora": 16,
+      "testo": "Ciao {nome}! Solo oggi da {pizzeria}: Box Famiglia (4 pizze + fritti + 1,5L) a 35€. Ordina dall'app: {linkApp}" },
+    "reportSerale": { "attiva": true, "ora": 23 }
+  },
+
+  "prodotti": [
+    { "nome": "Margherita", "prezzo": 6.0, "ricetta": { "Impasto (panetto)": 1, "Pomodoro (kg)": 0.08, "Fior di latte (kg)": 0.12 } },
+    { "nome": "Marinara", "prezzo": 5.0, "ricetta": { "Impasto (panetto)": 1, "Pomodoro (kg)": 0.1 } },
+    { "nome": "Diavola", "prezzo": 7.5, "ricetta": { "Impasto (panetto)": 1, "Pomodoro (kg)": 0.08, "Fior di latte (kg)": 0.12, "Salame piccante (kg)": 0.05 } },
+    { "nome": "Bufala", "prezzo": 9.0, "ricetta": { "Impasto (panetto)": 1, "Pomodoro (kg)": 0.08, "Mozzarella di bufala (kg)": 0.125 } },
+    { "nome": "Box Famiglia", "prezzo": 35.0, "ricetta": { "Impasto (panetto)": 4, "Pomodoro (kg)": 0.32, "Fior di latte (kg)": 0.48, "Patatine (kg)": 0.4 } }
+  ],
+
+  "ingredienti": [
+    { "nome": "Impasto (panetto)", "scortaMinima": 60, "quantitaRiordino": 150, "fornitore": "Produzione interna" },
+    { "nome": "Pomodoro (kg)", "scortaMinima": 10, "quantitaRiordino": 25, "fornitore": "Fornitore Pomodoro", "telefonoFornitore": "" },
+    { "nome": "Fior di latte (kg)", "scortaMinima": 10, "quantitaRiordino": 20, "fornitore": "Caseificio", "telefonoFornitore": "" },
+    { "nome": "Mozzarella di bufala (kg)", "scortaMinima": 3, "quantitaRiordino": 8, "fornitore": "Caseificio", "telefonoFornitore": "" },
+    { "nome": "Salame piccante (kg)", "scortaMinima": 2, "quantitaRiordino": 5, "fornitore": "Salumeria", "telefonoFornitore": "" },
+    { "nome": "Patatine (kg)", "scortaMinima": 5, "quantitaRiordino": 15, "fornitore": "Surgelati", "telefonoFornitore": "" }
+  ]
+}
