@@ -57,3 +57,7 @@ Le automazioni partono ogni 5 minuti, quindi il sistema deve restare acceso: un 
 ```bash
 npm test
 ```
+
+## Materiali pronti
+
+`npm run materiali` crea in `materiali/` il volantino A5 (fronte tessera, retro feste e squadre) e il foglio di adesivi per il cartone, con il QR. I messaggi pronti da copiare sono in `materiali/MESSAGGI.md`. Prima di stampare, compila `config.json` e imposta `urlPubblico` con l indirizzo vero, altrimenti il QR non funziona.
