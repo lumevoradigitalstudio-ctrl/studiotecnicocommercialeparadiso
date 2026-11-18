@@ -1,6 +1,6 @@
-export interface ChatMessage { role: "system" | "user" | "assistant" | "tool"; content: string; toolName?: string }
-export interface ToolSpec { name: string; description: string }
-export interface ToolCall { name: string; args: unknown }
+export interface ChatMessage { role: "system" | "user" | "assistant" | "tool"; content: string; toolName?: string; toolCallId?: string; toolCalls?: ToolCall[] }
+export interface ToolSpec { name: string; description: string; inputSchema?: Record<string, unknown> }
+export interface ToolCall { id?: string; name: string; args: unknown }
 export interface Usage { inputTokens: number; outputTokens: number }
 export interface ProviderRequest { messages: ChatMessage[]; tools: ToolSpec[]; maxOutputTokens: number }
 export interface ProviderResponse { text?: string; toolCalls?: ToolCall[]; usage: Usage }

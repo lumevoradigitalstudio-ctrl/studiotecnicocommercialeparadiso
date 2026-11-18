@@ -28,13 +28,14 @@ export async function runAgent(userText: string, d: AgentDeps): Promise<AgentRep
   try {
     const msgs: ChatMessage[] = [{ role: "system", content: SYSTEM_PROMPT }, ...(d.history ?? []).slice(-10), { role: "user", content: userText.slice(0, 2000) }];
     for (let step = 0; step < MAX_STEPS; step++) {
-      const r = await d.provider.complete({ messages: msgs, tools: TOOLS.map(t => ({ name: t.name, description: t.description })), maxOutputTokens: 600 });
+      const r = await d.provider.complete({ messages: msgs, tools: TOOLS.map(t => ({ name: t.name, description: t.description, inputSchema: t.jsonSchema })), maxOutputTokens: 600 });
       cost += estimateCostEur(d.provider, r.usage);
       if (r.toolCalls?.length) {
+        msgs.push({ role: "assistant", content: r.text ?? "", toolCalls: r.toolCalls });
         for (const tc of r.toolCalls) {
           used.push(tc.name);
           const res = await executeTool(d.ctx, tc.name, tc.args);
-          msgs.push({ role: "tool", toolName: tc.name, content: wrapUntrusted(`tool:${tc.name}`, JSON.stringify(res.ok ? res.data : { error: res.error })) });
+          msgs.push({ role: "tool", toolName: tc.name, toolCallId: tc.id, content: wrapUntrusted(`tool:${tc.name}`, JSON.stringify(res.ok ? res.data : { error: res.error })) });
         }
         continue;
       }
