@@ -6,9 +6,14 @@ export function estimateCostEur(p: LLMProvider, u: Usage): number {
 
 export interface QuotaLimits { perDay: number; perMonth: number; maxConcurrent: number }
 export type QuotaDecision = { ok: true } | { ok: false; reason: "daily" | "monthly" | "concurrency" | "budget" };
+/** Contratto comune: in produzione è implementato dal DB (`consume_ai_quota`), in test/demo da InMemoryQuota. */
+export interface QuotaGate {
+  tryConsume(user: string, lim: QuotaLimits, now?: Date): QuotaDecision | Promise<QuotaDecision>;
+  release(user: string, costEur: number, usage?: Usage, ok?: boolean): void | Promise<void>;
+}
 
 /** Riferimento in-memory della logica SQL `consume_ai_quota` (atomica). Usato per test e per modalità demo locale. */
-export class InMemoryQuota {
+export class InMemoryQuota implements QuotaGate {
   private day = new Map<string, number>();
   private month = new Map<string, number>();
   private inflight = new Map<string, number>();
@@ -30,7 +35,7 @@ export class InMemoryQuota {
     this.inflight.set(user, (this.inflight.get(user) ?? 0) + 1);
     return { ok: true };
   }
-  release(user: string, costEur: number) {
+  release(user: string, costEur: number, _usage?: Usage, _ok?: boolean) {
     this.inflight.set(user, Math.max(0, (this.inflight.get(user) ?? 1) - 1));
     this.spent.set(user, (this.spent.get(user) ?? 0) + costEur);
   }

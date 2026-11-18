@@ -22,6 +22,7 @@ export interface Actions {
   addPantry(p: z.infer<typeof PantryItem>): Promise<void>;
   removePantry(index: number): Promise<void>;
   wipeData(): Promise<void>;
+  deleteAccount(): Promise<boolean>;
 }
 const Ctx = createContext<{ state: AppState; ready: boolean; error: string | null; update: (fn: (s: AppState) => AppState) => void; reset: () => Promise<void>; actions: Actions } | null>(null);
 export function StoreProvider({ children }: { children: React.ReactNode }) {
@@ -47,6 +48,7 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
     addMeal: (m) => guard(async () => { const id = uid ? await remote.insertMeal(uid, m) : String(Date.now()); update(s => ({ ...s, meals: [{ ...m, id }, ...s.meals] })); }),
     addPantry: (p) => guard(async () => { const id = uid ? await remote.insertPantry(uid, p) : undefined; update(s => ({ ...s, pantry: [...s.pantry, { ...p, id }] })); }),
     removePantry: (i) => guard(async () => { const id = state.pantry[i]?.id; if (uid && id) await remote.deletePantry(id); update(s => ({ ...s, pantry: s.pantry.filter((_, j) => j !== i) })); }),
+    deleteAccount: async () => { try { setError(null); await remote.deleteAccount(); await reset(); return true; } catch { setError("Eliminazione non riuscita. Riprova o contatta il supporto."); return false; } },
     wipeData: () => guard(async () => { if (uid) await remote.deleteAllMyData(uid); await reset(); }),
   };
   return <Ctx.Provider value={{ state, ready, error, update, reset, actions }}>{children}</Ctx.Provider>;

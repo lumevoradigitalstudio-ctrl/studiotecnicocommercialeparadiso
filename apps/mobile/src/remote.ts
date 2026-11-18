@@ -45,3 +45,10 @@ export async function deleteAllMyData(userId: string) {
   check(await c.from("user_preferences").delete().eq("user_id", userId));
   check(await c.from("profiles").delete().eq("id", userId));
 }
+
+/** Elimina l'account (e a cascata tutti i dati) tramite Edge Function con ruolo di servizio. */
+export async function deleteAccount() {
+  const { error } = await db().functions.invoke("delete-account", { body: { confirm: "ELIMINA" } });
+  if (error) throw new Error("delete_failed");
+  await db().auth.signOut();
+}
