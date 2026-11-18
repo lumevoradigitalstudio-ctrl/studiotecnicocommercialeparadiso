@@ -113,3 +113,25 @@ describe("scenari demo", () => {
     expect((await runAgent("Ho fame, cosa mangio adesso?", deps())).text).toMatch(/\?/);
   });
 });
+
+describe("tool ricette", () => {
+  it("search_recipes usa dispensa ed esclusioni dell'utente", async () => {
+    const d = data({ getPreferences: async () => ({ excludedFoods: ["uova"], diet: [] }) });
+    const r = await executeTool(ctx({ data: d }), "search_recipes", {});
+    expect(r.ok).toBe(true);
+    const ids = (r as { data: { id: string }[] }).data.map(x => x.id);
+    expect(ids.length).toBeGreaterThan(0); expect(ids).not.toContain("frittata-patate");
+  });
+  it("filtro vegetariano dalle preferenze", async () => {
+    const d = data({ getPantry: async () => [{ name: "tonno in scatola" }, { name: "fagioli cannellini cotti" }, { name: "insalata" }, { name: "patate" }], getPreferences: async () => ({ diet: ["vegetariano"] }) });
+    const ids = ((await executeTool(ctx({ data: d }), "search_recipes", {})) as { data: { id: string }[] }).data.map(x => x.id);
+    expect(ids).not.toContain("tonno-fagioli");
+  });
+  it("create_shopping_list: solo ciò che manca, ricetta inesistente gestita, argomenti extra rifiutati", async () => {
+    const d = data({ getPantry: async () => [{ name: "pomodori" }] });
+    expect(await executeTool(ctx({ data: d }), "create_shopping_list", { recipeId: "pasta-pomodoro", servings: 2 })).toEqual({ ok: true, data: { items: [{ name: "pasta", amount: 160, unit: "g" }, { name: "basilico", amount: 4, unit: "pz" }] } });
+    expect(await executeTool(ctx({ data: d }), "create_shopping_list", { recipeId: "inesistente", servings: 2 })).toEqual({ ok: true, data: { error: "ricetta_non_trovata" } });
+    expect((await executeTool(ctx({ data: d }), "create_shopping_list", { recipeId: "x", servings: 2, userId: "altro" })).ok).toBe(false);
+    expect((await executeTool(ctx({ data: d }), "create_shopping_list", { recipeId: "pasta-pomodoro", servings: 500 })).ok).toBe(false);
+  });
+});
