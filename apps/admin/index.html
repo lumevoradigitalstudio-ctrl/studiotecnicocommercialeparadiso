@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>RITMO — Admin</title>
+<style>body{font:16px/1.5 system-ui,sans-serif;max-width:860px;margin:0 auto;padding:24px;background:#FAF7F2;color:#1F2A24}input,button,select{font:inherit;min-height:44px;margin:4px 0;padding:0 12px;border-radius:12px;border:1px solid #E6E0D6}button{background:#2F6B57;color:#fff;border:0;font-weight:600}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px}td,th{padding:8px 12px;border-bottom:1px solid #E6E0D6;text-align:left}.err{color:#8A1C1C}.muted{color:#55625A;font-size:.9em}</style></head>
+<body>
+<h1>RITMO — Dashboard</h1>
+<p class="muted">Solo dati aggregati. Nessuna conversazione né dato sanitario individuale. Ogni accesso viene registrato.</p>
+<form id="login"><label>Email<br><input id="email" type="email" autocomplete="username" required></label><br><label>Password<br><input id="pw" type="password" autocomplete="current-password" required></label><br><button type="submit">Accedi</button></form>
+<div id="out" hidden>
+ <label>Periodo <select id="days"><option value="7">7 giorni</option><option value="30" selected>30 giorni</option><option value="90">90 giorni</option></select></label> <button id="reload" type="button">Aggiorna</button> <button id="logout" type="button">Esci</button>
+ <table id="tbl" aria-label="Metriche"></table>
+ <p class="muted" id="note"></p>
+</div>
+<p id="err" class="err" role="alert"></p>
+<script src="config.js"></script>
+<script>
+const C=window.RITMO_ADMIN; let token=null; // il token resta SOLO in memoria (mai in storage/cookie)
+const $=id=>document.getElementById(id), err=t=>{$("err").textContent=t||""};
+const LABELS=[["signups_total","Registrazioni totali"],["signups_window","Registrazioni nel periodo"],["onboarding_completed","Onboarding completati"],["active_users_7d","Utenti attivi (7 giorni)"],["active_users_30d","Utenti attivi (30 giorni)"],["plus_active","Abbonati Plus attivi"],["cancellations_window","Disdette/scadenze nel periodo"],["ai_requests_window","Richieste AI nel periodo"],["ai_failed_window","Richieste AI fallite"],["ai_cost_eur_window","Costo AI nel periodo (€)"]];
+async function load(){err("");
+ const r=await fetch(C.SUPABASE_URL+"/functions/v1/admin-metrics",{method:"POST",headers:{"content-type":"application/json",authorization:"Bearer "+token,apikey:C.PUBLISHABLE_KEY},body:JSON.stringify({days:Number($("days").value)})});
+ if(r.status===403){err("Questo account non ha accesso alla dashboard.");return}
+ if(!r.ok){err("Impossibile caricare le metriche.");return}
+ const {metrics:m}=await r.json(); const t=$("tbl"); t.replaceChildren();
+ for(const [k,l] of LABELS){const tr=t.insertRow();tr.insertCell().textContent=l;tr.insertCell().textContent=typeof m[k]==="number"&&k==="ai_cost_eur_window"?m[k].toFixed(4):String(m[k]??"n/d")}
+ const tr=t.insertRow();tr.insertCell().textContent="Ricavi stimati";tr.insertCell().textContent="non disponibili";
+ $("note").textContent="Aggiornato: "+m.generated_at+". Ricavi: richiedono l'integrazione con i dati RevenueCat, non ancora disponibile."; $("out").hidden=false}
+$("login").addEventListener("submit",async e=>{e.preventDefault();err("");
+ const r=await fetch(C.SUPABASE_URL+"/auth/v1/token?grant_type=password",{method:"POST",headers:{"content-type":"application/json",apikey:C.PUBLISHABLE_KEY},body:JSON.stringify({email:$("email").value,password:$("pw").value})});
+ $("pw").value=""; if(!r.ok){err("Accesso non riuscito.");return}
+ token=(await r.json()).access_token; $("login").hidden=true; await load()});
+$("reload").onclick=load; $("logout").onclick=()=>{token=null;$("out").hidden=true;$("login").hidden=false;$("tbl").replaceChildren()};
+</script></body></html>

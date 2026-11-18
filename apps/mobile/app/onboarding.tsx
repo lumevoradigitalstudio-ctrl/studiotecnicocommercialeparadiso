@@ -19,7 +19,7 @@ export default function Onboarding() {
   return (
     <ScrollView contentContainerStyle={{ padding: space.lg, gap: space.lg }}>
       <H2>Qual è il tuo obiettivo?</H2>
-      <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.sm }}>{GOALS.map(([k, l]) => <Chip key={k} label={l} on={goal === k} onPress={() => setGoal(k)} />)}</View>
+      <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.sm }}>{GOALS.map(([k, l]) => <Chip key={k} radio label={l} on={goal === k} onPress={() => setGoal(k)} />)}</View>
       <H2>Preferenze</H2>
       <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.sm }}>{DIETS.map(([k, l]) => <Chip key={k} label={l} on={diet.includes(k)} onPress={() => toggle(k)} />)}</View>
       <Field label="Alimenti da escludere (separati da virgola)" value={excluded} onChangeText={setExcluded} placeholder="es. coriandolo, tonno" />

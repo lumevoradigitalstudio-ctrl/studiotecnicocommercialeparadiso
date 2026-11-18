@@ -39,7 +39,7 @@ describe.skipIf(!PGBIN)("RLS e quote su Postgres reale", () => {
     await admin.query(`
       create role anon nologin; create role authenticated nologin; create role service_role nologin bypassrls;
       create schema auth;
-      create table auth.users (id uuid primary key);
+      create table auth.users (id uuid primary key, created_at timestamptz not null default now());
       create function auth.uid() returns uuid language sql stable as $$ select nullif(current_setting('request.jwt.claim.sub', true), '')::uuid $$;
       grant usage on schema auth to anon, authenticated, service_role;
       grant execute on function auth.uid() to anon, authenticated, service_role;`);
@@ -124,6 +124,33 @@ describe.skipIf(!PGBIN)("RLS e quote su Postgres reale", () => {
   it("budget globale: oltre la soglia le richieste sono rifiutate", async () => {
     const r = await admin.query(`select decision from consume_ai_quota('${A}', 0.0000001)`);
     expect(r.rows[0].decision).toBe("budget");
+  });
+
+  it("billing: evento idempotente, stale ignorato, scadenza → free; utente sconosciuto rifiutato", async () => {
+    const C = "00000000-0000-0000-0000-00000000000c"; await admin.query(`insert into auth.users values ('${C}')`);
+    const ap = async (id: string, ts: string, active: boolean) => (await admin.query(`select apply_billing_event('${id}','${C}','RENEWAL','PRODUCTION','${ts}', ${active}, '2027-01-01') as r`)).rows[0].r;
+    expect(await ap("ev1", "2026-11-01T00:00:00Z", true)).toBe("applied");
+    expect(await ap("ev1", "2026-11-01T00:00:00Z", true)).toBe("duplicate");
+    expect(await ap("ev0", "2026-10-01T00:00:00Z", false)).toBe("stale");
+    expect((await admin.query(`select plan, active from subscription_entitlements where user_id='${C}'`)).rows[0]).toEqual({ plan: "plus", active: true });
+    expect(await ap("ev2", "2026-11-02T00:00:00Z", false)).toBe("applied");
+    expect((await admin.query(`select plan, active from subscription_entitlements where user_id='${C}'`)).rows[0]).toEqual({ plan: "free", active: false });
+    expect((await admin.query(`select apply_billing_event('evX','00000000-0000-0000-0000-0000000000ff','RENEWAL','PRODUCTION', now(), true, null) as r`)).rows[0].r).toBe("unknown_user");
+  });
+
+  it("admin_metrics: solo aggregati (nessuna email/testo), non eseguibile da utenti o anon", async () => {
+    const m = (await admin.query(`select admin_metrics(30) as m`)).rows[0].m;
+    expect(m.signups_total).toBeGreaterThan(0); expect(m.revenue_estimate).toBeNull();
+    expect(JSON.stringify(m)).not.toMatch(/@|pasta di B|uova di/);
+    await as(A, async c => { await expect(c.query(`select admin_metrics(30)`)).rejects.toThrow(/permission denied/); });
+    for (const t of ["billing_events", "admin_users", "waitlist"]) await as(A, async c => { await expect(c.query(`select * from ${t}`)).rejects.toThrow(/permission denied/); });
+    await as(A, async c => { await expect(c.query(`select apply_billing_event('z','${A}','RENEWAL','PRODUCTION', now(), true, null)`)).rejects.toThrow(/permission denied/); });
+  });
+
+  it("lista d'attesa: consenso obbligatorio e email unica (case-insensitive)", async () => {
+    await expect(admin.query(`insert into waitlist (email, consent_marketing, consent_text_version) values ('x@y.it', false, 'v0')`)).rejects.toThrow(/check/);
+    await admin.query(`insert into waitlist (email, consent_marketing, consent_text_version) values ('Mario@Y.it', true, 'v0')`);
+    await expect(admin.query(`insert into waitlist (email, consent_marketing, consent_text_version) values ('mario@y.it', true, 'v0')`)).rejects.toThrow(/unique|duplicate/);
   });
 
   it("eliminazione account: cascade su tutti i dati", async () => {

@@ -18,8 +18,8 @@ export const Field = (p: TextInputProps & { label: string }) => (
   <View style={{ gap: space.xs }}><Text style={s.label}>{p.label}</Text>
     <TextInput accessibilityLabel={p.label} placeholderTextColor={colors.inkSoft} {...p} style={[s.input, p.style]} /></View>
 );
-export const Chip = ({ label, on, onPress }: { label: string; on: boolean; onPress: () => void }) => (
-  <Pressable accessibilityRole="checkbox" accessibilityState={{ checked: on }} onPress={onPress} style={[s.chip, on && { backgroundColor: colors.primary, borderColor: colors.primary }]}>
+export const Chip = ({ label, on, onPress, radio }: { label: string; on: boolean; onPress: () => void; radio?: boolean }) => (
+  <Pressable role={radio ? "radio" : "checkbox"} aria-checked={on} aria-label={label} onPress={onPress} style={[s.chip, on && { backgroundColor: colors.primary, borderColor: colors.primary }]}>
     <Text style={{ color: on ? colors.primaryInk : colors.ink, fontSize: font.body }}>{label}</Text></Pressable>
 );
 export const Notice = ({ children }: { children: React.ReactNode }) => <View style={s.notice}><Text style={{ color: colors.warn, fontSize: font.small }}>{children}</Text></View>;

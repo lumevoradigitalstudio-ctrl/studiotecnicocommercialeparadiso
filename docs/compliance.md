@@ -12,3 +12,6 @@ Dati di abitudini alimentari possono rivelare condizioni di salute → trattarli
 | USDA FoodData Central | CC0/dominio pubblico secondo fonti **terze** (testo ufficiale non trovato: da confermare su fdc.nal.usda.gov); API gratuita con chiave, 1.000 richieste/ora/IP ([guida](https://fdc.nal.usda.gov/api-guide.html)) | Usabile anche con cache; chiave **solo server** (header `x-api-key`, mai nell'URL) |
 | CREA | Condizioni di riuso **non reperite** | **Non utilizzato.** Da contattare CREA-AN per permesso; lacuna: copertura alimenti italiani |
 Limiti: USDA è in inglese (traduzione IT→EN minima, ~30 termini); OFF ha qualità eterogenea (scarto automatico dei record incoerenti ±25% sull'energia Atwater).
+
+## Lista d'attesa (implementata, bozza)
+Raccoglie email + consenso marketing esplicito + versione del testo (`draft-0`). **Mancano:** double opt-in via email (richiede un mittente email), rate limit per IP, informativa legale reale (la pagina `privacy.html` è una BOZZA), procedura di cancellazione/revoca, registro del trattamento.
