@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RITMO AI — Mangia bene, anche quando la vita cambia programma</title>
+<meta name="description" content="Assistente di alimentazione per chi ha orari irregolari. In sviluppo: iscriviti alla lista d'attesa.">
+<style>
+:root{--bg:#FAF7F2;--ink:#1F2A24;--soft:#55625A;--primary:#2F6B57;--line:#E6E0D6;--sage:#E4EEE8}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:720px;margin:0 auto;padding:32px 20px 64px}h1{font-size:clamp(2rem,6vw,3rem);line-height:1.1;margin:.2em 0}
+h2{margin-top:2em}p.lead{font-size:1.2em;color:var(--soft)}ul{padding-left:1.2em}li{margin:.4em 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px;margin:24px 0}
+label{display:block;margin:.8em 0 .2em;font-size:.9em;color:var(--soft)}input[type=email]{width:100%;min-height:48px;border:1px solid var(--line);border-radius:14px;padding:0 14px;font:inherit}
+.check{display:flex;gap:10px;align-items:flex-start;margin:14px 0;font-size:.9em;color:var(--soft)}.check input{width:22px;height:22px;margin-top:3px}
+button{min-height:48px;border:0;border-radius:999px;background:var(--primary);color:#fff;font:inherit;font-weight:600;padding:0 28px;cursor:pointer}button[disabled]{opacity:.5}
+#msg{margin-top:12px;min-height:1.5em}.note{background:#FFF3D6;color:#8A5A00;border-radius:14px;padding:10px 14px;font-size:.85em}
+.hp{position:absolute;left:-9999px}a{color:var(--primary)}footer{margin-top:3em;font-size:.85em;color:var(--soft)}
+</style>
+</head>
+<body><main>
+<p><strong>RITMO AI</strong></p>
+<h1>Mangia bene, anche quando la vita cambia programma.</h1>
+<p class="lead">Un assistente che ti aiuta a decidere cosa mangiare adesso: tiene conto dei tuoi orari, di ciò che hai in dispensa e delle tue preferenze.</p>
+<h2>Per momenti come questi</h2>
+<ul>
+<li>Finisci di lavorare tardi e non sai cosa mangiare.</li>
+<li>Hai poche cose in frigo e vuoi un'idea semplice.</li>
+<li>Hai mangiato fuori programma e vuoi solo riprendere la tua routine, senza sensi di colpa.</li>
+</ul>
+<p class="note">RITMO AI è in fase di sviluppo, non ancora disponibile negli store. Non è un servizio medico e non sostituisce medico, dietista o nutrizionista.</p>
+<section class="card" aria-labelledby="wl">
+<h2 id="wl" style="margin-top:0">Lista d'attesa</h2>
+<form id="form" novalidate>
+<label for="email">La tua email</label>
+<input id="email" name="email" type="email" autocomplete="email" required>
+<input class="hp" type="text" name="website" id="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div class="check"><input id="consent" type="checkbox"><label for="consent" style="margin:0">Acconsento a essere contattato via email per novità e accesso anticipato a RITMO AI. Posso revocare il consenso in ogni momento. <a href="privacy.html">Informativa (bozza)</a></label></div>
+<button id="send" type="submit">Iscrivimi</button>
+<div id="msg" role="status" aria-live="polite"></div>
+</form></section>
+<footer>© RITMO AI — progetto in sviluppo. Il nome è provvisorio.</footer>
+</main>
+<script src="config.js"></script>
+<script src="landing.js"></script>
+</body></html>

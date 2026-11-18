@@ -1,0 +1,23 @@
+{
+  "name": "ritmo-ai",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test:all": "bash scripts/e2e-all.sh"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/pg": "^8.11.0",
+    "axe-core": "^4.14.1",
+    "esbuild": "^0.28.2",
+    "pg": "^8.13.0",
+    "typescript": "^5.6.0",
+    "vitest": "^3.0.0",
+    "zod": "^3.24.0"
+  }
+}
