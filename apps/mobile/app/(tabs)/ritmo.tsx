@@ -8,7 +8,7 @@ import type { MealEntryInput } from "@ritmo/core";
 import type { z } from "zod";
 import { colors, radius, space } from "../../src/theme";
 
-const SUGGESTIONS = ["Ho fame, cosa mangio adesso?", "Ho uova, patate e pomodori", "Oggi ho mangiato una pizza fuori programma"];
+const SUGGESTIONS = ["Lavoro dalle 16 a mezzanotte", "Ho fame, cosa mangio adesso?", "Ho uova, patate e pomodori", "Domani lavoro tutto il pomeriggio. Organizzami i pasti.", "Oggi ho mangiato una pizza fuori programma"];
 
 export default function Chat() {
   const { state, update, actions } = useStore(); const [text, setText] = useState(""); const [busy, setBusy] = useState(false); const [pending, setPending] = useState<z.infer<typeof MealEntryInput>[]>([]);
@@ -21,7 +21,7 @@ export default function Chat() {
   }
   return (
     <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === "ios" ? "padding" : undefined}>
-      <View style={{ padding: space.md }}><Notice>{remoteEnabled ? "Assistente in fase di test." : "Assistente DEMO (risposte predefinite, nessun modello reale collegato)."} Le informazioni nutrizionali sono stime e non sostituiscono il parere di un professionista.</Notice></View>
+      <View style={{ padding: space.md }}><Notice>{remoteEnabled ? "Assistente in fase di test." : "Assistente locale a regole (modalità DEMO): niente modello AI né connessione necessari."} Le informazioni nutrizionali sono stime e non sostituiscono il parere di un professionista.</Notice></View>
       <FlatList data={state.chat} keyExtractor={(_, i) => String(i)} contentContainerStyle={{ padding: space.md, gap: space.sm }}
         ListEmptyComponent={<View style={{ gap: space.sm }}>{SUGGESTIONS.map(s => <Button key={s} kind="ghost" label={s} onPress={() => send(s)} />)}</View>}
         renderItem={({ item }) => (

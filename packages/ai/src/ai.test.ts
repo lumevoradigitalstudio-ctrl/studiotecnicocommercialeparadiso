@@ -12,7 +12,7 @@ const data = (over: Partial<DataAccess> = {}): DataAccess => ({
   searchFood: async () => [], saveMeal: vi.fn(async () => ({ id: "m1" })), upsertPantry: vi.fn(async () => {}), ...over,
 });
 const ctx = (over: Partial<ToolContext> = {}): ToolContext => ({ userId: "u1", data: data(), confirmed: false, ...over });
-const deps = (over = {}) => ({ provider: new DemoProvider(), quota: new InMemoryQuota(), ctx: ctx(), plan: "free" as const, ...over });
+const deps = (over = {}) => ({ provider: new DemoProvider({ now: () => new Date("2026-11-18T22:30:00") }), quota: new InMemoryQuota(), ctx: ctx(), plan: "free" as const, ...over });
 
 describe("sicurezza input", () => {
   it.each([
@@ -103,14 +103,14 @@ describe("scenari demo", () => {
   it("B — dispensa: usa il tool e propone ricetta marcata come stima/demo", async () => {
     const r = await runAgent("Ho uova, patate, prosciutto crudo, pomodori e insalata", deps());
     expect(r.toolsUsed).toEqual(["get_pantry_items"]); expect(r.demo).toBe(true);
-    expect(r.text).toMatch(/frittata/i); expect(r.text).toMatch(/stima/i);
+    expect(r.text).toMatch(/frittata/i); expect(r.text).toMatch(/non ancora disponibili/);
   });
   it("C — pizza fuori programma: nessuna colpevolizzazione né compensazione", async () => {
     const r = await runAgent("Oggi ho mangiato una pizza fuori programma", deps());
     expect(r.blocked).toBeUndefined(); expect(r.text).toMatch(/nessuna compensazione/i);
   });
-  it("D — fame: chiede un'informazione se il contesto non basta", async () => {
-    expect((await runAgent("Ho fame, cosa mangio adesso?", deps())).text).toMatch(/\?/);
+  it("D — fame con dispensa nota: propone una ricetta usando solo il contesto disponibile", async () => {
+    expect((await runAgent("Ho fame, cosa mangio adesso?", deps())).text).toMatch(/Frittata di patate|Uova|Pasta/i);
   });
 });
 
@@ -144,5 +144,37 @@ describe("search_food_database", () => {
     expect((await executeTool(c, "search_food_database", { query: "x" })).ok).toBe(false);
     expect((await executeTool(c, "search_food_database", { query: "uova", userId: "altro" })).ok).toBe(false);
     expect(searchFood).toHaveBeenCalledTimes(1);
+  });
+});
+
+
+describe("assistente locale (scenari del prodotto)", () => {
+  const run = (t: string, d = {}) => runAgent(t, deps(d));
+  it("A — turno 16-24: piano con pasto prima, spuntino a metà, cena tardiva; nessun consiglio medico", async () => {
+    const r = await run("Lavoro dalle 16 a mezzanotte e durante il turno continuo a mangiare qualcosa");
+    expect(r.blocked).toBeUndefined(); expect(r.text).toMatch(/14:00/); expect(r.text).toMatch(/Durante il turno/); expect(r.text).toMatch(/Dopo il turno \(verso le 00:00\)/); expect(r.text).toMatch(/modificabile/); expect(r.text).not.toMatch(/dieta|kcal|colpa/i);
+  });
+  it("E — «domani lavoro tutto il pomeriggio»: proposta con assunzione dichiarata", async () => {
+    const r = await run("Domani lavoro tutto il pomeriggio. Organizzami i pasti."); expect(r.text).toMatch(/domani/); expect(r.text).toMatch(/ho assunto il turno dalle 14:00 alle 19:00/);
+  });
+  it("D — ho fame alle 22:30: usa l'ora (cena tardiva) e, con dispensa, propone una ricetta reale", async () => {
+    const r = await run("Ho fame, cosa mangio adesso?", { ctx: ctx({ data: data({ getPantry: async () => [{ name: "uova" }, { name: "patate" }] }) }) });
+    expect(r.toolsUsed).toEqual(["get_pantry_items"]); expect(r.text).toMatch(/cena tardiva/); expect(r.text).toMatch(/Frittata di patate/);
+  });
+  it("D — ho fame con dispensa vuota: suggerimenti per fascia oraria + una domanda", async () => {
+    const r = await run("Ho fame, cosa mangio adesso?", { ctx: ctx({ data: data({ getPantry: async () => [] }) }) }); expect(r.text).toMatch(/leggero/); expect(r.text).toMatch(/\?/); expect(r.text).toMatch(/Cosa hai a disposizione/);
+  });
+  it("B — ingredienti scritti nel messaggio anche con dispensa vuota", async () => {
+    const r = await run("Ho uova, patate, prosciutto crudo, pomodori e insalata", { ctx: ctx({ data: data({ getPantry: async () => [] }) }) });
+    expect(r.text).toMatch(/ricetta|Con ciò che hai/); expect(r.text).toMatch(/non ancora disponibili/);
+  });
+  it("parser turni e ingredienti", async () => {
+    const { parseShift, parseIngredients, slotFor } = await import("./demo");
+    expect(parseShift("lavoro dalle 22 alle 6")).toEqual({ start: 22, end: 30, assumed: false }); expect(parseShift("buongiorno")).toBeNull();
+    expect(parseIngredients("Ho uova, patate e pomodori.")).toEqual(["uova", "patate", "pomodori"]);
+    expect([slotFor(8), slotFor(13), slotFor(19), slotFor(23), slotFor(3)]).toEqual(["colazione", "pranzo", "cena", "cena tardiva", "notte"]);
+  });
+  it("le risposte dell'assistente locale passano sempre la validazione di sicurezza", async () => {
+    for (const t of ["Lavoro dalle 16 a mezzanotte", "Ho fame", "Ho uova e patate", "Oggi ho mangiato una pizza", "ciao"]) expect((await run(t)).blocked).toBeUndefined();
   });
 });
