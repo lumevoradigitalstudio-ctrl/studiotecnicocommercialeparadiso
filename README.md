@@ -24,3 +24,6 @@ Senza segreti `ritmo-chat` risponde 503 (nessun fallback demo in produzione). `n
 
 ## Suite completa e altre funzioni
 `npm run test:all` esegue unit/RLS locale, typecheck, build web, E2E (app, landing, admin) e audit axe. Deploy extra: `supabase functions deploy admin-metrics` (JWT attivo); `supabase functions deploy revenuecat-webhook --no-verify-jwt`; `supabase functions deploy waitlist --no-verify-jwt`. Segreti: `REVENUECAT_WEBHOOK_SECRET`, `ADMIN_ALLOWED_ORIGINS`, `LANDING_ALLOWED_ORIGINS`. Landing in `apps/landing` (imposta `WAITLIST_URL` in `config.js`), admin in `apps/admin`. Stato: `docs/readiness.md`.
+
+## Pubblicazione web
+Preparata ma **non eseguita**: vedi `docs/deploy-web.md` (siti statici app/landing/admin, header di sicurezza testati, due modalità demo/backend). Build: `bash scripts/build-web.sh`.

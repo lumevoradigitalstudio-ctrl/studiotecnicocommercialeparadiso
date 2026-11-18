@@ -1,0 +1,8 @@
+# Sito «app web» (demo). I siti landing e admin si pubblicano separatamente con base apps/landing e apps/admin (nessuna build).
+[build]
+  command = "npm install && cd apps/mobile && npm install --legacy-peer-deps && npx expo export --platform web"
+  publish = "apps/mobile/dist"
+[build.environment]
+  NODE_VERSION = "22"
+  EXPO_NO_TELEMETRY = "1"
+  CI = "1"

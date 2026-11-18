@@ -5,3 +5,4 @@
 - [x] Test automatici riproducibili (`npm run test:all`) · [x] audit accessibilità automatico · [x] scrubbing privacy pronto
 - [x] Migrazione 0003 applicata al progetto reale · [ ] Rieseguire advisor di sicurezza · [ ] Deploy funzioni (`ritmo-chat`, `delete-account`, `admin-metrics` con JWT; `revenuecat-webhook`, `waitlist` con `--no-verify-jwt`) e segreti · [ ] Creare il primo admin (INSERT in `admin_users` da SQL) e abilitare MFA
 - [ ] Tutti gli altri blocchi sopra restano aperti. Vedi `docs/readiness.md`.
+- [x] Configurazione hosting web preparata (`_headers` con CSP verificata, `_redirects`, `netlify.toml`) · [ ] Deploy effettivo su una piattaforma (richiede tua conferma) · [ ] Dominio e verifica marchio

@@ -5,8 +5,8 @@ const ok = (c, m) => { if (!c) { console.error("FAIL:", m); process.exit(1); } c
 const b = await chromium.launch(); const ctx = await b.newContext(); const errs = [];
 // --- landing
 let p = await ctx.newPage(); p.on("pageerror", e => errs.push(String(e)));
-let hits = []; await p.route("https://wl.test/**", r => { hits.push(JSON.parse(r.request().postData() ?? "{}")); r.fulfill({ status: 200, contentType: "application/json", body: '{"ok":true}' }); });
-await p.addInitScript(() => { Object.defineProperty(window, "RITMO", { configurable: true, get: () => ({ WAITLIST_URL: "https://wl.test/waitlist" }), set() {} }); });
+let hits = []; await p.route("https://wl.supabase.co/**", r => { hits.push(JSON.parse(r.request().postData() ?? "{}")); r.fulfill({ status: 200, contentType: "application/json", body: '{"ok":true}' }); });
+await p.addInitScript(() => { Object.defineProperty(window, "RITMO", { configurable: true, get: () => ({ WAITLIST_URL: "https://wl.supabase.co/waitlist" }), set() {} }); });
 await p.goto(landing);
 ok(await p.getByText("Non è un servizio medico", { exact: false }).first().isVisible(), "landing: disclaimer non-medico visibile");
 ok(!/(testimonial|recensioni|migliaia|\d+\s?utenti)/i.test(await p.textContent("body")), "landing: nessuna prova sociale/numero inventato");
@@ -16,7 +16,7 @@ await p.getByLabel("La tua email").fill("mario@example.it"); await p.getByRole("
 ok(await p.getByText("serve il tuo consenso").isVisible() && hits.length === 0, "landing: senza consenso non invia");
 await p.getByLabel(/Acconsento/).check(); await p.getByRole("button", { name: "Iscrivimi" }).click();
 await p.getByText("Grazie!").waitFor(); ok(hits.length === 1 && hits[0].consent === true && hits[0].email === "mario@example.it", "landing: invio con consenso esplicito");
-await p.unroute("https://wl.test/**"); await p.route("https://wl.test/**", r => r.fulfill({ status: 500, body: "{}" }));
+await p.unroute("https://wl.supabase.co/**"); await p.route("https://wl.supabase.co/**", r => r.fulfill({ status: 500, body: "{}" }));
 await p.getByLabel("La tua email").fill("a@example.it"); await p.getByLabel(/Acconsento/).check(); await p.getByRole("button", { name: "Iscrivimi" }).click();
 await p.getByText("Non è stato possibile completare l'iscrizione").waitFor(); ok(true, "landing: errore server mostrato senza dettagli");
 // --- admin
