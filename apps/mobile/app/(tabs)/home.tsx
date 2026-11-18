@@ -6,6 +6,8 @@ import { quickIdea } from "@ritmo/ai";
 import { Button, Card, H2, Body } from "../../src/ui";
 import { useStore } from "../../src/store";
 import { colors, radius, space } from "../../src/theme";
+import { Hero3D, Rise } from "../../src/fx";
+import { WEIGHT_AREA } from "../../src/config";
 
 const Row = ({ icon, title, sub, onPress }: { icon: React.ComponentProps<typeof Ionicons>["name"]; title: string; sub: string; onPress: () => void }) => (
   <Pressable role="button" onPress={onPress} style={({ pressed }) => [{ flexDirection: "row", alignItems: "center", gap: space.md, backgroundColor: colors.surface, borderRadius: radius.lg, borderWidth: 1, borderColor: colors.line, padding: space.md, minHeight: 64 }, pressed && { opacity: 0.85 }]}>
@@ -26,14 +28,18 @@ export default function Home() {
   return (
     <ScrollView contentContainerStyle={{ padding: space.lg, gap: space.md }}>
       <View style={{ gap: 2 }}><Text style={{ fontSize: 30, fontWeight: "800", color: colors.ink }}>{hello}</Text><Text style={{ fontSize: 15, color: colors.inkSoft }}>Mangia bene, anche quando la vita cambia programma.</Text></View>
-      <View style={{ backgroundColor: colors.primary, borderRadius: radius.lg, padding: space.lg, gap: space.sm }}>
-        <Text style={{ color: "#CFE3D8", fontSize: 13, fontWeight: "600", textTransform: "uppercase", letterSpacing: 0.6 }}>Ora: {slot}</Text>
-        <Text style={{ color: colors.primaryInk, fontSize: 18, lineHeight: 25, fontWeight: "600" }}>{best ? `Con la tua dispensa: ${best.recipe.title} (${best.recipe.minutes} min).` : `Un'idea semplice: ${idea}.`}</Text>
-        <Pressable role="button" aria-label="Chiedi a RITMO" onPress={() => r.push("/(tabs)/ritmo")} style={{ alignSelf: "flex-start", backgroundColor: colors.bg, borderRadius: radius.pill, paddingHorizontal: space.lg, minHeight: 44, justifyContent: "center", marginTop: space.xs }}>
-          <Text style={{ color: colors.primary, fontWeight: "700", fontSize: 16 }}>Chiedi a RITMO</Text></Pressable>
-      </View>
+      <Rise>
+        <View style={{ backgroundColor: colors.primary, borderRadius: radius.lg, padding: space.lg, gap: space.sm, overflow: "hidden", shadowColor: "#1F2A24", shadowOpacity: 0.25, shadowRadius: 16, shadowOffset: { width: 0, height: 10 }, elevation: 6 }}>
+          <View style={{ alignItems: "center", marginBottom: -space.sm }}><Hero3D size={210} /></View>
+          <Text style={{ color: "#CFE3D8", fontSize: 13, fontWeight: "600", textTransform: "uppercase", letterSpacing: 0.6 }}>Ora: {slot}</Text>
+          <Text style={{ color: colors.primaryInk, fontSize: 18, lineHeight: 25, fontWeight: "600" }}>{best ? `Con la tua dispensa: ${best.recipe.title} (${best.recipe.minutes} min).` : `Un'idea semplice: ${idea}.`}</Text>
+          <Pressable role="button" aria-label="Chiedi a RITMO" onPress={() => r.push("/(tabs)/ritmo")} style={{ alignSelf: "flex-start", backgroundColor: colors.bg, borderRadius: radius.pill, paddingHorizontal: space.lg, minHeight: 44, justifyContent: "center", marginTop: space.xs }}>
+            <Text style={{ color: colors.primary, fontWeight: "700", fontSize: 16 }}>Chiedi a RITMO</Text></Pressable>
+        </View>
+      </Rise>
       <Row icon="restaurant-outline" title="Oggi" sub={todays.length ? `${todays.length} ${todays.length === 1 ? "pasto registrato" : "pasti registrati"}` : "Nessun pasto registrato"} onPress={() => r.push("/(tabs)/pasti")} />
       <Row icon="basket-outline" title="La tua dispensa" sub={state.pantry.length ? `${state.pantry.length} ingredienti salvati` : "Aggiungi gli ingredienti che hai per ricevere ricette"} onPress={() => r.push("/(tabs)/cucina")} />
+      {WEIGHT_AREA && <Row icon="flag-outline" title="Il tuo obiettivo" sub="Un percorso su misura, graduale e facoltativo" onPress={() => r.push("/(tabs)/obiettivo")} />}
       <Row icon="leaf-outline" title="Il tuo percorso" sub="Gli ultimi 7 giorni, senza pressione" onPress={() => r.push("/(tabs)/percorso")} />
     </ScrollView>
   );

@@ -1,7 +1,7 @@
 import type { z } from "zod";
 import type { UserPreferences, PantryItem } from "@ritmo/core";
 import { supabase } from "./supabase";
-import type { MealRow } from "./store";
+import type { MealRow, WeightState } from "./store";
 
 type Prefs = z.infer<typeof UserPreferences>; type Pantry = z.infer<typeof PantryItem> & { id?: string };
 const db = () => { if (!supabase) throw new Error("backend non configurato"); return supabase; };
@@ -10,14 +10,22 @@ const check = <T,>(r: { data: T; error: { message: string } | null }) => { if (r
 /** Accesso dati autenticato col JWT dell'utente: la sicurezza è garantita dalla RLS lato database. */
 export async function loadAll(userId: string) {
   const c = db();
-  const [prof, pref, pantry, meals] = await Promise.all([
+  const [prof, pref, pantry, meals, prog] = await Promise.all([
     c.from("profiles").select("onboarding_completed").eq("id", userId).maybeSingle(),
     c.from("user_preferences").select("*").eq("user_id", userId).maybeSingle(),
     c.from("pantry_items").select("id,name,quantity,unit,expires_on").order("created_at"),
     c.from("meal_entries").select("id,meal_type,eaten_at,description,kcal,is_estimate").order("eaten_at", { ascending: false }).limit(200),
+    c.from("progress_entries").select("id,kind,value,recorded_at").in("kind", ["weight", "body_profile"]).order("recorded_at").limit(1000),
   ]);
   const p = check(pref), pr = check(prof);
+  const rows = (check(prog) ?? []) as { id: string; kind: string; value: any; recorded_at: string }[];
+  const bodyRow = [...rows].reverse().find(r => r.kind === "body_profile");
+  const weight: WeightState = {
+    consent: !!bodyRow, body: bodyRow?.value?.body ?? null, screening: bodyRow?.value?.screening ?? null, shift: bodyRow?.value?.shift ?? null,
+    entries: rows.filter(r => r.kind === "weight").map(r => ({ id: r.id, date: r.recorded_at.slice(0, 10), kg: Number(r.value?.kg) })).filter(e => Number.isFinite(e.kg)),
+  };
   return {
+    weight,
     onboarded: !!pr?.onboarding_completed,
     prefs: p ? { goal: p.goal, diet: p.diet ?? [], excludedFoods: p.excluded_foods ?? [], cookingMinutes: p.cooking_minutes ?? 30, weeklyBudgetEur: p.weekly_budget_eur, notificationsEnabled: false } as Prefs : null,
     pantry: (check(pantry) ?? []).map((r: any): Pantry => ({ id: r.id, name: r.name, quantity: r.quantity ?? undefined, unit: r.unit ?? undefined, expiresOn: r.expires_on ?? undefined })),
@@ -51,4 +59,23 @@ export async function deleteAccount() {
   const { error } = await db().functions.invoke("delete-account", { body: { confirm: "ELIMINA" } });
   if (error) throw new Error("delete_failed");
   await db().auth.signOut();
+}
+
+/** Dati sul peso: categoria particolare (salute). Salvati solo dopo consenso esplicito; revocabili e cancellabili. */
+export async function saveBodyProfile(userId: string, v: { body: unknown; screening: unknown; shift: unknown }) {
+  const c = db();
+  check(await c.from("progress_entries").delete().eq("user_id", userId).eq("kind", "body_profile"));
+  check(await c.from("progress_entries").insert({ user_id: userId, kind: "body_profile", value: v }));
+}
+export async function grantWeightConsent(userId: string, granted: boolean) {
+  check(await db().from("consents").insert({ user_id: userId, purpose: "health_data_processing", granted, policy_version: "draft-0-weight" }));
+}
+export async function insertWeight(userId: string, kg: number, date: string): Promise<string> {
+  const r = check(await db().from("progress_entries").insert({ user_id: userId, kind: "weight", value: { kg }, recorded_at: `${date}T12:00:00Z` }).select("id").single());
+  return (r as { id: string }).id;
+}
+export async function deleteProgress(id: string) { check(await db().from("progress_entries").delete().eq("id", id)); }
+export async function revokeWeightData(userId: string) {
+  check(await db().from("progress_entries").delete().eq("user_id", userId).in("kind", ["weight", "body_profile"]));
+  await grantWeightConsent(userId, false);
 }

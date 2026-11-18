@@ -15,3 +15,6 @@ Limiti: USDA è in inglese (traduzione IT→EN minima, ~30 termini); OFF ha qual
 
 ## Lista d'attesa (implementata, bozza)
 Raccoglie email + consenso marketing esplicito + versione del testo (`draft-0`). **Mancano:** double opt-in via email (richiede un mittente email), rate limit per IP, informativa legale reale (la pagina `privacy.html` è una BOZZA), procedura di cancellazione/revoca, registro del trattamento.
+
+## Area «Obiettivo peso»
+Tratta peso, altezza, età, sesso e flag di salute (categoria particolare). Consenso esplicito separato nell'app; revoca = cancellazione. Rafforza la necessità di DPIA e di una revisione legale. Vedi `docs/weight-area.md`.

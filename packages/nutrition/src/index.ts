@@ -44,3 +44,4 @@ export function scaleServings(grams: number, fromServings: number, toServings: n
   return round1((grams / fromServings) * toServings);
 }
 export * from "./sources";
+export * from "./weight";

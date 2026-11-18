@@ -9,6 +9,7 @@ node scripts/build-functions.mjs >/dev/null
 node tests/e2e/serve.mjs apps/mobile/dist 8099 & node tests/e2e/serve.mjs apps/landing 8101 & node tests/e2e/serve.mjs apps/admin 8102 &
 trap 'pkill -f tests/e2e/serve.mjs || true' EXIT; sleep 1
 node tests/e2e/mvp.mjs http://127.0.0.1:8099
+node tests/e2e/obiettivo.mjs http://127.0.0.1:8099
 node tests/e2e/web.mjs http://127.0.0.1:8101 http://127.0.0.1:8102
 node tests/e2e/a11y.mjs http://127.0.0.1:8101 http://127.0.0.1:8102 http://127.0.0.1:8099
 echo "TUTTO OK"

@@ -4,7 +4,7 @@ Assistente di alimentazione per la vita reale (Italia). **Stato: prototipo tecni
 ## Avvio
 ```bash
 npm install
-npm test                         # 108 test: core, nutrition, ai, RLS su Postgres 16 locale (saltati se manca)
+npm test                         # 123 test: core, nutrition, ai, RLS su Postgres 16 locale (saltati se manca)
 npm run typecheck
 cd apps/mobile && npm install --legacy-peer-deps && npx expo start
 # E2E web:  npx expo export --platform web && node ../../tests/e2e/serve.mjs dist 8099 & node ../../tests/e2e/mvp.mjs

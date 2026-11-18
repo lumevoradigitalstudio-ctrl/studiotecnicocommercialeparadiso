@@ -17,3 +17,6 @@ Accessibilità (label, ruoli, target ≥44px, font scalabili) · privacy by desi
 
 ## Aggiornamento
 Implementati (locale, testati in E2E): ricette dalla dispensa con porzioni modificabili, lista della spesa («Da comprare»), «Il mio percorso» (giorni con almeno un pasto, senza serie né colpa). Tool AI `search_recipes` e `create_shopping_list` (66 test). Non persistita: la lista della spesa è calcolata al volo, non salvata (tabella `shopping_lists` pronta, nessuna UI di salvataggio).
+
+## Area «Obiettivo peso» e design 3D (v0.2)
+Aggiunte: percorso di dimagrimento su misura (screening, stima prudente, giornata sul turno, registro peso con andamento e check-in) e scena 3D animata (Hero3D: piatto in prospettiva, sfere in orbita, barre «ritmo»; card con profondità; ingressi morbidi; rispetto di «riduci animazioni»). Il 3D è **pseudo-3D con trasformazioni di base** (nessun motore 3D come three.js: più semplice e sicuro per la build Android); un vero 3D resta un'opzione futura.
