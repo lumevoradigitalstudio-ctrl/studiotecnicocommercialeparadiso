@@ -13,3 +13,5 @@
 | RevenueCat | **Non configurato** | Paywall solo informativo | Richiede account, build native, sandbox. |
 
 Rete: `api.expo.dev` è bloccato dal proxy → `expo install` non funziona qui; versioni scelte da `bundledNativeModules.json`.
+
+Rete (2026-11-18): `world.openfoodfacts.org`, `api.nal.usda.gov`, `www.crea.gov.it` → 403 dal proxy. Proposta di un ambiente dedicato con questi due host: negata dall'utente; non ripetuta.

@@ -6,7 +6,7 @@ export interface DataAccess {
   getPreferences(userId: string): Promise<unknown>;
   getSchedule(userId: string): Promise<unknown>;
   getPantry(userId: string): Promise<{ name: string }[]>;
-  searchFood(query: string): Promise<unknown[]>;
+  searchFood(query: string): Promise<unknown>;
   saveMeal(userId: string, meal: z.infer<typeof MealEntryInput>): Promise<{ id: string }>;
   upsertPantry(userId: string, items: z.infer<typeof PantryItem>[]): Promise<void>;
 }

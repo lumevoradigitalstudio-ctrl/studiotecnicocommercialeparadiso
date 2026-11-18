@@ -135,3 +135,14 @@ describe("tool ricette", () => {
     expect((await executeTool(ctx({ data: d }), "create_shopping_list", { recipeId: "pasta-pomodoro", servings: 500 })).ok).toBe(false);
   });
 });
+
+describe("search_food_database", () => {
+  it("passa la query validata al DataAccess e restituisce attribuzioni; query sospette respinte prima di ogni chiamata", async () => {
+    const searchFood = vi.fn(async () => ({ foods: [], attributions: ["Dati: USDA FoodData Central"] }));
+    const c = ctx({ data: data({ searchFood }) });
+    expect((await executeTool(c, "search_food_database", { query: "uova" })).ok).toBe(true); expect(searchFood).toHaveBeenCalledWith("uova");
+    expect((await executeTool(c, "search_food_database", { query: "x" })).ok).toBe(false);
+    expect((await executeTool(c, "search_food_database", { query: "uova", userId: "altro" })).ok).toBe(false);
+    expect(searchFood).toHaveBeenCalledTimes(1);
+  });
+});

@@ -43,3 +43,4 @@ export function scaleServings(grams: number, fromServings: number, toServings: n
   if (fromServings <= 0 || toServings <= 0) throw new RangeError("servings must be > 0");
   return round1((grams / fromServings) * toServings);
 }
+export * from "./sources";

@@ -1,10 +1,13 @@
 // Edge Function «ritmo-chat». Segreti richiesti (impostati dal proprietario, MAI nel repo):
+//   USDA_API_KEY (facoltativa, gratuita: senza, si usa solo Open Food Facts),
 //   ANTHROPIC_API_KEY, ANTHROPIC_MODEL, PRICE_IN_EUR_PER_MTOK, PRICE_OUT_EUR_PER_MTOK, AI_GLOBAL_MONTHLY_BUDGET_EUR (facoltativo)
 // SUPABASE_URL / SUPABASE_ANON_KEY / SUPABASE_SERVICE_ROLE_KEY sono forniti dalla piattaforma.
 import { createClient } from "npm:@supabase/supabase-js@2";
+import { searchFoods, TtlCache } from "../../../packages/nutrition/src/index.ts";
 import { handleChat, AnthropicProvider, resolvePlan, type QuotaGate, type DataAccess } from "../../../packages/ai/src/index.ts";
 
 const env = (k: string) => Deno.env.get(k) ?? "";
+const foodCache = new TtlCache<Awaited<ReturnType<typeof searchFoods>>>(); // cache per istanza, 6 h
 const admin = createClient(env("SUPABASE_URL"), env("SUPABASE_SERVICE_ROLE_KEY"), { auth: { persistSession: false } });
 
 function makeProvider() {
@@ -46,7 +49,12 @@ Deno.serve((req: Request) => handleChat(req, {
       getPreferences: async () => (await c.from("user_preferences").select("goal,diet,excluded_foods,cooking_minutes").eq("user_id", uid).maybeSingle()).data ?? {},
       getSchedule: async () => (await c.from("work_schedules").select("weekday,start_time,end_time").eq("user_id", uid)).data ?? [],
       getPantry: async () => (await c.from("pantry_items").select("name").eq("user_id", uid).limit(100)).data ?? [],
-      searchFood: async () => [], // database alimentare non ancora integrato
+      searchFood: async (q) => {
+        try {
+          const r = await searchFoods(q, { usdaApiKey: env("USDA_API_KEY") || undefined, cache: foodCache });
+          return { foods: r.foods.slice(0, 6).map(f => ({ name: f.name, brand: f.brand, per100g: { kcal: f.kcal, protein: f.protein, carbs: f.carbs, fat: f.fat }, source: f.source })), attributions: r.attributions, partial: r.partial, note: "valori per 100 g, stime da database esterni" };
+        } catch { return { foods: [], attributions: [], partial: true, note: "ricerca non disponibile" }; }
+      },
       saveMeal: async () => { throw new Error("scrittura via chat non consentita: usare la conferma lato app"); },
       upsertPantry: async () => { throw new Error("scrittura via chat non consentita: usare la conferma lato app"); },
     };
