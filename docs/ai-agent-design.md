@@ -1,0 +1,5 @@
+# Design dell'agente
+Prompt di sistema versionato (`SYSTEM_PROMPT_VERSION`). Pipeline: **rischio deterministico pre-LLM** (DCA, restrizioni estreme, minori, gravidanza/allattamento, condizioni mediche, allergie gravi → risposta fissa, nessun costo) → quota → loop provider/tool (max 4) → **validazione output** (blocca compensazione/digiuno/prescrizioni → fallback) → rilascio slot e costo.
+Tool: `get_user_preferences`, `get_user_schedule`, `get_pantry_items`, `search_food_database`, `save_meal_entry`*, `update_pantry`* (*richiedono `confirmed`). Non ancora implementati: `search_recipes`, `suggest_meal`, `create_shopping_list`, `get_progress_summary`.
+Argomenti validati con zod `.strict()` (un `userId` scelto dal modello viene rifiutato). Output dei tool incapsulato in `<untrusted>` e segnalato se sembra injection.
+**Limiti noti:** le regex di rischio sono una prima barriera, non esaustiva (falsi negativi probabili, es. slang/ortografia); la validazione dell'output è euristica; la memoria autorizzata (`ai_memories`) ha schema ma nessuna UI/logica; nessun provider reale testato; serve revisione di un dietista sui testi.

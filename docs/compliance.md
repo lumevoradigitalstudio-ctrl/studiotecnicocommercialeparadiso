@@ -1,0 +1,4 @@
+# Privacy/GDPR — checklist per revisione legale (NON è consulenza legale)
+Dati di abitudini alimentari possono rivelare condizioni di salute → trattarli come categoria particolare (art. 9): base giuridica = consenso esplicito (l'onboarding lo raccoglie per le preferenze; da registrare in `consents` con versione informativa).
+- [x] Minimizzazione: nessun peso/altezza richiesto. [x] Esportazione e cancellazione locali. 
+- [ ] Informativa e termini (testi legali). [ ] Registro consensi lato server. [ ] DPIA (probabile necessaria). [ ] DPA/trasferimenti extra-UE per provider AI, Supabase (regione eu-central-1 nel progetto ARVEN, da scegliere per RITMO), RevenueCat, Sentry. [ ] Politica di conservazione. [ ] Eliminazione account server-side (cascade già testato in DB). [ ] Verifica qualificazione come dispositivo medico (claim commerciali solo di benessere). [ ] Consenso marketing separato. [ ] Revisione contenuti da dietista/nutrizionista.

@@ -1,0 +1,2 @@
+# Blocchi al rilascio (tutti aperti)
+- [ ] Verifica marchio/domini/store per «RITMO AI» · [ ] Revisione dietista/nutrizionista · [ ] Revisione legale/privacy/DPIA · [ ] Auth e DB reali in ambiente RITMO · [ ] LLM reale + test costi · [ ] RevenueCat sandbox + build native · [ ] Test su dispositivi Android/iOS reali · [ ] Sentry senza PII · [ ] Asset e schede store · [ ] Supporto/contatti · [ ] Valutazione dispositivo medico · [ ] Autorizzazione tua alla pubblicazione.

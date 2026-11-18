@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", "module": "ESNext", "moduleResolution": "Bundler",
+    "strict": true, "noUncheckedIndexedAccess": true, "skipLibCheck": true,
+    "esModuleInterop": true, "resolveJsonModule": true, "noEmit": true,
+    "types": ["node"],
+    "paths": {
+      "@ritmo/core": ["./packages/core/src/index.ts"],
+      "@ritmo/nutrition": ["./packages/nutrition/src/index.ts"],
+      "@ritmo/ai": ["./packages/ai/src/index.ts"]
+    }
+  },
+  "include": ["packages/*/src", "tests"]
+}
