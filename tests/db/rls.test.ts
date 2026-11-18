@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeAll, afterAll } from "vitest";
 import { execSync, spawn, type ChildProcess } from "node:child_process";
-import { existsSync, readFileSync, mkdtempSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync, mkdtempSync } from "node:fs";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import pg from "pg";
@@ -43,11 +43,14 @@ describe.skipIf(!PGBIN)("RLS e quote su Postgres reale", () => {
       create function auth.uid() returns uuid language sql stable as $$ select nullif(current_setting('request.jwt.claim.sub', true), '')::uuid $$;
       grant usage on schema auth to anon, authenticated, service_role;
       grant execute on function auth.uid() to anon, authenticated, service_role;`);
-    await admin.query(readFileSync(path.resolve(__dirname, "../../supabase/migrations/20261118000001_init.sql"), "utf8"));
+    const mdir = path.resolve(__dirname, "../../supabase/migrations");
+    const migs = readdirSync(mdir).filter(f => f.endsWith(".sql")).sort();
+    await admin.query(readFileSync(path.join(mdir, migs[0]!), "utf8"));
     await admin.query(`grant usage on schema public to anon, authenticated, service_role;
       grant select, insert, update, delete on all tables in schema public to authenticated, service_role;
       grant usage on all sequences in schema public to authenticated, service_role;`);
     // le revoke della migration devono prevalere: ri-applichiamo come fa Supabase (default privileges) senza concedere scrittura sulle tabelle protette
+    for (const f of migs.slice(1)) await admin.query(readFileSync(path.join(mdir, f), "utf8")); // hardening dopo i grant di test
     await admin.query(`revoke insert, update, delete on public.subscription_entitlements, public.ai_usage_ledger, public.plan_limits, public.audit_events from authenticated`);
     await admin.query(`insert into auth.users values ('${A}'), ('${B}')`);
   }, 60_000);
