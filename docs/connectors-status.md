@@ -17,3 +17,16 @@ Rete: `api.expo.dev` è bloccato dal proxy → `expo install` non funziona qui; 
 Rete (2026-11-18): `world.openfoodfacts.org`, `api.nal.usda.gov`, `www.crea.gov.it` → 403 dal proxy. Proposta di un ambiente dedicato con questi due host: negata dall'utente; non ripetuta.
 
 Migrazione `20261118000003` **applicata** al progetto reale e verificata via SQL (22 tabelle, tutte con RLS; `authenticated`/`anon` senza accesso a `billing_events`, `admin_users`, `waitlist` né a `admin_metrics`/`apply_billing_event`; `service_role` sì). Advisor di sicurezza non rieseguiti dopo la 0003 (la chiamata non ha risposto).
+
+## Funzioni Edge sul progetto reale (2026-11-18)
+`delete-account` e `ritmo-chat` **deployate** via Supabase MCP (v1, ACTIVE, verify_jwt attivo). Bundle "slim" (`scripts/build-functions-slim.mjs`; `delete-account` ridotto a mano al solo codice usato). **Non provate dal vivo**: da questa sessione l'host supabase.co è bloccato, quindi non ho potuto chiamarle. Non deployate: `admin-metrics`, `revenuecat-webhook`, `waitlist`.
+**Segreti: NON impostati** (il tentativo con `create_edge_function_secret` è stato negato dal sistema di permessi: vanno inseriti da te dalla dashboard Supabase → Edge Functions → Secrets):
+| Nome | Valore |
+|---|---|
+| `ANTHROPIC_API_KEY` | la tua chiave (console Anthropic) |
+| `ANTHROPIC_MODEL` | `claude-haiku-5-5` |
+| `PRICE_IN_EUR_PER_MTOK` | `0.10` (indicativo: $0,10/Mtok ≤100k token, fonti terze; verifica sul listino ufficiale) |
+| `PRICE_OUT_EUR_PER_MTOK` | `0.50` (idem) |
+| `AI_GLOBAL_MONTHLY_BUDGET_EUR` | un tetto mensile tuo, es. `5` |
+| `USDA_API_KEY` (facoltativa) | chiave gratuita FoodData Central |
+Finché mancano i primi quattro, `ritmo-chat` risponde 503 e l'app mostra «assistente non disponibile».

@@ -6,7 +6,7 @@
 | Autenticazione reale | ◐ codice scritto, **mai provato con un utente reale** |
 | Database reale | ◐ progetto Supabase creato, migrazioni 0001-0003 applicate e verificate sui privilegi |
 | Persistenza verificata | ✔ in modalità locale (E2E); ✖ in modalità remota |
-| Agente AI | ◐ DEMO verificato; handler server testato; **nessuna chiamata a un LLM reale** |
+| Agente AI | ◐ DEMO verificato; funzione `ritmo-chat` **deployata** ma senza segreti (503) e mai provata dal vivo; **nessuna chiamata a un LLM reale** |
 | Autorizzazioni testate | ✔ su Postgres locale; ✖ non su Supabase reale |
 | Gestione errori / test documentati / config riproducibile | ✔ `npm run test:all` |
 ## Prodotto vendibile (tutto ancora aperto)
