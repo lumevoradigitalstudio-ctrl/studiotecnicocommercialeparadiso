@@ -23,6 +23,9 @@ const GENERIC: Record<Slot, string> = {
   notte: "qualcosa di leggero e facile da preparare: yogurt, un frutto, qualche cracker con formaggio fresco",
 };
 
+/** Idea veloce per l'ora indicata (usata dalla Home). */
+export function quickIdea(hour: number): { slot: Slot; idea: string } { const slot = slotFor(hour); return { slot, idea: GENERIC[slot] }; }
+
 /** Estrae ingredienti da frasi tipo «Ho uova, patate e pomodori». */
 export function parseIngredients(text: string): string[] {
   const m = text.match(/\b(?:ho|abbiamo|in frigo (?:ho|c'è|ci sono)|dispensa:?)\s+(.+)$/i); if (!m) return [];

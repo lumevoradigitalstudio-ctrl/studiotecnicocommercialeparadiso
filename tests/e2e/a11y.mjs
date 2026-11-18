@@ -14,6 +14,6 @@ await p.goto(admin); await audit(p, "admin login");
 await p.goto(app); await p.getByText("RITMO AI").first().waitFor(); await audit(p, "app: benvenuto");
 await p.getByRole("button", { name: /Inizia/ }).click(); await p.getByText("Qual è il tuo obiettivo?").waitFor(); await audit(p, "app: onboarding");
 await p.getByText("Organizzare i pasti").click(); await p.getByLabel("Consenso al trattamento delle preferenze alimentari").click(); await p.getByRole("button", { name: "Continua" }).click();
-await p.getByText("Non sai cosa mangiare adesso?").waitFor(); await audit(p, "app: home");
-for (const t of ["RITMO AI", "I miei pasti", "La mia cucina", "Il mio percorso", "Profilo"]) { await p.getByRole("tab", { name: new RegExp(t) }).click(); await p.waitForTimeout(250); await audit(p, "app: " + t); }
+await p.getByRole("button", { name: "Chiedi a RITMO" }).waitFor(); await audit(p, "app: home");
+for (const t of ["RITMO", "Pasti", "Cucina", "Percorso", "Profilo"]) { await p.getByRole("tab", { name: new RegExp("^"+t) }).click(); await p.waitForTimeout(250); await audit(p, "app: " + t); }
 await b.close(); process.exit(bad ? 1 : 0);
