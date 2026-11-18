@@ -2,23 +2,53 @@ import React, { createContext, useContext, useEffect, useState, useCallback } fr
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { UserPreferences, MealEntryInput, PantryItem } from "@ritmo/core";
 import type { z } from "zod";
+import { useAuth } from "./auth";
+import { remoteEnabled } from "./supabase";
+import * as remote from "./remote";
 
 export interface ChatLine { role: "user" | "assistant"; text: string; demo?: boolean }
 export interface MealRow extends z.infer<typeof MealEntryInput> { id: string }
 export interface AppState {
   onboarded: boolean; prefs: z.infer<typeof UserPreferences> | null;
-  pantry: z.infer<typeof PantryItem>[]; meals: MealRow[]; chat: ChatLine[]; consentHealth: boolean;
+  pantry: (z.infer<typeof PantryItem> & { id?: string })[]; meals: MealRow[]; chat: ChatLine[]; consentHealth: boolean;
 }
 const EMPTY: AppState = { onboarded: false, prefs: null, pantry: [], meals: [], chat: [], consentHealth: false };
 const KEY = "ritmo.state.v1";
 
 /** Persistenza locale (AsyncStorage). Con un progetto Supabase RITMO verrà sostituita da un repository con RLS. */
-const Ctx = createContext<{ state: AppState; ready: boolean; update: (fn: (s: AppState) => AppState) => void; reset: () => Promise<void> } | null>(null);
+export interface Actions {
+  finishOnboarding(prefs: z.infer<typeof UserPreferences>): Promise<void>;
+  addMeal(m: Omit<MealRow, "id">): Promise<void>;
+  addPantry(p: z.infer<typeof PantryItem>): Promise<void>;
+  removePantry(index: number): Promise<void>;
+  wipeData(): Promise<void>;
+}
+const Ctx = createContext<{ state: AppState; ready: boolean; error: string | null; update: (fn: (s: AppState) => AppState) => void; reset: () => Promise<void>; actions: Actions } | null>(null);
 export function StoreProvider({ children }: { children: React.ReactNode }) {
-  const [state, setState] = useState<AppState>(EMPTY); const [ready, setReady] = useState(false);
-  useEffect(() => { AsyncStorage.getItem(KEY).then(v => { if (v) { try { setState({ ...EMPTY, ...JSON.parse(v) }); } catch { /* dati corrotti: riparte da zero */ } } setReady(true); }); }, []);
-  const update = useCallback((fn: (s: AppState) => AppState) => setState(prev => { const next = fn(prev); AsyncStorage.setItem(KEY, JSON.stringify(next)); return next; }), []);
-  const reset = useCallback(async () => { await AsyncStorage.removeItem(KEY); setState(EMPTY); }, []);
-  return <Ctx.Provider value={{ state, ready, update, reset }}>{children}</Ctx.Provider>;
+  const { session, loading } = useAuth(); const uid = session?.user.id ?? null;
+  const [state, setState] = useState<AppState>(EMPTY); const [ready, setReady] = useState(false); const [error, setError] = useState<string | null>(null);
+  // Modalità remota: i dati vivono nel DB (RLS). La cache locale serve solo in modalità demo.
+  const persistLocal = !remoteEnabled;
+  useEffect(() => {
+    if (loading) return;
+    setReady(false); setError(null);
+    if (remoteEnabled) {
+      if (!uid) { setState(EMPTY); setReady(true); return; }
+      remote.loadAll(uid).then(d => setState(s => ({ ...EMPTY, chat: s.chat, ...d }))).catch(() => setError("Impossibile caricare i dati. Riprova.")).finally(() => setReady(true));
+    } else {
+      AsyncStorage.getItem(KEY).then(v => { if (v) { try { setState({ ...EMPTY, ...JSON.parse(v) }); } catch { /* dati corrotti */ } } setReady(true); });
+    }
+  }, [uid, loading]);
+  const update = useCallback((fn: (s: AppState) => AppState) => setState(prev => { const next = fn(prev); if (persistLocal) AsyncStorage.setItem(KEY, JSON.stringify(next)); return next; }), [persistLocal]);
+  const reset = useCallback(async () => { if (persistLocal) await AsyncStorage.removeItem(KEY); setState(EMPTY); }, [persistLocal]);
+  const guard = async (fn: () => Promise<void>) => { try { setError(null); await fn(); } catch { setError("Operazione non riuscita. Riprova."); } };
+  const actions: Actions = {
+    finishOnboarding: (prefs) => guard(async () => { if (uid) await remote.saveOnboarding(uid, prefs); update(s => ({ ...s, prefs, onboarded: true, consentHealth: true })); }),
+    addMeal: (m) => guard(async () => { const id = uid ? await remote.insertMeal(uid, m) : String(Date.now()); update(s => ({ ...s, meals: [{ ...m, id }, ...s.meals] })); }),
+    addPantry: (p) => guard(async () => { const id = uid ? await remote.insertPantry(uid, p) : undefined; update(s => ({ ...s, pantry: [...s.pantry, { ...p, id }] })); }),
+    removePantry: (i) => guard(async () => { const id = state.pantry[i]?.id; if (uid && id) await remote.deletePantry(id); update(s => ({ ...s, pantry: s.pantry.filter((_, j) => j !== i) })); }),
+    wipeData: () => guard(async () => { if (uid) await remote.deleteAllMyData(uid); await reset(); }),
+  };
+  return <Ctx.Provider value={{ state, ready, error, update, reset, actions }}>{children}</Ctx.Provider>;
 }
 export const useStore = () => { const c = useContext(Ctx); if (!c) throw new Error("StoreProvider mancante"); return c; };

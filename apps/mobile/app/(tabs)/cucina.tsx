@@ -6,17 +6,18 @@ import { useStore } from "../../src/store";
 import { space } from "../../src/theme";
 
 export default function Cucina() {
-  const { state, update } = useStore(); const [name, setName] = useState("");
+  const { state, actions, error } = useStore(); const [name, setName] = useState("");
   const parsed = PantryItem.safeParse({ name });
   return (
     <ScrollView contentContainerStyle={{ padding: space.lg, gap: space.md }}>
       <H2>La mia dispensa</H2>
-      <Field label="Aggiungi ingrediente" value={name} onChangeText={setName} onSubmitEditing={() => parsed.success && (update(s => ({ ...s, pantry: [...s.pantry, parsed.data] })), setName(""))} />
-      <Button label="Aggiungi" disabled={!parsed.success} onPress={() => { if (!parsed.success) return; update(s => ({ ...s, pantry: [...s.pantry, parsed.data] })); setName(""); }} />
+      <Field label="Aggiungi ingrediente" value={name} onChangeText={setName} onSubmitEditing={async () => { if (parsed.success) { await actions.addPantry(parsed.data); setName(""); } }} />
+      <Button label="Aggiungi" disabled={!parsed.success} onPress={async () => { if (!parsed.success) return; await actions.addPantry(parsed.data); setName(""); }} />
+      {error && <Body>{error}</Body>}
       {state.pantry.length === 0 && <Body soft>Dispensa vuota.</Body>}
       {state.pantry.map((p, i) => (
         <Card key={`${p.name}-${i}`}><View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-          <Body>{p.name}</Body><Button kind="ghost" label={`Rimuovi ${p.name}`} onPress={() => update(s => ({ ...s, pantry: s.pantry.filter((_, j) => j !== i) }))} /></View></Card>))}
+          <Body>{p.name}</Body><Button kind="ghost" label={`Rimuovi ${p.name}`} onPress={() => actions.removePantry(i)} /></View></Card>))}
     </ScrollView>
   );
 }

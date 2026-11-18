@@ -10,7 +10,7 @@ const GOALS = [["mangiare_meglio", "Mangiare meglio"], ["organizzare_pasti", "Or
 const DIETS = [["vegetariano", "Vegetariano"], ["vegano", "Vegano"], ["senza_glutine", "Senza glutine"], ["senza_lattosio", "Senza lattosio"]] as const;
 
 export default function Onboarding() {
-  const r = useRouter(); const { update } = useStore();
+  const r = useRouter(); const { actions, error } = useStore();
   const [goal, setGoal] = useState<string>(""); const [diet, setDiet] = useState<string[]>([]);
   const [excluded, setExcluded] = useState(""); const [minutes, setMinutes] = useState("30"); const [notif, setNotif] = useState(false);
   const [consent, setConsent] = useState(false);
@@ -33,7 +33,8 @@ export default function Onboarding() {
         <Body soft>Acconsento al trattamento delle mie preferenze alimentari per personalizzare i suggerimenti. Posso revocarlo e cancellare i dati dal Profilo.</Body>
       </View>
       <Body soft>Non chiediamo peso né altezza: non servono per iniziare.</Body>
-      <Button label="Continua" disabled={!parsed.success || !consent} onPress={() => { if (!parsed.success) return; update(s => ({ ...s, prefs: parsed.data, onboarded: true, consentHealth: true })); r.replace("/(tabs)/home"); }} />
+      <Button label="Continua" disabled={!parsed.success || !consent} onPress={async () => { if (!parsed.success) return; await actions.finishOnboarding(parsed.data); r.replace("/(tabs)/home"); }} />
+      {error && <Body>{error}</Body>}
     </ScrollView>
   );
 }

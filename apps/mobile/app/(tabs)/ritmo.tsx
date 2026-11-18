@@ -8,11 +8,11 @@ import { colors, radius, space } from "../../src/theme";
 const SUGGESTIONS = ["Ho fame, cosa mangio adesso?", "Ho uova, patate e pomodori", "Oggi ho mangiato una pizza fuori programma"];
 
 export default function Chat() {
-  const { state, update } = useStore(); const [text, setText] = useState(""); const [busy, setBusy] = useState(false);
+  const { state, update, actions } = useStore(); const [text, setText] = useState(""); const [busy, setBusy] = useState(false);
   async function send(t: string) {
     const msg = t.trim(); if (!msg || busy) return; setBusy(true); setText("");
     update(s => ({ ...s, chat: [...s.chat, { role: "user", text: msg }] }));
-    const r = await askRitmo(msg, state, m => update(s => ({ ...s, meals: [...s.meals, m] })));
+    const r = await askRitmo(msg, state, m => { const { id: _id, ...rest } = m; void actions.addMeal(rest); });
     update(s => ({ ...s, chat: [...s.chat, { role: "assistant", text: r.text, demo: r.demo }] })); setBusy(false);
   }
   return (
