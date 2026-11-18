@@ -1,0 +1,35 @@
+# Costruisce un APK di TEST (firmato con la chiave di debug di Expo: va bene per provare, NON per Google Play).
+# Si avvia a mano (Actions → "Android APK (test)" → Run workflow) o quando questo file cambia su questo branch.
+# Nessun segreto richiesto. L'APK si scarica dalla pagina della run, sezione "Artifacts".
+name: Android APK (test)
+on:
+  workflow_dispatch:
+  push:
+    branches: [ccr-87348f8d-uziqaj]
+    paths: [".github/workflows/android-apk.yml"]
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: 17 }
+      - name: Dipendenze (root e app)
+        run: |
+          npm ci
+          cd apps/mobile && npm ci --legacy-peer-deps
+      - name: Genera il progetto Android nativo
+        working-directory: apps/mobile
+        env: { EXPO_NO_TELEMETRY: "1", CI: "1" }
+        run: npx expo prebuild --platform android --no-install
+      - name: Compila l'APK
+        working-directory: apps/mobile/android
+        run: ./gradlew assembleRelease --no-daemon -Dorg.gradle.jvmargs="-Xmx3g"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ritmo-ai-test-apk
+          path: apps/mobile/android/app/build/outputs/apk/release/*.apk
+          if-no-files-found: error
