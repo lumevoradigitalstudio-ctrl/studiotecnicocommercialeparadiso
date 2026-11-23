@@ -8,15 +8,14 @@ Lo stato del lavoro è in `STATO.md`, il piano e l'indice in `PIANO.md`. Leggili
 - Autore/editore: A Putiga – Sapori di Calabria. Titolare: [NOME AUTORE — da ricevere].
 - Tono: caldo, familiare, narrativo, con richiami alla "putìga", la bottega di paese. Niente toni da pubblicità.
 - Pubblico: italiani e calabresi fuori regione; stranieri e italo-discendenti che vogliono la cucina di casa.
-- Formato: A4 verticale. Numero di ricette: 38.
+- Formato: A4 verticale. Numero di ricette: 60, con preferenza per i piatti casarecci e un capitolo di salumi fatti in casa.
 
 ## Identità visiva
 - Colori: carta `#EFDCB6`, carta chiara `#F6EAD0`, inchiostro `#2E2A1A`, verde oliva `#4D4C22`, rosso `#A3281C`, kraft `#C69C6D`.
 - Caratteri (Google Fonts, licenza OFL, incorporati nel PDF): titoli "IM Fell English SC", testo "EB Garamond".
 
-## Prodotti A Putiga
-Filetti di melanzane sott'olio, olive nere infornate, peperoncino piccante "Diavolino", 'nduja, formaggio vaccino semistagionato, pomodori secchi sott'olio, olive schiacciate, soppressata calabrese, marmellata di bergamotto, caciocavallo silano.
-Box "Con i prodotti A Putiga" / "With A Putiga products" solo dove ha senso, con link a https://aputiga.it.
+## Niente prodotti A Putiga
+Su richiesta dell'utente (23/11/2026): nessun capitolo, box o link ai prodotti A Putiga nelle ricette. Il marchio resta come editore e identità visiva, in attesa di conferma.
 
 ## Struttura fissa di ogni ricetta (identica in IT ed EN)
 File `ricette/it/NN-nome.md` e `ricette/en/NN-name.md`: intestazione YAML per i campi strutturati, poi il testo.
@@ -46,6 +45,12 @@ Le fonti di ogni ricetta vanno in `fonti/NN-nome.md`.
 ## Sicurezza alimentare
 - Conserve sott'olio, sott'aceto, salse e preparazioni a rischio botulino: seguire le "Linee guida per la corretta preparazione delle conserve alimentari in ambito domestico" (ISS – Centro Nazionale di Riferimento per il Botulismo / Ministero della Salute) e citarle.
 - Pratica tradizionale non sicura o non più legale: presentarla come storica e dare la versione sicura (es. sardella col novellame, struncatura con gli scarti di macinatura).
+
+## Salumi fatti in casa
+- Carne solo da macellazione regolare con controllo veterinario (trichinella): comprarla dal macellaio, non da maiali non controllati.
+- Per i salumi stagionati: sale nitritato o nitrito nelle dosi di legge, controllo di temperatura, umidità e calo peso, e misura del pH quando la ricetta lo richiede. Ogni numero ha una fonte o porta [DA VERIFICARE].
+- Il metodo tradizionale senza controlli si racconta come storico. La versione da seguire è quella sicura.
+- Un salume fatto in casa non si chiama mai DOP/IGP: le denominazioni valgono solo per i produttori certificati.
 
 ## Edizione inglese
 Localizzare, non tradurre parola per parola: tenere i nomi italiani dei piatti, spiegare gli ingredienti locali, convertire le misure, usare termini culinari dell'inglese internazionale.

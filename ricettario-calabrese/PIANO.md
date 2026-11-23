@@ -1,6 +1,6 @@
 # Piano — Fase 0
 
-Stato: **in attesa di approvazione**. Nessuna ricetta scritta.
+Stato: indice rivisto (rev. 2) dopo le richieste dell'utente. Fase 1, primo blocco in corso.
 
 ## 1. Fonti di riferimento (sigle usate nell'indice)
 
@@ -21,70 +21,89 @@ Le sigle indicano dove verificare ogni ricetta in Fase 1. Ho controllato che ogn
 
 Normativa da citare in Fase 1: Reg. UE 1169/2011 (allergeni); regole sulla pesca del novellame (sardella) `[DA VERIFICARE]`; disciplinari dei vini DOC calabresi.
 
-## 2. Indice proposto: 38 ricette in 8 capitoli
+## 2. Indice: 60 ricette in 9 capitoli (rev. 2, 23/11/2026)
 
-`[DA VERIFICARE]` vuol dire che non sono sicuro della provincia o del nome. In Fase 1 si conferma o si cambia.
+Modifiche chieste dall'utente: tolto il capitolo "Con i prodotti A Putiga", più piatti casarecci, nuovo capitolo "Salumi di casa".
+`[DV]` = `[DA VERIFICARE]`: provincia o nome da confermare in Fase 1. Prov. `REG` = piatto diffuso in tutta la regione.
 
-### Antipasti e conserve (5)
-| N. | Ricetta | Provincia | Stagione/festa | Perché | Fonti |
+| N. | Ricetta | Prov. | Stagione/festa | Perché | Fonti |
 |---|---|---|---|---|---|
-| 01 | Melanzane sott'olio (*mulingiani sutt'ogghiu*) | CZ (diffusa ovunque) | fine estate | È la conserva simbolo della dispensa. Applica per prima le regole ISS | ISS, CAV |
-| 02 | Peperoncini ripieni sott'olio (tonno, capperi, acciughe) | VV | fine estate | Il peperoncino è il segno della Calabria. Conserva a rischio, da trattare con le regole ISS | ISS, PAL |
-| 03 | Olive schiacciate (*alivi scacciati*) | CS | ottobre-novembre | Rito della raccolta. Collegata a un prodotto A Putiga | PAT, ARSAC |
-| 04 | Sardella (*rosamarina*): versione storica e versione di oggi | KR | primavera (storica) | Mostra come trattare una pratica oggi vietata | LOC, PAT |
-| 05 | Polpette di melanzane (*purpetti 'i mulingiani*) | RC | estate | Cucina povera molto amata, facile per chi inizia | CCRC, PAL |
+| | **Salumi di casa (6)** | | | | |
+| 01 | Salsiccia fresca e secca (*sazizza*) | REG | inverno, uccisione del maiale | Il primo salume da imparare | DISC, CAV |
+| 02 | Soppressata | REG | inverno | Il salume più noto della regione | DISC, CAV |
+| 03 | Capocollo (*capicollu*) | REG | inverno | Taglio intero, più semplice da stagionare | DISC, PAL |
+| 04 | Pancetta tesa e arrotolata | REG | inverno | Serve anche per molte ricette del libro | DISC, PAL |
+| 05 | 'Nduja | VV | inverno | Richiesta esplicita, simbolo di Spilinga | LOC, SF |
+| 06 | Curcuci e sugna (ciccioli e strutto) `[DV nome]` | CS | inverno | Nulla del maiale si butta | CAV, LOC |
+| | **Conserve e dispensa (10)** | | | | |
+| 07 | Salsa di pomodoro di casa (*'a sarsa*) | REG | agosto | Rito d'estate di ogni famiglia | ISS, CAV |
+| 08 | Pomodori secchi sott'olio | REG | estate | Dispensa di base | ISS, PAL |
+| 09 | Melanzane sott'olio (*mulingiani sutt'ogghiu*) | CZ | fine estate | La conserva simbolo, con le regole ISS | ISS, CAV |
+| 10 | Peperoncini ripieni sott'olio | VV | fine estate | Conserva a rischio, trattata con le regole ISS | ISS, PAL |
+| 11 | Peperoncino essiccato, in polvere e in olio | CS | estate-autunno | Base di metà delle ricette | ISS, LOC |
+| 12 | Olive schiacciate (*alivi scacciati*) | CS | ottobre-novembre | Rito della raccolta | PAT, ARSAC |
+| 13 | Olive nere al forno `[DV]` | CZ | novembre-dicembre | Olive senza salamoia, pronte in pochi giorni | PAT, ARSAC |
+| 14 | Funghi sott'olio della Sila | CS | autunno | Conserva di montagna | ISS, LOC |
+| 15 | Sardella (*rosamarina*): versione storica e di oggi | KR | primavera (storica) | Pratica oggi vietata, rifatta a norma | LOC, PAT |
+| 16 | Miele di fichi (*ficotto*) `[DV nome]` | CS | settembre | Serve per i dolci di Natale (n. 59) | DOP, CAV |
+| | **Antipasti e piatti di casa (6)** | | | | |
+| 17 | Polpette di melanzane (*purpetti 'i mulingiani*) | RC | estate | Cucina povera molto amata | CCRC, PAL |
+| 18 | Polpette di pane | REG | tutto l'anno | Per non buttare il pane raffermo | CAV, AIC |
+| 19 | Ricotta fatta in casa | REG | primavera | Formaggio fresco fattibile in cucina | SF, AIC |
+| 20 | Frittata con la cipolla rossa di Tropea | VV | primavera-estate | Cena veloce di casa | DOP, ARSAC |
+| 21 | Pitticelle di fiori di zucca `[DV]` | RC | estate | Frittelle dell'orto | CCRC, AIC |
+| 22 | Pipi e ova (peperoni e uova) | REG | estate | Il pranzo dei campi | CAV, PAL |
+| | **Pane e lievitati (6)** | | | | |
+| 23 | Pane di casa nel forno di casa | REG | tutto l'anno | Il pane di grano duro, adattato al forno di casa | CAV, AIC |
+| 24 | Pitta catanzarese | CZ | tutto l'anno | Il pane per il morzello (n. 39) | PAT, CAV |
+| 25 | Pane di patate | CS | inverno | Usa la Patata della Sila IGP | DOP, ARSAC |
+| 26 | Cuddrurieddri (ciambelle fritte di patate) | CS | 8 dicembre | Fritto dell'Immacolata | LOC, CAV |
+| 27 | Zeppole con le alici (*zippuli*) | VV | Natale | Classico della vigilia | LOC, PAL |
+| 28 | Frese (friselle) | REG | estate | Pane biscottato per il pranzo d'estate | CAV, AIC |
+| | **Pasta fatta in casa e primi (10)** | | | | |
+| 29 | Fileja fatti a mano con sugo di 'nduja | VV | tutto l'anno | La pasta fatta a mano più nota del Vibonese | LOC, AIC |
+| 30 | Maccheroni al ferretto con ragù della domenica | CS | domenica, feste | Il pranzo di famiglia | CAV, AIC |
+| 31 | Struncatura: storia e versione di oggi | RC | tutto l'anno | Pasta nata dagli scarti di macinatura, rifatta a norma | CCRC, LOC |
+| 32 | Lagane e ceci (*lagane e ciciari*) `[DV prov.]` | CZ | inverno | Legumi e pasta tirata a mano | CAV, AIC |
+| 33 | Millecosedde | CS | inverno | Minestra di legumi della montagna | PAT, LOC |
+| 34 | Pasta china (pasta al forno della festa) `[DV prov.]` | RC | feste | Il piatto della festa | CCRC, PAL |
+| 35 | Pasta e fagioli con le cotiche | REG | inverno | Usa le cotiche del maiale (cap. 1) | CAV, AIC |
+| 36 | Pasta ammollicata con le alici | REG | vigilie, Quaresima | Il "formaggio dei poveri": mollica tostata | CAV, PAL |
+| 37 | Pasta con pomodori secchi, olive e mollica | REG | tutto l'anno | Primo della dispensa (n. 08, 12) | AIC, PAL |
+| 38 | Licurdia (zuppa di cipolle) `[DV prov.]` | CS | inverno | Zuppa povera di cipolle e pane | CAV, LOC |
+| | **Secondi di carne (6)** | | | | |
+| 39 | Morzello (*morzeddu*) alla catanzarese | CZ | tutto l'anno | Il piatto di strada di Catanzaro | PAT, LOC |
+| 40 | Capra al sugo dell'Aspromonte `[DV nome]` | RC | feste estive | Cucina pastorale | CCRC, SF |
+| 41 | Frittole (*frittuli*) | VV | inverno | Rito dell'uccisione del maiale | PAT, LOC |
+| 42 | Salsiccia con patate e peperoni al forno | REG | tutto l'anno | Teglia unica, usa il n. 01 | AIC, PAL |
+| 43 | Braciole di maiale ripiene `[DV]` | REG | domenica | Secondo della domenica col ragù | CAV, AIC |
+| 44 | Agnello con piselli di Pasqua | REG | Pasqua | Il secondo di Pasqua | CAV, PAL |
+| | **Secondi di pesce (5)** | | | | |
+| 45 | Pesce spada alla bagnarota | RC | maggio-luglio | Pesca tradizionale dello Stretto | CCRC, AIC |
+| 46 | Stocco alla mammolese | RC | tutto l'anno | Insegna a trattare lo stoccafisso | LOC, PAT |
+| 47 | Tonno alla pizzitana | VV | primavera-estate | Ricorda le tonnare | LOC, PAL |
+| 48 | Alici arriganate `[DV prov.]` | KR | primavera-estate | Pesce azzurro, costa poco | AIC, PAL |
+| 49 | Baccalà con patate e olive | CZ | vigilia di Natale | Piatto di magro delle feste | CAV, AIC |
+| | **Contorni (5)** | | | | |
+| 50 | Pipi e patate (peperoni e patate) | REG | estate | Il contorno di casa più comune | CAV, PAL |
+| 51 | Patate 'mpacchiuse | CS | autunno-inverno | Usa la Patata della Sila IGP | DOP, LOC |
+| 52 | Ciambotta `[DV prov.]` | KR | estate | Stufato di verdure estive | CAV, AIC |
+| 53 | Parmigiana di melanzane alla calabrese `[DV prov.]` | VV | estate | Variante con uova sode e soppressata | PAL, AIC |
+| 54 | Peperoni ripieni di mollica (*pipi chini*) | REG | estate | Ripieno povero di pane e formaggio | CAV, AIC |
+| | **Dolci delle feste (6)** | | | | |
+| 55 | Pitta 'mpigliata | CS | Natale | Dolce delle nozze e del Natale | PAT, LOC |
+| 56 | Petrali | RC | Natale | Dolce reggino ai fichi secchi | CCRC, PAT |
+| 57 | Cuzzupa (*cuddhura*) di Pasqua | VV | Pasqua | Pane dolce con le uova | PAT, LOC |
+| 58 | Mostaccioli (*'nzuddi*) di Soriano | VV | fiere, feste patronali | Dolce delle fiere | PAT, SF |
+| 59 | Turdilli al miele di fichi | CS | Natale | Fritto natalizio cosentino | CAV, LOC |
+| 60 | Pitta 'nchiusa `[DV prov.]` | KR | Natale | Dolce con frutta secca e miele | PAT, LOC |
 
-### Pane e lievitati (4)
-| 06 | Pitta catanzarese | CZ | tutto l'anno | Il pane per il morzello (n. 16) | PAT, CAV |
-| 07 | Pane di patate | CS | inverno | Usa la Patata della Sila IGP | DOP, ARSAC |
-| 08 | Cuddrurieddri (ciambelle fritte di patate) | CS | 8 dicembre, Immacolata | Fritto delle feste, legato a una data | LOC, CAV |
-| 09 | Zeppole con le alici (*zippuli*) | VV | Natale | Classico della vigilia | LOC, PAL |
-
-### Primi (6)
-| 10 | Fileja con 'nduja e pomodoro | VV | tutto l'anno | Pasta fatta a mano più nota del Vibonese, con 'nduja di Spilinga | PAT, SF |
-| 11 | Struncatura con alici e mollica: storia e versione di oggi | RC (Piana di Gioia Tauro) | tutto l'anno | Pasta nata dagli scarti di macinatura, rifatta con farina integrale a norma | CCRC, LOC |
-| 12 | Maccheroni al ferretto con ragù della domenica | CS | domenica, feste | Il pranzo di famiglia per eccellenza | CAV, AIC |
-| 13 | Lagane e ceci (*lagane e ciciari*) | CZ `[DA VERIFICARE]` | inverno | Piatto di legumi antichissimo, facile da rifare fuori regione | CAV, AIC |
-| 14 | Millecosedde | CS | inverno | Minestra di legumi misti della montagna | PAT, LOC |
-| 15 | Pasta china (pasta al forno della festa) | RC `[DA VERIFICARE]` | feste, matrimoni | Piatto della festa, usa formaggio e salumi A Putiga | CCRC, PAL |
-
-### Secondi di carne (4)
-| 16 | Morzello (*morzeddu*) alla catanzarese | CZ | tutto l'anno | Il piatto di strada di Catanzaro | PAT, LOC |
-| 17 | Capra al sugo dell'Aspromonte | RC `[DA VERIFICARE nome]` | feste estive | Cucina pastorale. Il sugo condisce anche la pasta | CCRC, SF |
-| 18 | Frittole (*frittuli*) | VV / RC | inverno, uccisione del maiale | Rito invernale. In Fase 1 cerco una versione fattibile in casa | PAT, LOC |
-| 19 | Salsiccia di Calabria con patate e peperoni al forno | regionale | tutto l'anno | Facile, usa la Salsiccia di Calabria DOP | DOP, AIC |
-
-### Secondi di pesce (5)
-| 20 | Pesce spada alla bagnarota | RC (Bagnara) | maggio-luglio | Legato alla pesca tradizionale dello Stretto | CCRC, AIC |
-| 21 | Stocco alla mammolese | RC (Mammola) | tutto l'anno | Lo stocco di Mammola è molto noto. Insegna come trattare lo stoccafisso | LOC, PAT |
-| 22 | Tonno alla pizzitana | VV (Pizzo) | primavera-estate | Ricorda le tonnare | LOC, PAL |
-| 23 | Alici arriganate (alici gratinate all'origano) | KR `[DA VERIFICARE]` | primavera-estate | Pesce azzurro, semplice, costa poco | AIC, PAL |
-| 24 | Baccalà alla calabrese con patate e olive | CZ | vigilia di Natale | Piatto di magro delle feste. Usa le olive A Putiga | CAV, AIC |
-
-### Contorni (4)
-| 25 | Pipi e patate | CZ (diffuso ovunque) | estate | Il contorno di casa più comune | CAV, PAL |
-| 26 | Patate 'mpacchiuse | CS (Sila) | autunno-inverno | Usa la Patata della Sila IGP | DOP, LOC |
-| 27 | Ciambotta | KR `[DA VERIFICARE]` | estate | Stufato di verdure estive | CAV, AIC |
-| 28 | Parmigiana di melanzane alla calabrese | VV `[DA VERIFICARE]` | estate | Variante con uova sode e salumi. Usa la soppressata | PAL, AIC |
-
-### Dolci delle feste (6)
-| 29 | Pitta 'mpigliata | CS (San Giovanni in Fiore) | Natale | Dolce delle nozze e del Natale | PAT, LOC |
-| 30 | Petrali | RC | Natale | Dolce reggino ai fichi secchi | CCRC, PAT |
-| 31 | Cuzzupa (*cuddhura*) di Pasqua | VV / CZ | Pasqua | Pane dolce con le uova, il nome cambia da paese a paese | PAT, LOC |
-| 32 | Mostaccioli (*'nzuddi*) di Soriano | VV (Soriano Calabro) | fiere, feste patronali | Dolce delle fiere | PAT, SF |
-| 33 | Turdilli al miele di fichi | CS | Natale | Fritto natalizio | PAT, CAV |
-| 34 | Pitta 'nchiusa | KR `[DA VERIFICARE]` | Natale | Dolce crotonese con frutta secca e miele | PAT, LOC |
-
-### Con i prodotti A Putiga (4)
-| 35 | Crostini caldi con 'nduja e Caciocavallo Silano DOP | regionale | tutto l'anno | Antipasto veloce con due prodotti della box | DOP, ARSAC |
-| 36 | Pasta con pomodori secchi, olive infornate e mollica | regionale | tutto l'anno | Primo della dispensa, pronto in 20 minuti | AIC, ARSAC |
-| 37 | Crostata alla marmellata di bergamotto | RC (bergamotto) | inverno | Dolce semplice con un prodotto A Putiga | DOP, ARSAC |
-| 38 | Il tagliere della putìga | regionale | tutto l'anno | Come comporre e servire la box: abbinamenti e vini | DOP, ARSAC |
+Nuova sigla: **DISC** = disciplinari DOP dei salumi di Calabria (Capocollo, Pancetta, Salsiccia, Soppressata; Consorzio di tutela, Cosenza). Servono per sale, tagli e tempi, non per chiamare DOP il salume di casa.
 
 ### Equilibrio
-- **Province:** Cosenza 8, Vibo Valentia 8, Reggio Calabria 8, Catanzaro 6, Crotone 4, regionali 4 (i conteggi seguono la provincia dell'intestazione, le ricette a cavallo di due province sono contate una volta). **Crotone è sotto-rappresentata** e 3 delle sue 4 ricette sono da verificare: in Fase 1 cerco piatti crotonesi più sicuri (anche con Pecorino Crotonese DOP), ed eventualmente sostituisco.
-- **Stagioni:** estate 10, autunno-inverno 7, Natale/Immacolata 7, Pasqua 1, primavera 1, tutto l'anno o feste ricorrenti 12.
-- **Prodotti A Putiga:** ognuno dei 10 è previsto in almeno una ricetta (box nelle n. 01, 03, 10, 12, 15, 19, 24, 28, 35-38).
+- Province (conteggio automatico): REG 19, CS 13, VV 10, RC 8, CZ 6, KR 4. Crotone resta la più debole (4 ricette, 3 con attribuzione `[DV]`): in Fase 1 cerco piatti crotonesi sicuri.
+
+Primo blocco (Fase 1): **05 'Nduja, 09 Melanzane sott'olio, 29 Fileja con 'nduja, 50 Pipi e patate, 59 Turdilli**. Coprono cinque capitoli diversi: salumi, conserve, pasta, contorni e dolci.
 
 ## 3. Struttura dei file
 
@@ -124,7 +143,7 @@ I caratteri li scarico dal repository ufficiale `google/fonts` su GitHub (licenz
 
 ## 5. Immagini: situazione attuale
 - `foto/` è vuota.
-- In questa sessione c'è uno strumento di generazione immagini via MCP (Higgsfield). **Ha costi a crediti**: in Fase 3 ti mostro una stima e chiedo l'ok prima di usarlo. Se non lo approvi, scrivo solo i prompt in `immagini/prompt.md`.
+- Higgsfield (MCP) approvato dall'utente il 23/11/2026. Saldo 465 crediti. Il modello predefinito costa 0,75 crediti a immagine: circa 300 immagini (60 ricette × 5) fanno circa 225 crediti. In Fase 3 faccio prima 2 immagini di prova di stile.
 
 ## 6. Skill
 Disponibili: pdf, fact-checker, humanizer, verify-before-done, direct-response-copy, offer-and-pricing. **Non disponibile:** frontend-design.
