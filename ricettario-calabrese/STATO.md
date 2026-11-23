@@ -8,7 +8,7 @@ Ultimo aggiornamento: 2026-11-23
 | 0 — Piano | ✅ indice rivisto (rev. 2: 60 ricette, senza A Putiga, con salumi di casa) |
 | 1 — Ricerca e scrittura IT | ✅ 60/60 bozze scritte (12 blocchi). **STOP: revisione dell'utente** prima della Fase 2. Restano 133 voci `[DA VERIFICARE]` |
 | 2 — Edizione EN | ✅ 60/60 ricette + apertura del capitolo salumi in `ricette/en/`. Conversioni US aggiunte e controllate da script (0 errori). Struttura: 120/120 OK |
-| 3 — Immagini | `immagini/stile.md` scritto; 2 immagini di prova generate (ricetta 29). **STOP: in attesa dell'ok sullo stile e sul piano crediti.** Le immagini non si possono scaricare: il proxy blocca d8j0ntlcm91z4.cloudfront.net |
+| 3 — Immagini | ✅ 240 immagini IA generate con Higgsfield (238 del piano: 60 principali 2k + 178 passaggi 1k, più le 2 prove della 29). Tutte in `immagini/registro.csv` con link e prompt. **I file non sono nel repository:** il proxy di questa sessione blocca il sito delle immagini. Da scaricare sul proprio computer con `python3 immagini/scarica_immagini.py` |
 | 4 — Impaginazione ed esportazione | non iniziata |
 | 5 — Controllo qualità | non iniziata |
 | 6 — Kit di vendita | non iniziata |
@@ -35,6 +35,7 @@ Controllo automatico: `python3 controlli/controlla_ricette.py`.
 - Il marchio A Putiga resta come editore, in copertina e nei colori? ("A Putiga lasciala stare": per ora ho tolto prodotti, box e link)
 - Ok all'installazione di WeasyPrint e Python-Markdown.
 - Eventuali foto vere in `foto/` (ora è vuota).
+- Le immagini scaricate con `scarica_immagini.py` (servono per l'impaginazione della Fase 4).
 
 ## [DA VERIFICARE]
 Molti punti vengono dalla stessa causa: i siti ufficiali (iss.it, salute.gov.it, eur-lex, regione.calabria.it, masaf) sono bloccati dal proxy di questa sessione e l'utente ha rifiutato di sbloccarli. I numeri vengono da sintesi secondarie e vanno confrontati con i testi originali prima della vendita.
@@ -65,6 +66,8 @@ Molti punti vengono dalla stessa causa: i siti ufficiali (iss.it, salute.gov.it,
 | Presenza nell'elenco PAT | tutte | Confermare per ogni piatto in Fase 1 |
 
 ## Decisioni prese
+- 23/11 (Fase 3): immagini completate. Crediti usati circa 255-260 su 465 (prove 2,75; piano circa 252; fino a circa 4 per un lotto andato in timeout e rifatto, con possibili doppioni non registrati). La principale della 55 è fallita una volta ed è stata rigenerata. Controllo a campione di 4 immagini (05, 29, 41, 57): stile coerente, nessun testo né volto.
+- 23/11 (Fase 3): `immagini/scarica_immagini.py` scarica tutte le immagini nelle cartelle `immagini/NN-nome/` e, se c'è Pillow, porta le principali a 2000 px, JPEG 85.
 - 23/11 (Fase 3): costi Higgsfield gpt_image_2_6. Immagine 2k high = 2 crediti (2336×1744 px), 2k medium = 1,75, 1k low = 0,75 (1024×1024). 5 immagini a ricetta in 2k high = circa 600 crediti, oltre il saldo (circa 462 dopo le prove). Proposta: principale 2k high + 3 passaggi 1k = 4,25 crediti a ricetta, circa 255 in tutto.
 - 23/11 (Fase 2): le misure US non sono scritte a mano. `controlli/converti_misure.py` le aggiunge tra parentesi (oz/lb, cups/tbsp/tsp/quarts, °F, in, teglie A × B) e con `--check` le ricalcola. Le misure sotto i 5 g restano solo metriche.
 - 23/11 (Fase 2): EN in inglese internazionale (UK spelling, aubergine/courgette con il nome US tra parentesi nei titoli). Nomi italiani dei piatti mantenuti. Nelle conserve si cita anche l'USDA, nei salumi il Cure #1 americano con la stessa formula.
