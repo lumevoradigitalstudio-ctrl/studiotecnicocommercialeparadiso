@@ -73,10 +73,10 @@ Modifiche chieste dall'utente: tolto il capitolo "Con i prodotti A Putiga", più
 | 38 | Licurdia (zuppa di cipolle) — fonti divise tra CS e VV | CS | inverno | Zuppa povera di cipolle e pane | CAV, LOC |
 | | **Secondi di carne (6)** | | | | |
 | 39 | Morzello (*morzeddu*) alla catanzarese | CZ | tutto l'anno | Il piatto di strada di Catanzaro | PAT, LOC |
-| 40 | Capra al sugo dell'Aspromonte `[DV nome]` | RC | feste estive | Cucina pastorale | CCRC, SF |
+| 40 | Capra in umido con vino e pomodoro `[DV nome]` | RC | feste estive | Cucina pastorale | CCRC, SF |
 | 41 | Frittole (*frittuli*) | VV | inverno | Rito dell'uccisione del maiale | PAT, LOC |
 | 42 | Salsiccia con patate e peperoni al forno | REG | tutto l'anno | Teglia unica, usa il n. 01 | AIC, PAL |
-| 43 | Braciole di maiale ripiene `[DV]` | REG | domenica | Secondo della domenica col ragù | CAV, AIC |
+| 43 | Vrasciole (polpette allungate) | REG | domenica | Polpette della domenica, con fonte (sostituiscono le braciole ripiene) | AIC, CAV |
 | 44 | Agnello con piselli di Pasqua | REG | Pasqua | Il secondo di Pasqua | CAV, PAL |
 | | **Secondi di pesce (5)** | | | | |
 | 45 | Pesce spada alla bagnarota | RC | maggio-luglio | Pesca tradizionale dello Stretto | CCRC, AIC |

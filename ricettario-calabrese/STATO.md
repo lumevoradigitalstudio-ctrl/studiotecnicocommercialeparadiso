@@ -6,7 +6,7 @@ Ultimo aggiornamento: 2026-11-23
 | Fase | Stato |
 |---|---|
 | 0 — Piano | ✅ indice rivisto (rev. 2: 60 ricette, senza A Putiga, con salumi di casa) |
-| 1 — Ricerca e scrittura IT | blocco 1 approvato dall'utente; blocchi 2-8 scritti (40/60) |
+| 1 — Ricerca e scrittura IT | blocco 1 approvato dall'utente; blocchi 2-9 scritti (45/60) |
 | 2 — Edizione EN | non iniziata |
 | 3 — Immagini | non iniziata |
 | 4 — Impaginazione ed esportazione | non iniziata |
@@ -21,6 +21,7 @@ Blocco 5: 18, 19, 20, 21, 22 (capitolo Antipasti completo).
 Blocco 6: 23, 24, 25, 26, 27.
 Blocco 7: 28 (capitolo Pane completo), 30, 31, 32, 33.
 Blocco 8: 34, 35, 36, 37, 38 (capitolo Primi completo).
+Blocco 9: 39, 40, 41, 42, 43 (manca il 44, Agnello con piselli).
 Controllo automatico: `python3 controlli/controlla_ricette.py`.
 
 ## Da ricevere dall'utente
@@ -55,6 +56,7 @@ Molti punti vengono dalla stessa causa: i siti ufficiali (iss.it, salute.gov.it,
 | Presenza nell'elenco PAT | tutte | Confermare per ogni piatto in Fase 1 |
 
 ## Decisioni prese
+- 23/11: la 43 "Braciole di maiale ripiene" (senza fonte) è sostituita dalle "Vrasciole" (con fonte).
 - 23/11: la 36 "Pasta ammollicata con le alici" è sostituita da "Pasta e patate alla tiella": era un doppione della 31 (struncatura ammollicata). La 34 (pasta china) passa a REG.
 - 23/11: ricette 13 e 17 passate da CZ/RC a "tutta la Calabria" (le fonti non indicano una provincia). La sardella resta a Crotone (Crucoli, Cirò Marina), con fonti.
 - 23/11: l'utente ha chiesto di togliere A Putiga, aumentare le ricette (soprattutto casarecce) e aggiungere i salumi fatti in casa. Indice portato a 60.
