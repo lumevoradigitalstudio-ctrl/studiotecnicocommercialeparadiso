@@ -29,7 +29,7 @@ def controlla(f):
     if not os.path.exists(m.get(chiave_fonti, '')):
         errori.append('file fonti mancante')
     passi = len(re.findall(r'^\d+\. ', corpo, re.M))
-    return errori, parole, passi, corpo.count('DA VERIFICARE')
+    return errori, parole, passi, corpo.count('DA VERIFICARE') + corpo.count('TO BE VERIFIED')
 
 if __name__ == '__main__':
     ko = 0
