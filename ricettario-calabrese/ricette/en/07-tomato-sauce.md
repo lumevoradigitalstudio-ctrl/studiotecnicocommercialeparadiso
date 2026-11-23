@@ -36,7 +36,7 @@ In August, many Calabrian families set aside a day for the tomato sauce. Crates 
 ## Ingredients
 
 - 5 kg (11 lb) ripe sauce tomatoes, such as San Marzano or other plum tomatoes
-- 90 ml (½ cup) bottled lemon juice, or 7.5 g (0.3 oz) citric acid, for 3 litres of sauce
+- 90 ml (½ cup) bottled lemon juice, or 7.5 g (0.3 oz) citric acid, for 3 l (3¼ quarts) of sauce
 - 10 g (0.4 oz) fine salt, optional
 - 1 bunch fresh basil, washed and dried
 

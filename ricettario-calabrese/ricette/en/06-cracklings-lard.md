@@ -35,7 +35,7 @@ Nothing from the pig is thrown away, least of all the fat. It is cut into small 
 - 1 teaspoon ground Calabrian chilli, optional
 - 2 bay leaves, optional
 
-**Equipment:** heavy-based stainless-steel or cast-iron pot of at least 5 litres; slotted spoon; fine sieve; clean cheesecloth; clean, dry glass jars; kitchen thermometer.
+**Equipment:** heavy-based stainless-steel or cast-iron pot of at least 5 l (5¼ quarts); slotted spoon; fine sieve; clean cheesecloth; clean, dry glass jars; kitchen thermometer.
 
 ## Method
 

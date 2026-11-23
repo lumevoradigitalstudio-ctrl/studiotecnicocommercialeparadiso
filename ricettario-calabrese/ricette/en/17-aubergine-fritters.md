@@ -44,7 +44,7 @@ Aubergine polpette are the "meatballs" of those who had no meat. With aubergines
 ## Method
 
 1. Wash the aubergines, remove the stems and peel them. Cut them into 3 cm (1¼ in) cubes.
-2. Bring 2 litres of salted water to the boil and cook the aubergines for 8-10 minutes, until soft when pierced with a fork.
+2. Bring 2 l (2 quarts) of salted water to the boil and cook the aubergines for 8-10 minutes, until soft when pierced with a fork.
 3. Drain them and let them cool in the colander for 15 minutes.
 4. Squeeze them hard, a handful at a time, or wrapped in a tea towel, until almost no more water comes out. They should become a dry mass.
 5. Soak the bread in cold water for 2 minutes and squeeze it well.
