@@ -7,7 +7,7 @@ Ultimo aggiornamento: 2026-11-23
 |---|---|
 | 0 — Piano | ✅ indice rivisto (rev. 2: 60 ricette, senza A Putiga, con salumi di casa) |
 | 1 — Ricerca e scrittura IT | ✅ 60/60 bozze scritte (12 blocchi). **STOP: revisione dell'utente** prima della Fase 2. Restano 133 voci `[DA VERIFICARE]` |
-| 2 — Edizione EN | non iniziata |
+| 2 — Edizione EN | ✅ 60/60 ricette + apertura del capitolo salumi in `ricette/en/`. Conversioni US aggiunte e controllate da script (0 errori). Struttura: 120/120 OK |
 | 3 — Immagini | non iniziata |
 | 4 — Impaginazione ed esportazione | non iniziata |
 | 5 — Controllo qualità | non iniziata |
@@ -65,6 +65,9 @@ Molti punti vengono dalla stessa causa: i siti ufficiali (iss.it, salute.gov.it,
 | Presenza nell'elenco PAT | tutte | Confermare per ogni piatto in Fase 1 |
 
 ## Decisioni prese
+- 23/11 (Fase 2): le misure US non sono scritte a mano. `controlli/converti_misure.py` le aggiunge tra parentesi (oz/lb, cups/tbsp/tsp/quarts, °F, in, teglie A × B) e con `--check` le ricalcola. Le misure sotto i 5 g restano solo metriche.
+- 23/11 (Fase 2): EN in inglese internazionale (UK spelling, aubergine/courgette con il nome US tra parentesi nei titoli). Nomi italiani dei piatti mantenuti. Nelle conserve si cita anche l'USDA, nei salumi il Cure #1 americano con la stessa formula.
+- 23/11 (Fase 2): corretta un'affermazione storica non verificata sulla 47 ("per secoli" → "a lungo"), in IT ed EN.
 - 23/11: la 60 "Pitta 'nchiusa" era un altro nome della pitta 'mpigliata (55): sostituita dalla giurgiulena.
 - 23/11: incidente durante il blocco 12. Un comando ha scritto quattro schede fonti sopra le ricette 56, 57, 58 e 60, che non erano ancora salvate. Le ho riscritte dal testo originale e controllate.
 - 23/11: la 47 si chiama "Tonno in agrodolce con le cipolle" e non "alla pizzitana": l'unica fonte su quel nome lo lega a uno chef.
