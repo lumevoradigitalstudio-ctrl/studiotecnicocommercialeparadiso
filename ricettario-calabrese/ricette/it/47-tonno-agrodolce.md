@@ -22,7 +22,7 @@ stato: bozza blocco 10
 
 *Pizzo e Costa degli Dei, Vibo Valentia · primavera-estate*
 
-A Pizzo, sulla costa vibonese, il tonno è stato per secoli il lavoro e il cibo del paese. Le tonnare di Pizzo hanno funzionato fino ai primi anni Sessanta del Novecento. Uno dei modi più amati per cucinarlo, su questa costa e in tutta la Calabria, è in agrodolce. I tranci si scottano in padella e si coprono con una montagna di cipolle rosse di Tropea, stufate con aceto e zucchero finché diventano morbide e lucide. Si mangia tiepido o freddo, e il giorno dopo è anche più buono. Alcuni cuochi della zona lo profumano con un pizzico di menta, altre ricette usano il timo, l'uvetta o i pinoli.
+A Pizzo, sulla costa vibonese, il tonno è stato a lungo il lavoro e il cibo del paese. Le tonnare di Pizzo hanno funzionato fino ai primi anni Sessanta del Novecento. Uno dei modi più amati per cucinarlo, su questa costa e in tutta la Calabria, è in agrodolce. I tranci si scottano in padella e si coprono con una montagna di cipolle rosse di Tropea, stufate con aceto e zucchero finché diventano morbide e lucide. Si mangia tiepido o freddo, e il giorno dopo è anche più buono. Alcuni cuochi della zona lo profumano con un pizzico di menta, altre ricette usano il timo, l'uvetta o i pinoli.
 
 **Porzioni:** 4 · **Preparazione:** 15 minuti · **Cottura:** 30 minuti · **Riposo:** 30 minuti (facoltativo) · **Difficoltà:** facile
 

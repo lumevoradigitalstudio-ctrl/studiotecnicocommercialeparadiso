@@ -23,7 +23,7 @@ status: draft EN block 8
 
 *Tonno in agrodolce con le cipolle · Pizzo and the Costa degli Dei, Vibo Valentia · spring-summer*
 
-In Pizzo, on the coast near Vibo Valentia, tuna was for centuries the town's work and food. The tuna traps of Pizzo were in use until the early 1960s. One of the best-loved ways to cook it, on this coast and all over Calabria, is sweet and sour. The steaks are seared in a pan and covered with a mountain of Tropea red onions, stewed with vinegar and sugar until soft and glossy. It is eaten warm or cold, and the next day it is even better. Some local cooks scent it with a pinch of mint, while other recipes use thyme, raisins or pine nuts.
+In Pizzo, on the coast near Vibo Valentia, tuna was for a long time the town's work and food. The tuna traps of Pizzo were in use until the early 1960s. One of the best-loved ways to cook it, on this coast and all over Calabria, is sweet and sour. The steaks are seared in a pan and covered with a mountain of Tropea red onions, stewed with vinegar and sugar until soft and glossy. It is eaten warm or cold, and the next day it is even better. Some local cooks scent it with a pinch of mint, while other recipes use thyme, raisins or pine nuts.
 
 **Serves:** 4 · **Prep:** 15 minutes · **Cook:** 30 minutes · **Rest:** 30 minutes (optional) · **Difficulty:** easy
 
