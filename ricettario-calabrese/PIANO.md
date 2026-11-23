@@ -66,11 +66,11 @@ Modifiche chieste dall'utente: tolto il capitolo "Con i prodotti A Putiga", più
 | 31 | Struncatura: storia e versione di oggi | RC | tutto l'anno | Pasta nata dagli scarti di macinatura, rifatta a norma | CCRC, LOC |
 | 32 | Lagane e ceci (*lagane e ciciari*) `[DV prov.]` | CZ | inverno | Legumi e pasta tirata a mano | CAV, AIC |
 | 33 | Millecosedde | CS | inverno | Minestra di legumi della montagna | PAT, LOC |
-| 34 | Pasta china (pasta al forno della festa) `[DV prov.]` | RC | feste | Il piatto della festa | CCRC, PAL |
+| 34 | Pasta china (pasta al forno della festa) | REG | feste | Il piatto della festa | CCRC, PAL |
 | 35 | Pasta e fagioli con le cotiche | REG | inverno | Usa le cotiche del maiale (cap. 1) | CAV, AIC |
-| 36 | Pasta ammollicata con le alici | REG | vigilie, Quaresima | Il "formaggio dei poveri": mollica tostata | CAV, PAL |
+| 36 | Pasta e patate alla tiella (*'ara tieddra*) | REG | tutto l'anno | Teglia unica, tutto a crudo (sostituisce la pasta ammollicata, doppione della 31) | AIC, PAL |
 | 37 | Pasta con pomodori secchi, olive e mollica | REG | tutto l'anno | Primo della dispensa (n. 08, 12) | AIC, PAL |
-| 38 | Licurdia (zuppa di cipolle) `[DV prov.]` | CS | inverno | Zuppa povera di cipolle e pane | CAV, LOC |
+| 38 | Licurdia (zuppa di cipolle) — fonti divise tra CS e VV | CS | inverno | Zuppa povera di cipolle e pane | CAV, LOC |
 | | **Secondi di carne (6)** | | | | |
 | 39 | Morzello (*morzeddu*) alla catanzarese | CZ | tutto l'anno | Il piatto di strada di Catanzaro | PAT, LOC |
 | 40 | Capra al sugo dell'Aspromonte `[DV nome]` | RC | feste estive | Cucina pastorale | CCRC, SF |

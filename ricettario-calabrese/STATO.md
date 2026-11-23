@@ -6,7 +6,7 @@ Ultimo aggiornamento: 2026-11-23
 | Fase | Stato |
 |---|---|
 | 0 — Piano | ✅ indice rivisto (rev. 2: 60 ricette, senza A Putiga, con salumi di casa) |
-| 1 — Ricerca e scrittura IT | blocco 1 approvato dall'utente; blocchi 2-7 scritti (35/60) |
+| 1 — Ricerca e scrittura IT | blocco 1 approvato dall'utente; blocchi 2-8 scritti (40/60) |
 | 2 — Edizione EN | non iniziata |
 | 3 — Immagini | non iniziata |
 | 4 — Impaginazione ed esportazione | non iniziata |
@@ -20,6 +20,7 @@ Blocco 4: 13, 14, 15, 16, 17 (capitolo Conserve completo).
 Blocco 5: 18, 19, 20, 21, 22 (capitolo Antipasti completo).
 Blocco 6: 23, 24, 25, 26, 27.
 Blocco 7: 28 (capitolo Pane completo), 30, 31, 32, 33.
+Blocco 8: 34, 35, 36, 37, 38 (capitolo Primi completo).
 Controllo automatico: `python3 controlli/controlla_ricette.py`.
 
 ## Da ricevere dall'utente
@@ -46,7 +47,7 @@ Molti punti vengono dalla stessa causa: i siti ufficiali (iss.it, salute.gov.it,
 | **Pitticelle (21): nessuna fonte trovata.** Se non si trova una fonte, sostituirla con un'altra ricetta | ricetta 21 | CCIAA Reggio, Cavalcanti |
 | Temperatura della ricotta, zona IGP della cipolla di Tropea | ricette 19, 20 | disciplinare IGP |
 | Farina della pitta catanzarese, nomi delle zeppole per zona | ricette 24, 27 | fonti catanzaresi |
-| **Doppione:** la 31 (struncatura ammollicata) ha lo stesso condimento della 36 (pasta ammollicata). Proposta: sostituire la 36 | ricette 31, 36 | decisione dell'utente |
+| Nessuna fonte calabrese per la pasta e fagioli con le cotiche; acqua della pasta alla tiella | ricette 35, 36 | fonti calabresi, prova in cucina |
 | Frese (nessuna fonte), storia della struncatura, provincia della millecosedde, cicerchia | ricette 28, 31, 33 | fonti calabresi |
 | Voci `[DV]` dell'indice (n. 06, 13, 16, 21, 32, 34, 38, 40, 43, 48, 52, 53, 60) | indice | provincia o nome |
 | Norma sulla pesca del novellame | ricetta 04 | Riferimento normativo esatto e in vigore |
@@ -54,6 +55,7 @@ Molti punti vengono dalla stessa causa: i siti ufficiali (iss.it, salute.gov.it,
 | Presenza nell'elenco PAT | tutte | Confermare per ogni piatto in Fase 1 |
 
 ## Decisioni prese
+- 23/11: la 36 "Pasta ammollicata con le alici" è sostituita da "Pasta e patate alla tiella": era un doppione della 31 (struncatura ammollicata). La 34 (pasta china) passa a REG.
 - 23/11: ricette 13 e 17 passate da CZ/RC a "tutta la Calabria" (le fonti non indicano una provincia). La sardella resta a Crotone (Crucoli, Cirò Marina), con fonti.
 - 23/11: l'utente ha chiesto di togliere A Putiga, aumentare le ricette (soprattutto casarecce) e aggiungere i salumi fatti in casa. Indice portato a 60.
 - 23/11: Higgsfield autorizzato dall'utente per le immagini. Saldo 465 crediti, circa 0,75 crediti a immagine.

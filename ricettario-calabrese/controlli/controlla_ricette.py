@@ -10,7 +10,12 @@ def controlla(f):
     _, y, corpo = open(f, encoding='utf-8').read().split('---', 2)
     m = yaml.safe_load(y)
     errori = [f'campo {k}' for k in CAMPI if k not in m] + [f'sezione {s}' for s in SEZIONI if s not in corpo]
-    paragrafi = [p for p in corpo.split('\n\n') if p.strip() and not p.lstrip().startswith(('#', '*', '-', '|'))]
+    # salta titoli, elenchi, tabelle, il sottotitolo in corsivo (*...*) e la riga dei tempi (**Porzioni:**)
+    def e_testo(p):
+        p = p.strip()
+        sottotitolo = p.startswith('*') and p.endswith('*') and '\n' not in p and not p.startswith('**')
+        return p and not p.startswith(('#', '-', '|', '**')) and not sottotitolo
+    paragrafi = [p for p in corpo.split('\n\n') if e_testo(p)]
     parole = len(paragrafi[0].split()) if paragrafi else 0
     if not 80 <= parole <= 120:
         errori.append(f'introduzione di {parole} parole')
