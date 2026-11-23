@@ -1,4 +1,4 @@
-"""Controlla la struttura fissa delle ricette IT: campi YAML, sezioni, lunghezza dell'introduzione, file fonti."""
+"""Controlla la struttura fissa delle ricette IT ed EN: campi YAML, sezioni, lunghezza dell'introduzione, file fonti."""
 import glob, os, re, sys, yaml
 
 CAMPI = ['numero', 'capitolo', 'titolo', 'dialetto', 'provincia', 'stagione', 'porzioni', 'preparazione',
@@ -6,10 +6,17 @@ CAMPI = ['numero', 'capitolo', 'titolo', 'dialetto', 'provincia', 'stagione', 'p
 SEZIONI = ['## Ingredienti', '## Procedimento', '## Consigli', '## Errori da evitare', '## Varianti locali',
            '## Conservazione', '## Fuori dalla Calabria', '## Allergeni', '## DOP e IGP', '## Vino']
 
+CAMPI_EN = ['number', 'chapter', 'title', 'italian_title', 'dialect', 'area', 'season', 'serves', 'prep',
+            'cook', 'total', 'difficulty', 'allergens', 'pdo_pgi', 'wine', 'sources']
+SEZIONI_EN = ['## Ingredients', '## Method', '## Tips', '## Common mistakes', '## Local variations',
+              '## Storage', '## Substitutions', '## Allergens', '## PDO and PGI', '## Wine']
+
 def controlla(f):
+    en = '/en/' in f
+    campi, sezioni, chiave_fonti = (CAMPI_EN, SEZIONI_EN, 'sources') if en else (CAMPI, SEZIONI, 'fonti')
     _, y, corpo = open(f, encoding='utf-8').read().split('---', 2)
     m = yaml.safe_load(y)
-    errori = [f'campo {k}' for k in CAMPI if k not in m] + [f'sezione {s}' for s in SEZIONI if s not in corpo]
+    errori = [f'campo {k}' for k in campi if k not in m] + [f'sezione {s}' for s in sezioni if s not in corpo]
     # salta titoli, elenchi, tabelle, il sottotitolo in corsivo (*...*) e la riga dei tempi (**Porzioni:**)
     def e_testo(p):
         p = p.strip()
@@ -19,14 +26,14 @@ def controlla(f):
     parole = len(paragrafi[0].split()) if paragrafi else 0
     if not 80 <= parole <= 120:
         errori.append(f'introduzione di {parole} parole')
-    if not os.path.exists(m.get('fonti', '')):
+    if not os.path.exists(m.get(chiave_fonti, '')):
         errori.append('file fonti mancante')
     passi = len(re.findall(r'^\d+\. ', corpo, re.M))
     return errori, parole, passi, corpo.count('DA VERIFICARE')
 
 if __name__ == '__main__':
     ko = 0
-    for f in sorted(glob.glob('ricette/it/[0-9]*.md')):
+    for f in sorted(glob.glob('ricette/it/[0-9]*.md')) + sorted(glob.glob('ricette/en/[0-9]*.md')):
         errori, parole, passi, dv = controlla(f)
         ko += bool(errori)
         print(f"{'OK' if not errori else 'KO'} {f}: intro {parole}, passaggi {passi}, DV {dv} {errori or ''}")
