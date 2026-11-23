@@ -9,7 +9,7 @@ Ultimo aggiornamento: 2026-11-23
 | 1 — Ricerca e scrittura IT | ✅ 60/60 bozze scritte (12 blocchi). **STOP: revisione dell'utente** prima della Fase 2. Restano 133 voci `[DA VERIFICARE]` |
 | 2 — Edizione EN | ✅ 60/60 ricette + apertura del capitolo salumi in `ricette/en/`. Conversioni US aggiunte e controllate da script (0 errori). Struttura: 120/120 OK |
 | 3 — Immagini | ✅ 240 immagini IA generate con Higgsfield (238 del piano: 60 principali 2k + 178 passaggi 1k, più le 2 prove della 29). Tutte in `immagini/registro.csv` con link e prompt. **I file non sono nel repository:** il proxy di questa sessione blocca il sito delle immagini. Da scaricare sul proprio computer con `python3 immagini/scarica_immagini.py` |
-| 4 — Impaginazione ed esportazione | non iniziata |
+| 4 — Impaginazione ed esportazione | 🟡 bozza pronta: `output/Ricettario-Calabrese-A-Putiga-IT.pdf` (166 pagine) e `output/Calabrian-Cookbook-A-Putiga-EN.pdf` (168). Copertina, colophon e crediti, indice cliccabile con numeri di pagina, introduzione, aperture di capitolo, 60 ricette su pagina nuova, glossario, conversioni, indice per ingredienti, chiusura. Caratteri incorporati, 75 segnalibri. **Mancano le immagini** (240 riquadri segnaposto) e il nome dell'autore. Si rifà con `python3 impaginazione/costruisci.py` |
 | 5 — Controllo qualità | non iniziata |
 | 6 — Kit di vendita | non iniziata |
 
@@ -33,7 +33,6 @@ Controllo automatico: `python3 controlli/controlla_ricette.py`.
 - [NOME AUTORE] del titolare.
 - Conferma di pubblico e formato (A4 verticale).
 - Il marchio A Putiga resta come editore, in copertina e nei colori? ("A Putiga lasciala stare": per ora ho tolto prodotti, box e link)
-- Ok all'installazione di WeasyPrint e Python-Markdown.
 - Eventuali foto vere in `foto/` (ora è vuota).
 - Le immagini scaricate con `scarica_immagini.py` (servono per l'impaginazione della Fase 4).
 
@@ -66,6 +65,12 @@ Molti punti vengono dalla stessa causa: i siti ufficiali (iss.it, salute.gov.it,
 | Presenza nell'elenco PAT | tutte | Confermare per ogni piatto in Fase 1 |
 
 ## Decisioni prese
+- 23/11 (Fase 4): installati WeasyPrint 70 e Python-Markdown 3.11 (ok dell'utente). Caratteri EB Garamond e IM Fell English SC scaricati da Google Fonts (OFL) in `impaginazione/font/`.
+- 23/11 (Fase 4): il glossario si genera dai nomi dialettali delle ricette, esclusi quelli con [DA VERIFICARE] (24 voci). Si allungherà man mano che i nomi vengono verificati.
+- 23/11 (Fase 4): l'indice per ingredienti cerca 34 ingredienti nelle sole liste ingredienti. Controllato: IT ed EN danno le stesse ricette per tutte le 34 voci.
+- 23/11 (Fase 4): nel PDF le immagini vengono ridotte (principali 1800 px, passaggi 600 px, JPEG 82) per stare sotto i 50 MB. Gli originali non si toccano.
+- 23/11 (Fase 4): la pagina finale è un saluto senza link a aputiga.it, perché l'utente ha chiesto di lasciare stare A Putiga. Il marchio resta come editore in copertina e nel colophon (`EDITORE` in `costruisci.py`), in attesa di conferma.
+- 23/11 (Fase 4): le voci [DA VERIFICARE] si vedono nel PDF, evidenziate: vanno risolte prima della versione finale.
 - 23/11 (Fase 3): immagini completate. Crediti usati circa 255-260 su 465 (prove 2,75; piano circa 252; fino a circa 4 per un lotto andato in timeout e rifatto, con possibili doppioni non registrati). La principale della 55 è fallita una volta ed è stata rigenerata. Controllo a campione di 4 immagini (05, 29, 41, 57): stile coerente, nessun testo né volto.
 - 23/11 (Fase 3): `immagini/scarica_immagini.py` scarica tutte le immagini nelle cartelle `immagini/NN-nome/` e, se c'è Pillow, porta le principali a 2000 px, JPEG 85.
 - 23/11 (Fase 3): costi Higgsfield gpt_image_2_6. Immagine 2k high = 2 crediti (2336×1744 px), 2k medium = 1,75, 1k low = 0,75 (1024×1024). 5 immagini a ricetta in 2k high = circa 600 crediti, oltre il saldo (circa 462 dopo le prove). Proposta: principale 2k high + 3 passaggi 1k = 4,25 crediti a ricetta, circa 255 in tutto.

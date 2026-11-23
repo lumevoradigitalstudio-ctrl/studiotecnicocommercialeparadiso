@@ -1,0 +1,91 @@
+/* Ricettario calabrese — A4 verticale. Colori e caratteri da CLAUDE.md */
+@font-face { font-family: 'EB Garamond'; src: url('font/EBGaramond.ttf'); font-weight: 400 800; font-style: normal; }
+@font-face { font-family: 'EB Garamond'; src: url('font/EBGaramond-Italic.ttf'); font-weight: 400 800; font-style: italic; }
+@font-face { font-family: 'IM Fell English SC'; src: url('font/IMFeENsc28P.ttf'); }
+
+:root { --carta: #EFDCB6; --carta-chiara: #F6EAD0; --inchiostro: #2E2A1A; --oliva: #4D4C22; --rosso: #A3281C; --kraft: #C69C6D; }
+
+@page {
+  size: A4; margin: 20mm 18mm 22mm 18mm; background: var(--carta-chiara);
+  @top-left { content: string(libro); font: 8.5pt 'IM Fell English SC'; color: var(--oliva); }
+  @top-right { content: string(capitolo); font: 8.5pt 'IM Fell English SC'; color: var(--oliva); }
+  @bottom-center { content: counter(page); font: 10pt 'EB Garamond'; color: var(--inchiostro); }
+}
+@page copertina { margin: 0; background: var(--carta); @top-left { content: none } @top-right { content: none } @bottom-center { content: none } }
+@page vuota { @top-left { content: none } @top-right { content: none } }
+
+html { font-family: 'EB Garamond', serif; font-size: 10.5pt; line-height: 1.38; color: var(--inchiostro); hyphens: auto; }
+body { margin: 0; string-set: libro attr(data-x); }
+h1, h2, h3 { font-family: 'IM Fell English SC', serif; font-weight: normal; color: var(--rosso); hyphens: manual; }
+h1 { font-size: 25pt; line-height: 1.1; margin: 4mm 0 1mm; }
+h2 { font-size: 13.5pt; color: var(--oliva); border-bottom: 0.6pt solid var(--kraft); padding-bottom: 0.6mm; margin: 5mm 0 2mm; break-after: avoid; bookmark-level: none; }
+h3 { font-size: 11.5pt; color: var(--oliva); margin: 3mm 0 1mm; break-after: avoid; bookmark-level: none; }
+p { margin: 0 0 2mm; orphans: 2; widows: 2; }
+ul, ol { margin: 0 0 2mm; padding-left: 5mm; }
+li { margin-bottom: 0.6mm; }
+a { color: inherit; text-decoration: none; }
+strong { font-weight: 600; }
+table { border-collapse: collapse; }
+.verif { font-family: 'EB Garamond'; font-size: 8.5pt; background: #f3d2a2; color: var(--rosso); padding: 0 0.8mm; }
+
+/* segnalibri del PDF: capitoli, poi ricette */
+h1 { bookmark-level: 1; }
+h1.ricetta { bookmark-level: 2; }
+h1.titolo-libro { bookmark-level: none; }
+
+/* copertina */
+.copertina { page: copertina; height: 297mm; text-align: center; display: flex; flex-direction: column; align-items: center; padding: 22mm 20mm 0; box-sizing: border-box; }
+.copertina .cornice { width: 170mm; height: 128mm; border: 1.2pt solid var(--rosso); padding: 2.5mm; background: var(--carta-chiara); }
+.copertina .foto { width: 100%; height: 100%; object-fit: cover; }
+.titolo-libro { font-size: 46pt; margin: 14mm 0 2mm; color: var(--rosso); }
+.sottotitolo { font-style: italic; font-size: 15pt; color: var(--oliva); }
+.autore { font-size: 13pt; margin-top: 8mm; }
+.editore { font-family: 'IM Fell English SC'; font-size: 13pt; color: var(--oliva); margin-top: auto; padding-bottom: 18mm; }
+
+/* pagine iniziali */
+.colophon { page: vuota; break-before: page; font-size: 9pt; padding-top: 95mm; }
+.colophon p { margin-bottom: 2.5mm; }
+.indice { page: vuota; break-before: page; }
+.indice ul { list-style: none; padding: 0; margin: 0; }
+.indice li.cap > a { display: block; font-family: 'IM Fell English SC'; font-size: 11pt; color: var(--rosso); margin-top: 1.6mm; }
+.indice li.cap li { font-size: 9pt; line-height: 1.3; margin: 0; padding-left: 5mm; }
+.indice a::after { content: leader('. ') target-counter(attr(href), page); color: var(--inchiostro); }
+.indice li.cap ul { column-count: 2; column-gap: 8mm; }
+.intro, .appendice { break-before: page; }
+h1.appendice { string-set: capitolo content(); }
+
+/* aperture di capitolo */
+.apertura { break-before: page; }
+.apertura .numcap { font-family: 'IM Fell English SC'; font-size: 60pt; color: var(--kraft); margin: 18mm 0 0; line-height: 1; }
+h1.capitolo { font-size: 34pt; string-set: capitolo content(); border-bottom: 1.2pt solid var(--rosso); padding-bottom: 2mm; margin-bottom: 6mm; }
+
+/* ricetta */
+article.ricetta { break-before: page; }
+figure { margin: 0; }
+.principale .foto { display: block; width: 100%; height: 100mm; object-fit: cover; }
+figcaption { font-size: 7.5pt; font-style: italic; color: var(--oliva); text-align: right; margin-top: 0.8mm; }
+.ricetta h1 + p em:only-child { color: var(--oliva); }
+.ricetta h1 + p { font-size: 10pt; margin-bottom: 3mm; }
+.passi { break-inside: avoid; margin: 4mm 0 2mm; }
+.passi .riga { display: flex; gap: 4mm; }
+.passi .passo { width: 56mm; height: 56mm; object-fit: cover; }
+.segnaposto { display: flex; align-items: center; justify-content: center; text-align: center; border: 1pt dashed var(--kraft); background: var(--carta); color: var(--kraft); font-size: 8pt; box-sizing: border-box; }
+.principale .segnaposto { height: 100mm; }
+.note { column-count: 2; column-gap: 7mm; font-size: 9.6pt; margin-top: 3mm; }
+.note h2 { font-size: 12pt; margin-top: 2mm; }
+.note section { break-inside: auto; }
+
+/* appendici */
+.glossario { column-count: 2; column-gap: 8mm; }
+.glossario dt { font-style: italic; font-weight: 600; break-after: avoid; }
+.glossario dd { margin: 0 0 2mm 4mm; }
+.glossario a::after, .ing-indice a::after { content: ', ' target-counter(attr(href), page); }
+.tabelle { display: flex; flex-wrap: wrap; gap: 6mm; }
+.tabelle table { width: 52mm; font-size: 9.6pt; }
+.tabelle th { font-family: 'IM Fell English SC'; font-weight: normal; color: var(--oliva); text-align: left; border-bottom: 0.6pt solid var(--kraft); }
+.tabelle td { padding: 0.5mm 2mm 0.5mm 0; border-bottom: 0.3pt solid #e2cda5; }
+.ing-indice { column-count: 2; column-gap: 8mm; font-size: 9.4pt; }
+.ing-indice .voce { break-inside: avoid; }
+.ing-indice h3 { margin: 2.5mm 0 0.5mm; }
+.ing-indice ul { list-style: none; padding: 0; margin: 0; }
+.chiusura { break-before: page; page: vuota; text-align: center; padding-top: 90mm; }
