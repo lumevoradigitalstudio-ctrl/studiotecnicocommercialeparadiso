@@ -49,7 +49,7 @@ Before you start, read the **safety rules** at the beginning of this chapter.
 2. Cut everything into 3 cm (1¼ in) cubes, removing sinews and cartilage.
 3. Soak the casings in lukewarm water for 30 minutes and rinse them inside too.
 4. Weigh the salt and spices. **For dry sausage**, calculate the curing salt as explained at the start of the chapter (limit 80 mg/kg) and bring the total to 50 g (2 oz) with sea salt. Dissolve the culture in a tablespoon of cold, unchlorinated water.
-5. Grind with the 8-10 mm (⅜-⅜ in) plate. Or chop the meat by hand with a knife into half-centimetre pieces.
+5. Grind with the 8-10 mm (⅜ in) plate. Or chop the meat by hand with a knife into half-centimetre pieces.
 6. Add salt, pepper, chilli, fennel and the wine if using (and the culture, for dry sausage).
 7. Knead with your hands for 3-4 minutes, until the mixture turns sticky and holds together.
 8. Fry a teaspoon of the mixture and taste it. Adjust only the spices, never the curing salt.

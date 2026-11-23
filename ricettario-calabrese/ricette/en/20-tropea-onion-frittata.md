@@ -40,7 +40,7 @@ The red onion of Tropea is sweet, crisp and mild. It is often eaten raw, but coo
 
 ## Method
 
-1. Peel the onions and slice them thinly, 3-4 mm (⅛-⅛ in) thick.
+1. Peel the onions and slice them thinly, 3-4 mm (⅛ in) thick.
 2. Heat the oil in the pan over low heat and add the onions with a pinch of salt.
 3. Cook them for 15-20 minutes, covered for the first 10, stirring now and then. They should turn soft, glossy and lightly golden, without burning.
 4. Meanwhile beat the eggs in a bowl with the pecorino, parsley, salt and pepper.

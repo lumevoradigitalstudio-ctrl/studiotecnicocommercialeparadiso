@@ -32,7 +32,7 @@ True ricotta is made from the whey left over after cheesemaking, and that is how
 - 2 l (2 quarts) fresh whole pasteurised milk (not UHT)
 - 200 ml (¾ cup) fresh cream, optional, for a creamier cheese
 - 5 g (0.2 oz) fine salt
-- 70-80 ml (¼-¼ cup) strained lemon juice, about 2 lemons
+- 70-80 ml (¼ cup) strained lemon juice, about 2 lemons
 
 **Equipment:** heavy-based stainless-steel pot, kitchen thermometer, sieve, cheesecloth or a clean cotton cloth (or ricotta baskets), slotted spoon.
 

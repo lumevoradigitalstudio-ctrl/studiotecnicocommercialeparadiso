@@ -45,6 +45,7 @@ def converti(a, b, unita):
     va, ua = CONV[unita](float(a))
     if b is None: return f'{va} {ua}'
     vb, ub = CONV[unita](float(b))
+    if (va, ua) == (vb, ub): return f'{va} {ua}'  # i due estremi arrotondati coincidono
     return f'{va}-{vb} {ub}' if ua == ub else f'{va} {ua}-{vb} {ub}'
 
 def annota(testo):
@@ -72,6 +73,7 @@ assert converti('250', None, 'ml') == '1 cup'
 assert converti('500', None, 'ml') == '2 cups'
 assert verifica('Use 400 g (14 oz) and 100 g (5 oz).') == ['100 g (5 oz) -> atteso (3½ oz)']
 assert converti('2', None, 'cm') == '¾ in'
+assert converti('3', '4', 'mm') == '⅛ in'
 assert annota('Add 30 ml (2 tbsp) oil and 400 g flour.') == 'Add 30 ml (2 tbsp) oil and 400 g (14 oz) flour.'
 assert annota('80 mg per kg') == '80 mg per kg'
 assert annota('0.5 g culture, 1.3 g per kg') == '0.5 g culture, 1.3 g per kg'
