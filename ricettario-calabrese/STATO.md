@@ -6,7 +6,7 @@ Ultimo aggiornamento: 2026-11-23
 | Fase | Stato |
 |---|---|
 | 0 — Piano | ✅ indice rivisto (rev. 2: 60 ricette, senza A Putiga, con salumi di casa) |
-| 1 — Ricerca e scrittura IT | blocco 1 approvato dall'utente; blocchi 2-5 scritti (25/60) |
+| 1 — Ricerca e scrittura IT | blocco 1 approvato dall'utente; blocchi 2-6 scritti (30/60) |
 | 2 — Edizione EN | non iniziata |
 | 3 — Immagini | non iniziata |
 | 4 — Impaginazione ed esportazione | non iniziata |
@@ -18,6 +18,7 @@ Bozze (10/60). Blocco 1 (stile approvato): 05, 09, 29, 50, 59. Blocco 2 (capitol
 Blocco 3 (conserve): 07, 08, 10, 11, 12.
 Blocco 4: 13, 14, 15, 16, 17 (capitolo Conserve completo).
 Blocco 5: 18, 19, 20, 21, 22 (capitolo Antipasti completo).
+Blocco 6: 23, 24, 25, 26, 27 (pane; manca il 28, Frese).
 Controllo automatico: `python3 controlli/controlla_ricette.py`.
 
 ## Da ricevere dall'utente
@@ -43,6 +44,7 @@ Molti punti vengono dalla stessa causa: i siti ufficiali (iss.it, salute.gov.it,
 | Funghi (tempi, aceto), sardella (testo Reg. CE 1967/2006, deroga 2010), miele di fichi (sicurezza in dispensa), PAT delle polpette | ricette 13-17 | ISS, EUR-Lex, MASAF |
 | **Pitticelle (21): nessuna fonte trovata.** Se non si trova una fonte, sostituirla con un'altra ricetta | ricetta 21 | CCIAA Reggio, Cavalcanti |
 | Temperatura della ricotta, zona IGP della cipolla di Tropea | ricette 19, 20 | disciplinare IGP |
+| Farina della pitta catanzarese, nomi delle zeppole per zona | ricette 24, 27 | fonti catanzaresi |
 | Voci `[DV]` dell'indice (n. 06, 13, 16, 21, 32, 34, 38, 40, 43, 48, 52, 53, 60) | indice | provincia o nome |
 | Norma sulla pesca del novellame | ricetta 04 | Riferimento normativo esatto e in vigore |
 | Elenco DOP/IGP | tutte | Il PDF della Regione è del 23/03/2023: confrontarlo con il registro MASAF/eAmbrosia più recente |
