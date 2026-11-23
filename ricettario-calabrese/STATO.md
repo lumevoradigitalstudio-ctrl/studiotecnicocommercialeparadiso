@@ -6,7 +6,7 @@ Ultimo aggiornamento: 2026-11-23
 | Fase | Stato |
 |---|---|
 | 0 — Piano | ✅ indice rivisto (rev. 2: 60 ricette, senza A Putiga, con salumi di casa) |
-| 1 — Ricerca e scrittura IT | blocco 1 approvato dall'utente; blocchi 2-9 scritti (45/60) |
+| 1 — Ricerca e scrittura IT | blocco 1 approvato dall'utente; blocchi 2-10 scritti (50/60) |
 | 2 — Edizione EN | non iniziata |
 | 3 — Immagini | non iniziata |
 | 4 — Impaginazione ed esportazione | non iniziata |
@@ -21,7 +21,8 @@ Blocco 5: 18, 19, 20, 21, 22 (capitolo Antipasti completo).
 Blocco 6: 23, 24, 25, 26, 27.
 Blocco 7: 28 (capitolo Pane completo), 30, 31, 32, 33.
 Blocco 8: 34, 35, 36, 37, 38 (capitolo Primi completo).
-Blocco 9: 39, 40, 41, 42, 43 (manca il 44, Agnello con piselli).
+Blocco 9: 39, 40, 41, 42, 43.
+Blocco 10: 44 (capitolo Carne completo), 45, 46, 47, 48.
 Controllo automatico: `python3 controlli/controlla_ricette.py`.
 
 ## Da ricevere dall'utente
@@ -50,12 +51,14 @@ Molti punti vengono dalla stessa causa: i siti ufficiali (iss.it, salute.gov.it,
 | Farina della pitta catanzarese, nomi delle zeppole per zona | ricette 24, 27 | fonti catanzaresi |
 | Nessuna fonte calabrese per la pasta e fagioli con le cotiche; acqua della pasta alla tiella | ricette 35, 36 | fonti calabresi, prova in cucina |
 | Frese (nessuna fonte), storia della struncatura, provincia della millecosedde, cicerchia | ricette 28, 31, 33 | fonti calabresi |
+| Nessuna fonte per agnello con piselli (44) e alici arriganate (48); stagione del pesce spada; ammollo dello stocco | ricette 44-48 | fonti calabresi |
 | Voci `[DV]` dell'indice (n. 06, 13, 16, 21, 32, 34, 38, 40, 43, 48, 52, 53, 60) | indice | provincia o nome |
 | Norma sulla pesca del novellame | ricetta 04 | Riferimento normativo esatto e in vigore |
 | Elenco DOP/IGP | tutte | Il PDF della Regione è del 23/03/2023: confrontarlo con il registro MASAF/eAmbrosia più recente |
 | Presenza nell'elenco PAT | tutte | Confermare per ogni piatto in Fase 1 |
 
 ## Decisioni prese
+- 23/11: la 47 si chiama "Tonno in agrodolce con le cipolle" e non "alla pizzitana": l'unica fonte su quel nome lo lega a uno chef.
 - 23/11: la 43 "Braciole di maiale ripiene" (senza fonte) è sostituita dalle "Vrasciole" (con fonte).
 - 23/11: la 36 "Pasta ammollicata con le alici" è sostituita da "Pasta e patate alla tiella": era un doppione della 31 (struncatura ammollicata). La 34 (pasta china) passa a REG.
 - 23/11: ricette 13 e 17 passate da CZ/RC a "tutta la Calabria" (le fonti non indicano una provincia). La sardella resta a Crotone (Crucoli, Cirò Marina), con fonti.

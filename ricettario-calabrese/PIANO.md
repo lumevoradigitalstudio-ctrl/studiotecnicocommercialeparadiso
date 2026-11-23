@@ -81,7 +81,7 @@ Modifiche chieste dall'utente: tolto il capitolo "Con i prodotti A Putiga", più
 | | **Secondi di pesce (5)** | | | | |
 | 45 | Pesce spada alla bagnarota | RC | maggio-luglio | Pesca tradizionale dello Stretto | CCRC, AIC |
 | 46 | Stocco alla mammolese | RC | tutto l'anno | Insegna a trattare lo stoccafisso | LOC, PAT |
-| 47 | Tonno alla pizzitana | VV | primavera-estate | Ricorda le tonnare | LOC, PAL |
+| 47 | Tonno in agrodolce con le cipolle (Pizzo) | VV | primavera-estate | Ricorda le tonnare | LOC, PAL |
 | 48 | Alici arriganate `[DV prov.]` | KR | primavera-estate | Pesce azzurro, costa poco | AIC, PAL |
 | 49 | Baccalà con patate e olive | CZ | vigilia di Natale | Piatto di magro delle feste | CAV, AIC |
 | | **Contorni (5)** | | | | |
