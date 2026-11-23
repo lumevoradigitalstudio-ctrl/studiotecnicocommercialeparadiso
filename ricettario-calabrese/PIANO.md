@@ -1,6 +1,6 @@
 # Piano — Fase 0
 
-Stato: indice rivisto (rev. 2) dopo le richieste dell'utente. Fase 1, primo blocco in corso.
+Stato: indice rev. 3. Le 60 ricette sono scritte. Sostituzioni rispetto alla rev. 2: 36, 43, 47 (titolo), 60. Province corrette secondo le fonti.
 
 ## 1. Fonti di riferimento (sigle usate nell'indice)
 
@@ -93,10 +93,10 @@ Modifiche chieste dall'utente: tolto il capitolo "Con i prodotti A Putiga", più
 | | **Dolci delle feste (6)** | | | | |
 | 55 | Pitta 'mpigliata | CS | Natale | Dolce delle nozze e del Natale | PAT, LOC |
 | 56 | Petrali | RC | Natale | Dolce reggino ai fichi secchi | CCRC, PAT |
-| 57 | Cuzzupa (*cuddhura*) di Pasqua | VV | Pasqua | Pane dolce con le uova | PAT, LOC |
+| 57 | Cuzzupa (*cuddhura*) di Pasqua | REG | Pasqua | Pane dolce con le uova | PAT, LOC |
 | 58 | Mostaccioli (*'nzuddi*) di Soriano | VV | fiere, feste patronali | Dolce delle fiere | PAT, SF |
 | 59 | Turdilli al miele di fichi | CS | Natale | Fritto natalizio cosentino | CAV, LOC |
-| 60 | Pitta 'nchiusa `[DV prov.]` | KR | Natale | Dolce con frutta secca e miele | PAT, LOC |
+| 60 | Giurgiulena (croccante di sesamo e miele) | REG | Natale | Sostituisce la pitta 'nchiusa, doppione della 55 | SF, LOC |
 
 Nuova sigla: **DISC** = disciplinari DOP dei salumi di Calabria (Capocollo, Pancetta, Salsiccia, Soppressata; Consorzio di tutela, Cosenza). Servono per sale, tagli e tempi, non per chiamare DOP il salume di casa.
 

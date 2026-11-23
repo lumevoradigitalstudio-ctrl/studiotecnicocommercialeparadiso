@@ -6,7 +6,7 @@ Ultimo aggiornamento: 2026-11-23
 | Fase | Stato |
 |---|---|
 | 0 — Piano | ✅ indice rivisto (rev. 2: 60 ricette, senza A Putiga, con salumi di casa) |
-| 1 — Ricerca e scrittura IT | blocco 1 approvato dall'utente; blocchi 2-11 scritti (55/60) |
+| 1 — Ricerca e scrittura IT | ✅ 60/60 bozze scritte (12 blocchi). **STOP: revisione dell'utente** prima della Fase 2. Restano 133 voci `[DA VERIFICARE]` |
 | 2 — Edizione EN | non iniziata |
 | 3 — Immagini | non iniziata |
 | 4 — Impaginazione ed esportazione | non iniziata |
@@ -24,6 +24,9 @@ Blocco 8: 34, 35, 36, 37, 38 (capitolo Primi completo).
 Blocco 9: 39, 40, 41, 42, 43.
 Blocco 10: 44 (capitolo Carne completo), 45, 46, 47, 48.
 Blocco 11: 49 (capitolo Pesce completo), 51, 52, 53, 54 (capitolo Contorni completo).
+Blocco 12: 55, 56, 57, 58, 60 (capitolo Dolci completo).
+
+Province (prima indicata in ogni ricetta): tutta la regione 28, Cosenza 12, Reggio 7, Vibo 6, Catanzaro 5, Crotone 2. Molte ricette assegnate a una provincia nell'indice sono diventate "tutta la Calabria", perché le fonti non le legano a una zona.
 Controllo automatico: `python3 controlli/controlla_ricette.py`.
 
 ## Da ricevere dall'utente
@@ -54,13 +57,16 @@ Molti punti vengono dalla stessa causa: i siti ufficiali (iss.it, salute.gov.it,
 | Frese (nessuna fonte), storia della struncatura, provincia della millecosedde, cicerchia | ricette 28, 31, 33 | fonti calabresi |
 | Nessuna fonte per agnello con piselli (44) e alici arriganate (48); stagione del pesce spada; ammollo dello stocco | ricette 44-48 | fonti calabresi |
 | Nessuna fonte per la ciambotta (52); "trappitara" (49) | ricette 49, 52 | fonti calabresi |
-| **Crotone sotto-rappresentata:** dopo le correzioni restano solo sardella (15), alici arriganate (48, senza fonte) e pitta 'nchiusa (60) | indice | cercare piatti crotonesi con fonte |
+| **Crotone sotto-rappresentata:** restano solo sardella (15) e alici arriganate (48, senza fonte); la pitta 'mpigliata (55) è citata anche per Crotone | indice | cercare piatti crotonesi con fonte |
+| Senza nessuna fonte trovata: 21 pitticelle, 28 frese, 35 pasta e fagioli con le cotiche, 44 agnello con piselli, 48 alici arriganate, 52 ciambotta | ricette | fonti calabresi, oppure sostituire |
 | Voci `[DV]` dell'indice (n. 06, 13, 16, 21, 32, 34, 38, 40, 43, 48, 52, 53, 60) | indice | provincia o nome |
 | Norma sulla pesca del novellame | ricetta 04 | Riferimento normativo esatto e in vigore |
 | Elenco DOP/IGP | tutte | Il PDF della Regione è del 23/03/2023: confrontarlo con il registro MASAF/eAmbrosia più recente |
 | Presenza nell'elenco PAT | tutte | Confermare per ogni piatto in Fase 1 |
 
 ## Decisioni prese
+- 23/11: la 60 "Pitta 'nchiusa" era un altro nome della pitta 'mpigliata (55): sostituita dalla giurgiulena.
+- 23/11: incidente durante il blocco 12. Un comando ha scritto quattro schede fonti sopra le ricette 56, 57, 58 e 60, che non erano ancora salvate. Le ho riscritte dal testo originale e controllate.
 - 23/11: la 47 si chiama "Tonno in agrodolce con le cipolle" e non "alla pizzitana": l'unica fonte su quel nome lo lega a uno chef.
 - 23/11: la 43 "Braciole di maiale ripiene" (senza fonte) è sostituita dalle "Vrasciole" (con fonte).
 - 23/11: la 36 "Pasta ammollicata con le alici" è sostituita da "Pasta e patate alla tiella": era un doppione della 31 (struncatura ammollicata). La 34 (pasta china) passa a REG.
@@ -68,7 +74,7 @@ Molti punti vengono dalla stessa causa: i siti ufficiali (iss.it, salute.gov.it,
 - 23/11: l'utente ha chiesto di togliere A Putiga, aumentare le ricette (soprattutto casarecce) e aggiungere i salumi fatti in casa. Indice portato a 60.
 - 23/11: Higgsfield autorizzato dall'utente per le immagini. Saldo 465 crediti, circa 0,75 crediti a immagine.
 - 23/11: per i salumi stagionati ho scelto la versione sicura (sale nitritato calcolato sul limite di legge, fermentazione con pH misurato, calo peso) e una variante da frigorifero, da consumare cotta.
-- La skill fact-checker non è ancora stata usata in modo formale: ho fatto verifiche con la ricerca web e segnato i dubbi. La uso prima di chiudere ogni ricetta.
+- Le skill fact-checker e humanizer non sono ancora state usate: le verifiche sono state fatte con la ricerca web, con i dubbi segnati. Da fare prima della consegna.
 - Progetto nella cartella `ricettario-calabrese/` del repository, branch `ccr-9e811f96-dg6t17`.
 - Per l'impaginazione propongo WeasyPrint invece di Chromium, perché calcola i numeri di pagina dell'indice.
 - Per l'EPUB uso pandoc, già installato.
