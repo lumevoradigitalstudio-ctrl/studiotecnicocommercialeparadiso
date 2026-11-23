@@ -6,7 +6,7 @@ Ultimo aggiornamento: 2026-11-23
 | Fase | Stato |
 |---|---|
 | 0 — Piano | ✅ indice rivisto (rev. 2: 60 ricette, senza A Putiga, con salumi di casa) |
-| 1 — Ricerca e scrittura IT | blocco 1 approvato dall'utente; blocchi 2-10 scritti (50/60) |
+| 1 — Ricerca e scrittura IT | blocco 1 approvato dall'utente; blocchi 2-11 scritti (55/60) |
 | 2 — Edizione EN | non iniziata |
 | 3 — Immagini | non iniziata |
 | 4 — Impaginazione ed esportazione | non iniziata |
@@ -23,6 +23,7 @@ Blocco 7: 28 (capitolo Pane completo), 30, 31, 32, 33.
 Blocco 8: 34, 35, 36, 37, 38 (capitolo Primi completo).
 Blocco 9: 39, 40, 41, 42, 43.
 Blocco 10: 44 (capitolo Carne completo), 45, 46, 47, 48.
+Blocco 11: 49 (capitolo Pesce completo), 51, 52, 53, 54 (capitolo Contorni completo).
 Controllo automatico: `python3 controlli/controlla_ricette.py`.
 
 ## Da ricevere dall'utente
@@ -52,6 +53,8 @@ Molti punti vengono dalla stessa causa: i siti ufficiali (iss.it, salute.gov.it,
 | Nessuna fonte calabrese per la pasta e fagioli con le cotiche; acqua della pasta alla tiella | ricette 35, 36 | fonti calabresi, prova in cucina |
 | Frese (nessuna fonte), storia della struncatura, provincia della millecosedde, cicerchia | ricette 28, 31, 33 | fonti calabresi |
 | Nessuna fonte per agnello con piselli (44) e alici arriganate (48); stagione del pesce spada; ammollo dello stocco | ricette 44-48 | fonti calabresi |
+| Nessuna fonte per la ciambotta (52); "trappitara" (49) | ricette 49, 52 | fonti calabresi |
+| **Crotone sotto-rappresentata:** dopo le correzioni restano solo sardella (15), alici arriganate (48, senza fonte) e pitta 'nchiusa (60) | indice | cercare piatti crotonesi con fonte |
 | Voci `[DV]` dell'indice (n. 06, 13, 16, 21, 32, 34, 38, 40, 43, 48, 52, 53, 60) | indice | provincia o nome |
 | Norma sulla pesca del novellame | ricetta 04 | Riferimento normativo esatto e in vigore |
 | Elenco DOP/IGP | tutte | Il PDF della Regione è del 23/03/2023: confrontarlo con il registro MASAF/eAmbrosia più recente |

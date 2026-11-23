@@ -83,12 +83,12 @@ Modifiche chieste dall'utente: tolto il capitolo "Con i prodotti A Putiga", più
 | 46 | Stocco alla mammolese | RC | tutto l'anno | Insegna a trattare lo stoccafisso | LOC, PAT |
 | 47 | Tonno in agrodolce con le cipolle (Pizzo) | VV | primavera-estate | Ricorda le tonnare | LOC, PAL |
 | 48 | Alici arriganate `[DV prov.]` | KR | primavera-estate | Pesce azzurro, costa poco | AIC, PAL |
-| 49 | Baccalà con patate e olive | CZ | vigilia di Natale | Piatto di magro delle feste | CAV, AIC |
+| 49 | Baccalà con patate e olive | CS | vigilia di Natale | Piatto di magro delle feste | CAV, AIC |
 | | **Contorni (5)** | | | | |
 | 50 | Pipi e patate (peperoni e patate) | REG | estate | Il contorno di casa più comune | CAV, PAL |
 | 51 | Patate 'mpacchiuse | CS | autunno-inverno | Usa la Patata della Sila IGP | DOP, LOC |
-| 52 | Ciambotta `[DV prov.]` | KR | estate | Stufato di verdure estive | CAV, AIC |
-| 53 | Parmigiana di melanzane alla calabrese `[DV prov.]` | VV | estate | Variante con uova sode e soppressata | PAL, AIC |
+| 52 | Ciambotta | REG | estate | Stufato di verdure estive | CAV, AIC |
+| 53 | Parmigiana di melanzane alla calabrese | REG | estate | Variante con uova sode e soppressata | PAL, AIC |
 | 54 | Peperoni ripieni di mollica (*pipi chini*) | REG | estate | Ripieno povero di pane e formaggio | CAV, AIC |
 | | **Dolci delle feste (6)** | | | | |
 | 55 | Pitta 'mpigliata | CS | Natale | Dolce delle nozze e del Natale | PAT, LOC |
