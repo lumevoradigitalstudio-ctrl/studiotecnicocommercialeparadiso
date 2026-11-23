@@ -6,7 +6,7 @@ Ultimo aggiornamento: 2026-11-23
 | Fase | Stato |
 |---|---|
 | 0 — Piano | ✅ indice rivisto (rev. 2: 60 ricette, senza A Putiga, con salumi di casa) |
-| 1 — Ricerca e scrittura IT | blocco 1 approvato dall'utente; blocchi 2-3 scritti (15/60) |
+| 1 — Ricerca e scrittura IT | blocco 1 approvato dall'utente; blocchi 2-4 scritti (20/60) |
 | 2 — Edizione EN | non iniziata |
 | 3 — Immagini | non iniziata |
 | 4 — Impaginazione ed esportazione | non iniziata |
@@ -16,6 +16,7 @@ Ultimo aggiornamento: 2026-11-23
 ## Ricette completate
 Bozze (10/60). Blocco 1 (stile approvato): 05, 09, 29, 50, 59. Blocco 2 (capitolo Salumi completo): apertura del capitolo, 01, 02, 03, 04, 06.
 Blocco 3 (conserve): 07, 08, 10, 11, 12.
+Blocco 4: 13, 14, 15, 16, 17 (capitolo Conserve completo).
 Controllo automatico: `python3 controlli/controlla_ricette.py`.
 
 ## Da ricevere dall'utente
@@ -38,12 +39,14 @@ Molti punti vengono dalla stessa causa: i siti ufficiali (iss.it, salute.gov.it,
 | Disciplinari Lamezia DOC e Greco di Bianco DOC | ricette 50, 59 | sito MASAF |
 | Nomi dialettali di soppressata e pancetta, pressatura, sale totale, conservazione dei salumi | ricette 01-04, 06 | fonti dialettologiche, disciplinari completi |
 | Dose di acido nella salsa (USDA contro fonti italiane), tempi di pastorizzazione, durata in frigorifero dei peperoncini ripieni, dosi della salamoia per le olive | ricette 07, 08, 10, 11, 12 | testo ISS originale, USDA |
+| Funghi (tempi, aceto), sardella (testo Reg. CE 1967/2006, deroga 2010), miele di fichi (sicurezza in dispensa), PAT delle polpette | ricette 13-17 | ISS, EUR-Lex, MASAF |
 | Voci `[DV]` dell'indice (n. 06, 13, 16, 21, 32, 34, 38, 40, 43, 48, 52, 53, 60) | indice | provincia o nome |
 | Norma sulla pesca del novellame | ricetta 04 | Riferimento normativo esatto e in vigore |
 | Elenco DOP/IGP | tutte | Il PDF della Regione è del 23/03/2023: confrontarlo con il registro MASAF/eAmbrosia più recente |
 | Presenza nell'elenco PAT | tutte | Confermare per ogni piatto in Fase 1 |
 
 ## Decisioni prese
+- 23/11: ricette 13 e 17 passate da CZ/RC a "tutta la Calabria" (le fonti non indicano una provincia). La sardella resta a Crotone (Crucoli, Cirò Marina), con fonti.
 - 23/11: l'utente ha chiesto di togliere A Putiga, aumentare le ricette (soprattutto casarecce) e aggiungere i salumi fatti in casa. Indice portato a 60.
 - 23/11: Higgsfield autorizzato dall'utente per le immagini. Saldo 465 crediti, circa 0,75 crediti a immagine.
 - 23/11: per i salumi stagionati ho scelto la versione sicura (sale nitritato calcolato sul limite di legge, fermentazione con pH misurato, calo peso) e una variante da frigorifero, da consumare cotta.

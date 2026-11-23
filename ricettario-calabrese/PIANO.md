@@ -42,12 +42,12 @@ Modifiche chieste dall'utente: tolto il capitolo "Con i prodotti A Putiga", più
 | 10 | Peperoncini ripieni sott'olio | VV | fine estate | Conserva a rischio, trattata con le regole ISS | ISS, PAL |
 | 11 | Peperoncino essiccato, in polvere e in olio | CS | estate-autunno | Base di metà delle ricette | ISS, LOC |
 | 12 | Olive schiacciate (*alivi scacciati*) | CS | ottobre-novembre | Rito della raccolta | PAT, ARSAC |
-| 13 | Olive nere al forno `[DV]` | CZ | novembre-dicembre | Olive senza salamoia, pronte in pochi giorni | PAT, ARSAC |
+| 13 | Olive nere al forno | REG | novembre-dicembre | Olive senza salamoia, pronte in pochi giorni | PAT, ARSAC |
 | 14 | Funghi sott'olio della Sila | CS | autunno | Conserva di montagna | ISS, LOC |
 | 15 | Sardella (*rosamarina*): versione storica e di oggi | KR | primavera (storica) | Pratica oggi vietata, rifatta a norma | LOC, PAT |
-| 16 | Miele di fichi (*ficotto*) `[DV nome]` | CS | settembre | Serve per i dolci di Natale (n. 59) | DOP, CAV |
+| 16 | Miele di fichi (*milazzu* `[DV nome]`) | CS | settembre | Serve per i dolci di Natale (n. 59) | DOP, CAV |
 | | **Antipasti e piatti di casa (6)** | | | | |
-| 17 | Polpette di melanzane (*purpetti 'i mulingiani*) | RC | estate | Cucina povera molto amata | CCRC, PAL |
+| 17 | Polpette di melanzane (*purpetti 'i mulingiani*) | REG | estate | Cucina povera molto amata | CCRC, PAL |
 | 18 | Polpette di pane | REG | tutto l'anno | Per non buttare il pane raffermo | CAV, AIC |
 | 19 | Ricotta fatta in casa | REG | primavera | Formaggio fresco fattibile in cucina | SF, AIC |
 | 20 | Frittata con la cipolla rossa di Tropea | VV | primavera-estate | Cena veloce di casa | DOP, ARSAC |
