@@ -48,7 +48,10 @@ def converti(a, b, unita):
     if (va, ua) == (vb, ub): return f'{va} {ua}'  # i due estremi arrotondati coincidono
     return f'{va}-{vb} {ub}' if ua == ub else f'{va} {ua}-{vb} {ub}'
 
+DIM = re.compile(r'(\d+) × (\d+) cm(?! \()')
+
 def annota(testo):
+    testo = DIM.sub(lambda m: f"{m.group(0)} ({lung(float(m.group(1)))[0]} × {lung(float(m.group(2)))[0]} in)", testo)
     def sost(m):
         c = converti(*m.groups())
         return f'{m.group(0)} ({c})' if c else m.group(0)
@@ -60,7 +63,7 @@ def verifica(testo):
     errori = []
     for m in VERIFICA.finditer(testo):
         atteso = converti(m.group(1), m.group(2), m.group(3))
-        if atteso and m.group(4)[:1] in '0123456789⅛¼⅜½⅝¾⅞' and m.group(4) != atteso:  # salta parentesi che non sono conversioni
+        if atteso and '×' not in m.group(4) and m.group(4)[:1] in '0123456789⅛¼⅜½⅝¾⅞' and m.group(4) != atteso:  # salta parentesi che non sono conversioni
             errori.append(f'{m.group(0)} -> atteso ({atteso})')
     return errori
 
@@ -74,6 +77,7 @@ assert converti('500', None, 'ml') == '2 cups'
 assert verifica('Use 400 g (14 oz) and 100 g (5 oz).') == ['100 g (5 oz) -> atteso (3½ oz)']
 assert converti('2', None, 'cm') == '¾ in'
 assert converti('3', '4', 'mm') == '⅛ in'
+assert annota('a 30 × 40 cm dish') == 'a 30 × 40 cm (12 × 16 in) dish'
 assert annota('Add 30 ml (2 tbsp) oil and 400 g flour.') == 'Add 30 ml (2 tbsp) oil and 400 g (14 oz) flour.'
 assert annota('80 mg per kg') == '80 mg per kg'
 assert annota('0.5 g culture, 1.3 g per kg') == '0.5 g culture, 1.3 g per kg'
