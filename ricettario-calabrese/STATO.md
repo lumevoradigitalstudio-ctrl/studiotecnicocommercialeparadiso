@@ -49,4 +49,3 @@ Molti punti vengono dalla stessa causa: i siti ufficiali (iss.it, salute.gov.it,
 - Per l'EPUB uso pandoc, già installato.
 - Per rasterizzare le pagine nei controlli uso `pdftoppm`, già installato (non serve PyMuPDF).
 - La skill frontend-design non c'è: applico a mano le stesse regole di impaginazione.
-- Lo strumento immagini disponibile (Higgsfield via MCP) ha costi a crediti: chiedo prima di usarlo (Fase 3).
