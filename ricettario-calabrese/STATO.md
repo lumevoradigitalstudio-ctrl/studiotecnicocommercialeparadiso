@@ -6,7 +6,7 @@ Ultimo aggiornamento: 2026-11-23
 | Fase | Stato |
 |---|---|
 | 0 — Piano | ✅ indice rivisto (rev. 2: 60 ricette, senza A Putiga, con salumi di casa) |
-| 1 — Ricerca e scrittura IT | blocco 1 scritto (5/60), **STOP: in attesa dell'ok su stile e struttura** |
+| 1 — Ricerca e scrittura IT | blocco 1 approvato dall'utente; blocco 2 scritto (10/60) |
 | 2 — Edizione EN | non iniziata |
 | 3 — Immagini | non iniziata |
 | 4 — Impaginazione ed esportazione | non iniziata |
@@ -14,7 +14,8 @@ Ultimo aggiornamento: 2026-11-23
 | 6 — Kit di vendita | non iniziata |
 
 ## Ricette completate
-Bozze del blocco 1 (5/60): 05 'Nduja, 09 Melanzane sott'olio, 29 Fileja con 'nduja, 50 Pipi e patate, 59 Turdilli.
+Bozze (10/60). Blocco 1 (stile approvato): 05, 09, 29, 50, 59. Blocco 2 (capitolo Salumi completo): apertura del capitolo, 01, 02, 03, 04, 06.
+Controllo automatico: `python3 controlli/controlla_ricette.py`.
 
 ## Da ricevere dall'utente
 - [NOME AUTORE] del titolare.
@@ -34,6 +35,7 @@ Molti punti vengono dalla stessa causa: i siti ufficiali (iss.it, salute.gov.it,
 | Lunghezza dei fileja, iscrizione PAT | ricetta 29 | elenco PAT, fonti locali |
 | Varianti dei turdilli con uova o lievito | ricetta 59 | fonti locali |
 | Disciplinari Lamezia DOC e Greco di Bianco DOC | ricette 50, 59 | sito MASAF |
+| Nomi dialettali di soppressata e pancetta, pressatura, sale totale, conservazione dei salumi | ricette 01-04, 06 | fonti dialettologiche, disciplinari completi |
 | Voci `[DV]` dell'indice (n. 06, 13, 16, 21, 32, 34, 38, 40, 43, 48, 52, 53, 60) | indice | provincia o nome |
 | Norma sulla pesca del novellame | ricetta 04 | Riferimento normativo esatto e in vigore |
 | Elenco DOP/IGP | tutte | Il PDF della Regione è del 23/03/2023: confrontarlo con il registro MASAF/eAmbrosia più recente |
