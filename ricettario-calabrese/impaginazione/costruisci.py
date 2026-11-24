@@ -126,11 +126,32 @@ def ridotta(p, lato):
     return q
 
 
+def sfumata(q):
+    """Copertina con la sfumatura color carta già nell'immagine: i gradienti trasparenti nel PDF lasciano una riga in alcuni lettori."""
+    from PIL import Image
+    d = q.with_name('sfumata-' + q.name)
+    if not d.exists() or d.stat().st_mtime < q.stat().st_mtime:
+        with Image.open(q) as im:
+            im = im.convert('RGB')
+            w, h = im.size
+            banda = int(h * 0.36)
+            alfa = Image.new('L', (1, banda))
+            for y in range(banda):
+                t = y / banda
+                alfa.putpixel((0, y), int(255 * (0.93 - 0.13 * t / 0.6 if t < 0.6 else 0.80 * (1 - (t - 0.6) / 0.4) ** 1.5)))
+            maschera = Image.new('L', (w, h), 0)
+            maschera.paste(alfa.resize((w, banda)), (0, 0))
+            im.paste(Image.new('RGB', (w, h), (246, 234, 208)), (0, 0), maschera)
+            im.save(d, 'JPEG', quality=82, optimize=True)
+    return d
+
+
 def immagine(rel, classe, c):
     p = R / rel
     if p.exists():
         # principale 180 mm, passaggi 56 mm: circa 225-250 dpi
-        return f'<img class="{classe}" src="{ridotta(p, {"sfondo": 2200, "foto": 1600}.get(classe, 560)).as_uri()}" alt="">'
+        q = ridotta(p, {"sfondo": 2200, "foto": 1600}.get(classe, 560))
+        return f'<img class="{classe}" src="{(sfumata(q) if classe == "sfondo" else q).as_uri()}" alt="">'
     return f'<div class="{classe} segnaposto"><span>{c["mancante"]}<br>{html.escape(p.name)}</span></div>'
 
 

@@ -36,8 +36,7 @@ h1.titolo-libro { bookmark-level: none; }
 /* copertina: immagine a tutta pagina, titolo sul muro in alto, editore in basso */
 .copertina { page: copertina; height: 297mm; position: relative; overflow: hidden; text-align: center; }
 .copertina .sfondo { position: absolute; top: 0; left: 0; width: 210mm; height: 297mm; object-fit: cover; }
-.copertina .testata { position: absolute; top: 0; left: 0; right: 0; padding: 20mm 18mm 16mm;
-  background: linear-gradient(to bottom, rgba(246,234,208,0.93) 0%, rgba(246,234,208,0.85) 60%, rgba(246,234,208,0.4) 80%, rgba(246,234,208,0) 94%, rgba(246,234,208,0) 100%); }
+.copertina .testata { position: absolute; top: 0; left: 0; right: 0; padding: 20mm 18mm 16mm; }
 .sopratitolo { font-family: 'IM Fell English SC'; font-size: 13pt; letter-spacing: 2pt; color: var(--oliva); margin: 0 0 3mm; }
 .titolo-libro { font-size: 44pt; line-height: 1.05; margin: 0 0 4mm; color: var(--rosso); }
 .sottotitolo { font-style: italic; font-size: 14pt; color: var(--inchiostro); margin: 0; }
