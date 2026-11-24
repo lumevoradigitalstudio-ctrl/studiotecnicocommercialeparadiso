@@ -2,3 +2,4 @@ __pycache__/
 output/*.html
 output/.immagini/
 sito/pubblico/d/
+output/*.zip
