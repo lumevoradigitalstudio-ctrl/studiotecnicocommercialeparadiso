@@ -36,7 +36,6 @@ button { font: inherit; }
   transform: translateX(-120%); animation: luccica 4.5s ease-in-out infinite 2s; }
 @keyframes luccica { 0%, 60% { transform: translateX(-120%); } 85%, 100% { transform: translateX(120%); } }
 .secondario { font-size: 1.05rem; text-underline-offset: 4px; }
-.garanzia { font-size: .95rem; color: var(--oliva); margin: .9rem 0 0; }
 
 /* hero: sfondo che si muove piano, polvere nella luce, libro 3D */
 .hero { position: relative; max-width: none !important; min-height: min(92vh, 860px); display: flex; align-items: center; padding: 3rem 1.2rem !important; overflow: hidden; isolation: isolate; }
@@ -67,7 +66,6 @@ button { font: inherit; }
 .sotto { font-style: italic; font-size: 1.35rem; color: var(--oliva); margin: 0 0 1.2rem; animation: sali .9s .9s both; }
 .lead { font-size: 1.15rem; animation: sali .9s 1.05s both; }
 .azioni { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.6rem; margin-top: 1.6rem; animation: sali .9s 1.2s both; }
-.hero .garanzia { animation: sali .9s 1.35s both; }
 @keyframes sali { from { opacity: 0; transform: translateY(24px); } }
 
 /* numeri che contano */

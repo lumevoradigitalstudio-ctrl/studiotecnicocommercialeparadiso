@@ -39,7 +39,6 @@ T = {
     altra='English', altra_url='en/index.html', compra='Acquista il PDF', omaggio='Scarica gratis una ricetta',
     anteprima_txt='Anteprima del sito: il pagamento non è ancora attivo.',
     lead='La cucina di casa calabrese spiegata passo per passo: dai giorni del maiale alle conserve di fine estate, dalla pasta tirata a mano ai dolci di Natale e di Pasqua.',
-    garanzia='File che non si apre o non arriva? Lo sistemiamo o ti rimborsiamo.',
     numeri=[(60, 'ricette'), (9, 'capitoli'), ('{p}', 'pagine A4'), (241, 'illustrazioni')],
     h_dentro='Cosa trovi dentro', h_pagine='Sfoglialo', h_pagine_sub='Tocca la pagina di destra per girarla.',
     h_ricette='60 ricette in 9 capitoli', h_perchi='Per chi è', h_omaggio='Prima di comprarlo, assaggialo',
@@ -54,9 +53,9 @@ T = {
     prezzo_note='Pagamento sicuro sulla piattaforma di vendita.',
     faq=[('Come ricevo il libro?', 'Dopo il pagamento ricevi un link per scaricare il PDF, anche via email. Puoi leggerlo su computer, tablet e telefono.'),
          ('Posso stamparlo?', 'Sì, è impaginato in formato A4, per uso personale.'),
-         ('Le foto sono vere?', 'No. Le immagini sono illustrazioni generate con l\'intelligenza artificiale, e ognuna lo dice nella didascalia. I testi e le ricette sono scritti per questo libro.'),
+         ('Le ricette sono originali calabresi?', 'Certo. Sono piatti della cucina di casa calabrese, scelti zona per zona, dal Vibonese alla Sila, da Reggio al Cosentino, e controllati uno per uno su fonti calabresi: disciplinari DOP e IGP, elenchi dei prodotti tradizionali, testi di cucina regionale. I testi sono scritti da zero per questo libro.'),
          ('C\'è anche in inglese?', 'Sì, esiste un\'edizione inglese separata, con le misure americane (oz, cups, °F) accanto a quelle metriche.'),
-         ('Posso chiedere il rimborso?', 'Se il file non si apre o non arriva, lo sistemiamo o ti rimborsiamo. Per il resto, per i contenuti digitali scaricati subito il diritto di recesso non si applica, come previsto dal Codice del Consumo. I dettagli sono nelle condizioni di vendita.')],
+         ('Posso chiedere il rimborso?', 'Per i contenuti digitali scaricati subito il diritto di recesso non si applica, come previsto dal Codice del Consumo. I dettagli sono nelle condizioni di vendita.')],
     legali='Condizioni di vendita e privacy', legali_url='condizioni.html', nota_ia='Immagini illustrative generate con IA.',
     h_cond='Condizioni di vendita e privacy'),
  'en': dict(
@@ -67,7 +66,6 @@ T = {
     altra='Italiano', altra_url='../index.html', compra='Buy the PDF', omaggio='Download a free recipe',
     anteprima_txt='Site preview: payment is not active yet.',
     lead='Southern Italian home cooking from Calabria, explained step by step: from pork-curing days to late-summer preserves, from hand-rolled pasta to Christmas and Easter sweets.',
-    garanzia="File won't open or didn't arrive? We'll fix it or refund you.",
     numeri=[(60, 'recipes'), (9, 'chapters'), ('{p}', 'A4 pages'), (241, 'illustrations')],
     h_dentro="What's inside", h_pagine='Flip through it', h_pagine_sub='Tap the right-hand page to turn it.',
     h_ricette='60 recipes in 9 chapters', h_perchi="Who it's for", h_omaggio='Taste it before you buy it',
@@ -82,9 +80,9 @@ T = {
     prezzo_note='Secure payment on the sales platform. Sales tax or VAT is calculated at checkout.',
     faq=[('How do I get the book?', 'After payment you get a link to download the PDF, also by email. Read it on a computer, tablet or phone.'),
          ('Can I print it?', 'Yes, it is laid out on A4 pages, for personal use.'),
-         ('Are the photos real?', 'No. The images are illustrations generated with artificial intelligence, and each caption says so. The texts and recipes were written for this book.'),
+         ('Are these authentic Calabrian recipes?', 'Of course. They are Calabrian home-cooking dishes, chosen area by area, from Vibo Valentia to the Sila mountains, from Reggio to Cosenza, and checked one by one against Calabrian sources: PDO and PGI product specifications, official lists of traditional foods, regional cookbooks. The texts were written from scratch for this book.'),
          ('Are US measures included?', 'Yes: every quantity is in grams and millilitres with oz, cups and °F in brackets.'),
-         ('Can I get a refund?', "If the file won't open or doesn't arrive, we'll fix it or refund you. Otherwise, digital content delivered immediately is not covered by the EU right of withdrawal. See the terms of sale for details.")],
+         ('Can I get a refund?', 'Digital content delivered immediately is not covered by the EU right of withdrawal. See the terms of sale for details.')],
     legali='Terms of sale and privacy', legali_url='terms.html', nota_ia='Illustrative images generated with AI.',
     h_cond='Terms of sale and privacy'),
 }
@@ -95,7 +93,7 @@ COND = {
 <h2>Prodotto</h2><p>«{titolo}» è un libro digitale in formato PDF ({p} pagine). Non è previsto l'invio di copie stampate.</p>
 <h2>Prezzo e pagamento</h2><p>Il prezzo è indicato in euro, IVA inclusa. Il pagamento e la consegna sono gestiti dalla piattaforma di vendita indicata al momento dell'acquisto, secondo le sue condizioni.</p>
 <h2>Consegna</h2><p>Il link per scaricare il PDF arriva subito dopo il pagamento, sullo schermo e via email.</p>
-<h2>Diritto di recesso</h2><p>Per i contenuti digitali forniti subito, il diritto di recesso non si applica se chi compra dà il consenso all'esecuzione immediata e riconosce di perdere il diritto di recesso (art. 59, comma 1, lettera o, del Codice del Consumo). Se il file non si apre o non arriva, scrivici: lo risolviamo o ti rimborsiamo.</p>
+<h2>Diritto di recesso</h2><p>Per i contenuti digitali forniti subito, il diritto di recesso non si applica se chi compra dà il consenso all'esecuzione immediata e riconosce di perdere il diritto di recesso (art. 59, comma 1, lettera o, del Codice del Consumo).</p>
 <h2>Uso del libro</h2><p>Il PDF è per uso personale. Non può essere rivenduto, condiviso o pubblicato, in tutto o in parte, senza il permesso scritto dell'editore. La ricetta omaggio si può condividere così com'è.</p>
 <h2>Sicurezza alimentare</h2><p>Segui le dosi, le temperature e i tempi indicati, soprattutto per conserve e salumi. Le informazioni su allergeni e sicurezza alimentare non sostituiscono il parere di un medico o di un tecnico alimentare.</p>
 <h2>Privacy</h2><p>Questo sito non usa cookie, non raccoglie statistiche e non chiede dati. I dati necessari all'acquisto (nome, email, pagamento) sono trattati dalla piattaforma di vendita, secondo la sua informativa privacy.</p>""",
@@ -104,7 +102,7 @@ COND = {
 <h2>Product</h2><p>“{titolo}” is a digital book in PDF format ({p} pages). No printed copies are shipped.</p>
 <h2>Price and payment</h2><p>Payment and delivery are handled by the sales platform shown at checkout, under its own terms. Any sales tax or VAT is calculated at checkout according to your country.</p>
 <h2>Delivery</h2><p>The download link appears straight after payment, on screen and by email.</p>
-<h2>Right of withdrawal and refunds</h2><p>For digital content supplied immediately, the EU right of withdrawal does not apply once you consent to immediate delivery and acknowledge that you lose that right. If the file does not open or does not arrive, write to us: we will fix it or refund you.</p>
+<h2>Right of withdrawal and refunds</h2><p>For digital content supplied immediately, the EU right of withdrawal does not apply once you consent to immediate delivery and acknowledge that you lose that right.</p>
 <h2>Use of the book</h2><p>The PDF is for personal use. It may not be resold, shared or published, in whole or in part, without the publisher's written permission. The free sample recipe may be shared as it is.</p>
 <h2>Food safety</h2><p>Follow the quantities, temperatures and times given, especially for preserves and cured meats. The allergen and food safety information does not replace the advice of a doctor or a food safety professional.</p>
 <h2>Privacy</h2><p>This site uses no cookies, collects no statistics and asks for no data. The data needed for a purchase (name, email, payment) is handled by the sales platform, under its privacy policy.</p>""",
@@ -209,7 +207,7 @@ def pagina(lingua, info, img, capitoli):
 <div class="dorso"></div><div class="taglio"></div></div></div>
 <div class="hero-testo"><p class="gancio">{e(t["gancio"])}</p><h1 class="titolo-anim">{e(t["titolo"])}</h1><p class="sotto">{e(t["sotto"])}</p>
 <p class="lead">{e(t["lead"])}</p><div class="azioni"><a class="bottone luccica" href="{link}">{t["compra"]} · {PREZZO[lingua]}</a>
-<a class="secondario" href="{img["omaggio"]}" download>{t["omaggio"]} ↓</a></div><p class="garanzia">✓ {e(t["garanzia"])}</p></div></div></section>
+<a class="secondario" href="{img["omaggio"]}" download>{t["omaggio"]} ↓</a></div></div></div></section>
 <ul class="numeri" data-anim>{numeri}</ul>
 <section class="nastri" aria-hidden="true">{nastri}</section>
 <section><h2 data-anim>{t["h_dentro"]}</h2><div class="cards">{dentro}</div></section>
@@ -222,7 +220,7 @@ def pagina(lingua, info, img, capitoli):
 <section><h2 data-anim>{t["h_perchi"]}</h2><p class="testo" data-anim>{e(t["perchi"])}</p></section>
 <section id="prezzo" class="prezzo"><div class="prezzo-card" data-anim><h2>{t["h_prezzo"]}</h2><p class="cifra">{PREZZO[lingua]}</p>
 <ul class="spunte">{punti}</ul><a class="bottone luccica" href="{link}">{t["compra"]}</a>
-<p class="garanzia">✓ {e(t["garanzia"])}</p><p class="piccolo">{e(t["prezzo_note"])}</p></div></section>
+<p class="piccolo">{e(t["prezzo_note"])}</p></div></section>
 <section><h2 data-anim>{t["h_faq"]}</h2><div class="faq">{faq}</div></section>
 </main>
 <div class="barra-acquisto" aria-hidden="true"><span>{e(t["titolo"])} · {PREZZO[lingua]}</span><a class="bottone" href="{link}" tabindex="-1">{t["compra"]}</a></div>
