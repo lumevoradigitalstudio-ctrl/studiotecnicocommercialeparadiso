@@ -191,6 +191,8 @@ def pagina(lingua, info, img, capitoli):
                    for k, (nome, rr) in enumerate(capitoli))
     punti = ''.join(f'<li>{e(p.format(**info))}</li>' for p in t['prezzo_punti'])
     faq = ''.join(f'<details data-anim><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q, a in t['faq'])
+    video = (f'<video data-video muted loop playsinline preload="none" poster="{pre}img/{img["sfondo"]}">'
+             f'<source src="{pre}video/{img["video"]}" type="video/mp4"></video>') if img.get('video') else ''
     alt = (f'<link rel="alternate" hreflang="it" href="{DOMINIO}/"><link rel="alternate" hreflang="en" href="{DOMINIO}/en/">'
            f'<meta property="og:image" content="{DOMINIO}/img/copertina-{lingua}.jpg">') if DOMINIO else ''
     return f'''<!DOCTYPE html>
@@ -202,7 +204,7 @@ def pagina(lingua, info, img, capitoli):
 <header class="barra"><span class="marchio">{EDITORE}</span><nav><a class="lingua" href="{t["altra_url"]}">{t["altra"]}</a>
 <a class="bottone piccolo-btn" href="{link}">{t["compra"]}</a></nav></header>
 <main>
-<section class="hero"><div class="sfondo" aria-hidden="true"><img src="{pre}img/{img["sfondo"]}" alt=""></div><div class="polvere" aria-hidden="true"></div>
+<section class="hero"><div class="sfondo" aria-hidden="true"><img src="{pre}img/{img["sfondo"]}" alt="">{video}</div><div class="polvere" aria-hidden="true"></div>
 <div class="hero-int"><div class="scena" data-tilt><div class="libro"><img class="fronte" src="{pre}img/{img["copertina"]}" alt="{e(t["titolo"])}" width="900" height="1273">
 <div class="dorso"></div><div class="taglio"></div></div></div>
 <div class="hero-testo"><p class="gancio">{e(t["gancio"])}</p><h1 class="titolo-anim">{e(t["titolo"])}</h1><p class="sotto">{e(t["sotto"])}</p>
@@ -251,6 +253,11 @@ def main():
         shutil.copy(S / f, OUT / f)
     piatti = [foto(principale(n), OUT / 'img' / f'piatto-{n:02d}.jpg', 640, 74) for n in PIATTI]
     sfondo = foto(principale(23), OUT / 'img' / 'sfondo.jpg', 1600, 70)  # diversa dalla copertina, che è già sul libro 3D
+    video = None
+    if (S / 'video' / 'hero.mp4').exists():  # video IA del hero (Higgsfield), già compresso: vedi STATO.md
+        (OUT / 'video').mkdir()
+        shutil.copy(S / 'video' / 'hero.mp4', OUT / 'video' / 'hero.mp4')
+        video = 'hero.mp4'
     for lingua, t in T.items():
         pdf = R / 'output' / t['pdf']
         info = dict(p=len(PdfReader(pdf).pages), anno=2026)
@@ -263,7 +270,7 @@ def main():
             capitoli[-1][1].append((fm[chiavi[0]], fm[chiavi[2]]))
         pagine = pagine_pdf(pdf, sorted(set(SFOGLIA)), OUT / 'img', lingua)
         base = OUT if lingua == 'it' else OUT / 'en'  # il PDF omaggio sta accanto alla sua pagina
-        img = dict(sfondo=sfondo, copertina=pagine[1], pagine=pagine, piatti=piatti,
+        img = dict(sfondo=sfondo, video=video, copertina=pagine[1], pagine=pagine, piatti=piatti,
                    capitoli=[foto(principale(rr[len(rr) // 2][0]), OUT / 'img' / f'capitolo-{k + 1}.jpg', 640, 74)
                              for k, (_, rr) in enumerate(capitoli)],
                    omaggio=omaggio(pdf, base / ('ricetta-omaggio.pdf' if lingua == 'it' else 'free-recipe.pdf')))

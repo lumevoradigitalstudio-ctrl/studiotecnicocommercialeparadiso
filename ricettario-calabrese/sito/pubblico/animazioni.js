@@ -12,6 +12,14 @@
       [...p].map(c => `<span class="lettera" style="--k:${k++}">${c}</span>`).join('') + '</span>').join(' ');
   }
 
+  // video del hero: parte solo se il movimento è ammesso; fino ad allora resta la foto
+  const video = document.querySelector('[data-video]');
+  if (video && !fermo) {
+    video.preload = 'auto';
+    video.addEventListener('playing', () => video.classList.add('pronto'), { once: true });
+    video.play().catch(() => {});
+  }
+
   // polvere nella luce del hero
   const polvere = document.querySelector('.polvere');
   if (polvere && !fermo) {
