@@ -36,7 +36,7 @@ T = {
     sotto='60 ricette calabresi di casa, dai salumi ai dolci delle feste',
     gancio='I sapori di casa, anche lontano da casa.',
     meta='Ricettario digitale in PDF: 60 ricette di cucina calabrese di casa, con salumi, conserve sicure, pasta fatta a mano, secondi e dolci delle feste.',
-    altra='English', altra_url='en/', compra='Acquista il PDF', omaggio='Scarica gratis una ricetta',
+    altra='English', altra_url='en/index.html', compra='Acquista il PDF', omaggio='Scarica gratis una ricetta',
     anteprima_txt='Anteprima del sito: il pagamento non è ancora attivo.',
     lead='La cucina di casa calabrese spiegata passo per passo: dai giorni del maiale alle conserve di fine estate, dalla pasta tirata a mano ai dolci di Natale e di Pasqua.',
     garanzia='File che non si apre o non arriva? Lo sistemiamo o ti rimborsiamo.',
@@ -64,7 +64,7 @@ T = {
     sotto='60 Calabrian home recipes, from cured meats to festive sweets',
     gancio='The flavours of Calabria, in your own kitchen.',
     meta='Digital PDF cookbook: 60 Calabrian home recipes, with home-cured meats, safe preserves, hand-made pasta, main courses and festive sweets. US measures included.',
-    altra='Italiano', altra_url='../', compra='Buy the PDF', omaggio='Download a free recipe',
+    altra='Italiano', altra_url='../index.html', compra='Buy the PDF', omaggio='Download a free recipe',
     anteprima_txt='Site preview: payment is not active yet.',
     lead='Southern Italian home cooking from Calabria, explained step by step: from pork-curing days to late-summer preserves, from hand-rolled pasta to Christmas and Easter sweets.',
     garanzia="File won't open or didn't arrive? We'll fix it or refund you.",
@@ -238,7 +238,7 @@ def condizioni(lingua, info):
     return f'''<!DOCTYPE html>
 <html lang="{lingua}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{t["h_cond"]} — {html.escape(t["titolo"])}</title><meta name="robots" content="noindex"><link rel="stylesheet" href="{pre}stile.css"></head>
-<body><header class="barra"><a class="marchio" href="./">{EDITORE}</a></header>
+<body><header class="barra"><a class="marchio" href="index.html">{EDITORE}</a></header>
 <main class="legale"><h1>{t["h_cond"]}</h1>{corpo}</main>
 <footer><p>© {info["anno"]} {EDITORE}</p></footer></body></html>'''
 
