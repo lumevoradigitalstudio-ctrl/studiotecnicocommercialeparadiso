@@ -93,3 +93,22 @@ figcaption { font-size: 7.5pt; font-style: italic; color: var(--oliva); text-ali
 .ing-indice h3 { margin: 2.5mm 0 0.5mm; }
 .ing-indice ul { list-style: none; padding: 0; margin: 0; }
 .chiusura { break-before: page; page: vuota; text-align: center; padding-top: 90mm; }
+
+/* aperture di capitolo senza testo: immagine grande */
+.foto-apertura .foto { display: block; width: 100%; height: 150mm; object-fit: cover; }
+.foto-apertura .segnaposto { height: 150mm; }
+
+/* ricette compattate dallo script per non lasciare pagine con due righe */
+.liv1 .principale .foto, .liv1 .principale .segnaposto { height: 72mm; }
+.liv1 .passi .passo { width: 46mm; height: 46mm; }
+.liv1 .note { font-size: 9.2pt; }
+.liv2 .principale .foto, .liv2 .principale .segnaposto, .liv3 .principale .foto, .liv3 .principale .segnaposto { height: 60mm; }
+.liv2, .liv3 { line-height: 1.3; }
+.liv2 h2, .liv3 h2 { margin: 3.5mm 0 1.5mm; }
+.liv2 li, .liv3 li { margin-bottom: 0.2mm; }
+.liv2 .passi .passo { width: 42mm; height: 42mm; }
+.liv2 .note, .liv3 .note { font-size: 9pt; }
+/* liv3: i passaggi illustrati riempiono l'ultima pagina */
+.passi.in-fondo { margin-top: 6mm; }
+.passi.in-fondo .riga { gap: 5mm; }
+.passi.in-fondo .passo { width: 55mm; height: 55mm; }

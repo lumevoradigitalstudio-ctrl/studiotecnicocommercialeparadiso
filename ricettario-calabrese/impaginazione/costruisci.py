@@ -11,7 +11,10 @@ diventano riquadri segnaposto con il nome del file.
 """
 import html, pathlib, re, sys, unicodedata
 
+import io
+
 import markdown
+from pypdf import PdfReader
 import yaml
 from weasyprint import HTML
 
@@ -131,7 +134,8 @@ def immagine(rel, classe, c):
     return f'<div class="{classe} segnaposto"><span>{c["mancante"]}<br>{html.escape(p.name)}</span></div>'
 
 
-def ricetta(fm, corpo, c):
+def ricetta(fm, corpo, c, liv=0):
+    """liv 1-2: ricetta compattata per non lasciare una pagina con due righe; liv 3: i passaggi illustrati vanno in fondo."""
     n = fm[c['num']]
     slug = next((R / 'ricette' / 'it').glob(f'{n:02d}-*.md')).stem  # le immagini usano i nomi IT
     base = f'immagini/{slug}/{n:02d}'
@@ -148,8 +152,23 @@ def ricetta(fm, corpo, c):
     note = ''.join(f'<section>{s}</section>' for s in sezioni[i_met + 1:])
     principale = (f'<figure class="principale">{immagine(base + "-principale.jpg", "foto", c)}'
                   f'<figcaption>{c["didascalia"]}</figcaption></figure>')
-    return (f'<article class="ricetta">{principale}{testa}{corpo_html}{striscia}'
+    if liv >= 3:
+        return (f'<article class="ricetta liv{liv}">{principale}{testa}{corpo_html}'
+                f'<div class="note">{note}</div>{striscia.replace("class=\"passi\"", "class=\"passi in-fondo\"")}</article>')
+    return (f'<article class="ricetta liv{liv}">{principale}{testa}{corpo_html}{striscia}'
             f'<div class="note">{note}</div></article>')
+
+
+def corte(pdf, starts, soglia=400):
+    """Numeri delle ricette che finiscono su una pagina con poche righe.
+    starts: [(indice pagina iniziale, numero ricetta o None)] in ordine; None = altro contenuto."""
+    pagine = PdfReader(io.BytesIO(pdf)).pages
+    out = set()
+    for (inizio, n), (dopo, _) in zip(starts, starts[1:]):
+        ultima = dopo - 1
+        if n and ultima > inizio and len((pagine[ultima].extract_text() or '').strip()) < soglia:
+            out.add(n)
+    return out
 
 
 def ingredienti_md(corpo, c):
@@ -212,9 +231,14 @@ def costruisci(lingua, salva_html=False):
         apertura = aperture.get(nome)
         testo_ap = re.sub(r'<h1>.*?</h1>', '', md(apertura), count=1) if apertura else ''
         testo_ap = testo_ap.replace('<code>', '<span class="verif">').replace('</code>', '</span>')
+        if not testo_ap:  # apertura senza testo: un'immagine grande di una ricetta del capitolo
+            n_img = rr[len(rr) // 2][0][c['num']]
+            slug = next((R / 'ricette' / 'it').glob(f'{n_img:02d}-*.md')).stem
+            testo_ap = (f'<figure class="foto-apertura">{immagine(f"immagini/{slug}/{n_img:02d}-principale.jpg", "foto", c)}'
+                        f'<figcaption>{c["didascalia"]}</figcaption></figure>')
         out.append(f'<section class="apertura"><p class="numcap">{k}</p>'
                    f'<h1 class="capitolo" id="cap{k}">{html.escape(nome)}</h1>{testo_ap}</section>')
-        out.extend(ricetta(fm, corpo, c) for fm, corpo in rr)
+        out.extend(('RICETTA', fm, corpo) for fm, corpo in rr)
 
     # glossario: solo nomi dialettali senza dubbi aperti
     gloss = []
@@ -243,14 +267,31 @@ def costruisci(lingua, salva_html=False):
     out.append(f'<section class="chiusura">{testo("chiusura")}</section>')
 
     css = (pathlib.Path(__file__).parent / 'stile.css').as_uri()
-    doc = (f'<!DOCTYPE html><html lang="{lingua}"><head><meta charset="utf-8"><title>{c["titolo"]}</title>'
-           f'<meta name="author" content="{AUTORE or EDITORE}"><link rel="stylesheet" href="{css}"></head>'
-           f'<body data-x="{c["titolo"]}">{"".join(out)}</body></html>')
+    livelli = {}
+    for giro in range(5):  # compatta solo le ricette che lasciano una pagina con poche righe, al massimo 3 livelli
+        corpo_doc = ''.join(ricetta(x[1], x[2], c, livelli.get(x[1][c['num']], 0)) if isinstance(x, tuple) else x
+                            for x in out)
+        doc = (f'<!DOCTYPE html><html lang="{lingua}"><head><meta charset="utf-8"><title>{c["titolo"]}</title>'
+               f'<meta name="author" content="{AUTORE or EDITORE}"><link rel="stylesheet" href="{css}"></head>'
+               f'<body data-x="{c["titolo"]}">{corpo_doc}</body></html>')
+        reso = HTML(string=doc, base_url=str(R)).render()
+        pdf = reso.write_pdf()
+        starts = sorted((i, int(a[1:]) if re.fullmatch(r'r\d\d', a) else None)
+                        for i, pg in enumerate(reso.pages) for a in pg.anchors
+                        if re.fullmatch(r'r\d\d|cap\d+|glossario', a))
+        da_fare = {n for n in corte(pdf, starts) if livelli.get(n, 0) < 3}
+        if not da_fare:
+            break
+        for n in da_fare:
+            livelli[n] = livelli.get(n, 0) + 1
+    rimaste = sorted(corte(pdf, starts))
     dest = R / 'output'
     dest.mkdir(exist_ok=True)
     if salva_html:
         (dest / f'{lingua}.html').write_text(doc, encoding='utf-8')
-    HTML(string=doc, base_url=str(R)).write_pdf(dest / c['file'])
+    (dest / c['file']).write_bytes(pdf)
+    print(f'  impaginazione: {giro + 1} giri, ricette compattate {len(livelli)}, '
+          f'con passaggi in fondo {sum(v >= 3 for v in livelli.values())}, pagine corte rimaste {rimaste}')
     mancanti = len(re.findall(r'class="(?:foto|passo) segnaposto"', doc))
     print(f'{c["file"]}: {len(ricette)} ricette, {len(capitoli)} capitoli, voci di glossario {len(gloss)}, '
           f'immagini segnaposto {mancanti}')
