@@ -22,8 +22,8 @@ EDITORE = 'A Putiga – Sapori di Calabria'
 # mostra una fascia "anteprima" e i pulsanti portano alla sezione prezzo.
 LINK = {'it': '', 'en': ''}
 PREZZO = {'it': '12,90 €', 'en': '$14.99'}  # proposta: decidi tu
-DATI_VENDITORE = '[Ragione sociale, indirizzo, Partita IVA, email — da completare]'
-DOMINIO = ''  # es. 'https://www.esempio.it' — serve per i link tra le lingue e l'anteprima social
+DATI_VENDITORE = 'A Putiga di Giovanni Masi · Via C. Colombo, 88046 Lamezia Terme (CZ) · P. IVA 03856550797 · Tel. 376 0512942'  # manca l'email di contatto
+DOMINIO = 'https://ricettario.aputiga.it'  # sottodominio da creare sul pannello del dominio aputiga.it
 # ---------------------------------------------------------------------------------------------
 
 SFOGLIA = [1, 10, 11, 21, 22, 70, 71]  # pagine del PDF nel libro da sfogliare (fronte/retro dei fogli)
