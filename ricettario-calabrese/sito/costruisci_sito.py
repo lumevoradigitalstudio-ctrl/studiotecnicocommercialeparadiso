@@ -192,7 +192,7 @@ def pagina(lingua, info, img, capitoli):
     punti = ''.join(f'<li>{e(p.format(**info))}</li>' for p in t['prezzo_punti'])
     faq = ''.join(f'<details data-anim><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q, a in t['faq'])
     video = (f'<video data-video muted loop playsinline preload="none" poster="{pre}img/{img["sfondo"]}">'
-             f'<source src="{pre}video/{img["video"]}" type="video/mp4"></video>') if img.get('video') else ''
+             f'<source src="{pre}video/hero.mp4" type="video/mp4"><source src="{pre}video/hero.webm" type="video/webm"></video>') if img.get('video') else ''
     alt = (f'<link rel="alternate" hreflang="it" href="{DOMINIO}/"><link rel="alternate" hreflang="en" href="{DOMINIO}/en/">'
            f'<meta property="og:image" content="{DOMINIO}/img/copertina-{lingua}.jpg">') if DOMINIO else ''
     return f'''<!DOCTYPE html>
@@ -256,7 +256,8 @@ def main():
     video = None
     if (S / 'video' / 'hero.mp4').exists():  # video IA del hero (Higgsfield), già compresso: vedi STATO.md
         (OUT / 'video').mkdir()
-        shutil.copy(S / 'video' / 'hero.mp4', OUT / 'video' / 'hero.mp4')
+        for f in ('hero.mp4', 'hero.webm'):
+            shutil.copy(S / 'video' / f, OUT / 'video' / f)
         video = 'hero.mp4'
     for lingua, t in T.items():
         pdf = R / 'output' / t['pdf']
