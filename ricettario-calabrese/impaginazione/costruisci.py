@@ -117,15 +117,15 @@ def ridotta(p, lato):
         with Image.open(p) as im:
             im = im.convert('RGB')
             im.thumbnail((lato, lato))
-            im.save(q, 'JPEG', quality=82, optimize=True)
+            im.save(q, "JPEG", quality=76, optimize=True, progressive=True)
     return q
 
 
 def immagine(rel, classe, c):
     p = R / rel
     if p.exists():
-        # principale 180 mm, passaggi 56 mm: circa 250 dpi
-        return f'<img class="{classe}" src="{ridotta(p, 1800 if classe == "foto" else 600).as_uri()}" alt="">'
+        # principale 180 mm, passaggi 56 mm: circa 225-250 dpi
+        return f'<img class="{classe}" src="{ridotta(p, 1600 if classe == "foto" else 560).as_uri()}" alt="">'
     return f'<div class="{classe} segnaposto"><span>{c["mancante"]}<br>{html.escape(p.name)}</span></div>'
 
 

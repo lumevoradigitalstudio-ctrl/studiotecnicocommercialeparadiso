@@ -9,7 +9,7 @@ Ultimo aggiornamento: 2026-11-23
 | 1 — Ricerca e scrittura IT | ✅ 60/60 bozze scritte (12 blocchi). **STOP: revisione dell'utente** prima della Fase 2. Restano 133 voci `[DA VERIFICARE]` |
 | 2 — Edizione EN | ✅ 60/60 ricette + apertura del capitolo salumi in `ricette/en/`. Conversioni US aggiunte e controllate da script (0 errori). Struttura: 120/120 OK |
 | 3 — Immagini | ✅ 240 immagini IA generate con Higgsfield (238 del piano: 60 principali 2k + 178 passaggi 1k, più le 2 prove della 29). Tutte in `immagini/registro.csv` con link e prompt. **I file non sono nel repository:** il proxy di questa sessione blocca il sito delle immagini. Da scaricare sul proprio computer con `python3 immagini/scarica_immagini.py` |
-| 4 — Impaginazione ed esportazione | 🟡 bozza pronta: `output/Ricettario-Calabrese-A-Putiga-IT.pdf` (166 pagine) e `output/Calabrian-Cookbook-A-Putiga-EN.pdf` (168). Copertina, colophon e crediti, indice cliccabile con numeri di pagina, introduzione, aperture di capitolo, 60 ricette su pagina nuova, glossario, conversioni, indice per ingredienti, chiusura. Caratteri incorporati, 75 segnalibri. **Mancano le immagini** (240 riquadri segnaposto) e il nome dell'autore. Si rifà con `python3 impaginazione/costruisci.py` |
+| 4 — Impaginazione ed esportazione | ✅ con immagini: `output/Ricettario-Calabrese-A-Putiga-IT.pdf` (166 pagine, 31 MB) e `output/Calabrian-Cookbook-A-Putiga-EN.pdf` (168 pagine, 31 MB). Tutte le 240 immagini scaricate in `immagini/NN-nome/` e controllate (si aprono tutte). Manca solo il nome dell'autore. EPUB non fatto (facoltativo). Si rifà con `python3 impaginazione/costruisci.py` |
 | 5 — Controllo qualità | non iniziata |
 | 6 — Kit di vendita | non iniziata |
 
@@ -34,7 +34,6 @@ Controllo automatico: `python3 controlli/controlla_ricette.py`.
 - Conferma di pubblico e formato (A4 verticale).
 - Il marchio A Putiga resta come editore, in copertina e nei colori? ("A Putiga lasciala stare": per ora ho tolto prodotti, box e link)
 - Eventuali foto vere in `foto/` (ora è vuota).
-- Le immagini scaricate con `scarica_immagini.py` (servono per l'impaginazione della Fase 4).
 
 ## [DA VERIFICARE]
 Molti punti vengono dalla stessa causa: i siti ufficiali (iss.it, salute.gov.it, eur-lex, regione.calabria.it, masaf) sono bloccati dal proxy di questa sessione e l'utente ha rifiutato di sbloccarli. I numeri vengono da sintesi secondarie e vanno confrontati con i testi originali prima della vendita.
@@ -65,6 +64,7 @@ Molti punti vengono dalla stessa causa: i siti ufficiali (iss.it, salute.gov.it,
 | Presenza nell'elenco PAT | tutte | Confermare per ogni piatto in Fase 1 |
 
 ## Decisioni prese
+- 24/11 (Fase 4): l'utente non era al computer: con il suo ok ho creato l'ambiente "ricettario-calabrese" che sblocca solo d8j0ntlcm91z4.cloudfront.net, e ho scaricato le 240 immagini (0 errori). Nel PDF: principali 1600 px, passaggi 560 px, JPEG 76, per stare a 31 MB.
 - 23/11 (Fase 4): installati WeasyPrint 70 e Python-Markdown 3.11 (ok dell'utente). Caratteri EB Garamond e IM Fell English SC scaricati da Google Fonts (OFL) in `impaginazione/font/`.
 - 23/11 (Fase 4): il glossario si genera dai nomi dialettali delle ricette, esclusi quelli con [DA VERIFICARE] (24 voci). Si allungherà man mano che i nomi vengono verificati.
 - 23/11 (Fase 4): l'indice per ingredienti cerca 34 ingredienti nelle sole liste ingredienti. Controllato: IT ed EN danno le stesse ricette per tutte le 34 voci.
