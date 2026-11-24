@@ -6,7 +6,7 @@ Prima rigenera i PDF (impaginazione/costruisci.py): pagine, peso, anteprime e ri
 Il sito non usa cookie, statistiche né servizi esterni: si carica così com'è su qualsiasi hosting statico.
 Le animazioni sono in sito/animazioni.js e sito/stile.css e si spengono con "riduci movimento" del sistema.
 """
-import html, pathlib, re, shutil, subprocess, sys, tempfile
+import html, os, pathlib, re, shutil, subprocess, sys, tempfile
 
 import yaml
 from PIL import Image
@@ -20,9 +20,14 @@ EDITORE = 'A Putiga – Sapori di Calabria'
 # --- DA COMPLETARE prima di mettere il sito online -------------------------------------------
 # Link di acquisto della piattaforma (Payhip, Lemon Squeezy, Gumroad...): finché è vuoto il sito
 # mostra una fascia "anteprima" e i pulsanti portano alla sezione prezzo.
-LINK = {'it': '', 'en': ''}
-PREZZO = {'it': '12,90 €', 'en': '$14.99'}  # proposta: decidi tu
-DATI_VENDITORE = 'A Putiga di Giovanni Masi · Via C. Colombo, 88046 Lamezia Terme (CZ) · P. IVA 03856550797 · Tel. 376 0512942'  # manca l'email di contatto
+LINK = {'it': 'https://buy.stripe.com/14A6oJenE6TC1bEdg11sQ04', 'en': 'https://buy.stripe.com/7sYfZjenEcdW2fI2Bn1sQ05'}  # Stripe (account A Putiga / Pizzeria 400 gradi)
+# pagine di download nascoste: dopo il pagamento Stripe rimanda qui (vedi after_completion dei link)
+# shortcut: chi conosce il link può condividerlo; se diventa un problema, serve un download firmato lato server
+DOWNLOAD = {'it': 'aJgCJbdDj9QL', 'en': '0zorJh5ufDXr'}
+PREZZO = {'it': '12,90 €', 'en': '$14.99'}
+EMAIL = os.environ.get('CONTATTO_EMAIL', '')  # l'email di contatto la imposta il titolare: CONTATTO_EMAIL=... python3 sito/costruisci_sito.py
+CONTATTO = 'Tel. 376 0512942' + (f' · {EMAIL}' if EMAIL else '')
+DATI_VENDITORE = 'A Putiga di Giovanni Masi · Via Cristoforo Colombo 80, 88046 Lamezia Terme (CZ) · P. IVA 03856550797 · ' + CONTATTO
 DOMINIO = 'https://ricettario.aputiga.it'  # sottodominio da creare sul pannello del dominio aputiga.it
 # ---------------------------------------------------------------------------------------------
 
@@ -50,7 +55,7 @@ T = {
             ('Glossario e indici', 'Indice cliccabile, glossario dei nomi in dialetto, tabella delle conversioni e indice per ingredienti.')],
     perchi='Per chi è nato in Calabria e vive lontano. Per chi ha nonni calabresi e vuole rifare i piatti di casa. Per chi ama la cucina regionale italiana e vuole ricette precise, senza scorciatoie e senza segreti inventati.',
     prezzo_punti=['PDF a colori, {p} pagine, più la versione EPUB', 'Leggibile su telefono, tablet e computer', 'Stampabile in A4 per uso personale', 'Download subito dopo il pagamento'],
-    prezzo_note='Pagamento sicuro sulla piattaforma di vendita.',
+    prezzo_note='Pagamento sicuro con Stripe: carta, Apple Pay, Google Pay e altri metodi.',
     faq=[('Come ricevo il libro?', 'Dopo il pagamento ricevi un link per scaricare il PDF, anche via email. Puoi leggerlo su computer, tablet e telefono.'),
          ('Posso stamparlo?', 'Sì, è impaginato in formato A4, per uso personale.'),
          ('Le ricette sono originali calabresi?', 'Certo. Sono piatti della cucina di casa calabrese, scelti zona per zona, dal Vibonese alla Sila, da Reggio al Cosentino, e controllati uno per uno su fonti calabresi: disciplinari DOP e IGP, elenchi dei prodotti tradizionali, testi di cucina regionale. I testi sono scritti da zero per questo libro.'),
@@ -77,7 +82,7 @@ T = {
             ('Glossary and indexes', 'Clickable contents, a glossary of dialect names, conversion tables and an index by ingredient.')],
     perchi='For Italian-Americans and anyone with Calabrian roots who wants to cook the dishes of home. For every cook who loves Italian regional food and wants precise recipes, with no shortcuts and no made-up secrets.',
     prezzo_punti=['Full-colour PDF, {p} pages, plus the EPUB edition', 'Read it on phone, tablet or computer', 'Printable on A4 for personal use', 'Instant download after payment'],
-    prezzo_note='Secure payment on the sales platform. Sales tax or VAT is calculated at checkout.',
+    prezzo_note='Secure payment with Stripe: card, Apple Pay, Google Pay and more.',
     faq=[('How do I get the book?', 'After payment you get a link to download the PDF, also by email. Read it on a computer, tablet or phone.'),
          ('Can I print it?', 'Yes, it is laid out on A4 pages, for personal use.'),
          ('Are these authentic Calabrian recipes?', 'Of course. They are Calabrian home-cooking dishes, chosen area by area, from Vibo Valentia to the Sila mountains, from Reggio to Cosenza, and checked one by one against Calabrian sources: PDO and PGI product specifications, official lists of traditional foods, regional cookbooks. The texts were written from scratch for this book.'),
@@ -241,6 +246,31 @@ def condizioni(lingua, info):
 <footer><p>© {info["anno"]} {EDITORE}</p></footer></body></html>'''
 
 
+SCARICA = {
+    'it': ('Grazie per il tuo acquisto!', 'Scarica il tuo libro qui sotto. Salva questa pagina: il link è solo tuo, non condividerlo.', 'Per qualsiasi problema: '),
+    'en': ('Thank you for your purchase!', 'Download your book below. Bookmark this page: the link is just for you, please do not share it.', 'Any problem? Contact us: '),
+}
+
+
+def pagine_download():
+    """Una cartella nascosta per edizione con PDF ed EPUB."""
+    file = {l: [T[l]['pdf'], T[l]['pdf'].replace('.pdf', '.epub')] for l in ('it', 'en')}
+    for chiave in ('it', 'en'):
+        cart = OUT / 'd' / DOWNLOAD[chiave]
+        cart.mkdir(parents=True)
+        voci = ''
+        for f in file[chiave]:
+            shutil.copy(R / 'output' / f, cart / f)
+            voci += f'<li><a class="bottone" href="{f}" download>{f.rsplit(".", 1)[1].upper()} · {html.escape(T[chiave]["titolo"])}</a></li>'
+        lang = chiave
+        tit, testo, aiuto = SCARICA[lang]
+        (cart / 'index.html').write_text(f'''<!DOCTYPE html><html lang="{lang}"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow">
+<title>{tit}</title><link rel="stylesheet" href="../../stile.css"></head><body><main class="legale scarica"><h1>{tit}</h1><p>{testo}</p>
+<ul class="download">{voci}</ul><p class="piccolo">{aiuto}{html.escape(CONTATTO)}</p></main></body></html>''', encoding='utf-8')
+    (OUT / 'robots.txt').write_text('User-agent: *\nDisallow: /d/\n', encoding='utf-8')
+
+
 def main():
     if OUT.exists():
         shutil.rmtree(OUT)  # cartella generata: si rifà ogni volta
@@ -277,6 +307,7 @@ def main():
         (base / 'index.html').write_text(pagina(lingua, info, img, capitoli), encoding='utf-8')
         (base / t['legali_url']).write_text(condizioni(lingua, info), encoding='utf-8')
         print(f'{lingua}: {info["p"]} pagine, link di acquisto {"OK" if LINK[lingua] else "MANCANTE"}')
+    pagine_download()
     peso = sum(f.stat().st_size for f in OUT.rglob('*') if f.is_file())
     print(f'sito in {OUT.relative_to(R)}: {peso / 1e6:.1f} MB')
 

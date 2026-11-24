@@ -4,9 +4,9 @@ Testi scritti con la skill direct-response-copy. Regole rispettate: niente recen
 
 ---
 
-## 1. Lemon Squeezy (pagina di pagamento del tuo sito)
+## 1. Sito (pagamento con Stripe) — già fatto
 
-Crea **3 prodotti** per lingua: singolo IT, singolo EN, bundle IT + EN.
+I link di pagamento Stripe sono creati e collegati ai pulsanti del sito (edizione italiana 12,90 €, edizione inglese $14.99). I testi qui sotto servono come descrizione di riferimento e per le altre piattaforme.
 
 ### Italiano
 **Nome:** Il libro di cucina della Putìga — 60 ricette calabresi di casa (PDF + EPUB)
@@ -43,14 +43,6 @@ Crea **3 prodotti** per lingua: singolo IT, singolo EN, bundle IT + EN.
 
 **Files:** `Calabrian-Cookbook-A-Putiga-EN.pdf` and `Calabrian-Cookbook-A-Putiga-EN.epub`
 
-### Bundle IT + EN
-**Nome / Name:** Il libro di cucina della Putìga + The Putìga Cookbook — edizione italiana e inglese
-**Prezzo / Price:** 17,90 € / $19.99
-**Descrizione:** la descrizione italiana o inglese qui sopra, più questa riga in cima:
-> Le due edizioni insieme: per chi in famiglia cucina in italiano e chi in inglese. / Both editions together: for the family members who cook in Italian and those who cook in English.
-
-**File:** i 4 file (2 PDF + 2 EPUB).
-
 ---
 
 ## 2. Etsy (in inglese: il pubblico è soprattutto americano)
@@ -61,13 +53,13 @@ Crea **3 prodotti** per lingua: singolo IT, singolo EN, bundle IT + EN.
 **Tags (13, max 20 characters each):**
 `calabrian recipes`, `italian cookbook`, `printable cookbook`, `recipe ebook`, `nduja`, `homemade pasta`, `italian recipes pdf`, `southern italy`, `italian gift`, `cured meat recipes`, `italian christmas`, `digital cookbook`, `italian american`
 
-**Description:** usa la descrizione inglese di Lemon Squeezy, poi aggiungi:
+**Description:** usa la descrizione inglese qui sopra, poi aggiungi:
 > **How it works:** this is a digital download. No physical item will be shipped. After purchase you can download the PDF and EPUB from your Etsy account.
 >
 > **Note:** the illustrations in this book were created with the help of AI. The recipes and texts were written for this book.
 
 **Category:** quella dei ricettari / libri di cucina che Etsy propone per i download digitali.
-**Type:** Digital (file da scaricare). **Price:** $14.99 (bundle: $19.99, annuncio separato).
+**Type:** Digital (file da scaricare). **Price:** $14.99.
 **Photos (in quest'ordine):** `libro-3d-en.jpg`, `doppia-pagina-en.jpg`, `anteprima-ricetta-en.jpg`, `capitoli-en.jpg`
 **AI:** Etsy chiede di indicare se l'articolo è fatto con l'aiuto dell'IA: rispondi sì (illustrazioni). Verifica l'opzione al momento del caricamento.
 

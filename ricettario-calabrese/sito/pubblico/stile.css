@@ -194,3 +194,7 @@ footer p { margin: .2rem; }
   [data-anim] { opacity: 1; transform: none; }
   .polvere { display: none; }
 }
+
+/* pagine di download */
+.download { list-style: none; padding: 0; display: grid; gap: .8rem; margin: 1.5rem 0; }
+.download .bottone { display: block; text-align: center; font-size: 1.05rem; }
