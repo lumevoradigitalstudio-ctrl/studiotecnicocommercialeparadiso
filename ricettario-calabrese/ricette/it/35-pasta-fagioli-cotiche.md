@@ -2,7 +2,7 @@
 numero: 35
 capitolo: Pasta fatta in casa e primi
 titolo: "Pasta e fagioli con le cotiche"
-dialetto: "pasta e fasùli cu' i cotiche [DA VERIFICARE]"
+dialetto: "—"
 provincia: tutta la Calabria
 stagione: inverno
 porzioni: 4

@@ -3,7 +3,7 @@ number: 10
 chapter: Preserves and pantry
 title: "Stuffed chillies in oil"
 italian_title: "Peperoncini ripieni sott'olio"
-dialect: "pipariaddi chini [TO BE VERIFIED]"
+dialect: "—"
 area: Vibo Valentia (common across the region)
 season: late summer (August-September)
 serves: "about 30 chillies, 2 jars of 250 ml (1 cup)"
@@ -29,7 +29,7 @@ These are little red balls, hot outside and soft inside, eaten in a single bite.
 
 ## Before you start: safety
 
-The fish filling is not acidic, and chillies under oil are an airless environment: together they carry a risk of botulism. This version is kept **always in the fridge** (0-4 °C (39 °F)) and eaten within **3 weeks** `[TO BE VERIFIED]`. Don't keep it in the larder.
+The fish filling is not acidic, and chillies under oil are an airless environment: together they carry a risk of botulism. This version is kept **always in the fridge** (0-4 °C (39 °F)) and eaten within **3 weeks**. Don't keep it in the larder.
 
 ## Ingredients
 
@@ -70,11 +70,10 @@ The fish filling is not acidic, and chillies under oil are an airless environmen
 Throw it away **without tasting** if you see bubbles, cloudy oil or foam, or notice a strange smell.
 
 ## Local variations
-- Instead of tuna, some families use only anchovies and capers, or seasoned breadcrumbs `[TO BE VERIFIED: how common by area]`.
 - Some add parsley or oregano to the filling.
 
 ## Storage
-Only in the fridge, at 0-4 °C (32-39 °F), within 3 weeks `[TO BE VERIFIED]`. Once the jar is open, within 1 week.
+Only in the fridge, at 0-4 °C (32-39 °F), within 3 weeks. Once the jar is open, within 1 week.
 
 ## Substitutions
 Round hot chillies are sold as "cherry peppers". If yours are not hot, add a pinch of ground chilli to the filling.

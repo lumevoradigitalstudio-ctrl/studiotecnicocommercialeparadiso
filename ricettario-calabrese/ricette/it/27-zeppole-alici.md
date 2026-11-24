@@ -2,7 +2,7 @@
 numero: 27
 capitolo: Pane e lievitati
 titolo: "Zeppole con le alici"
-dialetto: "zippule, crispelli [DA VERIFICARE: nomi per zona]"
+dialetto: "—"
 provincia: Catanzaro e Vibo Valentia (diffuse in tutta la regione)
 stagione: "vigilia dell'Immacolata e Natale"
 porzioni: "circa 25 zeppole"
@@ -20,7 +20,7 @@ stato: bozza blocco 6
 
 # Zeppole con le alici
 
-*Zippule, crispelli · Catanzaro e Vibo Valentia · Immacolata e Natale*
+*Catanzaro e Vibo Valentia · Immacolata e Natale*
 
 Nelle sere della vigilia, prima dell'Immacolata e poi a Natale, in molte case calabresi si friggono le zeppole. Nel Catanzarese si chiamano *zippule*, altrove *crispelli* o *crispelle*. Sono fatte con una pasta lievitata così morbida che non si stende: si prende con le mani bagnate, si avvolge intorno a un filetto d'alice e si lascia cadere nell'olio bollente. Escono gonfie, dorate e irregolari, una diversa dall'altra. Sono la versione salata, più semplice, dei cuddrurieddri (ricetta 26): qui non si danno forme, e l'impasto è ancora più morbido. Ci sono famiglie che le fanno anche senza ripieno, solo con il sale.
 

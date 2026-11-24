@@ -3,7 +3,7 @@ number: 2
 chapter: Home-cured meats
 title: "Soppressata"
 italian_title: "Soppressata"
-dialect: "suppressata [TO BE VERIFIED]"
+dialect: "—"
 area: all of Calabria
 season: winter, pig-butchering time
 serves: "4-5 soppressate, about 1.3 kg (2.9 lb) cured (from 2 kg (4.4 lb) of mixture)"
@@ -34,7 +34,7 @@ Before you start, read the **safety rules** at the beginning of this chapter.
 **For 2 kg (4.4 lb) of mixture**
 - 1.8 kg (4 lb) lean pork leg and shoulder, sinews removed
 - 200 g (7 oz) firm back fat, that is 10%; the PDO specification allows 4 to 15%
-- 56 g (2 oz) salt in total, that is 2.8%, including the curing salt calculated as at the start of the chapter, limit 80 mg/kg `[TO BE VERIFIED: total salt percentage]`
+- 56 g (2 oz) salt in total, that is 2.8%, including the curing salt calculated as at the start of the chapter, limit 80 mg/kg
 - 6 g (0.2 oz) whole black peppercorns
 - 20-40 g (0.7-1½ oz) ground Calabrian chilli, sweet or hot
 - 0.5 g starter culture for cured sausages, or the dose on the pack
@@ -56,8 +56,8 @@ Before you start, read the **safety rules** at the beginning of this chapter.
 9. Tie the other end with twine, pulling hard. Prick any remaining air bubbles with a needle.
 10. Weigh each soppressata and write the weight on a tag.
 11. Hang the soppressate for 48 hours at 20-24 °C (68-75 °F) with humidity above 90%.
-12. Measure the pH: it must be 5.3 or lower `[TO BE VERIFIED: threshold]`. If it has not dropped within 72 hours, throw them away.
-13. Lay the soppressate in a single layer between the two boards, put the weight on top and leave them in a cool place for 24 hours `[TO BE VERIFIED: pressing time]`. They should flatten a little without splitting.
+12. Measure the pH: it must be 5.3 or lower. If it has not dropped within 72 hours, throw them away.
+13. Lay the soppressate in a single layer between the two boards, put the weight on top and leave them in a cool place for 24 hours. They should flatten a little without splitting.
 14. Tie them again in a net of string and hang them at 12-15 °C (54-59 °F) with 75-85% humidity.
 15. Weigh them every week. They are ready when they have lost 30-35% of their weight, usually after 7-10 weeks. The PDO specification requires at least 45 days.
 16. Cut the first soppressata. The slice should be compact and bright red, with the cubes of fat firmly attached to the meat.
@@ -72,10 +72,9 @@ Before you start, read the **safety rules** at the beginning of this chapter.
 
 ## Local variations
 - It is made **sweet** (sweet chilli) and **hot**: the hot one is darker.
-- Some families keep it under oil or lard after curing `[TO BE VERIFIED: safety and how common]`.
 
 ## Storage
-Whole: hung in a cool place or in the fridge, wrapped in paper, for 3-4 months `[TO BE VERIFIED]`. It can also be vacuum-packed. Once cut, cover the cut end with cling film and eat within 2-3 weeks.
+Whole: hung in a cool place or in the fridge, wrapped in paper, for 3-4 months. It can also be vacuum-packed. Once cut, cover the cut end with cling film and eat within 2-3 weeks.
 
 ## Substitutions
 Hog bung casings are sold by butchers and online sausage-making shops. If you can't find ground Calabrian chilli, mix sweet (unsmoked) paprika and cayenne pepper.

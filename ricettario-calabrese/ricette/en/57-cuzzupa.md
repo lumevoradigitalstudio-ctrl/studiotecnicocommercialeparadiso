@@ -3,7 +3,7 @@ number: 57
 chapter: Festive sweets
 title: "Cuzzupa (Easter bread with whole eggs)"
 italian_title: "Cuzzupa di Pasqua"
-dialect: "cuzzupa, cuddhura, cudduraci [TO BE VERIFIED: names by area]"
+dialect: "—"
 area: all of Calabria
 season: Easter
 serves: "2 large or 6 small cuzzupe"
@@ -23,7 +23,7 @@ status: draft EN block 10
 
 *Cuzzupa di Pasqua · cuzzupa, cuddhura · all of Calabria · Easter*
 
-Cuzzupa is the sweet bread of Easter. It is made with a soft, lemon-scented dough, shaped into a ring, a plait, a heart or a basket, and it carries one or more whole eggs in their shells, held in place by crossed strips of dough. The egg is the symbol of rebirth. In many families the eggs must be an odd number, and according to a popular tradition their number sent messages between engaged couples `[TO BE VERIFIED]`. The name changes from village to village, and so do the shapes. Cuzzupe are eaten at breakfast for days after Easter.
+Cuzzupa is the sweet bread of Easter. It is made with a soft, lemon-scented dough, shaped into a ring, a plait, a heart or a basket, and it carries one or more whole eggs in their shells, held in place by crossed strips of dough. The egg is the symbol of rebirth. The name changes from village to village, and so do the shapes. Cuzzupe are eaten at breakfast for days after Easter. Allow about four hours: the dough needs time to rise slowly.
 
 **Makes:** 2 large or 6 small cuzzupe · **Prep:** 40 minutes · **Cook:** 35 minutes · **Rest:** 2 hours 30 minutes-3 hours · **Total:** about 4 hours · **Difficulty:** medium
 
@@ -68,12 +68,11 @@ Cuzzupa is the sweet bread of Easter. It is made with a soft, lemon-scented doug
 - Don't open the oven in the first 20 minutes: the dough collapses.
 
 ## Local variations
-- With baking powder instead of yeast, for a more crumbly, biscuit-like cuzzupa `[TO BE VERIFIED: how common by area]`.
 - With aniseed in the dough.
 - The eggs baked in the cuzzupa are eaten hard-boiled, peeled.
 
 ## Storage
-In a food bag, for 3-4 days. The eggs baked in the bread should be eaten within 2 days, or kept in the fridge `[TO BE VERIFIED]`.
+In a food bag, for 3-4 days. The eggs baked in the bread should be eaten within 2 days, or kept in the fridge.
 
 ## Substitutions
 The ingredients are available everywhere. Instead of lard, butter.

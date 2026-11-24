@@ -3,7 +3,7 @@ number: 27
 chapter: Bread and leavened doughs
 title: "Anchovy zeppole (fried dough puffs)"
 italian_title: "Zeppole con le alici"
-dialect: "zippule, crispelli [TO BE VERIFIED: names by area]"
+dialect: "—"
 area: Catanzaro and Vibo Valentia (common across the region)
 season: "eve of the Immaculate Conception and Christmas"
 serves: "about 25 zeppole"

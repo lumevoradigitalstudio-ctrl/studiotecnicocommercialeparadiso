@@ -3,7 +3,7 @@ number: 17
 chapter: Antipasti and home cooking
 title: "Aubergine (eggplant) fritters"
 italian_title: "Polpette di melanzane"
-dialect: "purpetti 'i mulingiani [TO BE VERIFIED]"
+dialect: "—"
 area: all of Calabria
 season: summer (July-September)
 serves: "4 (about 20 fritters)"
@@ -23,7 +23,7 @@ status: draft EN block 3
 
 *Polpette di melanzane · purpetti 'i mulingiani · all of Calabria · summer*
 
-Aubergine polpette are the "meatballs" of those who had no meat. With aubergines from the garden, stale bread, an egg and pecorino you make a dish that is never missing from Calabrian homes in summer. It is listed among Calabria's traditional food products `[TO BE VERIFIED]`. The aubergines are cooked, squeezed dry, mixed and fried until golden outside and soft inside. They are eaten hot, warm or cold the next day, on their own, in a sandwich or simmered in tomato sauce. The only secret is to squeeze the aubergines well, because water makes them fall apart in the pan.
+Aubergine polpette are the "meatballs" of those who had no meat. With aubergines from the garden, stale bread, an egg and pecorino you make a dish that is never missing from Calabrian homes in summer. The aubergines are cooked, squeezed dry, mixed and fried until golden outside and soft inside. They are eaten hot, warm or cold the next day, on their own, in a sandwich or simmered in tomato sauce. The only secret is to squeeze the aubergines well, because water makes them fall apart in the pan.
 
 **Serves:** 4 (about 20 fritters) · **Prep:** 30 minutes · **Cook:** 35 minutes · **Rest:** 15 minutes · **Total:** 1 hour 20 minutes · **Difficulty:** easy
 

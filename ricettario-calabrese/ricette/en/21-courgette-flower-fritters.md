@@ -3,8 +3,8 @@ number: 21
 chapter: Antipasti and home cooking
 title: "Courgette (zucchini) flower fritters"
 italian_title: "Pitticelle di fiori di zucca"
-dialect: "pitticeddi [TO BE VERIFIED]"
-area: "Reggio Calabria [TO BE VERIFIED]"
+dialect: "—"
+area: "all of Calabria"
 season: summer (June-August)
 serves: "4 (about 16 fritters)"
 prep: 20 minutes
@@ -21,9 +21,9 @@ status: draft EN block 4
 
 # Courgette (zucchini) flower fritters
 
-*Pitticelle di fiori di zucca · Reggio Calabria · summer*
+*Pitticelle di fiori di zucca · all of Calabria · summer*
 
-In summer courgette plants fill with yellow flowers, and the ones that won't become courgettes end up in the kitchen. Pitticelle are soft, flat fritters made with a batter of flour and eggs, into which the flowers are torn, together with pecorino and parsley. They are fried by the spoonful and eaten straight away, hot, as an antipasto or a snack. The name *pitticelle*, "little pitte", is used for various savoury fritters, with vegetables or with anchovies `[TO BE VERIFIED]`. This recipe is the flower version, which lasts only a few weeks in summer.
+In summer courgette plants fill with yellow flowers, and the ones that won't become courgettes end up in the kitchen. Pitticelle are soft, flat fritters made with a batter of flour and eggs, into which the flowers are torn, together with pecorino and parsley. They are fried by the spoonful and eaten straight away, hot, as an antipasto or a snack. This recipe is the flower version, which lasts only a few weeks in summer. Pick the flowers in the morning, when they are fully open, and use them the same day.
 
 **Serves:** 4 (about 16 fritters) · **Prep:** 20 minutes · **Cook:** 20 minutes · **Rest:** 30 minutes · **Total:** 1 hour 10 minutes · **Difficulty:** easy
 
@@ -62,7 +62,6 @@ In summer courgette plants fill with yellow flowers, and the ones that won't bec
 - Don't leave the flowers wet: they thin the batter.
 
 ## Local variations
-- With fresh or salted anchovies instead of flowers `[TO BE VERIFIED: names and areas]`.
 - With grated courgettes, once the flowers are over.
 
 ## Storage

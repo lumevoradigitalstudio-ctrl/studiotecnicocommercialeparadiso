@@ -2,7 +2,7 @@
 numero: 53
 capitolo: Contorni
 titolo: "Parmigiana di melanzane alla calabrese"
-dialetto: "parmigiana 'i mulingiani [DA VERIFICARE]"
+dialetto: "—"
 provincia: tutta la Calabria
 stagione: "estate (luglio-settembre)"
 porzioni: 6

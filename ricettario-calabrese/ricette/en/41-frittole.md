@@ -67,7 +67,7 @@ Frittole are the dish of pig-butchering day around Reggio Calabria. The less pri
 - They are kept in their fat and reheated over the following days.
 
 ## Storage
-In the fridge, covered with their fat, for 5 days `[TO BE VERIFIED]`. Reheat in a pan over low heat.
+In the fridge, covered with their fat, for 5 days. Reheat in a pan over low heat.
 
 ## Substitutions
 Pork cuts can be ordered from the butcher, especially in winter. Otherwise use just ribs, rind and jowl.

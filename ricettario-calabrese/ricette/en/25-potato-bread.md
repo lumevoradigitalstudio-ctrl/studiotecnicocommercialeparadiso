@@ -3,7 +3,7 @@ number: 25
 chapter: Bread and leavened doughs
 title: "Potato bread"
 italian_title: "Pane di patate"
-dialect: "pani 'i patati [TO BE VERIFIED]"
+dialect: "—"
 area: Cosenza (Sila)
 season: autumn-winter
 serves: "1 loaf of about 1 kg (2.2 lb)"
@@ -64,7 +64,6 @@ On the Sila plateau, potatoes grow above a thousand metres, and they are so rich
 
 ## Local variations
 - The same dough makes potato focacce topped with tomato and oregano.
-- Some families add pieces of cracklings (recipe 06) to the dough `[TO BE VERIFIED]`.
 
 ## Storage
 In a paper or cloth bag for 4-5 days: it stays soft longer than ordinary bread. It can be frozen in slices.

@@ -32,7 +32,7 @@ Before you start, read the **safety rules** at the beginning of this chapter.
 ## Ingredients
 
 - 1 whole pork neck (capocollo or coppa), about 2 kg (4.4 lb), trimmed by the butcher
-- total salt equal to 2.8% of the meat's weight, that is 56 g (2 oz) per 2 kg (4.4 lb), including the curing salt calculated as at the start of the chapter, limit 65 mg/kg `[TO BE VERIFIED: total salt percentage]`
+- total salt equal to 2.8% of the meat's weight, that is 56 g (2 oz) per 2 kg (4.4 lb), including the curing salt calculated as at the start of the chapter, dose 65 mg/kg
 - 3 g ground black pepper, for salting
 - 250 ml (1 cup) red wine vinegar
 - 30 g (1 oz) coarsely ground black pepper, for the coating
@@ -71,7 +71,7 @@ Before you start, read the **safety rules** at the beginning of this chapter.
 - The coating can be black pepper only, or pepper and chilli.
 
 ## Storage
-Whole: hung in a cool place or in the fridge, wrapped in paper, for 4-6 months `[TO BE VERIFIED]`. It can also be vacuum-packed. Once cut, cover the cut end with cling film and eat within 3-4 weeks.
+Whole: hung in a cool place or in the fridge, wrapped in paper, for 4-6 months. It can also be vacuum-packed. Once cut, cover the cut end with cling film and eat within 3-4 weeks.
 
 ## Substitutions
 Capocollo is the same cut as Italian *coppa* or pork collar. Beef bungs are sold by butchers; otherwise use meat-curing cloth.

@@ -3,7 +3,7 @@ number: 7
 chapter: Preserves and pantry
 title: "Home-bottled tomato sauce"
 italian_title: "Salsa di pomodoro di casa"
-dialect: "'a sarsa [TO BE VERIFIED]"
+dialect: "—"
 area: all of Calabria
 season: August
 serves: "about 6 bottles of 500 ml (from 5 kg (11 lb) of tomatoes)"
@@ -30,7 +30,7 @@ In August, many Calabrian families set aside a day for the tomato sauce. Crates 
 ## Before you start: safety
 
 - Use only sound, ripe tomatoes, with no rotten or bruised parts.
-- Always add acid: **30 ml (2 tbsp) bottled lemon juice or 2.5 g citric acid for every litre of sauce** (USDA guidance). Some Italian sources give lower doses: this book uses the more cautious one `[TO BE VERIFIED against the ISS guidelines]`.
+- Always add acid: **30 ml (2 tbsp) bottled lemon juice or 2.5 g citric acid for every litre of sauce** (USDA guidance). Some Italian sources give lower doses: this book uses the more cautious one.
 - Use undamaged bottles or jars and **new caps or lids** every time.
 
 ## Ingredients
@@ -76,10 +76,9 @@ Throw it away **without tasting** if the cap is bulging, if you see bubbles or f
 
 ## Local variations
 - In many homes the tomatoes are blanched whole before milling, instead of cooked in pieces.
-- In the past the bottles were boiled all together in a large drum over a wood fire. The principle is the same, but the times must be respected `[TO BE VERIFIED]`.
 
 ## Storage
-- Closed bottles: in a cool, dark place until the following summer `[TO BE VERIFIED: shelf life given by the ISS]`.
+- Closed bottles: in a cool, dark place within a year.
 - Opened bottle: in the fridge, use within 4-5 days.
 
 ## Substitutions

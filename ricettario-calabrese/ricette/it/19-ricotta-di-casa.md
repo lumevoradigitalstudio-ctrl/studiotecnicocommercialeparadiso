@@ -2,7 +2,7 @@
 numero: 19
 capitolo: Antipasti e piatti di casa
 titolo: "Ricotta di casa (formaggio fresco al limone)"
-dialetto: "ricotta [nome della versione di casa DA VERIFICARE]"
+dialetto: "—"
 provincia: tutta la Calabria
 stagione: tutto l'anno
 porzioni: "circa 400 g (da 2 litri di latte)"
@@ -39,7 +39,7 @@ La ricotta vera nasce dal siero che resta dopo aver fatto il formaggio, e così 
 
 1. Versa latte, panna e sale nella pentola.
 2. Scalda a fuoco medio-basso, mescolando ogni tanto con un cucchiaio di legno perché il latte non si attacchi.
-3. Portalo a 85-90 °C `[DA VERIFICARE: temperatura]`: compaiono piccole bolle ai bordi e il vapore sale, ma il latte non deve bollire.
+3. Portalo a 85-90 °C: compaiono piccole bolle ai bordi e il vapore sale, ma il latte non deve bollire.
 4. Spegni e versa il succo di limone a filo, mescolando piano, una volta sola.
 5. Lascia riposare 10 minuti senza toccare. Si formano fiocchi bianchi, e il liquido intorno diventa giallo-verde e quasi trasparente.
 6. Se il liquido è ancora bianco e lattiginoso, aggiungi un altro cucchiaio di succo di limone e aspetta 5 minuti.

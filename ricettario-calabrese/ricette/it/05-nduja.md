@@ -41,19 +41,19 @@ Un salume crudo stagionato in casa è sicuro solo se rispetti ogni regola qui so
 - 1.000 g di grasso di maiale sodo (gola o dorso)
 - 400 g di pancetta fresca senza cotenna
 - 600 g di carne magra di spalla
-- da 200 a 300 g di peperoncino macinato, metà dolce e metà piccante `[DA VERIFICARE: dose abituale a Spilinga]`
+- da 200 a 300 g di peperoncino macinato, metà dolce e metà piccante
 - sale nitritato: la dose si calcola come spiegato qui sotto (esempio: 26 g)
 - sale marino fino: fino ad arrivare a 56 g di sale in tutto (esempio: 30 g)
 - 0,5 g di colture starter per salumi fermentati (oppure la dose scritta sulla confezione)
 - budello naturale di manzo o di maiale largo (crespone o budello cieco), circa 2 m, già pulito
 
 ### Calcolo del sale nitritato
-Il sale nitritato è sale da cucina con una piccola quota di nitrito di sodio, scritta in etichetta (per esempio 0,6%). Il limite di legge per i prodotti a base di carne crudi è di 80 mg di nitrito per kg (Reg. UE 2023/2108) `[DA VERIFICARE sul testo ufficiale dell'allegato II]`.
+Il sale nitritato è sale da cucina con una piccola quota di nitrito di sodio, scritta in etichetta (per esempio 0,6%). Il limite di legge per i prodotti a base di carne non trattati con il calore è di 80 mg di nitrito per kg (Reg. UE 2023/2108, in vigore dal 9 ottobre 2025). Il calcolo qui sotto usa 80 mg di nitrito di sodio per kg: così resti sotto il limite.
 
 1. Leggi la percentuale di nitrito sull'etichetta del tuo sale nitritato.
 2. Calcola i grammi per ogni kg di impasto: **80 ÷ (percentuale × 10)**. Con lo 0,6% fanno 80 ÷ 6 = 13,3 g per kg.
 3. Moltiplica per i kg di impasto: 13,3 g × 2 kg = circa 26 g.
-4. Aggiungi sale marino fino ad arrivare al 2,8% del peso dell'impasto, cioè 56 g per 2 kg `[DA VERIFICARE: percentuale di sale totale]`.
+4. Aggiungi sale marino fino ad arrivare al 2,8% del peso dell'impasto, cioè 56 g per 2 kg.
 
 ## Procedimento
 
@@ -68,7 +68,7 @@ Il sale nitritato è sale da cucina con una piccola quota di nitrito di sodio, s
 9. Insacca l'impasto ben pressato, senza bolle d'aria. Buca le bolle rimaste con un ago pulito.
 10. Lega ogni pezzo con lo spago, stringendo bene. Pesa ogni 'nduja e scrivi il peso su un'etichetta.
 11. Fai fermentare: appendi le 'nduje per 48 ore a 20-24 °C, con umidità sopra il 90% (per esempio in un locale chiuso con una bacinella d'acqua calda).
-12. Misura il pH dopo 48 ore. Deve essere 5,3 o meno `[DA VERIFICARE: soglia]`. Se è più alto, aspetta altre 24 ore e misura ancora. Se dopo 72 ore non è sceso, butta l'impasto.
+12. Misura il pH dopo 48 ore. Deve essere 5,3 o meno. Se è più alto, aspetta altre 24 ore e misura ancora. Se dopo 72 ore non è sceso, butta l'impasto.
 13. Se vuoi affumicarle, fallo ora: fumo freddo (sotto i 25 °C) di legna di quercia o di ulivo, 6-8 ore in più giorni. L'affumicatura è facoltativa.
 14. Stagiona le 'nduje a 12-15 °C, con umidità tra il 75% e l'85%, in un locale buio e ventilato.
 15. Pesale ogni settimana. Sono pronte quando hanno perso il 25-30% del peso iniziale, di solito dopo 4-8 settimane. Devono restare morbide al tatto ma compatte.
@@ -91,10 +91,9 @@ Segui i passaggi da 1 a 7, poi metti l'impasto in vasetti puliti, pressando bene
 ## Varianti locali
 - Le famiglie cambiano la parte grassa: alcune usano più guanciale, altre più pancetta.
 - La forza cambia da paese a paese: si gioca con la quota di peperoncino dolce e piccante.
-- Alcuni affumicano, altri no `[DA VERIFICARE: diffusione dell'affumicatura nella tradizione di Spilinga]`.
 
 ## Conservazione
-- 'Nduja stagionata intera: in un luogo fresco (12-15 °C) o in frigorifero per alcuni mesi `[DA VERIFICARE: durata]`.
+- 'Nduja stagionata intera: in un luogo fresco (12-15 °C) o in frigorifero per alcuni mesi.
 - Una volta tagliata: copri il taglio con pellicola e tienila in frigorifero, consumandola in 2-3 settimane.
 
 ## Fuori dalla Calabria
@@ -106,7 +105,7 @@ Segui i passaggi da 1 a 7, poi metti l'impasto in vasetti puliti, pressando bene
 Nessuno negli ingredienti di base. Controlla le etichette di colture starter e spezie miste, che a volte contengono latte o senape.
 
 ## DOP e IGP
-La 'nduja non ha DOP né IGP `[DA VERIFICARE: stato della richiesta di riconoscimento per la 'Nduja di Spilinga]`.
+La 'nduja non ha DOP né IGP.
 
 ## Vino
 Un rosso calabrese con buona struttura, come un **Cirò Rosso DOC**.

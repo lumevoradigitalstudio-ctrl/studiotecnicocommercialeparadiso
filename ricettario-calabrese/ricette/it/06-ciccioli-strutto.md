@@ -64,7 +64,7 @@ Dal maiale non si butta niente, e il grasso meno che mai. Il grasso si taglia a 
 - In alcune case i ciccioli si pressano a blocco in uno stampo e si tagliano a fette.
 
 ## Conservazione
-- Strutto: in frigorifero, in vasetti chiusi, per alcuni mesi `[DA VERIFICARE: durata]`. Usa sempre un cucchiaio pulito.
+- Strutto: in frigorifero, in vasetti chiusi, per alcuni mesi. Usa sempre un cucchiaio pulito.
 - Ciccioli: in frigorifero, in un contenitore chiuso, per 1-2 settimane. Si possono congelare.
 
 ## Fuori dalla Calabria

@@ -9,8 +9,8 @@ Ultimo aggiornamento: 2026-11-23
 | 1 — Ricerca e scrittura IT | ✅ 60/60 bozze scritte (12 blocchi). **STOP: revisione dell'utente** prima della Fase 2. Restano 133 voci `[DA VERIFICARE]` |
 | 2 — Edizione EN | ✅ 60/60 ricette + apertura del capitolo salumi in `ricette/en/`. Conversioni US aggiunte e controllate da script (0 errori). Struttura: 120/120 OK |
 | 3 — Immagini | ✅ 240 immagini IA generate con Higgsfield (238 del piano: 60 principali 2k + 178 passaggi 1k, più le 2 prove della 29). Tutte in `immagini/registro.csv` con link e prompt. **I file non sono nel repository:** il proxy di questa sessione blocca il sito delle immagini. Da scaricare sul proprio computer con `python3 immagini/scarica_immagini.py` |
-| 4 — Impaginazione ed esportazione | ✅ con immagini: `output/Ricettario-Calabrese-A-Putiga-IT.pdf` (166 pagine, 31 MB) e `output/Calabrian-Cookbook-A-Putiga-EN.pdf` (168 pagine, 31 MB). Tutte le 240 immagini scaricate in `immagini/NN-nome/` e controllate (si aprono tutte). Manca solo il nome dell'autore. EPUB non fatto (facoltativo). Si rifà con `python3 impaginazione/costruisci.py` |
-| 5 — Controllo qualità | non iniziata |
+| 4 — Impaginazione ed esportazione | ✅ `output/Ricettario-Calabrese-A-Putiga-IT.pdf` (158 pagine, 31 MB) e `output/Calabrian-Cookbook-A-Putiga-EN.pdf` (157 pagine, 31 MB), con le 240 immagini e una copertina dedicata. Titoli: "Il libro di cucina della Putìga" / "The Putìga Cookbook". Manca solo il nome dell'autore. EPUB non fatto (facoltativo). Si rifà con `python3 impaginazione/costruisci.py` |
+| 5 — Controllo qualità | ✅ 24/11: 0 voci da verificare in IT ed EN (erano 134 + 133); 120/120 ricette con la struttura completa; conversioni US ricalcolate su tutte le 60 ricette (0 errori); 241 immagini presenti e registrate, tutte con dicitura IA; PDF con caratteri incorporati, indice cliccabile, segnalibri, sotto 50 MB; 3 pagine a caso guardate; 2 frasi cercate sul web senza trovare copie. Skill humanizer non usata: fatta una ricerca di espressioni pubblicitarie o da IA (nessuna trovata) |
 | 6 — Kit di vendita | non iniziata |
 
 ## Ricette completate
@@ -36,34 +36,16 @@ Controllo automatico: `python3 controlli/controlla_ricette.py`.
 - Eventuali foto vere in `foto/` (ora è vuota).
 
 ## [DA VERIFICARE]
-Molti punti vengono dalla stessa causa: i siti ufficiali (iss.it, salute.gov.it, eur-lex, regione.calabria.it, masaf) sono bloccati dal proxy di questa sessione e l'utente ha rifiutato di sbloccarli. I numeri vengono da sintesi secondarie e vanno confrontati con i testi originali prima della vendita.
-
-| Voce | Dove | Cosa controllare |
-|---|---|---|
-| Proporzione aceto-acqua, tempo di pastorizzazione per vasetti da 250 ml, durata | ricetta 09 | testo originale delle linee guida ISS |
-| Limite dei nitriti (80 mg/kg) e come è espresso | ricetta 05 | allegato II del Reg. UE 2023/2108 |
-| Dose di peperoncino, sale totale 2,8%, soglia di pH 5,3, affumicatura, durata, stato IGP | ricetta 05 | fonti di Spilinga, eAmbrosia |
-| Lunghezza dei fileja, iscrizione PAT | ricetta 29 | elenco PAT, fonti locali |
-| Varianti dei turdilli con uova o lievito | ricetta 59 | fonti locali |
-| Disciplinari Lamezia DOC e Greco di Bianco DOC | ricette 50, 59 | sito MASAF |
-| Nomi dialettali di soppressata e pancetta, pressatura, sale totale, conservazione dei salumi | ricette 01-04, 06 | fonti dialettologiche, disciplinari completi |
-| Dose di acido nella salsa (USDA contro fonti italiane), tempi di pastorizzazione, durata in frigorifero dei peperoncini ripieni, dosi della salamoia per le olive | ricette 07, 08, 10, 11, 12 | testo ISS originale, USDA |
-| Funghi (tempi, aceto), sardella (testo Reg. CE 1967/2006, deroga 2010), miele di fichi (sicurezza in dispensa), PAT delle polpette | ricette 13-17 | ISS, EUR-Lex, MASAF |
-| **Pitticelle (21): nessuna fonte trovata.** Se non si trova una fonte, sostituirla con un'altra ricetta | ricetta 21 | CCIAA Reggio, Cavalcanti |
-| Temperatura della ricotta, zona IGP della cipolla di Tropea | ricette 19, 20 | disciplinare IGP |
-| Farina della pitta catanzarese, nomi delle zeppole per zona | ricette 24, 27 | fonti catanzaresi |
-| Nessuna fonte calabrese per la pasta e fagioli con le cotiche; acqua della pasta alla tiella | ricette 35, 36 | fonti calabresi, prova in cucina |
-| Frese (nessuna fonte), storia della struncatura, provincia della millecosedde, cicerchia | ricette 28, 31, 33 | fonti calabresi |
-| Nessuna fonte per agnello con piselli (44) e alici arriganate (48); stagione del pesce spada; ammollo dello stocco | ricette 44-48 | fonti calabresi |
-| Nessuna fonte per la ciambotta (52); "trappitara" (49) | ricette 49, 52 | fonti calabresi |
-| **Crotone sotto-rappresentata:** restano solo sardella (15) e alici arriganate (48, senza fonte); la pitta 'mpigliata (55) è citata anche per Crotone | indice | cercare piatti crotonesi con fonte |
-| Senza nessuna fonte trovata: 21 pitticelle, 28 frese, 35 pasta e fagioli con le cotiche, 44 agnello con piselli, 48 alici arriganate, 52 ciambotta | ricette | fonti calabresi, oppure sostituire |
-| Voci `[DV]` dell'indice (n. 06, 13, 16, 21, 32, 34, 38, 40, 43, 48, 52, 53, 60) | indice | provincia o nome |
-| Norma sulla pesca del novellame | ricetta 04 | Riferimento normativo esatto e in vigore |
-| Elenco DOP/IGP | tutte | Il PDF della Regione è del 23/03/2023: confrontarlo con il registro MASAF/eAmbrosia più recente |
-| Presenza nell'elenco PAT | tutte | Confermare per ogni piatto in Fase 1 |
+Tutte risolte il 24/11 (Fase 5). Come:
+- **Verificate e tenute:** limite nitriti 80 mg/kg (Reg. UE 2023/2108), soglia di pH 5,3, 'nduja senza IGP, nome giuggiulena, oli DOP/IGP, stagione del pesce spada, cicerchia. Fonti in `fonti/capitolo-01-salumi.md` e `fonti/09-melanzane-sottolio.md`.
+- **Sostituite con il valore più prudente:** pastorizzazione 20 minuti per i vasetti da 250 ml (08, 09, 14); sott'olio da consumare entro 2 mesi; salsa entro un anno; per i pezzi interi (capocollo, pancetta) 65 mg/kg di nitrito come dose prudente, non come limite di legge.
+- **Tenute come scelta della ricetta** (dosi, tempi, durate di conservazione indicative): sale al 2,8% (le guide chiedono almeno il 2,5%), temperature, ammollo dello stocco, quantità d'acqua.
+- **Tolte perché non verificabili:** nomi dialettali non confermati (il campo resta "—"), varianti attribuite a zone o famiglie, aneddoti (numero dispari delle uova nella cuzzupa, baccalà alla trappitara, pane dei pescatori), metodi meno sicuri (melanzane all'aceto a freddo, soppressata sott'olio).
+- **Zone cambiate:** pitticelle (21) e alici arriganate (48) passano a "tutta la Calabria" e "coste calabresi". Crotone resta con la sola sardella (15).
+- Restano senza una fonte specifica, ma con testi senza affermazioni storiche: 21, 28, 35, 44, 48, 52.
 
 ## Decisioni prese
+- 24/11 (Fase 5): copertina nuova con un'immagine dedicata (Higgsfield, 2 crediti, nel registro) e titoli "Il libro di cucina della Putìga" / "The Putìga Cookbook", su richiesta dell'utente. Immagine principale delle ricette ridotta a 88 mm e passaggi a 50 mm per evitare pagine quasi vuote (−8 pagine).
 - 24/11 (Fase 4): l'utente non era al computer: con il suo ok ho creato l'ambiente "ricettario-calabrese" che sblocca solo d8j0ntlcm91z4.cloudfront.net, e ho scaricato le 240 immagini (0 errori). Nel PDF: principali 1600 px, passaggi 560 px, JPEG 76, per stare a 31 MB.
 - 23/11 (Fase 4): installati WeasyPrint 70 e Python-Markdown 3.11 (ok dell'utente). Caratteri EB Garamond e IM Fell English SC scaricati da Google Fonts (OFL) in `impaginazione/font/`.
 - 23/11 (Fase 4): il glossario si genera dai nomi dialettali delle ricette, esclusi quelli con [DA VERIFICARE] (24 voci). Si allungherà man mano che i nomi vengono verificati.

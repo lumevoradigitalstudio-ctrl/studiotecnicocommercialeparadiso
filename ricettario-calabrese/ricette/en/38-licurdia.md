@@ -64,7 +64,6 @@ Licurdia is a soup of onions, stale bread and chilli, born in farmers' homes as 
 ## Local variations
 - With lard instead of olive oil.
 - Without potatoes, just onions and bread.
-- With a beaten egg stirred into the soup at the end `[TO BE VERIFIED]`.
 
 ## Storage
 The soup without bread keeps in the fridge for 2 days. Add the bread when serving.

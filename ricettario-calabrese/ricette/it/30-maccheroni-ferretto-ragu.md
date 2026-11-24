@@ -2,7 +2,7 @@
 numero: 30
 capitolo: Pasta fatta in casa e primi
 titolo: "Maccheroni al ferretto con ragù della domenica"
-dialetto: "maccarruni 'i casa [DA VERIFICARE]"
+dialetto: "—"
 provincia: Cosenza (diffusi in tutta la regione)
 stagione: domenica e feste
 porzioni: 6

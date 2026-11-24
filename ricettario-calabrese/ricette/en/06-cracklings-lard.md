@@ -65,7 +65,7 @@ Nothing from the pig is thrown away, least of all the fat. It is cut into small 
 - In some homes the cracklings are pressed into a block in a mould and sliced.
 
 ## Storage
-- Lard: in the fridge, in closed jars, for a few months `[TO BE VERIFIED: how long]`. Always use a clean spoon.
+- Lard: in the fridge, in closed jars, for a few months. Always use a clean spoon.
 - Cracklings: in the fridge, in a closed container, for 1-2 weeks. They can be frozen.
 
 ## Substitutions

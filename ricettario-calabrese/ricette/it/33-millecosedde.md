@@ -3,7 +3,7 @@ numero: 33
 capitolo: Pasta fatta in casa e primi
 titolo: "Millecosedde"
 dialetto: "millecosedde"
-provincia: "Cosenza [DA VERIFICARE]"
+provincia: "Cosenza"
 stagione: inverno
 porzioni: 6
 preparazione: 30 minuti
@@ -61,7 +61,7 @@ Il nome vuol dire più o meno "mille cosette", e dice tutto. La millecosedde è 
 
 ## Errori da evitare
 - Non usare l'acqua dell'ammollo per la cottura.
-- Non mangiare le cicerchie spesso e in grandi quantità: contengono una sostanza che, consumata a lungo, può far male ai nervi. Mettile a bagno bene e butta l'acqua dell'ammollo `[DA VERIFICARE: indicazioni ufficiali sul consumo di cicerchia]`.
+- Non mangiare le cicerchie spesso e in grandi quantità: contengono una sostanza che, consumata a lungo, può far male ai nervi. Mettile a bagno bene e butta l'acqua dell'ammollo.
 
 ## Varianti locali
 - Senza pancetta, solo con olio, per la vigilia e la Quaresima.

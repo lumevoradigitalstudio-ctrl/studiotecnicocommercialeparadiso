@@ -3,7 +3,7 @@ number: 4
 chapter: Home-cured meats
 title: "Flat and rolled pancetta"
 italian_title: "Pancetta tesa e arrotolata"
-dialect: "panzetta [TO BE VERIFIED]"
+dialect: "—"
 area: all of Calabria
 season: winter, pig-butchering time
 serves: "about 1.4 kg (3.1 lb) cured pancetta (from 2 kg (4.4 lb) of meat)"
@@ -32,7 +32,7 @@ Before you start, read the **safety rules** at the beginning of this chapter.
 ## Ingredients
 
 - 1 piece of fresh pork belly, about 2 kg (4.4 lb), 4-5 cm (1½-2 in) thick, with the skin (for flat pancetta) or without (for rolled)
-- total salt equal to 2.8% of the meat's weight, that is 56 g (2 oz) per 2 kg (4.4 lb), including the curing salt calculated as at the start of the chapter, limit 65 mg/kg `[TO BE VERIFIED: total salt percentage]`
+- total salt equal to 2.8% of the meat's weight, that is 56 g (2 oz) per 2 kg (4.4 lb), including the curing salt calculated as at the start of the chapter, dose 65 mg/kg
 - 3 g ground black pepper
 - 2 bay leaves, crumbled, optional
 - 200 ml (¾ cup) wine vinegar
@@ -73,11 +73,11 @@ Before you start, read the **safety rules** at the beginning of this chapter.
 - Don't skip the vinegar wash: it removes excess salt and cleans the surface.
 
 ## Local variations
-- In many areas the coating is chilli, which turns the pancetta red `[TO BE VERIFIED: how common by area]`.
+- With a chilli coating, which turns the pancetta red.
 - Some families add fennel seeds or a little garlic to the salting.
 
 ## Storage
-Whole: hung in a cool place or in the fridge, wrapped in paper, for 2-3 months `[TO BE VERIFIED]`. It can also be vacuum-packed. Once cut, keep it in the fridge covered with cling film.
+Whole: hung in a cool place or in the fridge, wrapped in paper, for 2-3 months. It can also be vacuum-packed. Once cut, keep it in the fridge covered with cling film.
 
 ## Substitutions
 Ask the butcher for pork belly of even thickness. If you can't find ground Calabrian chilli, mix sweet paprika and cayenne pepper.

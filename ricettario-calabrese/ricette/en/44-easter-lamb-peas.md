@@ -3,7 +3,7 @@ number: 44
 chapter: Meat main courses
 title: "Easter lamb with peas"
 italian_title: "Agnello con piselli di Pasqua"
-dialect: "agneddu cu' i pisedda [TO BE VERIFIED]"
+dialect: "—"
 area: all of Calabria
 season: Easter (spring)
 serves: 6
@@ -23,7 +23,7 @@ status: draft EN block 8
 
 *Agnello con piselli di Pasqua · all of Calabria · Easter*
 
-At Easter, in many southern Italian homes, the main course is lamb, and in spring fresh peas have just arrived in the garden. This recipe cooks them together: pieces of lamb browned in olive oil with onion, splashed with white wine and left to cook gently, then the peas, which take on the flavour of the meat juices. It is a simple, fragrant dish, made while the cuzzupe (recipe 57) bake in the oven. In some families, at the end, eggs beaten with pecorino are poured over it and set into a creamy coating `[TO BE VERIFIED: how common in Calabria]`. Here it is given as a variation. With frozen peas it works all year.
+At Easter, in many southern Italian homes, the main course is lamb, and in spring fresh peas have just arrived in the garden. This recipe cooks them together: pieces of lamb browned in olive oil with onion, splashed with white wine and left to cook gently, then the peas, which take on the flavour of the meat juices. It is a simple, fragrant dish, made while the cuzzupe (recipe 57) bake in the oven. If you like, at the end you can pour over eggs beaten with pecorino, which set into a creamy coating: see the variations. With frozen peas it works all year.
 
 **Serves:** 6 · **Prep:** 20 minutes · **Cook:** 1 hour 30 minutes · **Total:** 1 hour 50 minutes · **Difficulty:** easy
 
@@ -65,6 +65,7 @@ At Easter, in many southern Italian homes, the main course is lamb, and in sprin
 - In the variation, don't pour in the eggs with the pan on the heat: they scramble.
 
 ## Local variations
+- With eggs: at the end beat 3 eggs with 40 g (1½ oz) pecorino, pour over the lamb and stir over low heat until they set into a creamy coating, about 2 minutes.
 - With potatoes instead of peas, in the oven.
 - With kid instead of lamb (see also recipe 40).
 

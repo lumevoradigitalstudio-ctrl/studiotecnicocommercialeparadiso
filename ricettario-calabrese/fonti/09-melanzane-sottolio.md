@@ -13,3 +13,8 @@
 - Tempo di pastorizzazione per vasetti da 250 ml (20 minuti è una stima da fonti secondarie).
 - Durata di conservazione.
 - Sicurezza del metodo a freddo (melanzane lasciate a bagno nell'aceto).
+
+## Verifiche del 24/11/2026 (Fase 5)
+- Tempo di pastorizzazione: le sintesi delle linee guida ISS indicano 15-20 minuti dall'ebollizione per vasetti da 350-400 g ([Il Fatto Alimentare](https://ilfattoalimentare.it/conserve-domestiche-linee-guida-iss.html)). Per i vasetti da 250 ml il libro usa 20 minuti, il valore più prudente. Stesso tempo per le ricette 08 e 14.
+- Acidificazione: le sintesi ISS indicano acqua e aceto in parti uguali. Le ricette 09 e 14 usano più aceto che acqua, quindi sono più acide.
+- Conservazione dei sott'olio: le fonti vanno da 2 a 3 mesi. Il libro scrive "entro 2 mesi", il valore più prudente (ricette 08, 09, 14).

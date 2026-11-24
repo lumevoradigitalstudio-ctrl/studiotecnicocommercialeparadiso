@@ -3,8 +3,8 @@ number: 52
 chapter: Side dishes
 title: "Ciambotta (summer vegetable stew)"
 italian_title: "Ciambotta"
-dialect: "ciambotta, ciambrotta [TO BE VERIFIED]"
-area: "all of Calabria [TO BE VERIFIED]"
+dialect: "—"
+area: "all of Calabria"
 season: "summer (July-September)"
 serves: 4
 prep: 20 minutes

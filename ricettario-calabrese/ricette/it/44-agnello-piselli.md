@@ -2,7 +2,7 @@
 numero: 44
 capitolo: Secondi di carne
 titolo: "Agnello con piselli di Pasqua"
-dialetto: "agneddu cu' i pisedda [DA VERIFICARE]"
+dialetto: "—"
 provincia: tutta la Calabria
 stagione: Pasqua (primavera)
 porzioni: 6
@@ -22,7 +22,7 @@ stato: bozza blocco 10
 
 *Tutta la Calabria · Pasqua*
 
-A Pasqua, in molte case del Sud, il secondo è l'agnello, e in primavera i piselli freschi sono appena arrivati nell'orto. Questa ricetta li cuoce insieme: pezzi di agnello rosolati nell'olio con la cipolla, sfumati con il vino bianco e lasciati cuocere piano, poi i piselli che si insaporiscono nel sugo della carne. È un piatto semplice e profumato, che si prepara mentre in forno cuociono le cuzzupe (ricetta 57). In alcune famiglie, alla fine, si versano sopra uova sbattute con il pecorino, che si rapprendono come una crema `[DA VERIFICARE: diffusione in Calabria]`. Qui la trovi come variante. Con i piselli surgelati funziona tutto l'anno.
+A Pasqua, in molte case del Sud, il secondo è l'agnello, e in primavera i piselli freschi sono appena arrivati nell'orto. Questa ricetta li cuoce insieme: pezzi di agnello rosolati nell'olio con la cipolla, sfumati con il vino bianco e lasciati cuocere piano, poi i piselli che si insaporiscono nel sugo della carne. È un piatto semplice e profumato, che si prepara mentre in forno cuociono le cuzzupe (ricetta 57). Alla fine, se vuoi, puoi versarci sopra uova sbattute con il pecorino, che si rapprendono come una crema: la trovi tra le varianti. Con i piselli surgelati funziona tutto l'anno.
 
 **Porzioni:** 6 · **Preparazione:** 20 minuti · **Cottura:** 1 ora e 30 minuti · **Totale:** 1 ora e 50 minuti · **Difficoltà:** facile
 
@@ -64,6 +64,7 @@ A Pasqua, in molte case del Sud, il secondo è l'agnello, e in primavera i pisel
 - Nella variante, non versare le uova con il tegame sul fuoco: si strapazzano.
 
 ## Varianti locali
+- Con le uova: alla fine sbatti 3 uova con 40 g di pecorino, versale sull'agnello e mescola a fuoco basso finché si rapprendono in una crema, circa 2 minuti.
 - Con le patate al posto dei piselli, al forno.
 - Con il capretto al posto dell'agnello (vedi anche la ricetta 40).
 

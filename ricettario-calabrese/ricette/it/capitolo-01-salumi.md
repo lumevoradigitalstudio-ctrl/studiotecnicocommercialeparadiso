@@ -23,13 +23,11 @@ In Calabria i giorni del maiale cadono d'inverno, quando fa freddo e la carne si
 Il sale nitritato è sale da cucina con una piccola quota di nitrito di sodio, scritta in etichetta (per esempio 0,6%).
 
 1. Leggi la percentuale di nitrito sull'etichetta.
-2. Scegli il limite di legge per il tuo salume:
+2. Scegli la dose di nitrito per il tuo salume (il limite di legge è 80 mg per kg, Reg. UE 2023/2108):
    - **insaccati crudi** (salsiccia secca, soppressata, 'nduja): **80 mg per kg**;
-   - **pezzi interi salati a secco** (capocollo, pancetta): **65 mg per kg**.
-
-   `[DA VERIFICARE: entrambi i limiti sull'allegato II del Reg. UE 2023/2108]`
-3. Grammi di sale nitritato per kg di carne = **limite ÷ (percentuale × 10)**.
-   *Esempio:* limite 80 mg/kg, sale allo 0,6% → 80 ÷ 6 = 13,3 g per kg.
+   - **pezzi interi salati a secco** (capocollo, pancetta): **65 mg per kg**, una dose più prudente.
+3. Grammi di sale nitritato per kg di carne = **dose ÷ (percentuale × 10)**.
+   *Esempio:* dose 80 mg/kg, sale allo 0,6% → 80 ÷ 6 = 13,3 g per kg.
 4. Per il resto del sale usa sale marino fino, fino ad arrivare alla dose totale scritta nella ricetta.
 
 ## L'attrezzatura

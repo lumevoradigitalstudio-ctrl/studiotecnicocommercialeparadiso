@@ -2,7 +2,7 @@
 numero: 18
 capitolo: Antipasti e piatti di casa
 titolo: "Polpette di pane"
-dialetto: "purpetti 'i pani [DA VERIFICARE]"
+dialetto: "—"
 provincia: tutta la Calabria
 stagione: tutto l'anno
 porzioni: "4 (circa 20 polpette)"
@@ -20,7 +20,7 @@ stato: bozza blocco 5
 
 # Polpette di pane
 
-*Purpetti 'i pani · tutta la Calabria · tutto l'anno*
+*tutta la Calabria · tutto l'anno*
 
 Nella cucina di casa il pane non si butta mai. Quello di qualche giorno, duro ma ancora buono, si bagna, si strizza e diventa polpette, con uova, pecorino, aglio e prezzemolo. Si friggono e poi si cuociono nel sugo, che le ammorbidisce e le insaporisce, oppure si mangiano fritte e basta. Sono un secondo che costa pochissimo e che piace ai bambini. Ricette come questa si trovano in tutto il Sud: in Calabria l'impasto è lo stesso delle polpette di carne della domenica, solo senza la carne. Questa ricetta usa il sugo di pomodoro, il modo più comune per servirle.
 
@@ -72,7 +72,6 @@ Nella cucina di casa il pane non si butta mai. Quello di qualche giorno, duro ma
 
 ## Varianti locali
 - Si possono mangiare solo fritte, calde, con un'insalata.
-- In alcune case si aggiunge un poco di salame o di soppressata tritata all'impasto `[DA VERIFICARE]`.
 
 ## Conservazione
 In frigorifero, nel loro sugo, per 2 giorni. Si scaldano bene in tegame a fuoco basso.

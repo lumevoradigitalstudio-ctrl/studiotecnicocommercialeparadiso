@@ -22,7 +22,7 @@ stato: bozza blocco 12
 
 *Petrali · Reggio Calabria · Natale*
 
-I petrali sono i dolci di Natale delle case reggine. Sono mezzelune di pasta frolla con dentro un ripieno scuro e profumato di fichi secchi, mandorle, noci, uvetta, miele e spezie. Il ripieno si prepara qualche giorno prima, così i sapori si mescolano. Poi si fanno i dischi di frolla, si riempiono, si chiudono e si infornano. In molte famiglie si decorano con una glassa bianca e gli zuccherini colorati `[DA VERIFICARE: diffusione]`. Si tengono in una scatola di latta per tutte le feste. Questa ricetta ne fa una trentina, e vale la pena farli in compagnia, perché il lavoro va più veloce.
+I petrali sono i dolci di Natale delle case reggine. Sono mezzelune di pasta frolla con dentro un ripieno scuro e profumato di fichi secchi, mandorle, noci, uvetta, miele e spezie. Il ripieno si prepara qualche giorno prima, così i sapori si mescolano. Poi si fanno i dischi di frolla, si riempiono, si chiudono e si infornano. Si possono decorare con una glassa bianca e gli zuccherini colorati. Si tengono in una scatola di latta per tutte le feste. Questa ricetta ne fa una trentina, e vale la pena farli in compagnia, perché il lavoro va più veloce.
 
 **Resa:** circa 30 petrali · **Preparazione:** 1 ora · **Cottura:** 20 minuti · **Riposo:** 1 ora + 1 notte · **Totale:** circa 2 ore e 30 minuti · **Difficoltà:** media
 
@@ -37,7 +37,7 @@ I petrali sono i dolci di Natale delle case reggine. Sono mezzelune di pasta fro
 - la scorza grattugiata di 1 arancia non trattata
 - 1 cucchiaino di cannella in polvere
 - 1 pizzico di chiodi di garofano in polvere
-- 50 g di cioccolato fondente tritato (facoltativo) `[DA VERIFICARE]`
+- 50 g di cioccolato fondente tritato (facoltativo)
 
 **Per la frolla**
 - 500 g di farina 00

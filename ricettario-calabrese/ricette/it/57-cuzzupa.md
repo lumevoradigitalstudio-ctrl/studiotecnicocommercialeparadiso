@@ -2,7 +2,7 @@
 numero: 57
 capitolo: Dolci delle feste
 titolo: "Cuzzupa di Pasqua"
-dialetto: "cuzzupa, cuddhura, cudduraci [DA VERIFICARE: nomi per zona]"
+dialetto: "—"
 provincia: tutta la Calabria
 stagione: Pasqua
 porzioni: "2 cuzzupe grandi o 6 piccole"
@@ -22,7 +22,7 @@ stato: bozza blocco 12
 
 *Cuzzupa, cuddhura · tutta la Calabria · Pasqua*
 
-La cuzzupa è il pane dolce di Pasqua. Si fa con una pasta morbida e profumata di limone, a forma di ciambella, di treccia, di cuore o di cestino, e porta incastonate una o più uova intere con il guscio, fermate da strisce di pasta incrociate. L'uovo è il simbolo della rinascita. In molte famiglie le uova devono essere in numero dispari, e secondo una tradizione popolare il loro numero mandava messaggi tra fidanzati `[DA VERIFICARE]`. Il nome cambia da paese a paese, e così le forme. Si mangiano a colazione per giorni dopo Pasqua.
+La cuzzupa è il pane dolce di Pasqua. Si fa con una pasta morbida e profumata di limone, a forma di ciambella, di treccia, di cuore o di cestino, e porta incastonate una o più uova intere con il guscio, fermate da strisce di pasta incrociate. L'uovo è il simbolo della rinascita. Il nome cambia da paese a paese, e così le forme. Si mangiano a colazione per giorni dopo Pasqua. Calcola circa quattro ore: la pasta deve lievitare con calma.
 
 **Resa:** 2 cuzzupe grandi o 6 piccole · **Preparazione:** 40 minuti · **Cottura:** 35 minuti · **Riposo:** 2 ore e 30 minuti-3 ore · **Totale:** circa 4 ore · **Difficoltà:** media
 
@@ -67,12 +67,11 @@ La cuzzupa è il pane dolce di Pasqua. Si fa con una pasta morbida e profumata d
 - Non aprire il forno nei primi 20 minuti: la pasta si sgonfia.
 
 ## Varianti locali
-- Con lievito per dolci al posto del lievito di birra, per una cuzzupa più friabile, simile a un biscotto `[DA VERIFICARE: diffusione per zona]`.
 - Con semi di anice nell'impasto.
 - Le uova cotte nella cuzzupa si mangiano sode, sbucciate.
 
 ## Conservazione
-In un sacchetto per alimenti, per 3-4 giorni. Le uova cotte nel dolce vanno mangiate entro 2 giorni, o tenute in frigorifero `[DA VERIFICARE]`.
+In un sacchetto per alimenti, per 3-4 giorni. Le uova cotte nel dolce vanno mangiate entro 2 giorni, o tenute in frigorifero.
 
 ## Fuori dalla Calabria
 Gli ingredienti si trovano ovunque. Al posto dello strutto, il burro.

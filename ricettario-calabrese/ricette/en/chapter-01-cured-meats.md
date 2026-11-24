@@ -23,13 +23,13 @@ In Calabria the pig is butchered in winter, when the cold makes the meat easier 
 Curing salt is table salt with a small amount of sodium nitrite. The percentage is printed on the label: EU nitrite curing salt usually contains 0.4-0.9%; US "Prague Powder #1" (Cure #1) contains 6.25%.
 
 1. Read the nitrite percentage on your label.
-2. Choose the legal limit for your product (EU, Regulation 2023/2108):
+2. Choose the nitrite dose for your product (the EU legal limit is 80 mg per kg, Regulation 2023/2108):
    - **raw sausages** (dry sausage, soppressata, 'nduja): **80 mg per kg**;
-   - **whole dry-salted cuts** (capocollo, pancetta): **65 mg per kg**.
+   - **whole dry-salted cuts** (capocollo, pancetta): **65 mg per kg**, a more cautious dose.
 
-   `[TO BE VERIFIED: both limits in Annex II of Regulation (EU) 2023/2108]`. Outside the EU, follow your own country's rules.
-3. Grams of curing salt per kg of meat = **limit ÷ (percentage × 10)**.
-   *Example:* limit 80 mg/kg, salt at 0.6% → 80 ÷ 6 = 13.3 g (0.5 oz) per kg. With Cure #1 at 6.25%: 80 ÷ 62.5 = 1.3 g per kg.
+   Outside the EU, follow your own country's rules.
+3. Grams of curing salt per kg of meat = **dose ÷ (percentage × 10)**.
+   *Example:* dose 80 mg/kg, salt at 0.6% → 80 ÷ 6 = 13.3 g (0.5 oz) per kg. With Cure #1 at 6.25%: 80 ÷ 62.5 = 1.3 g per kg.
 4. Make up the rest of the salt with fine sea salt, up to the total amount given in the recipe.
 
 ## Equipment

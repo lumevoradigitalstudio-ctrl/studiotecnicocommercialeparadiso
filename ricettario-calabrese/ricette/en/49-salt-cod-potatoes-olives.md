@@ -3,7 +3,7 @@ number: 49
 chapter: Fish main courses
 title: "Salt cod with potatoes and olives"
 italian_title: "Baccalà con patate e olive"
-dialect: "baccalà cu' i patati [TO BE VERIFIED]"
+dialect: "—"
 area: "Cosenza (common across the region)"
 season: "Christmas Eve, winter"
 serves: 4
@@ -23,7 +23,7 @@ status: draft EN block 9
 
 *Baccalà con patate e olive · Cosenza, common across the region · Christmas Eve*
 
-Baccalà, salted cod that came from far away and kept for a long time, was for many years the inexpensive fish of meatless days. On Christmas Eve in Calabria it is almost never missing. Around Cosenza it is cooked with Sila potatoes, black olives, tomato and parsley, in a pan where everything takes on flavour together. Some sources say its proper name should be *baccalà alla trappitara*, from the olive mill, because it was eaten during the days of olive pressing `[TO BE VERIFIED]`. The cod must be soaked for two or three days, or bought already soaked from the fishmonger.
+Baccalà, salted cod that came from far away and kept for a long time, was for many years the inexpensive fish of meatless days. On Christmas Eve in Calabria it is almost never missing. Around Cosenza it is cooked with Sila potatoes, black olives, tomato and parsley, in a pan where everything takes on flavour together. The cod must be soaked for two or three days, or bought already soaked from the fishmonger. After that, you only need to put everything in the pan and wait.
 
 **Serves:** 4 · **Prep:** 20 minutes · **Cook:** 50 minutes · **Total:** 1 hour 10 minutes (with pre-soaked cod) · **Difficulty:** easy
 

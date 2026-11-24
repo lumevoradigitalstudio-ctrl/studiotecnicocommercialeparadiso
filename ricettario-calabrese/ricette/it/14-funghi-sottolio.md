@@ -2,7 +2,7 @@
 numero: 14
 capitolo: Conserve e dispensa
 titolo: "Funghi sott'olio"
-dialetto: "funci sutt'ogghiu [DA VERIFICARE]"
+dialetto: "—"
 provincia: Cosenza (Sila)
 stagione: autunno (settembre-novembre)
 porzioni: "4 vasetti da 250 ml (da 1,5 kg di funghi puliti)"
@@ -36,7 +36,7 @@ D'autunno i boschi della Sila si riempiono di cercatori, e in tante case di mont
 
 - 1,5 kg di funghi sodi e sani (porcini piccoli, chiodini, champignon o funghi misti), già puliti
 - 750 ml di aceto di vino bianco con acidità di almeno il 6%
-- 500 ml di acqua `[DA VERIFICARE: proporzione aceto-acqua sulle linee guida ISS]`
+- 500 ml di acqua
 - 15 g di sale fino
 - 2 foglie di alloro secche
 - 1 cucchiaino di grani di pepe nero
@@ -50,14 +50,14 @@ D'autunno i boschi della Sila si riempiono di cercatori, e in tante case di mont
 1. Pulisci i funghi con un panno umido o un pennello, togliendo terra e parti rovinate. Taglia la base del gambo.
 2. Lasciali interi se sono piccoli. Taglia quelli grandi a pezzi di 2-3 cm.
 3. Porta a bollore aceto, acqua e sale in una pentola d'acciaio.
-4. Aggiungi i funghi e, da quando riprende il bollore, cuocili 5 minuti (7-8 minuti per i porcini) `[DA VERIFICARE: tempi]`. Devono essere teneri ma sodi.
+4. Aggiungi i funghi e, da quando riprende il bollore, cuocili 5 minuti (7-8 minuti per i porcini). Devono essere teneri ma sodi.
 5. Scolali e butta il liquido di cottura.
 6. Allargali su un canovaccio pulito, coprili con un altro canovaccio e lasciali asciugare 2-3 ore, finché sono asciutti al tatto.
 7. Mettili nei vasetti a strati con alloro, pepe e peperoncino, pressando, fino a 2 cm dal bordo.
 8. Copri con l'olio. Aspetta 30 minuti, schiaccia con una forchetta per far uscire l'aria, e rabbocca fino a 1-2 cm dal bordo.
 9. Pulisci i bordi e chiudi con le capsule nuove.
 10. Metti i vasetti nella pentola alta, coperti d'acqua fredda di qualche centimetro, separati da un canovaccio.
-11. Porta a ebollizione vivace e da quel momento conta 20 minuti `[DA VERIFICARE: tempo ISS per vasetti da 250 ml]`. Se il bollore si ferma, riparti da zero.
+11. Porta a ebollizione vivace e da quel momento conta 20 minuti. Se il bollore si ferma, riparti da zero.
 12. Lascia raffreddare nell'acqua, poi asciuga i vasetti e controlla che le capsule siano ben chiuse.
 13. Conserva al buio e al fresco. Controlla i vasetti per 10-15 giorni: l'olio deve restare limpido, senza bollicine.
 
@@ -75,10 +75,10 @@ Butta senza assaggiare se il tappo è gonfio, se vedi bollicine, olio torbido o 
 
 ## Varianti locali
 - In alcune case si aggiunge un chiodo di garofano o qualche seme di finocchio.
-- I chiodini, molto raccolti d'autunno, vanno bolliti a lungo perché crudi non sono commestibili `[DA VERIFICARE: tempo di prebollitura]`.
+- I chiodini crudi sono tossici: prima di ogni preparazione vanno bolliti in abbondante acqua, che poi si butta. Fai sempre controllare i funghi raccolti all'Ispettorato micologico dell'ASL.
 
 ## Conservazione
-- Vasetti chiusi e pastorizzati: al buio e al fresco, entro l'anno `[DA VERIFICARE]`.
+- Vasetti chiusi e pastorizzati: al buio e al fresco, entro 2 mesi.
 - Vasetto aperto: in frigorifero, sempre coperti d'olio, entro 7 giorni.
 
 ## Fuori dalla Calabria

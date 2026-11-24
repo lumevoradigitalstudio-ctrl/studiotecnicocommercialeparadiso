@@ -3,7 +3,7 @@ number: 60
 chapter: Festive sweets
 title: "Giurgiulena (sesame and honey brittle)"
 italian_title: "Giurgiulena (croccante di sesamo e miele)"
-dialect: "giurgiulena, cicirata [TO BE VERIFIED: names by area]"
+dialect: "—"
 area: "all of Calabria (closely linked to the Pollino, in the Cosenza area)"
 season: Christmas
 serves: "about 30 pieces"
@@ -23,7 +23,7 @@ status: draft EN block 10
 
 *Giurgiulena · all of Calabria, Pollino · Christmas*
 
-Giurgiulena is the poor man's nougat. Sesame seeds and honey, sometimes a few almonds, cooked together in a pan and spread out hot on a board, then cut into diamonds before they harden. It is scented with orange and cinnamon, crunchy and a little chewy, and it is one of the Christmas sweets. The name comes from sesame, which in dialect is called *giuggiulena* `[TO BE VERIFIED]`. It is also made in Sicily, and in Calabria it is closely linked to the tradition of the Pollino. It takes a quarter of an hour, but you have to work fast, because the caramel sets in a few minutes.
+Giurgiulena is the poor man's nougat. Sesame seeds and honey, sometimes a few almonds, cooked together in a pan and spread out hot on a board, then cut into diamonds before they harden. It is scented with orange and cinnamon, crunchy and a little chewy, and it is one of the Christmas sweets. The name comes from sesame, which in dialect is called *giuggiulena*. It is also made in Sicily, and in Calabria it is closely linked to the tradition of the Pollino. It takes a quarter of an hour, but you have to work fast, because the caramel sets in a few minutes.
 
 **Makes:** about 30 pieces · **Prep:** 15 minutes · **Cook:** 15 minutes · **Rest:** 30 minutes · **Total:** 1 hour · **Difficulty:** medium
 
@@ -35,7 +35,7 @@ Giurgiulena is the poor man's nougat. Sesame seeds and honey, sometimes a few al
 - 50 g (2 oz) flaked or chopped almonds, optional
 - grated zest of 1 unwaxed orange
 - 1 teaspoon ground cinnamon
-- seed oil, or 1 lemon cut in half, for spreading
+- seed oil, for greasing
 
 **Equipment:** wide non-stick or stainless-steel pan, wooden spoon, baking paper, rolling pin, large knife.
 
@@ -47,7 +47,7 @@ Giurgiulena is the poor man's nougat. Sesame seeds and honey, sometimes a few al
 4. Cook for 5-6 minutes, stirring, until the syrup turns a light amber colour (about 140-150 °C (285-300 °F) with a thermometer).
 5. Add the sesame, almonds, orange zest and cinnamon. Stir quickly for 2-3 minutes, until everything is well bound and the mixture comes away from the pan.
 6. Pour the mixture straight onto the oiled baking paper.
-7. Cover with the other sheet and roll out to a thickness of 1 cm (⅜ in). Or spread it with half a lemon `[TO BE VERIFIED: traditional use]`.
+7. Cover with the other sheet and roll out to a thickness of 1 cm (⅜ in). 
 8. Remove the top sheet and, while still hot, cut into diamonds or rectangles with the oiled knife.
 9. Leave to cool for 30 minutes, then break the pieces apart.
 
@@ -61,7 +61,6 @@ Giurgiulena is the poor man's nougat. Sesame seeds and honey, sometimes a few al
 
 ## Local variations
 - With whole almonds, partly or instead of sesame.
-- Served on orange or lemon leaves `[TO BE VERIFIED]`.
 
 ## Storage
 In a tin or a tightly closed jar, in a dry place, for 2-3 weeks. In humidity it turns sticky.

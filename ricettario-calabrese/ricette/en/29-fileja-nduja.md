@@ -60,7 +60,7 @@ Fileja are the pasta of patient hands. All you need is semolina, warm water and 
 6. Roll the piece under your fingers into a rope as thick as a pencil.
 7. Cut the rope into pieces of about 5 cm (2 in).
 8. Lay the rod diagonally on one piece and press lightly.
-9. Roll the rod back and forth under your open palms, moving your hands outwards. The dough wraps around the rod and stretches to 15-20 cm (6-7¾ in) `[TO BE VERIFIED: traditional length]`.
+9. Roll the rod back and forth under your open palms, moving your hands outwards. The dough wraps around the rod and stretches to 15-20 cm (6-7¾ in).
 10. Slide the fileja off the rod with a firm movement and lay it on a tray dusted with semolina.
 11. Repeat with all the dough. Let the fileja dry for 30 minutes, turning them halfway.
 

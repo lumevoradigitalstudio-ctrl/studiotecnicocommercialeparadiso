@@ -2,7 +2,7 @@
 numero: 42
 capitolo: Secondi di carne
 titolo: "Salsiccia con patate e peperoni al forno"
-dialetto: "sazizza, patati e pipi [DA VERIFICARE]"
+dialetto: "—"
 provincia: tutta la Calabria
 stagione: "estate-autunno (con i peperoni), tutto l'anno"
 porzioni: 4

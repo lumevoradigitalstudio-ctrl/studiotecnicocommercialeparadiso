@@ -59,7 +59,7 @@ I fileja sono la pasta delle mani pazienti. Bastano semola, acqua tiepida e un f
 6. Fai rotolare il pezzo sotto le dita fino a un cordoncino spesso come una matita.
 7. Taglia il cordoncino in pezzi di circa 5 cm.
 8. Appoggia il ferretto in diagonale su un pezzo e premi leggermente.
-9. Fai rotolare il ferretto avanti e indietro sotto i palmi aperti, allargando le mani verso l'esterno. La pasta si avvolge e si allunga fino a 15-20 cm `[DA VERIFICARE: lunghezza tradizionale]`.
+9. Fai rotolare il ferretto avanti e indietro sotto i palmi aperti, allargando le mani verso l'esterno. La pasta si avvolge e si allunga fino a 15-20 cm.
 10. Sfila il fileja dal ferretto con un movimento deciso e appoggialo su un vassoio spolverato di semola.
 11. Ripeti con tutto l'impasto. Lascia asciugare i fileja 30 minuti, girandoli a metà tempo.
 

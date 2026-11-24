@@ -39,7 +39,7 @@ L'olio non protegge dal botulino: lo isola dall'aria, e il batterio vive proprio
 - 2 kg di melanzane lunghe, sode e lucide
 - 60 g di sale grosso
 - 1 l di aceto di vino bianco al 6%
-- 500 ml di acqua `[DA VERIFICARE: proporzione aceto-acqua sulle linee guida ISS]`
+- 500 ml di acqua
 - 4 spicchi d'aglio, a fettine
 - 2-3 peperoncini piccanti secchi, a pezzetti (o 1 cucchiaino di peperoncino in scaglie)
 - 2 cucchiai di origano secco
@@ -62,7 +62,7 @@ L'olio non protegge dal botulino: lo isola dall'aria, e il batterio vive proprio
 11. Versa l'olio fino a coprire bene le melanzane. Aspetta 30 minuti: l'olio scende negli spazi. Rabbocca fino a 1-2 cm dal bordo.
 12. Pulisci i bordi con carta da cucina e chiudi con le capsule nuove.
 13. Metti i vasetti in piedi in una pentola alta, separati da un canovaccio. Coprili d'acqua fredda, che deve superarli di qualche centimetro.
-14. Porta a ebollizione vivace e, da quel momento, conta 20 minuti `[DA VERIFICARE: tempo ISS per vasetti da 250 ml]`. Se il bollore si ferma, riparti da zero.
+14. Porta a ebollizione vivace e, da quel momento, conta 20 minuti. Se il bollore si ferma, riparti da zero.
 15. Spegni e lascia raffreddare i vasetti nell'acqua. Poi asciugali e controlla il tappo: premendo al centro non deve fare "clic".
 16. Conserva al buio e al fresco. Controlla i vasetti ogni giorno per 10-15 giorni: l'olio deve restare limpido e senza bollicine che salgono.
 
@@ -81,10 +81,9 @@ Butta il vasetto **senza assaggiarlo** se vedi il tappo gonfio, bollicine che sa
 
 ## Varianti locali
 - In molte case si aggiunge la menta secca al posto dell'origano, o insieme.
-- Alcune famiglie non sbollentano, ma lasciano le melanzane a bagno nell'aceto a freddo per alcune ore `[DA VERIFICARE: diffusione e sicurezza di questo metodo]`. La versione con sbollentatura è quella più sicura.
 
 ## Conservazione
-- Vasetti chiusi e pastorizzati: al buio e al fresco, consumali entro l'anno `[DA VERIFICARE: durata indicata dall'ISS]`.
+- Vasetti chiusi e pastorizzati: al buio e al fresco, consumali entro 2 mesi.
 - Vasetto aperto: in frigorifero, con le melanzane sempre coperte d'olio, da consumare entro 7-10 giorni.
 
 ## Fuori dalla Calabria
@@ -95,7 +94,7 @@ Butta il vasetto **senza assaggiarlo** se vedi il tappo gonfio, bollicine che sa
 Solfiti, se presenti nell'aceto di vino (leggi l'etichetta).
 
 ## DOP e IGP
-Facoltativo: un olio extravergine DOP calabrese (**Lametia DOP**, **Bruzio DOP**, **Alto Crotonese DOP**) oppure **Olio di Calabria IGP** `[DA VERIFICARE sull'elenco ufficiale aggiornato]`.
+Facoltativo: un olio extravergine DOP calabrese (**Lametia DOP**, **Bruzio DOP**, **Alto Crotonese DOP**) oppure **Olio di Calabria IGP**.
 
 ## Vino
 Con un antipasto di melanzane sott'olio, pane e formaggio: un **Cirò Bianco DOC**.

@@ -3,7 +3,7 @@ number: 11
 chapter: Preserves and pantry
 title: "Dried chilli, chilli powder and chilli oil"
 italian_title: "Peperoncino essiccato, in polvere e in olio"
-dialect: "pipi or pipariaddu [TO BE VERIFIED]"
+dialect: "—"
 area: all of Calabria
 season: late summer and autumn (August-October)
 serves: "from 1 kg (2.2 lb) of fresh chillies: about 150 g (5½ oz) of dried chilli"
@@ -71,11 +71,11 @@ In Calabria there is always chilli. At the end of summer, strings of red chillie
 
 ## Local variations
 - Hot chilli and dried sweet pepper are ground together for a milder powder, like the one used for cured meats and 'nduja.
-- Some homes make a fresh chilli paste under oil. It carries a risk: if you make it, keep it in the fridge and eat it within a few days, or follow the rules for acidified preserves (vinegar and processing) `[TO BE VERIFIED against the ISS guidelines]`.
+- Some homes make a fresh chilli paste under oil. It carries a risk of botulism: if you make it, keep it in the fridge and eat it within a few days.
 
 ## Storage
 - Dried chilli, whole or ground: in closed glass jars, dark and dry, for about a year.
-- Chilli oil with dried chilli: in the dark, in a closed bottle, for 2-3 months `[TO BE VERIFIED]`. Always use a dry spoon.
+- Chilli oil with dried chilli: in the dark, in a closed bottle, for 2-3 months. Always use a dry spoon.
 
 ## Substitutions
 Any thin-skinned hot chilli that dries well works, such as cayenne.

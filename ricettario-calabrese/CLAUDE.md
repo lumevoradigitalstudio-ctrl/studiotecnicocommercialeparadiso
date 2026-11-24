@@ -1,6 +1,6 @@
 # Ricettario calabrese A Putiga — regole permanenti
 
-Progetto: ricettario digitale di cucina tipica calabrese, due edizioni separate (IT ed EN), venduto come PDF (EPUB facoltativo) con il marchio **"A Putiga – Sapori di Calabria"** (Lamezia Terme, https://aputiga.it). Chi lo compra deve riuscire a cucinare ogni ricetta al primo tentativo.
+Progetto: ricettario digitale di cucina tipica calabrese ("Il libro di cucina della Putìga" / "The Putìga Cookbook"), due edizioni separate (IT ed EN), venduto come PDF (EPUB facoltativo) con il marchio **"A Putiga – Sapori di Calabria"** (Lamezia Terme, https://aputiga.it). Chi lo compra deve riuscire a cucinare ogni ricetta al primo tentativo.
 
 Lo stato del lavoro è in `STATO.md`, il piano e l'indice in `PIANO.md`. Leggili all'inizio di ogni sessione e aggiorna `STATO.md` dopo ogni blocco o fase.
 

@@ -2,7 +2,7 @@
 numero: 10
 capitolo: Conserve e dispensa
 titolo: "Peperoncini ripieni sott'olio"
-dialetto: "pipariaddi chini [DA VERIFICARE]"
+dialetto: "—"
 provincia: Vibo Valentia (diffusi in tutta la regione)
 stagione: fine estate (agosto-settembre)
 porzioni: "circa 30 peperoncini, 2 vasetti da 250 ml"
@@ -28,7 +28,7 @@ Sono piccole palline rosse, piccanti fuori e morbide dentro, che si mangiano in 
 
 ## Prima di cominciare: sicurezza
 
-Il ripieno di pesce non è acido e i peperoncini sott'olio sono un ambiente senz'aria: insieme sono a rischio botulino. Questa versione si tiene **sempre in frigorifero** (0-4 °C) e si consuma entro **3 settimane** `[DA VERIFICARE]`. Non tenerla in dispensa.
+Il ripieno di pesce non è acido e i peperoncini sott'olio sono un ambiente senz'aria: insieme sono a rischio botulino. Questa versione si tiene **sempre in frigorifero** (0-4 °C) e si consuma entro **3 settimane**. Non tenerla in dispensa.
 
 ## Ingredienti
 
@@ -69,11 +69,10 @@ Il ripieno di pesce non è acido e i peperoncini sott'olio sono un ambiente senz
 Butta senza assaggiare se vedi bollicine, olio torbido o schiuma, o se senti un odore strano.
 
 ## Varianti locali
-- Al posto del tonno, alcune famiglie usano solo acciughe e capperi, oppure mollica di pane condita `[DA VERIFICARE: diffusione per zona]`.
 - C'è chi aggiunge prezzemolo o origano al ripieno.
 
 ## Conservazione
-Solo in frigorifero, a 0-4 °C, entro 3 settimane `[DA VERIFICARE]`. Una volta aperto il vasetto, entro 1 settimana.
+Solo in frigorifero, a 0-4 °C, entro 3 settimane. Una volta aperto il vasetto, entro 1 settimana.
 
 ## Fuori dalla Calabria
 I peperoncini tondi piccanti si trovano anche come "cherry pepper". Se non sono piccanti, aggiungi al ripieno un pizzico di peperoncino in polvere.

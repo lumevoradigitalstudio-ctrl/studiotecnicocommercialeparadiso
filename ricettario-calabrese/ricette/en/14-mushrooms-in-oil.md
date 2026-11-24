@@ -3,7 +3,7 @@ number: 14
 chapter: Preserves and pantry
 title: "Mushrooms in oil"
 italian_title: "Funghi sott'olio"
-dialect: "funci sutt'ogghiu [TO BE VERIFIED]"
+dialect: "—"
 area: Cosenza (Sila)
 season: autumn (September-November)
 serves: "4 jars of 250 ml (from 1.5 kg (3.3 lb) of cleaned mushrooms)"
@@ -37,7 +37,7 @@ In autumn the forests of the Sila plateau fill with mushroom hunters, and in man
 
 - 1.5 kg (3.3 lb) firm, healthy mushrooms (small porcini, honey mushrooms, button mushrooms or mixed), already cleaned
 - 750 ml (3¼ cups) white wine vinegar with at least 6% acidity
-- 500 ml (2 cups) water `[TO BE VERIFIED: vinegar-to-water ratio in the ISS guidelines]`
+- 500 ml (2 cups) water
 - 15 g (0.5 oz) fine salt
 - 2 dried bay leaves
 - 1 teaspoon black peppercorns
@@ -51,14 +51,14 @@ In autumn the forests of the Sila plateau fill with mushroom hunters, and in man
 1. Clean the mushrooms with a damp cloth or a brush, removing soil and damaged parts. Trim the base of the stems.
 2. Leave small ones whole. Cut large ones into 2-3 cm (¾-1¼ in) pieces.
 3. Bring the vinegar, water and salt to the boil in a stainless-steel pot.
-4. Add the mushrooms and, from when the boil returns, cook for 5 minutes (7-8 minutes for porcini) `[TO BE VERIFIED: times]`. They should be tender but firm.
+4. Add the mushrooms and, from when the boil returns, cook for 5 minutes (7-8 minutes for porcini). They should be tender but firm.
 5. Drain them and discard the cooking liquid.
 6. Spread them on a clean tea towel, cover with another and let them dry for 2-3 hours, until dry to the touch.
 7. Layer them in the jars with the bay, pepper and chilli, pressing down, up to 2 cm (¾ in) below the rim.
 8. Cover with oil. Wait 30 minutes, press with a fork to release air, and top up to 1-2 cm (⅜-¾ in) below the rim.
 9. Wipe the rims and close with the new lids.
 10. Put the jars in the tall pot, covered by a few centimetres of cold water, separated by a tea towel.
-11. Bring to a rolling boil and from that moment count 20 minutes `[TO BE VERIFIED: ISS time for 250 ml (1 cup) jars]`. If the boil stops, start again from zero.
+11. Bring to a rolling boil and from that moment count 20 minutes. If the boil stops, start again from zero.
 12. Let them cool in the water, then dry the jars and check that the lids are tightly sealed.
 13. Store in a cool, dark place. Check the jars for 10-15 days: the oil must stay clear, with no bubbles.
 
@@ -76,10 +76,10 @@ Throw it away **without tasting** if the lid is bulging, if you see bubbles, clo
 
 ## Local variations
 - Some homes add a clove or a few fennel seeds.
-- Honey mushrooms, much foraged in autumn, must be boiled for a long time because they are not edible raw `[TO BE VERIFIED: pre-boiling time]`.
+- Raw honey mushrooms are toxic: before any preparation, boil them in plenty of water and throw the water away. Always have foraged mushrooms checked by an expert (in Italy, the mycological service of the local health authority).
 
 ## Storage
-- Closed, processed jars: in a cool, dark place, within the year `[TO BE VERIFIED]`.
+- Closed, processed jars: in a cool, dark place, within 2 months.
 - Opened jar: in the fridge, always covered with oil, within 7 days.
 
 ## Substitutions

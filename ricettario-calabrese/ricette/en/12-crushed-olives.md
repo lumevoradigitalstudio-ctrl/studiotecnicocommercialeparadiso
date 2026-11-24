@@ -3,7 +3,7 @@ number: 12
 chapter: Preserves and pantry
 title: "Crushed green olives"
 italian_title: "Olive schiacciate"
-dialect: "alivi scacciati [TO BE VERIFIED]"
+dialect: "—"
 area: Cosenza (common across the region)
 season: October-November, at harvest time
 serves: "about 1 kg (2.2 lb) of seasoned olives"
@@ -68,12 +68,12 @@ Olives taken out of the water are not acidic enough to sit in oil at room temper
 - Don't leave seasoned olives out of the fridge for days.
 
 ## Local variations
-- **In brine, for the winter:** after soaking, put the olives in clean jars and cover them with a brine of 100 g (3½ oz) salt per litre of boiled and cooled water, with 50 ml (3½ tbsp) wine vinegar per litre `[TO BE VERIFIED: safe amounts]`. Close and keep cool. When serving, rinse them and season as above.
+- **In brine, for the winter:** after soaking, put the olives in clean jars and cover them with a brine of 100 g (3½ oz) salt per litre of boiled and cooled water, with 50 ml (3½ tbsp) wine vinegar per litre. Close and keep cool. When serving, rinse them and season as above.
 - Some families add bay leaves or orange zest.
 
 ## Storage
 - Seasoned olives: in the fridge, in a closed container, within 2 weeks.
-- Olives in brine: in a cool place, for a few months `[TO BE VERIFIED]`.
+- Olives in brine: in a cool place, for a few months.
 
 ## Substitutions
 Fresh green olives are sold in autumn at markets and in Italian or Greek shops. If you can't find wild fennel, use fennel seeds.

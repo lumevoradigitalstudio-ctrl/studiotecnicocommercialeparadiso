@@ -3,7 +3,7 @@ number: 42
 chapter: Meat main courses
 title: "Baked sausage with potatoes and peppers"
 italian_title: "Salsiccia con patate e peperoni al forno"
-dialect: "sazizza, patati e pipi [TO BE VERIFIED]"
+dialect: "—"
 area: all of Calabria
 season: "summer-autumn (with peppers), all year"
 serves: 4

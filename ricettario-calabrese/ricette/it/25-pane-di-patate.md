@@ -2,7 +2,7 @@
 numero: 25
 capitolo: Pane e lievitati
 titolo: "Pane di patate"
-dialetto: "pani 'i patati [DA VERIFICARE]"
+dialetto: "—"
 provincia: Cosenza (Sila)
 stagione: autunno-inverno
 porzioni: "1 pagnotta da circa 1 kg"
@@ -20,7 +20,7 @@ stato: bozza blocco 6
 
 # Pane di patate
 
-*Pani 'i patati · Sila, provincia di Cosenza · autunno-inverno*
+*Sila, provincia di Cosenza · autunno-inverno*
 
 Sull'altopiano della Sila le patate crescono oltre i mille metri, e sono così ricche di amido che da anni hanno la loro IGP. Messe nell'impasto del pane, lo rendono morbido e umido, con una crosta sottile e una mollica che resta soffice per giorni. È un pane di montagna, semplice e saporito. Si mangia con i salumi, con il formaggio, o semplicemente con l'olio. Le patate vanno lessate con la buccia e schiacciate ancora tiepide, così restano asciutte e non bagnano l'impasto. Il resto è come per il pane di casa, ma con un po' meno acqua.
 
@@ -63,7 +63,6 @@ Sull'altopiano della Sila le patate crescono oltre i mille metri, e sono così r
 
 ## Varianti locali
 - Con la stessa pasta si fanno focacce di patate condite con pomodoro e origano.
-- Alcune famiglie aggiungono all'impasto pezzetti di ciccioli (ricetta 06) `[DA VERIFICARE]`.
 
 ## Conservazione
 In un sacchetto di carta o di tela per 4-5 giorni: resta morbido più a lungo del pane comune. Si può congelare a fette.

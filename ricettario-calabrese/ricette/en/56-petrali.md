@@ -23,7 +23,7 @@ status: draft EN block 10
 
 *Petrali · Reggio Calabria · Christmas*
 
-Petrali are the Christmas sweets of Reggio homes. They are half-moons of shortcrust pastry with a dark, fragrant filling of dried figs, almonds, walnuts, raisins, honey and spices. The filling is made a few days ahead, so the flavours blend. Then the pastry rounds are cut, filled, closed and baked. Many families decorate them with a white icing and coloured sprinkles `[TO BE VERIFIED: how common]`. They are kept in a tin for the whole holiday season. This recipe makes about thirty, and they are worth making in company, because the work goes faster.
+Petrali are the Christmas sweets of Reggio homes. They are half-moons of shortcrust pastry with a dark, fragrant filling of dried figs, almonds, walnuts, raisins, honey and spices. The filling is made a few days ahead, so the flavours blend. Then the pastry rounds are cut, filled, closed and baked. They can be decorated with a white icing and coloured sprinkles. They are kept in a tin for the whole holiday season. This recipe makes about thirty, and they are worth making in company, because the work goes faster.
 
 **Makes:** about 30 petrali · **Prep:** 1 hour · **Cook:** 20 minutes · **Rest:** 1 hour + 1 night · **Total:** about 2 hours 30 minutes · **Difficulty:** medium
 
@@ -38,7 +38,7 @@ Petrali are the Christmas sweets of Reggio homes. They are half-moons of shortcr
 - grated zest of 1 unwaxed orange
 - 1 teaspoon ground cinnamon
 - 1 pinch ground cloves
-- 50 g (2 oz) chopped dark chocolate, optional `[TO BE VERIFIED]`
+- 50 g (2 oz) chopped dark chocolate, optional
 
 **For the pastry**
 - 500 g (1.1 lb) Italian 00 flour, or plain/all-purpose flour

@@ -3,7 +3,7 @@ number: 28
 chapter: Bread and leavened doughs
 title: "Frese (twice-baked bread rings) with tomato and oregano"
 italian_title: "Frese (friselle) con pomodoro e origano"
-dialect: "frisi [TO BE VERIFIED]"
+dialect: "—"
 area: all of Calabria
 season: "summer (frese are made all year)"
 serves: "12 half-frese (6 rings)"
@@ -23,7 +23,7 @@ status: draft EN block 5
 
 *Frese, friselle · all of Calabria · summer*
 
-Frese are bread rings baked twice: first whole, then split in half, until they are dry and hard like rusks. That way they keep for weeks, and in the past they were the bread of people working far from home, in the fields or at sea `[TO BE VERIFIED]`. To eat them, you pass them briefly under cold water and top them with ripe tomato, oregano, olive oil and salt. It is the summer lunch par excellence, with no need to turn on the stove. This page shows how to make them at home, and how to dress them. If you buy them ready-made, skip to step 13.
+Frese are bread rings baked twice: first whole, then split in half, until they are dry and hard like rusks. To eat them, you pass them briefly under cold water and top them with ripe tomato, oregano, olive oil and salt. It is the summer lunch par excellence, with no need to turn on the stove. This page shows how to make them at home, and how to dress them. If you buy them ready-made, skip to step 13. Home-made, in a tin, they keep for weeks.
 
 **Makes:** 12 half-frese · **Prep:** 30 minutes · **Cook:** 1 hour 30 minutes · **Rest:** 2 hours 30 minutes · **Total:** about 5 hours · **Difficulty:** medium
 

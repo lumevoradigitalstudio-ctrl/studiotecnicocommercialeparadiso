@@ -2,7 +2,7 @@
 numero: 8
 capitolo: Conserve e dispensa
 titolo: "Pomodori secchi sott'olio"
-dialetto: "pumadori sicchi [DA VERIFICARE]"
+dialetto: "—"
 provincia: tutta la Calabria
 stagione: estate (luglio-agosto)
 porzioni: "3 vasetti da 250 ml (da 3 kg di pomodori freschi)"
@@ -57,7 +57,7 @@ D'estate, sui tetti e sui balconi dei paesi, i pomodori tagliati a metà asciuga
 12. Copri con l'olio. Aspetta 30 minuti che l'olio scenda negli spazi e rabbocca fino a 1-2 cm dal bordo.
 13. Pulisci i bordi e chiudi con le capsule nuove.
 14. Metti i vasetti nella pentola alta, coperti d'acqua fredda di qualche centimetro, separati da un canovaccio.
-15. Porta a ebollizione vivace e da quel momento conta **almeno 15 minuti** `[DA VERIFICARE: tempo ISS per vasetti da 250 ml]`. Se il bollore si ferma, riparti da zero.
+15. Porta a ebollizione vivace e da quel momento conta **almeno 20 minuti**. Se il bollore si ferma, riparti da zero.
 16. Lascia raffreddare nell'acqua, poi asciuga i vasetti. Controllali per 10-15 giorni: l'olio deve restare limpido e senza bollicine.
 
 ## Consigli
@@ -73,11 +73,11 @@ Butta senza assaggiare se il tappo è gonfio, se vedi bollicine, olio torbido o 
 
 ## Varianti locali
 - Molte famiglie conservano i pomodori soltanto secchi, in sacchetti di tela, e li ammollano in acqua e aceto al momento d'usarli.
-- Si aggiungono capperi dissalati o filetti d'acciuga `[DA VERIFICARE: sicurezza di queste aggiunte nella conserva]`. Se vuoi usarli, aggiungili solo al momento di servire.
+- Capperi dissalati o filetti d'acciuga: aggiungili solo al momento di servire, mai nel vasetto.
 
 ## Conservazione
 - Pomodori soltanto secchi: in un sacchetto di tela o in un barattolo chiuso, al buio, per alcuni mesi.
-- Vasetti sott'olio pastorizzati: al buio e al fresco, entro l'anno `[DA VERIFICARE]`.
+- Vasetti sott'olio pastorizzati: al buio e al fresco, entro 2 mesi.
 - Vasetto aperto: in frigorifero, sempre coperti d'olio, entro 7-10 giorni.
 
 ## Fuori dalla Calabria

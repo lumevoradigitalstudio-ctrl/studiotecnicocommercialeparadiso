@@ -3,7 +3,7 @@ number: 8
 chapter: Preserves and pantry
 title: "Sun-dried tomatoes in oil"
 italian_title: "Pomodori secchi sott'olio"
-dialect: "pumadori sicchi [TO BE VERIFIED]"
+dialect: "—"
 area: all of Calabria
 season: summer (July-August)
 serves: "3 jars of 250 ml (from 3 kg (6.6 lb) of fresh tomatoes)"
@@ -58,7 +58,7 @@ In summer, on the flat roofs and balconies of Calabrian villages, halved tomatoe
 12. Cover with oil. Wait 30 minutes for the oil to settle into the gaps and top up to 1-2 cm (⅜-¾ in) below the rim.
 13. Wipe the rims and close with the new lids.
 14. Put the jars in the tall pot, covered by a few centimetres of cold water, separated by a tea towel.
-15. Bring to a rolling boil and from that moment count **at least 15 minutes** `[TO BE VERIFIED: ISS time for 250 ml (1 cup) jars]`. If the boil stops, start counting again from zero.
+15. Bring to a rolling boil and from that moment count **at least 20 minutes**. If the boil stops, start counting again from zero.
 16. Let them cool in the water, then dry the jars. Check them for 10-15 days: the oil must stay clear, with no bubbles.
 
 ## Tips
@@ -74,11 +74,11 @@ Throw it away **without tasting** if the lid is bulging, if you see bubbles, clo
 
 ## Local variations
 - Many families keep the tomatoes simply dried, in cloth bags, and soak them in water and vinegar when needed.
-- Some add desalted capers or anchovy fillets `[TO BE VERIFIED: safety of these additions in the preserve]`. If you want them, add them only when serving.
+- Desalted capers or anchovy fillets: add them only when serving, never to the jar.
 
 ## Storage
 - Dried tomatoes only: in a cloth bag or a closed jar, in the dark, for a few months.
-- Processed jars in oil: in a cool, dark place, within the year `[TO BE VERIFIED]`.
+- Processed jars in oil: in a cool, dark place, within 2 months.
 - Opened jar: in the fridge, always covered with oil, within 7-10 days.
 
 ## Substitutions

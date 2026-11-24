@@ -3,7 +3,7 @@ number: 58
 chapter: Festive sweets
 title: "Mostaccioli of Soriano (honey biscuits)"
 italian_title: "Mostaccioli di Soriano"
-dialect: "'nzuddha, mostazzoli [TO BE VERIFIED]"
+dialect: "—"
 area: "Vibo Valentia (Soriano Calabro)"
 season: "fairs and patron saints' days, Christmas"
 serves: "about 20 mostaccioli"
@@ -23,7 +23,7 @@ status: draft EN block 10
 
 *Mostaccioli di Soriano · 'nzuddha · Soriano Calabro, Vibo Valentia · fairs and feast days*
 
-Mostaccioli come from Soriano Calabro, in the Serre hills near Vibo Valentia. They are hard, golden biscuits made with flour, honey and cooked grape must, with no eggs and no fat. They come in many shapes, such as fish, hearts, horses, baskets and figures of saints, and are sold at fairs and patron saints' festivals, often decorated with coloured paper or foil `[TO BE VERIFIED]`. They are sweets to keep and to give as gifts. Hard when fresh, they soften with time or are dipped in wine. This recipe makes them at home in simple shapes, cut by hand or with cutters. The dark colour comes from the honey and the cooked must.
+Mostaccioli come from Soriano Calabro, in the Serre hills near Vibo Valentia. They are hard, golden biscuits made with flour, honey and cooked grape must, with no eggs and no fat. They come in many shapes, such as fish, hearts, horses, baskets and figures of saints, and are sold at fairs and patron saints' festivals, often decorated with coloured paper or foil. They are sweets to keep and to give as gifts. Hard when fresh, they soften with time or are dipped in wine. This recipe makes them at home in simple shapes, cut by hand or with cutters. The dark colour comes from the honey and the cooked must.
 
 **Makes:** about 20 mostaccioli · **Prep:** 45 minutes · **Cook:** 20 minutes · **Rest:** 1 night (optional) · **Total:** about 1 hour 15 minutes · **Difficulty:** medium
 
@@ -31,11 +31,11 @@ Mostaccioli come from Soriano Calabro, in the Serre hills near Vibo Valentia. Th
 
 - 500 g (1.1 lb) Italian 00 flour, or plain/all-purpose flour
 - 250 g (9 oz) honey
-- 80 ml (¼ cup) vincotto (cooked grape must) or water `[TO BE VERIFIED: amounts in the Soriano recipe]`
+- 80 ml (¼ cup) vincotto (cooked grape must) or water
 - grated zest of 1 unwaxed orange
 - 1 pinch ground cloves
 - 1 teaspoon ground cinnamon, optional
-- 3 g baker's ammonia (ammonium bicarbonate), or 5 g (0.2 oz) bicarbonate of soda `[TO BE VERIFIED]`
+- 3 g baker's ammonia (ammonium bicarbonate), or 5 g (0.2 oz) bicarbonate of soda
 
 **Equipment:** rolling pin, sharp knife or cookie cutters, baking trays with baking paper.
 
@@ -65,7 +65,6 @@ Mostaccioli come from Soriano Calabro, in the Serre hills near Vibo Valentia. Th
 
 ## Local variations
 - Decorated with coloured foil stuck on with a little honey, like the ones at fairs.
-- With a little cocoa in the dough, for a darker colour `[TO BE VERIFIED]`.
 
 ## Storage
 In a tin, in a dry place, for months. They soften with time.

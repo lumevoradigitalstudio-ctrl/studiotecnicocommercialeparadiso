@@ -29,7 +29,7 @@ Struncatura is a long, dark, rough pasta born on the plain of Gioia Tauro. For m
 
 ## The story, in brief
 
-According to the sources, struncatura owes part of its history to trade between the plain and the Amalfi Coast in the nineteenth and early twentieth centuries, and to pasta makers from Campania who settled in Gioia Tauro `[TO BE VERIFIED: dates and names]`. Pasta made from milling waste did not meet the hygiene and trading rules for pasta `[TO BE VERIFIED: which rule]`. So it should not be made that way again: today's version uses wholemeal durum wheat flour, sold legally.
+Pasta made from milling waste did not meet the hygiene and trading rules for pasta. So it should not be made that way again: today's version uses wholemeal durum wheat flour, sold legally.
 
 ## Ingredients
 
@@ -41,7 +41,7 @@ According to the sources, struncatura owes part of its history to trade between 
 - 80 g (3 oz) stale bread, coarsely crumbled
 - 2 tablespoons chopped parsley
 - 1 tablespoon desalted capers, optional
-- 50 g (2 oz) oven-dried black olives (recipe 13), chopped, optional `[TO BE VERIFIED: use in the Gioia Tauro recipe]`
+- 50 g (2 oz) oven-dried black olives (recipe 13), chopped, optional
 
 ## Method
 

@@ -39,7 +39,7 @@ The *tieddra* is the baking dish, and this is what goes into it when the house h
 - 1 tablespoon dried oregano
 - 1 handful chopped parsley
 - 80 ml (¼ cup) extra virgin olive oil
-- about 900 ml (3¾ cups) hot water `[TO BE VERIFIED: amount for this pasta]`
+- about 900 ml (3¾ cups) hot water
 - 10 g (0.4 oz) fine salt, pepper
 
 **Equipment:** baking dish at least 6 cm (2¼ in) deep, about 30 × 35 cm (12 × 14 in).

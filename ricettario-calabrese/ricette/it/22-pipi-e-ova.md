@@ -2,7 +2,7 @@
 numero: 22
 capitolo: Antipasti e piatti di casa
 titolo: "Peperoni e uova"
-dialetto: "pipi e ova [DA VERIFICARE]"
+dialetto: "—"
 provincia: tutta la Calabria
 stagione: estate (luglio-settembre)
 porzioni: 4
@@ -20,7 +20,7 @@ stato: bozza blocco 5
 
 # Peperoni e uova
 
-*Pipi e ova · tutta la Calabria · estate*
+*tutta la Calabria · estate*
 
 È uno dei piatti più semplici della cucina calabrese, e uno dei più amati. Si friggono i peperoni nell'olio finché sono dolci e morbidi, poi si rompono le uova nella padella e si mescola finché si rapprendono, senza farle seccare. Bastano pochi minuti e una fetta di pane per avere un pranzo completo. È il parente stretto dei peperoni e patate (ricetta 50): stessa padella, stesso olio, e alla fine le uova. Molte famiglie lo mettono in un panino da portare via. Si usano peperoni dolci, verdi o rossi, ma c'è chi aggiunge qualche peperoncino piccante.
 

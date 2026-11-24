@@ -33,14 +33,18 @@ h1 { bookmark-level: 1; }
 h1.ricetta { bookmark-level: 2; }
 h1.titolo-libro { bookmark-level: none; }
 
-/* copertina */
-.copertina { page: copertina; height: 297mm; text-align: center; display: flex; flex-direction: column; align-items: center; padding: 22mm 20mm 0; box-sizing: border-box; }
-.copertina .cornice { width: 170mm; height: 128mm; border: 1.2pt solid var(--rosso); padding: 2.5mm; background: var(--carta-chiara); }
-.copertina .foto { width: 100%; height: 100%; object-fit: cover; }
-.titolo-libro { font-size: 46pt; margin: 14mm 0 2mm; color: var(--rosso); }
-.sottotitolo { font-style: italic; font-size: 15pt; color: var(--oliva); }
-.autore { font-size: 13pt; margin-top: 8mm; }
-.editore { font-family: 'IM Fell English SC'; font-size: 13pt; color: var(--oliva); margin-top: auto; padding-bottom: 18mm; }
+/* copertina: immagine a tutta pagina, titolo sul muro in alto, editore in basso */
+.copertina { page: copertina; height: 297mm; position: relative; overflow: hidden; text-align: center; }
+.copertina .sfondo { position: absolute; top: 0; left: 0; width: 210mm; height: 297mm; object-fit: cover; }
+.copertina .testata { position: absolute; top: 0; left: 0; right: 0; padding: 20mm 18mm 16mm;
+  background: linear-gradient(to bottom, rgba(246,234,208,0.93) 0%, rgba(246,234,208,0.85) 60%, rgba(246,234,208,0.4) 80%, rgba(246,234,208,0) 94%, rgba(246,234,208,0) 100%); }
+.sopratitolo { font-family: 'IM Fell English SC'; font-size: 13pt; letter-spacing: 2pt; color: var(--oliva); margin: 0 0 3mm; }
+.titolo-libro { font-size: 44pt; line-height: 1.05; margin: 0 0 4mm; color: var(--rosso); }
+.sottotitolo { font-style: italic; font-size: 14pt; color: var(--inchiostro); margin: 0; }
+.autore { font-size: 13pt; margin-top: 4mm; }
+.copertina .piede { position: absolute; bottom: 0; left: 0; right: 0; padding: 4mm 0 5mm; background: rgba(46,42,26,0.82); }
+.editore { font-family: 'IM Fell English SC'; font-size: 14pt; color: var(--carta-chiara); margin: 0; }
+.nota-ia { font-size: 7pt; font-style: italic; color: var(--kraft); margin: 1mm 0 0; }
 
 /* pagine iniziali */
 .colophon { page: vuota; break-before: page; font-size: 9pt; padding-top: 95mm; }
@@ -62,15 +66,15 @@ h1.capitolo { font-size: 34pt; string-set: capitolo content(); border-bottom: 1.
 /* ricetta */
 article.ricetta { break-before: page; }
 figure { margin: 0; }
-.principale .foto { display: block; width: 100%; height: 100mm; object-fit: cover; }
+.principale .foto { display: block; width: 100%; height: 88mm; object-fit: cover; }
 figcaption { font-size: 7.5pt; font-style: italic; color: var(--oliva); text-align: right; margin-top: 0.8mm; }
 .ricetta h1 + p em:only-child { color: var(--oliva); }
 .ricetta h1 + p { font-size: 10pt; margin-bottom: 3mm; }
 .passi { break-inside: avoid; margin: 4mm 0 2mm; }
 .passi .riga { display: flex; gap: 4mm; }
-.passi .passo { width: 56mm; height: 56mm; object-fit: cover; }
+.passi .passo { width: 50mm; height: 50mm; object-fit: cover; }
 .segnaposto { display: flex; align-items: center; justify-content: center; text-align: center; border: 1pt dashed var(--kraft); background: var(--carta); color: var(--kraft); font-size: 8pt; box-sizing: border-box; }
-.principale .segnaposto { height: 100mm; }
+.principale .segnaposto { height: 88mm; }
 .note { column-count: 2; column-gap: 7mm; font-size: 9.6pt; margin-top: 3mm; }
 .note h2 { font-size: 12pt; margin-top: 2mm; }
 .note section { break-inside: auto; }

@@ -2,7 +2,7 @@
 numero: 28
 capitolo: Pane e lievitati
 titolo: "Frese (friselle) con pomodoro e origano"
-dialetto: "frisi [DA VERIFICARE]"
+dialetto: "—"
 provincia: tutta la Calabria
 stagione: "estate (le frese si fanno tutto l'anno)"
 porzioni: "12 mezze frese (6 ciambelle)"
@@ -22,7 +22,7 @@ stato: bozza blocco 7
 
 *Tutta la Calabria · estate*
 
-Le frese sono ciambelle di pane cotte due volte: la prima intere, la seconda tagliate a metà, finché diventano secche e dure come biscotti. Così si conservano per settimane, e un tempo erano il pane di chi lavorava lontano da casa, nei campi o in mare `[DA VERIFICARE]`. Per mangiarle basta passarle un attimo sotto l'acqua fresca e condirle con pomodoro maturo, origano, olio e sale. È il pranzo dell'estate per eccellenza, che non chiede di accendere i fornelli. In questa pagina trovi come farle in casa, e come condirle. Se le compri già fatte, salta al passaggio 13.
+Le frese sono ciambelle di pane cotte due volte: la prima intere, la seconda tagliate a metà, finché diventano secche e dure come biscotti. Per mangiarle basta passarle un attimo sotto l'acqua fresca e condirle con pomodoro maturo, origano, olio e sale. È il pranzo dell'estate per eccellenza, che non chiede di accendere i fornelli. In questa pagina trovi come farle in casa, e come condirle. Se le compri già fatte, salta al passaggio 13. Fatte in casa, chiuse in una scatola di latta, durano settimane.
 
 **Resa:** 12 mezze frese · **Preparazione:** 30 minuti · **Cottura:** 1 ora e 30 minuti · **Riposo:** 2 ore e 30 minuti · **Totale:** circa 5 ore · **Difficoltà:** media
 

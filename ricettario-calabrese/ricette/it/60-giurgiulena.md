@@ -2,7 +2,7 @@
 numero: 60
 capitolo: Dolci delle feste
 titolo: "Giurgiulena (croccante di sesamo e miele)"
-dialetto: "giurgiulena, cicirata [DA VERIFICARE: nomi per zona]"
+dialetto: "—"
 provincia: "tutta la Calabria (molto legata al Pollino, nel Cosentino)"
 stagione: Natale
 porzioni: "circa 30 pezzi"
@@ -22,7 +22,7 @@ stato: bozza blocco 12
 
 *Giurgiulena · tutta la Calabria, Pollino · Natale*
 
-La giurgiulena è il torrone dei poveri. Semi di sesamo e miele, a volte qualche mandorla, cotti insieme in padella e stesi caldi su un piano, poi tagliati a rombi prima che induriscano. È profumata di arancia e di cannella, croccante e un po' appiccicosa, ed è uno dei dolci di Natale. Il nome viene dal sesamo, che in dialetto si chiama *giuggiulena* `[DA VERIFICARE]`. Si fa anche in Sicilia, e in Calabria è molto legata alla tradizione del Pollino. Si prepara in un quarto d'ora, ma bisogna lavorare veloci, perché il caramello si indurisce in pochi minuti.
+La giurgiulena è il torrone dei poveri. Semi di sesamo e miele, a volte qualche mandorla, cotti insieme in padella e stesi caldi su un piano, poi tagliati a rombi prima che induriscano. È profumata di arancia e di cannella, croccante e un po' appiccicosa, ed è uno dei dolci di Natale. Il nome viene dal sesamo, che in dialetto si chiama *giuggiulena*. Si fa anche in Sicilia, e in Calabria è molto legata alla tradizione del Pollino. Si prepara in un quarto d'ora, ma bisogna lavorare veloci, perché il caramello si indurisce in pochi minuti.
 
 **Resa:** circa 30 pezzi · **Preparazione:** 15 minuti · **Cottura:** 15 minuti · **Riposo:** 30 minuti · **Totale:** 1 ora · **Difficoltà:** media
 
@@ -34,7 +34,7 @@ La giurgiulena è il torrone dei poveri. Semi di sesamo e miele, a volte qualche
 - 50 g di mandorle a lamelle o a pezzetti (facoltative)
 - la scorza grattugiata di 1 arancia non trattata
 - 1 cucchiaino di cannella in polvere
-- olio di semi o 1 limone tagliato a metà (per stendere)
+- olio di semi (per ungere)
 
 **Attrezzatura:** padella antiaderente o di acciaio larga, cucchiaio di legno, carta forno, mattarello, coltello grande.
 
@@ -46,7 +46,7 @@ La giurgiulena è il torrone dei poveri. Semi di sesamo e miele, a volte qualche
 4. Fai cuocere 5-6 minuti, mescolando, finché lo sciroppo prende un colore ambrato chiaro (circa 140-150 °C con il termometro).
 5. Aggiungi sesamo, mandorle, scorza d'arancia e cannella. Mescola velocemente per 2-3 minuti, finché tutto è ben legato e il composto si stacca dalla padella.
 6. Versa subito il composto sulla carta forno unta.
-7. Copri con l'altro foglio e stendi con il mattarello fino a uno spessore di 1 cm. In alternativa, stendi con mezzo limone `[DA VERIFICARE: uso tradizionale]`.
+7. Copri con l'altro foglio e stendi con il mattarello fino a uno spessore di 1 cm. 
 8. Togli il foglio di sopra e, mentre è ancora caldo, taglia a rombi o a rettangoli con il coltello unto d'olio.
 9. Lascia raffreddare 30 minuti, poi stacca i pezzi.
 
@@ -60,7 +60,6 @@ La giurgiulena è il torrone dei poveri. Semi di sesamo e miele, a volte qualche
 
 ## Varianti locali
 - Con le mandorle intere, in parte o al posto del sesamo.
-- Servita su foglie d'arancio o di limone `[DA VERIFICARE]`.
 
 ## Conservazione
 In una scatola di latta o in un barattolo ben chiuso, all'asciutto, per 2-3 settimane. Con l'umidità diventa appiccicosa.

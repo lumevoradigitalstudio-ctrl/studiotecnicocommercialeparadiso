@@ -28,7 +28,7 @@ La struncatura è una pasta lunga, scura e ruvida, nata nella Piana di Gioia Tau
 
 ## La storia, in breve
 
-Secondo le fonti, la struncatura deve parte della sua storia ai commerci tra la Piana e la Costiera Amalfitana, tra Ottocento e primo Novecento, e ai pastai campani arrivati a Gioia Tauro `[DA VERIFICARE: date e nomi]`. La pasta fatta con gli scarti della molitura non rispettava le norme igieniche e commerciali sulla pasta `[DA VERIFICARE: quale norma]`. Per questo non va rifatta così: la versione di oggi usa farina integrale di grano duro, venduta regolarmente.
+La pasta fatta con gli scarti della molitura non rispettava le norme igieniche e commerciali sulla pasta. Per questo non va rifatta così: la versione di oggi usa farina integrale di grano duro, venduta regolarmente.
 
 ## Ingredienti
 
@@ -40,7 +40,7 @@ Secondo le fonti, la struncatura deve parte della sua storia ai commerci tra la 
 - 80 g di mollica di pane raffermo, sbriciolata grossa
 - 2 cucchiai di prezzemolo tritato
 - 1 cucchiaio di capperi dissalati (facoltativo)
-- 50 g di olive nere al forno (ricetta 13), tagliate a pezzetti (facoltative) `[DA VERIFICARE: uso nella ricetta di Gioia Tauro]`
+- 50 g di olive nere al forno (ricetta 13), tagliate a pezzetti (facoltative)
 
 ## Procedimento
 

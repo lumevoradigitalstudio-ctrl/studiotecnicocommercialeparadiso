@@ -2,7 +2,7 @@
 numero: 23
 capitolo: Pane e lievitati
 titolo: "Pane di casa di grano duro"
-dialetto: "pani 'i casa [DA VERIFICARE]"
+dialetto: "—"
 provincia: tutta la Calabria
 stagione: tutto l'anno
 porzioni: "2 pagnotte da circa 800 g"
@@ -64,7 +64,6 @@ Un tempo, in molti paesi calabresi, il pane si impastava in casa e si cuoceva ne
 
 ## Varianti locali
 - In molte case si forma una sola grande pagnotta tonda o a ciambella.
-- Il pane cotto nel forno a legna, dopo che si spegneva, lasciava posto alle olive (ricetta 13) o ai biscotti `[DA VERIFICARE]`.
 
 ## Conservazione
 In un sacchetto di carta o di tela, per 3-4 giorni. Si può congelare a fette.

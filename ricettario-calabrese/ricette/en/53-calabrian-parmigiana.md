@@ -3,7 +3,7 @@ number: 53
 chapter: Side dishes
 title: "Calabrian aubergine parmigiana"
 italian_title: "Parmigiana di melanzane alla calabrese"
-dialect: "parmigiana 'i mulingiani [TO BE VERIFIED]"
+dialect: "—"
 area: all of Calabria
 season: "summer (July-September)"
 serves: 6

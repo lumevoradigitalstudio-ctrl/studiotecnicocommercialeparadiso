@@ -30,7 +30,7 @@ Pitta is the bread for morzello. In Catanzaro it is a low ring with a wide hole 
 ## Ingredients
 
 - 300 g (11 oz) Italian type 0 flour, or strong white bread flour
-- 200 g (7 oz) semola rimacinata (re-milled durum wheat semolina) `[TO BE VERIFIED: flour of the Catanzaro tradition]`
+- 200 g (7 oz) semola rimacinata (re-milled durum wheat semolina)
 - 320 ml (1¼ cups) lukewarm water, about 30 °C (86 °F)
 - 5 g (0.2 oz) fresh yeast, or 2 g dried yeast
 - 10 g (0.4 oz) fine salt
@@ -64,7 +64,6 @@ Pitta is the bread for morzello. In Catanzaro it is a low ring with a wide hole 
 
 ## Local variations
 - In other parts of Calabria pitta has a narrower hole and more crumb.
-- The same dough is used for pitte topped with tomato, oregano and anchovies `[TO BE VERIFIED]`.
 
 ## Storage
 In a paper bag for 1-2 days. They can be frozen and reheated in the oven at 200 °C (390 °F) for 5 minutes.

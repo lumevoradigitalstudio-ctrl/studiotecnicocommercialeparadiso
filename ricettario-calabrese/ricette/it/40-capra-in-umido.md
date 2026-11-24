@@ -2,8 +2,8 @@
 numero: 40
 capitolo: Secondi di carne
 titolo: "Capra in umido con vino e pomodoro"
-dialetto: "crapa [DA VERIFICARE]"
-provincia: "Reggio Calabria (Aspromonte) [DA VERIFICARE]"
+dialetto: "—"
+provincia: "Reggio Calabria (Aspromonte)"
 stagione: "feste estive e patronali"
 porzioni: 6
 preparazione: 30 minuti
@@ -22,7 +22,7 @@ stato: bozza blocco 9
 
 *Reggio Calabria, Aspromonte · feste estive e patronali*
 
-Sulle montagne calabresi, e soprattutto in Aspromonte, la capra è sempre stata la carne dei pastori e delle feste. È una carne saporita e un po' forte, che chiede cotture lunghe e pazienti. Per le feste la si cuoce in grandi pentole `[DA VERIFICARE]`, e il sugo condisce i maccheroni (ricetta 30) prima che la carne arrivi in tavola. Questa ricetta è una versione di casa: i pezzi di capra si rosolano bagnandoli con l'aceto, poi si cuociono per ore con vino, cipolla e pomodoro, a fuoco bassissimo. Il risultato è una carne che si stacca dall'osso e un sugo denso e scuro.
+Sulle montagne calabresi, e soprattutto in Aspromonte, la capra è sempre stata la carne dei pastori e delle feste. È una carne saporita e un po' forte, che chiede cotture lunghe e pazienti. Per le feste la si cuoce in grandi pentole, e il sugo condisce i maccheroni (ricetta 30) prima che la carne arrivi in tavola. Questa ricetta è una versione di casa: i pezzi di capra si rosolano bagnandoli con l'aceto, poi si cuociono per ore con vino, cipolla e pomodoro, a fuoco bassissimo. Il risultato è una carne che si stacca dall'osso e un sugo denso e scuro.
 
 **Porzioni:** 6 · **Preparazione:** 30 minuti · **Cottura:** 3 ore e 30 minuti-4 ore · **Riposo:** 4 ore (facoltativo) · **Difficoltà:** media
 
@@ -69,7 +69,6 @@ Sulle montagne calabresi, e soprattutto in Aspromonte, la capra è sempre stata 
 ## Varianti locali
 - **Capra lessa:** la carne sbollentata e poi cotta a lungo in un brodo di verdure, erbe e vino. Il brodo serve per la pasta.
 - **Capretto di Pasqua**, al sugo o in bianco, senza pomodoro.
-- In alcuni paesi la carne cuoce per molte ore in pentole di rame o di terracotta chiuse, sul fuoco della festa `[DA VERIFICARE: paesi e nomi]`.
 
 ## Conservazione
 In frigorifero 3 giorni, nel suo sugo. In freezer 3 mesi.

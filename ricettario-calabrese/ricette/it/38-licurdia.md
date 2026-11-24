@@ -63,7 +63,6 @@ La licurdia è una zuppa di cipolle, pane raffermo e peperoncino, nata nelle cas
 ## Varianti locali
 - Con lo strutto al posto dell'olio.
 - Senza patate, solo cipolle e pane.
-- Con un uovo sbattuto mescolato alla zuppa alla fine `[DA VERIFICARE]`.
 
 ## Conservazione
 La zuppa senza pane si conserva in frigorifero per 2 giorni. Il pane va aggiunto al momento.

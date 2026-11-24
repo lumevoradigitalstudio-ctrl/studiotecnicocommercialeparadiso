@@ -2,7 +2,7 @@
 numero: 13
 capitolo: Conserve e dispensa
 titolo: "Olive nere al forno"
-dialetto: "alivi 'nfurnati [DA VERIFICARE]"
+dialetto: "—"
 provincia: tutta la Calabria
 stagione: novembre-dicembre
 porzioni: "circa 800 g di olive (da 1 kg di olive fresche)"
@@ -41,7 +41,7 @@ Le olive nere, mature e lucide, raccolte a fine autunno, non hanno bisogno di sa
 3. Mescolale con il sale grosso nel colapasta, appoggiato su una ciotola che raccolga il liquido.
 4. Copri con un piatto e lascia in un luogo fresco.
 5. Mescola le olive con le mani ogni giorno. Butta il liquido scuro che si raccoglie nella ciotola.
-6. Dopo 2 settimane assaggia un'oliva (sciacquala prima). Sono pronte quando sono rugose e appena amarognole, di solito in 2-3 settimane `[DA VERIFICARE: durata tradizionale]`.
+6. Dopo 2 settimane assaggia un'oliva (sciacquala prima). Sono pronte quando sono rugose e appena amarognole, di solito in 2-3 settimane.
 7. Sciacqua le olive velocemente sotto l'acqua per togliere il sale in eccesso e asciugale con cura.
 8. Scalda il forno a 150 °C, statico.
 9. Disponi le olive in un solo strato sulla teglia con carta forno.
@@ -58,7 +58,6 @@ Le olive nere, mature e lucide, raccolte a fine autunno, non hanno bisogno di sa
 - Non conservarle già condite con aglio fresco fuori dal frigorifero.
 
 ## Varianti locali
-- Alcune famiglie le cuociono nel forno a legna, quando si spegne dopo il pane `[DA VERIFICARE]`.
 - In altre case si condiscono con aglio a fettine e alloro e si mangiano subito.
 
 ## Conservazione

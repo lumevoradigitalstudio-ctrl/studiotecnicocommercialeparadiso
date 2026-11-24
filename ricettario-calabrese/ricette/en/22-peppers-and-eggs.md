@@ -3,7 +3,7 @@ number: 22
 chapter: Antipasti and home cooking
 title: "Peppers and eggs"
 italian_title: "Peperoni e uova"
-dialect: "pipi e ova [TO BE VERIFIED]"
+dialect: "—"
 area: all of Calabria
 season: summer (July-September)
 serves: 4

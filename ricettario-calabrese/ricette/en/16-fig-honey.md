@@ -3,7 +3,7 @@ number: 16
 chapter: Preserves and pantry
 title: "Fig honey (fig syrup)"
 italian_title: "Miele di fichi"
-dialect: "milazzu [TO BE VERIFIED]"
+dialect: "—"
 area: Cosenza
 season: late summer (August-September)
 serves: "about 400 ml (from 3 kg (6.6 lb) of fresh figs)"
@@ -59,10 +59,9 @@ Fig honey isn't made by bees. It is made by cooking ripe late-summer figs for a 
 
 ## Local variations
 - Some families add orange or lemon zest while cooking the figs.
-- In many areas it is also called "miele cotto" or "vincotto di fichi" `[TO BE VERIFIED: names by area]`.
 
 ## Storage
-- Closed jars: in a cool, dark place for a few months `[TO BE VERIFIED: shelf life and safety]`.
+- Closed jars: in a cool, dark place for a few months.
 - Opened jar: in the fridge, within 2 months. Always use a clean spoon.
 
 ## Substitutions

@@ -38,7 +38,7 @@ La *tieddra* è la teglia da forno, e questo è il piatto che ci finisce dentro 
 - 1 cucchiaio di origano secco
 - 1 ciuffo di prezzemolo tritato
 - 80 ml di olio extravergine di oliva
-- circa 900 ml di acqua calda `[DA VERIFICARE: quantità per questa pasta]`
+- circa 900 ml di acqua calda
 - 10 g di sale fino, pepe
 
 **Attrezzatura:** teglia da forno profonda almeno 6 cm, di circa 30 × 35 cm.

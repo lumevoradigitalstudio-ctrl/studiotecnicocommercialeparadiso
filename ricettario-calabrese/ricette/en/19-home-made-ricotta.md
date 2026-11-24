@@ -3,7 +3,7 @@ number: 19
 chapter: Antipasti and home cooking
 title: "Home-made ricotta (fresh lemon cheese)"
 italian_title: "Ricotta di casa (formaggio fresco al limone)"
-dialect: "ricotta [name of the home version TO BE VERIFIED]"
+dialect: "—"
 area: all of Calabria
 season: all year
 serves: "about 400 g (from 2 l (2 quarts) of milk)"
@@ -21,7 +21,7 @@ status: draft EN block 4
 
 # Home-made ricotta (fresh lemon cheese)
 
-*Ricotta di casa · all of Calabria · all year*
+*all of Calabria · all year*
 
 True ricotta is made from the whey left over after cheesemaking, and that is how shepherds make it, with sheep's or goat's milk. A city kitchen has no whey. But in a few minutes you can make a similar fresh cheese, soft and sweet, by heating whole milk and curdling it with lemon juice. It isn't the shepherd's ricotta, and this book says so plainly, but on the table it comes very close. It is lovely warm with a drizzle of fig honey (recipe 16), on bread, in pasta fillings and in desserts. All you need is good milk and a thermometer.
 
@@ -40,7 +40,7 @@ True ricotta is made from the whey left over after cheesemaking, and that is how
 
 1. Pour the milk, cream and salt into the pot.
 2. Heat over medium-low heat, stirring now and then with a wooden spoon so the milk doesn't stick.
-3. Bring it to 85-90 °C (185-194 °F) `[TO BE VERIFIED: temperature]`: small bubbles appear around the edge and steam rises, but the milk must not boil.
+3. Bring it to 85-90 °C (185-194 °F): small bubbles appear around the edge and steam rises, but the milk must not boil.
 4. Turn off the heat and pour in the lemon juice in a thin stream, stirring gently, once only.
 5. Leave it for 10 minutes without touching it. White curds form, and the liquid around them turns yellow-green and almost clear.
 6. If the liquid is still white and milky, add another spoonful of lemon juice and wait 5 minutes.

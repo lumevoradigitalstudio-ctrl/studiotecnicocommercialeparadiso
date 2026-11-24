@@ -3,7 +3,7 @@ number: 46
 chapter: Fish main courses
 title: "Stockfish alla mammolese"
 italian_title: "Stocco alla mammolese"
-dialect: "stoccu a' mammolisi [TO BE VERIFIED]"
+dialect: "—"
 area: "Reggio Calabria (Mammola)"
 season: all year
 serves: 4
@@ -46,7 +46,7 @@ Mammola is a village inland in the Locride, far from the sea. Yet its most famou
 
 **If the stockfish is dry**
 1. Cut the dry stockfish into pieces with a kitchen saw, or ask the fishmonger to do it.
-2. Soak it in cold water in the fridge for 5-7 days, changing the water twice a day, until soft and swollen `[TO BE VERIFIED: soaking time]`.
+2. Soak it in cold water in the fridge for 5-7 days, changing the water twice a day, until soft and swollen.
 
 **The dish**
 3. Remove the skin and the larger bones from the stockfish and cut it into 5-6 cm (2-2¼ in) pieces.

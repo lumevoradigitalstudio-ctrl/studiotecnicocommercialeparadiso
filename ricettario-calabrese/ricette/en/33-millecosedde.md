@@ -4,7 +4,7 @@ chapter: Home-made pasta and first courses
 title: "Millecosedde (mixed bean and pasta soup)"
 italian_title: "Millecosedde"
 dialect: "millecosedde"
-area: "Cosenza [TO BE VERIFIED]"
+area: "Cosenza"
 season: winter
 serves: 6
 prep: 30 minutes
@@ -62,7 +62,7 @@ The name means something like "a thousand little things", and it says it all. Mi
 
 ## Common mistakes
 - Don't use the soaking water for cooking.
-- Don't eat grass peas often and in large amounts: they contain a substance that, eaten over long periods, can damage the nerves. Soak them well and discard the soaking water `[TO BE VERIFIED: official guidance on eating grass peas]`.
+- Don't eat grass peas often and in large amounts: they contain a substance that, eaten over long periods, can damage the nerves. Soak them well and discard the soaking water.
 
 ## Local variations
 - Without pancetta, with just olive oil, for meatless days and Lent.

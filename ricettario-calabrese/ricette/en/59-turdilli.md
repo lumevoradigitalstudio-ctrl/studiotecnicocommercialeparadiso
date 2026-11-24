@@ -75,7 +75,6 @@ Around Cosenza, Christmas smells of frying and honey. Turdilli are little gnocch
 
 ## Local variations
 - Instead of red wine, some families use white wine, muscat or vermouth.
-- In some homes eggs or yeast are added to the dough `[TO BE VERIFIED: how common by area]`.
 - Fig honey can be replaced by bee honey, and they are sometimes scattered with coloured sprinkles.
 
 ## Storage

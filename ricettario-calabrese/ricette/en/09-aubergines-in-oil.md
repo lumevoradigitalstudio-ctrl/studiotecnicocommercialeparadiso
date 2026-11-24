@@ -40,7 +40,7 @@ Oil does not protect against botulism: it shuts out the air, and the bacterium t
 - 2 kg (4.4 lb) long aubergines, firm and glossy
 - 60 g (2 oz) coarse salt
 - 1 l (4¼ cups) white wine vinegar at 6%
-- 500 ml (2 cups) water `[TO BE VERIFIED: vinegar-to-water ratio in the ISS guidelines]`
+- 500 ml (2 cups) water
 - 4 garlic cloves, sliced
 - 2-3 dried hot chillies, broken up, or 1 teaspoon chilli flakes
 - 2 tablespoons dried oregano
@@ -63,7 +63,7 @@ Oil does not protect against botulism: it shuts out the air, and the bacterium t
 11. Pour in oil to cover the aubergines well. Wait 30 minutes for the oil to settle into the gaps. Top up to 1-2 cm (⅜-¾ in) below the rim.
 12. Wipe the rims with paper towel and close with the new lids.
 13. Stand the jars in a tall pot, separated by a tea towel. Cover them with cold water, which must come a few centimetres above them.
-14. Bring to a rolling boil and from that moment count 20 minutes `[TO BE VERIFIED: ISS time for 250 ml (1 cup) jars]`. If the boil stops, start again from zero.
+14. Bring to a rolling boil and from that moment count 20 minutes. If the boil stops, start again from zero.
 15. Turn off the heat and let the jars cool in the water. Then dry them and check the lid: pressing the centre, it must not click.
 16. Store in a cool, dark place. Check the jars every day for 10-15 days: the oil must stay clear, with no rising bubbles.
 
@@ -82,10 +82,9 @@ Throw it away **without tasting** if the lid is bulging, if you see rising bubbl
 
 ## Local variations
 - In many homes dried mint is used instead of oregano, or together with it.
-- Some families don't blanch, but leave the aubergines in cold vinegar for a few hours `[TO BE VERIFIED: how common and how safe this method is]`. The blanched version is the safest.
 
 ## Storage
-- Closed, processed jars: in a cool, dark place, use within the year `[TO BE VERIFIED: shelf life given by the ISS]`.
+- Closed, processed jars: in a cool, dark place, use within 2 months.
 - Opened jar: in the fridge, with the aubergines always covered with oil, use within 7-10 days.
 
 ## Substitutions
@@ -95,7 +94,7 @@ Any long, dark aubergine works. Avoid large round ones, which have many seeds. C
 Sulphites, if present in the wine vinegar (read the label).
 
 ## PDO and PGI
-Optional: a Calabrian PDO extra virgin olive oil (**Lametia PDO**, **Bruzio PDO**, **Alto Crotonese PDO**) or **Olio di Calabria PGI** `[TO BE VERIFIED on the current official list]`.
+Optional: a Calabrian PDO extra virgin olive oil (**Lametia PDO**, **Bruzio PDO**, **Alto Crotonese PDO**) or **Olio di Calabria PGI**.
 
 ## Wine
 With an antipasto of aubergines in oil, bread and cheese: a **Cirò Bianco DOC**.

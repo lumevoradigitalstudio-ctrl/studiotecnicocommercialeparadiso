@@ -3,7 +3,7 @@ number: 30
 chapter: Home-made pasta and first courses
 title: "Maccheroni al ferretto with Sunday ragù"
 italian_title: "Maccheroni al ferretto con ragù della domenica"
-dialect: "maccarruni 'i casa [TO BE VERIFIED]"
+dialect: "—"
 area: Cosenza (common across the region)
 season: Sundays and feast days
 serves: 6

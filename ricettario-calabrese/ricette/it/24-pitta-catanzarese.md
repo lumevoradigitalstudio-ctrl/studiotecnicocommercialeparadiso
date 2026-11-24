@@ -29,7 +29,7 @@ La pitta è il pane del morzello. A Catanzaro è una ciambella bassa con un foro
 ## Ingredienti
 
 - 300 g di farina 0
-- 200 g di semola rimacinata di grano duro `[DA VERIFICARE: farina della tradizione catanzarese]`
+- 200 g di semola rimacinata di grano duro
 - 320 ml di acqua tiepida (circa 30 °C)
 - 5 g di lievito di birra fresco (oppure 2 g di lievito secco)
 - 10 g di sale fino
@@ -63,7 +63,6 @@ La pitta è il pane del morzello. A Catanzaro è una ciambella bassa con un foro
 
 ## Varianti locali
 - In altre zone della Calabria la pitta ha un foro più stretto e più mollica.
-- Con la stessa pasta si fanno le pitte condite con pomodoro, origano e acciughe `[DA VERIFICARE]`.
 
 ## Conservazione
 In un sacchetto di carta per 1-2 giorni. Si possono congelare e scaldare in forno a 200 °C per 5 minuti.

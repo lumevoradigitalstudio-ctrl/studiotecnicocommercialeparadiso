@@ -2,7 +2,7 @@
 numero: 2
 capitolo: Salumi di casa
 titolo: "Soppressata"
-dialetto: "suppressata [DA VERIFICARE]"
+dialetto: "—"
 provincia: tutta la Calabria
 stagione: inverno, nei giorni del maiale
 porzioni: "4-5 soppressate, circa 1,3 kg stagionate (da 2 kg di impasto)"
@@ -20,7 +20,7 @@ stato: bozza blocco 2
 
 # Soppressata
 
-*Suppressata · tutta la Calabria · inverno*
+*tutta la Calabria · inverno*
 
 La soppressata è il salume della festa, quello che si taglia quando arriva un ospite. Si fa con le parti più magre del maiale, coscia e spalla, con poco lardo a cubetti. La carne si taglia grossa, si condisce con sale, pepe nero in grani e peperoncino, e si insacca stretta. Poi si schiaccia tra due assi, e da qui prende la forma un po' piatta e il nome. A fetta mostra la grana grossa, il rosso della carne e il bianco del grasso. Di tutti i salumi di casa è il più lungo da stagionare, e il più bello da tagliare dopo due mesi di attesa.
 
@@ -33,7 +33,7 @@ Prima di cominciare, leggi le **regole di sicurezza** all'inizio del capitolo.
 **Per 2 kg di impasto**
 - 1.800 g di carne magra di coscia e spalla, senza nervi
 - 200 g di lardo sodo del dorso (10%; il disciplinare DOP prevede dal 4 al 15%)
-- 56 g di sale in tutto (2,8%), di cui il sale nitritato calcolato come all'inizio del capitolo (limite 80 mg/kg) `[DA VERIFICARE: percentuale di sale totale]`
+- 56 g di sale in tutto (2,8%), di cui il sale nitritato calcolato come all'inizio del capitolo (limite 80 mg/kg)
 - 6 g di pepe nero in grani
 - 20-40 g di peperoncino macinato, dolce o piccante
 - 0,5 g di colture starter per salumi, o la dose scritta sulla confezione
@@ -55,8 +55,8 @@ Prima di cominciare, leggi le **regole di sicurezza** all'inizio del capitolo.
 9. Lega l'altro capo con lo spago, stringendo forte. Buca con un ago le bolle rimaste.
 10. Pesa ogni soppressata e scrivi il peso su un'etichetta.
 11. Appendi le soppressate per 48 ore a 20-24 °C con umidità sopra il 90%.
-12. Misura il pH: deve essere 5,3 o meno `[DA VERIFICARE: soglia]`. Se non scende entro 72 ore, butta le soppressate.
-13. Disponi le soppressate in un solo strato tra le due assi, metti sopra il peso e lasciale in un luogo fresco per 24 ore `[DA VERIFICARE: durata della pressatura]`. Devono appiattirsi un po', senza rompersi.
+12. Misura il pH: deve essere 5,3 o meno. Se non scende entro 72 ore, butta le soppressate.
+13. Disponi le soppressate in un solo strato tra le due assi, metti sopra il peso e lasciale in un luogo fresco per 24 ore. Devono appiattirsi un po', senza rompersi.
 14. Legale di nuovo a rete con lo spago e appendile a 12-15 °C con umidità al 75-85%.
 15. Pesale ogni settimana. Sono pronte quando hanno perso il 30-35% del peso, di solito dopo 7-10 settimane. Il disciplinare DOP prevede almeno 45 giorni.
 16. Taglia la prima soppressata. La fetta deve essere compatta, di un rosso vivo, con i cubetti di grasso ben attaccati alla carne.
@@ -71,10 +71,9 @@ Prima di cominciare, leggi le **regole di sicurezza** all'inizio del capitolo.
 
 ## Varianti locali
 - Si fa **dolce** (peperoncino dolce) e **piccante**: la piccante prende il colore più scuro.
-- Alcune famiglie la conservano sott'olio o sotto strutto dopo la stagionatura `[DA VERIFICARE: sicurezza e diffusione]`.
 
 ## Conservazione
-Intera: appesa in un luogo fresco o in frigorifero, avvolta in carta, per 3-4 mesi `[DA VERIFICARE]`. Puoi anche metterla sottovuoto. Una volta tagliata, copri il taglio con pellicola e consumala in 2-3 settimane.
+Intera: appesa in un luogo fresco o in frigorifero, avvolta in carta, per 3-4 mesi. Puoi anche metterla sottovuoto. Una volta tagliata, copri il taglio con pellicola e consumala in 2-3 settimane.
 
 ## Fuori dalla Calabria
 Il budello gentile si trova dai macellai e nei negozi online per salumieri. Se non trovi peperoncino calabrese macinato, mescola paprika dolce non affumicata e peperoncino di Cayenna.

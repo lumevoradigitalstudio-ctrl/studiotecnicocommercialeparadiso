@@ -3,7 +3,7 @@ number: 18
 chapter: Antipasti and home cooking
 title: "Bread balls in tomato sauce"
 italian_title: "Polpette di pane"
-dialect: "purpetti 'i pani [TO BE VERIFIED]"
+dialect: "—"
 area: all of Calabria
 season: all year
 serves: "4 (about 20 balls)"
@@ -73,7 +73,6 @@ In a home kitchen, bread is never thrown away. Bread a few days old, hard but st
 
 ## Local variations
 - They can be eaten simply fried and hot, with a salad.
-- Some homes add a little chopped salami or soppressata to the mixture `[TO BE VERIFIED]`.
 
 ## Storage
 In the fridge, in their sauce, for 2 days. They reheat well in a pan over low heat.

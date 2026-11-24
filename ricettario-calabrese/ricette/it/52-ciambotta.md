@@ -2,8 +2,8 @@
 numero: 52
 capitolo: Contorni
 titolo: "Ciambotta"
-dialetto: "ciambotta, ciambrotta [DA VERIFICARE]"
-provincia: "tutta la Calabria [DA VERIFICARE]"
+dialetto: "—"
+provincia: "tutta la Calabria"
 stagione: "estate (luglio-settembre)"
 porzioni: 4
 preparazione: 20 minuti

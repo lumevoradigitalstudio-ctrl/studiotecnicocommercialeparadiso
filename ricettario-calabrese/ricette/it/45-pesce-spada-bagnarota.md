@@ -2,7 +2,7 @@
 numero: 45
 capitolo: Secondi di pesce
 titolo: "Pesce spada alla bagnarota"
-dialetto: "piscispata [DA VERIFICARE]"
+dialetto: "—"
 provincia: "Reggio Calabria (Bagnara Calabra)"
 stagione: "tarda primavera-estate (maggio-luglio)"
 porzioni: 4
@@ -22,7 +22,7 @@ stato: bozza blocco 10
 
 *Reggio Calabria, Bagnara Calabra · maggio-luglio*
 
-Bagnara Calabra, sulla costa dello Stretto, è il paese del pesce spada. Tra la tarda primavera e l'estate le barche escono a pescarlo nello Stretto `[DA VERIFICARE: stagione di pesca]`. *Alla bagnarota* vuol dire cotto in padella con un sughetto di pomodorini, cipolla rossa, olive, capperi, peperoncino e origano, sfumato con il vino bianco. Il pesce cuoce pochi minuti e resta morbido e succoso. È un piatto veloce, che si prepara in mezz'ora. Il segreto è comprare tranci spessi e non cuocerli troppo: il pesce spada stracotto diventa asciutto e stopposo.
+Bagnara Calabra, sulla costa dello Stretto, è il paese del pesce spada. Tra la tarda primavera e l'estate le barche escono a pescarlo nello Stretto. *Alla bagnarota* vuol dire cotto in padella con un sughetto di pomodorini, cipolla rossa, olive, capperi, peperoncino e origano, sfumato con il vino bianco. Il pesce cuoce pochi minuti e resta morbido e succoso. È un piatto veloce, che si prepara in mezz'ora. Il segreto è comprare tranci spessi e non cuocerli troppo: il pesce spada stracotto diventa asciutto e stopposo.
 
 **Porzioni:** 4 · **Preparazione:** 15 minuti · **Cottura:** 20 minuti · **Totale:** 35 minuti · **Difficoltà:** facile
 

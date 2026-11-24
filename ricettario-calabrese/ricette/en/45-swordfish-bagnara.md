@@ -3,7 +3,7 @@ number: 45
 chapter: Fish main courses
 title: "Swordfish alla bagnarota"
 italian_title: "Pesce spada alla bagnarota"
-dialect: "piscispata [TO BE VERIFIED]"
+dialect: "—"
 area: "Reggio Calabria (Bagnara Calabra)"
 season: "late spring-summer (May-July)"
 serves: 4
@@ -23,7 +23,7 @@ status: draft EN block 8
 
 *Pesce spada alla bagnarota · Reggio Calabria, Bagnara Calabra · May-July*
 
-Bagnara Calabra, on the coast of the Strait of Messina, is the swordfish town. From late spring into summer the boats go out to fish for it in the Strait `[TO BE VERIFIED: fishing season]`. *Alla bagnarota* means cooked in a pan with a light sauce of cherry tomatoes, red onion, olives, capers, chilli and oregano, splashed with white wine. The fish cooks for just a few minutes and stays tender and juicy. It is a quick dish, ready in half an hour. The secret is to buy thick steaks and not to overcook them: overcooked swordfish turns dry and stringy.
+Bagnara Calabra, on the coast of the Strait of Messina, is the swordfish town. From late spring into summer the boats go out to fish for it in the Strait. *Alla bagnarota* means cooked in a pan with a light sauce of cherry tomatoes, red onion, olives, capers, chilli and oregano, splashed with white wine. The fish cooks for just a few minutes and stays tender and juicy. It is a quick dish, ready in half an hour. The secret is to buy thick steaks and not to overcook them: overcooked swordfish turns dry and stringy.
 
 **Serves:** 4 · **Prep:** 15 minutes · **Cook:** 20 minutes · **Total:** 35 minutes · **Difficulty:** easy
 

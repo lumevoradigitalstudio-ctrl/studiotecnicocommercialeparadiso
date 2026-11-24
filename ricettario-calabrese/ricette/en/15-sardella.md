@@ -29,7 +29,7 @@ On the Ionian coast around Crotone, near Crucoli and Cirò Marina, sardella was 
 
 ## The historical sardella
 
-The traditional recipe combined sardine fry, salt and a very large amount of ground chilli, and left the cream to mature for weeks `[TO BE VERIFIED: proportions and times of the historical recipe]`. Regulation (EC) 1967/2006 sets minimum catch sizes in the Mediterranean. For some years Calabria had an exemption for novellame, which ended in 2010 `[TO BE VERIFIED: date and text of the exemption]`. Since then fishing for novellame has been illegal, and the Italian coastguard seizes the fish and fines those who catch or sell it.
+The traditional recipe combined sardine fry, salt and ground chilli. Regulation (EC) 1967/2006 sets minimum catch sizes in the Mediterranean. For some years Calabria had an exemption for novellame, which ended in 2010. Since then fishing for novellame has been illegal, and the Italian coastguard seizes the fish and fines those who catch or sell it.
 
 ## Ingredients (today's version)
 
@@ -63,10 +63,9 @@ The traditional recipe combined sardine fry, salt and a very large amount of gro
 
 ## Local variations
 - Some cooks use salted adult sardines instead of anchovies.
-- Commercial creams exist made with small imported fish instead of novellame `[TO BE VERIFIED: species and legality]`.
 
 ## Storage
-In the fridge, always covered with a film of oil, within 2 weeks `[TO BE VERIFIED]`.
+In the fridge, always covered with a film of oil, within 2 weeks.
 
 ## Substitutions
 Salted anchovies are sold in Italian delis everywhere. Well-drained anchovies in oil also work: in that case skip step 2.

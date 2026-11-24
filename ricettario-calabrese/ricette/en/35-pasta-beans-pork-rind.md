@@ -3,7 +3,7 @@ number: 35
 chapter: Home-made pasta and first courses
 title: "Pasta and beans with pork rind"
 italian_title: "Pasta e fagioli con le cotiche"
-dialect: "pasta e fasùli cu' i cotiche [TO BE VERIFIED]"
+dialect: "—"
 area: all of Calabria
 season: winter
 serves: 4

@@ -2,7 +2,7 @@
 numero: 17
 capitolo: Antipasti e piatti di casa
 titolo: "Polpette di melanzane"
-dialetto: "purpetti 'i mulingiani [DA VERIFICARE]"
+dialetto: "—"
 provincia: tutta la Calabria
 stagione: estate (luglio-settembre)
 porzioni: "4 (circa 20 polpette)"
@@ -20,9 +20,9 @@ stato: bozza blocco 4
 
 # Polpette di melanzane
 
-*Purpetti 'i mulingiani · tutta la Calabria · estate*
+*tutta la Calabria · estate*
 
-Le polpette di melanzane sono la carne di chi non ce l'aveva. Con le melanzane dell'orto, il pane raffermo, un uovo e il pecorino si fa un piatto che nelle case calabresi d'estate non manca mai. La ricetta risulta tra i prodotti agroalimentari tradizionali della Calabria `[DA VERIFICARE]`. Le melanzane si cuociono, si strizzano bene, si impastano e si friggono finché sono dorate fuori e morbide dentro. Si mangiano calde, tiepide o fredde il giorno dopo, da sole, nel panino o ripassate nel sugo di pomodoro. Il segreto è uno solo: strizzare bene le melanzane, perché l'acqua le fa rompere in padella.
+Le polpette di melanzane sono la carne di chi non ce l'aveva. Con le melanzane dell'orto, il pane raffermo, un uovo e il pecorino si fa un piatto che nelle case calabresi d'estate non manca mai. Le melanzane si cuociono, si strizzano bene, si impastano e si friggono finché sono dorate fuori e morbide dentro. Si mangiano calde, tiepide o fredde il giorno dopo, da sole, nel panino o ripassate nel sugo di pomodoro. Il segreto è uno solo: strizzare bene le melanzane, perché l'acqua le fa rompere in padella.
 
 **Porzioni:** 4 (circa 20 polpette) · **Preparazione:** 30 minuti · **Cottura:** 35 minuti · **Riposo:** 15 minuti · **Totale:** 1 ora e 20 minuti · **Difficoltà:** facile
 

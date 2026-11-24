@@ -42,9 +42,9 @@ A raw salume cured at home is safe only if you follow every rule below. If you a
 - 1 kg (2.2 lb) firm pork fat, from the jowl or back
 - 400 g (14 oz) fresh skinless pork belly
 - 600 g (1.3 lb) lean pork shoulder
-- 200 to 300 g (11 oz) ground Calabrian chilli, half sweet and half hot `[TO BE VERIFIED: usual dose in Spilinga]`
+- 200 to 300 g (11 oz) ground Calabrian chilli, half sweet and half hot
 - curing salt, calculated as at the start of the chapter, limit 80 mg/kg; with EU curing salt at 0.6% that is about 26 g (0.9 oz)
-- fine sea salt, to bring the total salt to 56 g (2 oz), that is 2.8% `[TO BE VERIFIED: total salt percentage]`
+- fine sea salt, to bring the total salt to 56 g (2 oz), that is 2.8%
 - 0.5 g starter culture for fermented sausages, or the dose on the pack
 - natural beef or wide hog casing (bung or caecum), about 2 m (7 ft), cleaned
 
@@ -61,7 +61,7 @@ A raw salume cured at home is safe only if you follow every rule below. If you a
 9. Stuff the mixture in tightly, with no air pockets. Prick any remaining bubbles with a clean needle.
 10. Tie each piece tightly with twine. Weigh each 'nduja and write the weight on a tag.
 11. Ferment: hang the 'nduje for 48 hours at 20-24 °C (68-75 °F) with humidity above 90%, for example in a closed room with a bowl of hot water.
-12. Measure the pH after 48 hours. It must be 5.3 or lower `[TO BE VERIFIED: threshold]`. If it is higher, wait 24 hours and measure again. If it has not dropped after 72 hours, throw the mixture away.
+12. Measure the pH after 48 hours. It must be 5.3 or lower. If it is higher, wait 24 hours and measure again. If it has not dropped after 72 hours, throw the mixture away.
 13. If you want to smoke them, do it now: cold smoke (below 25 °C (77 °F)) from oak or olive wood, 6-8 hours over several days. Smoking is optional.
 14. Cure the 'nduje at 12-15 °C (54-59 °F) with 75-85% humidity, in a dark, ventilated space.
 15. Weigh them every week. They are ready when they have lost 25-30% of their starting weight, usually after 4-8 weeks. They should still feel soft but compact.
@@ -84,10 +84,9 @@ Follow steps 1 to 7, then pack the mixture firmly into clean jars, or stuff it i
 ## Local variations
 - Families vary the fatty part: some use more jowl, others more belly.
 - The heat changes from village to village, by playing with the share of sweet and hot chilli.
-- Some smoke it, others don't `[TO BE VERIFIED: how common smoking is in the Spilinga tradition]`.
 
 ## Storage
-- Whole cured 'nduja: in a cool place at 12-15 °C (54-59 °F) or in the fridge for a few months `[TO BE VERIFIED: how long]`.
+- Whole cured 'nduja: in a cool place at 12-15 °C (54-59 °F) or in the fridge for a few months.
 - Once cut: cover the cut end with cling film and keep it in the fridge, eating it within 2-3 weeks.
 
 ## Substitutions
@@ -99,7 +98,7 @@ Follow steps 1 to 7, then pack the mixture firmly into clean jars, or stuff it i
 None in the basic ingredients. Check the labels of starter cultures and spice blends, which sometimes contain milk or mustard.
 
 ## PDO and PGI
-'Nduja has neither PDO nor PGI `[TO BE VERIFIED: status of the application for 'Nduja di Spilinga]`.
+'Nduja has neither PDO nor PGI.
 
 ## Wine
 A full-bodied Calabrian red, such as a **Cirò Rosso DOC**.

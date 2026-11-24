@@ -2,7 +2,7 @@
 numero: 16
 capitolo: Conserve e dispensa
 titolo: "Miele di fichi"
-dialetto: "milazzu [DA VERIFICARE]"
+dialetto: "—"
 provincia: Cosenza
 stagione: fine estate (agosto-settembre)
 porzioni: "circa 400 ml (da 3 kg di fichi freschi)"
@@ -58,10 +58,9 @@ Il miele di fichi non lo fanno le api. Si ottiene cuocendo a lungo i fichi matur
 
 ## Varianti locali
 - Alcune famiglie aggiungono una scorza d'arancia o di limone nella cottura dei fichi.
-- In molte zone si chiama anche "miele cotto" o "vincotto di fichi" `[DA VERIFICARE: nomi per zona]`.
 
 ## Conservazione
-- Vasetti chiusi: al buio e al fresco per alcuni mesi `[DA VERIFICARE: durata e sicurezza della conserva]`.
+- Vasetti chiusi: al buio e al fresco per alcuni mesi.
 - Vasetto aperto: in frigorifero, entro 2 mesi. Usa sempre un cucchiaio pulito.
 
 ## Fuori dalla Calabria

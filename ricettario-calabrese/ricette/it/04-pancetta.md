@@ -2,7 +2,7 @@
 numero: 4
 capitolo: Salumi di casa
 titolo: "Pancetta tesa e arrotolata"
-dialetto: "panzetta [DA VERIFICARE]"
+dialetto: "—"
 provincia: tutta la Calabria
 stagione: inverno, nei giorni del maiale
 porzioni: "circa 1,4 kg di pancetta stagionata (da 2 kg di carne)"
@@ -20,7 +20,7 @@ stato: bozza blocco 2
 
 # Pancetta tesa e arrotolata
 
-*Panzetta · tutta la Calabria · inverno*
+*tutta la Calabria · inverno*
 
 La pancetta è il salume di tutti i giorni. Fa da base al sugo, si rosola con i legumi e si mangia a fette sottili sul pane caldo. Si ricava dalla pancia del maiale, a strati di grasso e di magro. Si sala, si lava con l'aceto di vino e si condisce con pepe o peperoncino. Poi si lascia stesa ad asciugare, ed è la pancetta tesa, oppure si arrotola stretta e si lega, ed è la pancetta arrotolata. La tesa è pronta in poche settimane ed è la più adatta per chi fa i salumi per la prima volta. L'arrotolata chiede più tempo e più cura, ma a fette fa la sua figura.
 
@@ -31,7 +31,7 @@ Prima di cominciare, leggi le **regole di sicurezza** all'inizio del capitolo.
 ## Ingredienti
 
 - 1 pezzo di pancetta fresca di maiale, circa 2 kg, spessa 4-5 cm, con la cotenna (per la tesa) o senza (per l'arrotolata)
-- sale in tutto pari al 2,8% del peso della carne (56 g per 2 kg), di cui il sale nitritato calcolato come all'inizio del capitolo (limite 65 mg/kg) `[DA VERIFICARE: percentuale di sale totale]`
+- sale in tutto pari al 2,8% del peso della carne (56 g per 2 kg), di cui il sale nitritato calcolato come all'inizio del capitolo (dose 65 mg/kg)
 - 3 g di pepe nero macinato
 - 2 foglie di alloro sbriciolate (facoltative)
 - 200 ml di aceto di vino
@@ -72,11 +72,11 @@ Prima di cominciare, leggi le **regole di sicurezza** all'inizio del capitolo.
 - Non saltare il lavaggio con l'aceto: toglie il sale in eccesso e pulisce la superficie.
 
 ## Varianti locali
-- In molte zone la copertura è di peperoncino, che dà alla pancetta il colore rosso `[DA VERIFICARE: diffusione per zona]`.
+- Con una copertura di peperoncino, che dà alla pancetta il colore rosso.
 - Alcune famiglie aggiungono semi di finocchio o un poco d'aglio alla salatura.
 
 ## Conservazione
-Intera: appesa in un luogo fresco o in frigorifero, avvolta in carta, per 2-3 mesi `[DA VERIFICARE]`. Puoi anche metterla sottovuoto. Da tagliata, si conserva in frigorifero coperta da pellicola.
+Intera: appesa in un luogo fresco o in frigorifero, avvolta in carta, per 2-3 mesi. Puoi anche metterla sottovuoto. Da tagliata, si conserva in frigorifero coperta da pellicola.
 
 ## Fuori dalla Calabria
 Chiedi al macellaio una "pancia" di maiale di spessore regolare. Se non trovi peperoncino calabrese macinato, mescola paprika dolce e peperoncino di Cayenna.

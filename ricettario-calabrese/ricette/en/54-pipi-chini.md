@@ -23,7 +23,7 @@ status: draft EN block 9
 
 *Peperoni ripieni di mollica · pipi chini · all of Calabria · summer*
 
-*Pipi chini* means full peppers. They are filled with a humble, tasty mixture: stale bread soaked and squeezed, grated cheese, capers, basil, garlic, sometimes anchovies and a little tomato sauce. Then they are baked, or fried in a pan in olive oil, the version many consider the most traditional. They come out soft, with slightly charred skins and a golden filling. They are eaten hot, warm or cold, even the next day. There is also a richer version with minced meat. This is the breadcrumb one, said to be the oldest `[TO BE VERIFIED]`.
+*Pipi chini* means full peppers. They are filled with a humble, tasty mixture: stale bread soaked and squeezed, grated cheese, capers, basil, garlic, sometimes anchovies and a little tomato sauce. Then they are baked, or fried in a pan in olive oil, the version many consider the most traditional. They come out soft, with slightly charred skins and a golden filling. They are eaten hot, warm or cold, even the next day. There is also a richer version with minced meat. 
 
 **Serves:** 4 · **Prep:** 30 minutes · **Cook:** 40 minutes · **Total:** 1 hour 10 minutes · **Difficulty:** easy
 

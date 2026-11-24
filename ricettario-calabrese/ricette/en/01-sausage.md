@@ -37,7 +37,7 @@ Before you start, read the **safety rules** at the beginning of this chapter.
 - 50 g (2 oz) salt in total, that is 2.5%. For dry sausage, part of it is curing salt (see step 4).
 - 4 g coarsely ground black pepper
 - 20-30 g (0.7-1 oz) ground Calabrian chilli, sweet or hot, to taste
-- 6 g (0.2 oz) fennel seeds, optional (many families use them) `[TO BE VERIFIED: how common by area]`
+- 6 g (0.2 oz) fennel seeds, optional
 - 60 ml (¼ cup) cold red wine, optional
 - **dry sausage only:** 0.5 g starter culture for cured sausages, or the dose on the pack
 - 4-5 m (13-16 ft) natural hog casings, 32-36 mm (1¼-1½ in) wide
@@ -63,7 +63,7 @@ Before you start, read the **safety rules** at the beginning of this chapter.
 
 **Dry sausage**
 14. Hang it for 48 hours at 20-24 °C (68-75 °F) with humidity above 90%.
-15. Measure the pH: it must be 5.3 or lower `[TO BE VERIFIED: threshold]`. If it has not dropped within 72 hours, throw it away.
+15. Measure the pH: it must be 5.3 or lower. If it has not dropped within 72 hours, throw it away.
 16. Cure at 12-15 °C (54-59 °F) with 75-85% humidity. Halfway through you can press it lightly between two boards to flatten it.
 17. It is ready when it has lost 30% of its weight, usually in 3-5 weeks. Inside it must be firm and evenly red.
 
@@ -76,12 +76,12 @@ Before you start, read the **safety rules** at the beginning of this chapter.
 - Don't cure fresh sausage made without curing salt and culture: it is only for cooking and eating.
 
 ## Local variations
-- Around Cosenza hot sausage with plenty of chilli is common; elsewhere the sweet one `[TO BE VERIFIED]`.
-- Some families add pieces of liver (liver sausage), to be eaten only cooked `[TO BE VERIFIED: how common in Calabria]`.
+- Sweet or hot: adjust the amount of chilli to your taste.
+- Without fennel seeds, for a simpler flavour.
 
 ## Storage
 - Fresh: 3 days in the fridge, 3 months in the freezer.
-- Dry: hung in a cool place or in the fridge, wrapped in paper, for 2-3 months `[TO BE VERIFIED]`. It can also be vacuum-packed.
+- Dry: hung in a cool place or in the fridge, wrapped in paper, for 2-3 months. It can also be vacuum-packed.
 
 ## Substitutions
 Natural casings are sold by butchers. If you can't find ground Calabrian chilli, mix sweet (unsmoked) paprika and cayenne pepper.

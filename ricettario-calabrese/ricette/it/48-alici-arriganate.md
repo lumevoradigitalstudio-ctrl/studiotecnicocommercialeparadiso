@@ -2,8 +2,8 @@
 numero: 48
 capitolo: Secondi di pesce
 titolo: "Alici arriganate"
-dialetto: "alici arriganati [DA VERIFICARE]"
-provincia: "Crotone e costa ionica [DA VERIFICARE]"
+dialetto: "—"
+provincia: "coste calabresi"
 stagione: "primavera-estate"
 porzioni: 4
 preparazione: 30 minuti
@@ -20,9 +20,9 @@ stato: bozza blocco 10
 
 # Alici arriganate
 
-*Crotone e costa ionica · primavera-estate*
+*coste calabresi · primavera-estate*
 
-*Arriganate* vuol dire all'origano, e in questo piatto l'origano è quasi tutto. Le alici fresche, pulite e aperte a libro, si dispongono a strati in una teglia e si coprono con pangrattato, aglio, origano, prezzemolo e olio, poi passano in forno. Escono dorate sopra e morbide sotto, con il profumo dell'origano secco. È un piatto di pesce azzurro, economico e veloce, delle coste calabresi `[DA VERIFICARE: diffusione]`. Nella stessa teglia a volte si aggiungono pomodorini o un po' di pecorino. Il lavoro più lungo è pulire le alici: si fa con le dita, in pochi minuti, e diventa facile dopo le prime.
+*Arriganate* vuol dire all'origano, e in questo piatto l'origano è quasi tutto. Le alici fresche, pulite e aperte a libro, si dispongono a strati in una teglia e si coprono con pangrattato, aglio, origano, prezzemolo e olio, poi passano in forno. Escono dorate sopra e morbide sotto, con il profumo dell'origano secco. Nella stessa teglia a volte si aggiungono pomodorini o un po' di pecorino. Il lavoro più lungo è pulire le alici: si fa con le dita, in pochi minuti, e diventa facile dopo le prime.
 
 **Porzioni:** 4 · **Preparazione:** 30 minuti · **Cottura:** 20 minuti · **Totale:** 50 minuti · **Difficoltà:** facile
 

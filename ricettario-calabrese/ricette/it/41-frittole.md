@@ -66,7 +66,7 @@ Le frittole sono il piatto del giorno del maiale nel Reggino. Le parti meno nobi
 - Si conservano nel loro grasso e si riscaldano nei giorni seguenti.
 
 ## Conservazione
-In frigorifero, coperte dal loro grasso, per 5 giorni `[DA VERIFICARE]`. Si riscaldano in padella a fuoco basso.
+In frigorifero, coperte dal loro grasso, per 5 giorni. Si riscaldano in padella a fuoco basso.
 
 ## Fuori dalla Calabria
 Le parti del maiale si ordinano dal macellaio, soprattutto d'inverno. In mancanza, usa solo costine, cotenne e guanciale.

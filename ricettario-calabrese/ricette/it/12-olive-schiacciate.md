@@ -2,7 +2,7 @@
 numero: 12
 capitolo: Conserve e dispensa
 titolo: "Olive schiacciate"
-dialetto: "alivi scacciati [DA VERIFICARE]"
+dialetto: "—"
 provincia: Cosenza (diffuse in tutta la regione)
 stagione: ottobre-novembre, alla raccolta
 porzioni: "circa 1 kg di olive condite"
@@ -20,7 +20,7 @@ stato: bozza blocco 3
 
 # Olive schiacciate
 
-*Alivi scacciati · Cosenza, diffuse in tutta la regione · ottobre-novembre*
+*Cosenza, diffuse in tutta la regione · ottobre-novembre*
 
 Quando in autunno si raccolgono le olive, le prime verdi non vanno al frantoio: si schiacciano una a una con una pietra liscia, finché la polpa si spacca intorno al nocciolo. Poi restano per giorni in acqua fresca, cambiata ogni giorno, finché perdono l'amaro. Alla fine si condiscono con aglio, finocchietto selvatico, peperoncino e olio. Sono croccanti, amarognole e profumate, e vanno bene con il pane, i salumi e un bicchiere di vino. Sono una conserva semplice, senza soda né cotture, e sono tra le prime cose da imparare in casa.
 
@@ -67,12 +67,12 @@ Le olive tolte dall'acqua non sono abbastanza acide per stare sott'olio a temper
 - Non lasciare le olive condite fuori dal frigorifero per giorni.
 
 ## Varianti locali
-- **In salamoia, per l'inverno:** dopo l'ammollo, metti le olive in vasetti puliti e coprile con una salamoia di 100 g di sale per litro d'acqua bollita e raffreddata, con 50 ml di aceto di vino per litro `[DA VERIFICARE: dosi sicure]`. Chiudi e tieni al fresco. Al momento di servirle, sciacquale e condiscile come sopra.
+- **In salamoia, per l'inverno:** dopo l'ammollo, metti le olive in vasetti puliti e coprile con una salamoia di 100 g di sale per litro d'acqua bollita e raffreddata, con 50 ml di aceto di vino per litro. Chiudi e tieni al fresco. Al momento di servirle, sciacquale e condiscile come sopra.
 - Alcune famiglie aggiungono foglie di alloro o scorza d'arancia.
 
 ## Conservazione
 - Olive condite: in frigorifero, in un contenitore chiuso, entro 2 settimane.
-- Olive in salamoia: al fresco, per alcuni mesi `[DA VERIFICARE]`.
+- Olive in salamoia: al fresco, per alcuni mesi.
 
 ## Fuori dalla Calabria
 Le olive verdi fresche si trovano in autunno nei mercati e nei negozi di prodotti italiani o greci. Se non trovi il finocchietto selvatico, usa i semi di finocchio.

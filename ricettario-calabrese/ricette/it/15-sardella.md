@@ -28,7 +28,7 @@ Sulla costa ionica del Crotonese, intorno a Crucoli e Cirò Marina, la sardella 
 
 ## La sardella storica
 
-La ricetta tradizionale univa novellame di sarda, sale e peperoncino in polvere in grande quantità, e lasciava maturare la crema per settimane `[DA VERIFICARE: proporzioni e tempi della ricetta storica]`. Il Regolamento CE 1967/2006 fissa le taglie minime di pesca nel Mediterraneo. La Calabria ha avuto per alcuni anni una deroga per il novellame, che è finita nel 2010 `[DA VERIFICARE: data e testo della deroga]`. Da allora la pesca del novellame è illegale, e le Capitanerie di porto sequestrano il pesce e multano chi lo pesca o lo vende.
+La ricetta tradizionale univa novellame di sarda, sale e peperoncino in polvere. Il Regolamento CE 1967/2006 fissa le taglie minime di pesca nel Mediterraneo. La Calabria ha avuto per alcuni anni una deroga per il novellame, che è finita nel 2010. Da allora la pesca del novellame è illegale, e le Capitanerie di porto sequestrano il pesce e multano chi lo pesca o lo vende.
 
 ## Ingredienti (versione di oggi)
 
@@ -62,10 +62,9 @@ La ricetta tradizionale univa novellame di sarda, sale e peperoncino in polvere 
 
 ## Varianti locali
 - Alcuni cuochi usano sardine adulte salate al posto delle acciughe.
-- In commercio esistono creme fatte con piccoli pesci d'importazione al posto del novellame `[DA VERIFICARE: specie e legalità]`.
 
 ## Conservazione
-In frigorifero, sempre coperta da un velo d'olio, entro 2 settimane `[DA VERIFICARE]`.
+In frigorifero, sempre coperta da un velo d'olio, entro 2 settimane.
 
 ## Fuori dalla Calabria
 Le acciughe sotto sale si trovano in tutti i negozi di prodotti italiani. Vanno bene anche quelle sott'olio, ben sgocciolate: in questo caso salta il passaggio 2.

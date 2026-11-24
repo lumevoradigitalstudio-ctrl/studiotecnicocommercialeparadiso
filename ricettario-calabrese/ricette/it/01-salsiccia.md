@@ -36,7 +36,7 @@ Prima di cominciare, leggi le **regole di sicurezza** all'inizio del capitolo.
 - 50 g di sale in tutto (2,5%). Per la salsiccia secca, una parte è sale nitritato (vedi passaggio 4).
 - 4 g di pepe nero macinato grosso
 - 20-30 g di peperoncino macinato, dolce o piccante, a piacere
-- 6 g di semi di finocchio (facoltativi, si usano in molte case) `[DA VERIFICARE: diffusione per zona]`
+- 6 g di semi di finocchio (facoltativi)
 - 60 ml di vino rosso freddo (facoltativo)
 - **solo per la secca:** 0,5 g di colture starter per salumi, o la dose scritta sulla confezione
 - 4-5 m di budello naturale di maiale (diametro 32-36 mm)
@@ -62,7 +62,7 @@ Prima di cominciare, leggi le **regole di sicurezza** all'inizio del capitolo.
 
 **Salsiccia secca**
 14. Appendila per 48 ore a 20-24 °C con umidità sopra il 90%.
-15. Misura il pH: deve essere 5,3 o meno `[DA VERIFICARE: soglia]`. Se non scende entro 72 ore, buttala.
+15. Misura il pH: deve essere 5,3 o meno. Se non scende entro 72 ore, buttala.
 16. Stagionala a 12-15 °C con umidità al 75-85%. A metà tempo puoi pressarla leggermente tra due assi, per la forma piatta.
 17. È pronta quando ha perso il 30% del peso, di solito in 3-5 settimane. Dentro deve essere compatta e di un rosso uniforme.
 
@@ -75,12 +75,12 @@ Prima di cominciare, leggi le **regole di sicurezza** all'inizio del capitolo.
 - Non stagionare la salsiccia fresca, quella senza sale nitritato e colture: va solo cotta e mangiata.
 
 ## Varianti locali
-- Nel Cosentino è comune la salsiccia piccante con peperoncino in abbondanza, altrove quella dolce `[DA VERIFICARE]`.
-- In alcune case si aggiungono pezzetti di fegato (salsiccia di fegato), da mangiare solo cotta `[DA VERIFICARE: diffusione in Calabria]`.
+- Dolce o piccante: regola la dose di peperoncino secondo il tuo gusto.
+- Senza semi di finocchio, per un sapore più semplice.
 
 ## Conservazione
 - Fresca: in frigorifero 3 giorni, in freezer 3 mesi.
-- Secca: appesa in un luogo fresco o in frigorifero, avvolta in carta, per 2-3 mesi `[DA VERIFICARE]`. Puoi anche metterla sottovuoto.
+- Secca: appesa in un luogo fresco o in frigorifero, avvolta in carta, per 2-3 mesi. Puoi anche metterla sottovuoto.
 
 ## Fuori dalla Calabria
 Il budello naturale si trova dai macellai. Se non trovi peperoncino calabrese macinato, mescola paprika dolce non affumicata e peperoncino di Cayenna.

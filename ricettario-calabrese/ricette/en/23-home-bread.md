@@ -3,7 +3,7 @@ number: 23
 chapter: Bread and leavened doughs
 title: "Durum wheat home bread"
 italian_title: "Pane di casa di grano duro"
-dialect: "pani 'i casa [TO BE VERIFIED]"
+dialect: "—"
 area: all of Calabria
 season: all year
 serves: "2 loaves of about 800 g (1.8 lb)"
@@ -65,7 +65,6 @@ In the past, in many Calabrian villages, bread was kneaded at home and baked in 
 
 ## Local variations
 - In many homes a single large round or ring-shaped loaf is made.
-- In the cooling wood-fired oven, after the bread, came the olives (recipe 13) or biscuits `[TO BE VERIFIED]`.
 
 ## Storage
 In a paper or cloth bag, for 3-4 days. It can be frozen in slices.

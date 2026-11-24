@@ -2,7 +2,7 @@
 numero: 49
 capitolo: Secondi di pesce
 titolo: "Baccalà con patate e olive"
-dialetto: "baccalà cu' i patati [DA VERIFICARE]"
+dialetto: "—"
 provincia: "Cosenza (diffuso in tutta la regione)"
 stagione: "vigilia di Natale, inverno"
 porzioni: 4
@@ -22,7 +22,7 @@ stato: bozza blocco 10
 
 *Cosenza, diffuso in tutta la regione · vigilia di Natale*
 
-Il baccalà, merluzzo salato che arrivava da lontano e durava a lungo, è stato a lungo il pesce economico dei giorni di magro. Alla vigilia di Natale in Calabria non manca quasi mai. Nel Cosentino lo si cuoce con le patate della Sila, le olive nere, il pomodoro e il prezzemolo, in un tegame dove tutto si insaporisce insieme. Alcune fonti dicono che il nome giusto sarebbe *baccalà alla trappitara*, cioè del frantoio, perché si mangiava nei giorni della spremitura delle olive `[DA VERIFICARE]`. Il baccalà va ammollato per due o tre giorni, oppure comprato già ammollato in pescheria.
+Il baccalà, merluzzo salato che arrivava da lontano e durava a lungo, è stato a lungo il pesce economico dei giorni di magro. Alla vigilia di Natale in Calabria non manca quasi mai. Nel Cosentino lo si cuoce con le patate della Sila, le olive nere, il pomodoro e il prezzemolo, in un tegame dove tutto si insaporisce insieme. Il baccalà va ammollato per due o tre giorni, oppure comprato già ammollato in pescheria. Poi resta solo da mettere tutto nel tegame e aspettare.
 
 **Porzioni:** 4 · **Preparazione:** 20 minuti · **Cottura:** 50 minuti · **Totale:** 1 ora e 10 minuti (con baccalà già ammollato) · **Difficoltà:** facile
 

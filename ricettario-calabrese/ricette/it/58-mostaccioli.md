@@ -2,7 +2,7 @@
 numero: 58
 capitolo: Dolci delle feste
 titolo: "Mostaccioli di Soriano"
-dialetto: "'nzuddha, mostazzoli [DA VERIFICARE]"
+dialetto: "—"
 provincia: "Vibo Valentia (Soriano Calabro)"
 stagione: "fiere e feste patronali, Natale"
 porzioni: "circa 20 mostaccioli"
@@ -22,7 +22,7 @@ stato: bozza blocco 12
 
 *'Nzuddha · Soriano Calabro, Vibo Valentia · fiere e feste*
 
-I mostaccioli nascono a Soriano Calabro, nelle Serre vibonesi. Sono biscotti duri e dorati fatti con farina, miele e mosto cotto, senza uova e senza grassi. Prendono forme diverse, come pesci, cuori, cavalli, cesti e figure di santi, e si vendono alle fiere e alle feste patronali, spesso decorati con carta colorata o stagnola `[DA VERIFICARE]`. Sono dolci da conservare e da regalare. Duri appena fatti, si ammorbidiscono con il tempo o si inzuppano nel vino. Questa ricetta li fa in casa con forme semplici, tagliate a mano o con le formine. Il colore scuro viene dal miele e dal mosto cotto.
+I mostaccioli nascono a Soriano Calabro, nelle Serre vibonesi. Sono biscotti duri e dorati fatti con farina, miele e mosto cotto, senza uova e senza grassi. Prendono forme diverse, come pesci, cuori, cavalli, cesti e figure di santi, e si vendono alle fiere e alle feste patronali, spesso decorati con carta colorata o stagnola. Sono dolci da conservare e da regalare. Duri appena fatti, si ammorbidiscono con il tempo o si inzuppano nel vino. Questa ricetta li fa in casa con forme semplici, tagliate a mano o con le formine. Il colore scuro viene dal miele e dal mosto cotto.
 
 **Resa:** circa 20 mostaccioli · **Preparazione:** 45 minuti · **Cottura:** 20 minuti · **Riposo:** 1 notte (facoltativo) · **Totale:** circa 1 ora e 15 minuti · **Difficoltà:** media
 
@@ -30,11 +30,11 @@ I mostaccioli nascono a Soriano Calabro, nelle Serre vibonesi. Sono biscotti dur
 
 - 500 g di farina 00
 - 250 g di miele
-- 80 ml di vino cotto (mosto cotto) o di acqua `[DA VERIFICARE: dosi della ricetta di Soriano]`
+- 80 ml di vino cotto (mosto cotto) o di acqua
 - la scorza grattugiata di 1 arancia non trattata
 - 1 pizzico di chiodi di garofano in polvere
 - 1 cucchiaino di cannella in polvere (facoltativa)
-- 3 g di ammoniaca per dolci (o 5 g di bicarbonato) `[DA VERIFICARE]`
+- 3 g di ammoniaca per dolci (o 5 g di bicarbonato)
 
 **Attrezzatura:** mattarello, coltello affilato o formine, teglie con carta forno.
 
@@ -64,7 +64,6 @@ I mostaccioli nascono a Soriano Calabro, nelle Serre vibonesi. Sono biscotti dur
 
 ## Varianti locali
 - Decorati con carta stagnola colorata incollata con un po' di miele, come quelli delle fiere.
-- Con un po' di cacao nell'impasto, per un colore più scuro `[DA VERIFICARE]`.
 
 ## Conservazione
 In una scatola di latta, all'asciutto, per mesi. Con il tempo si ammorbidiscono.

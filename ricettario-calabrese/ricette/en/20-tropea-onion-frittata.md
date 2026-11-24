@@ -3,7 +3,7 @@ number: 20
 chapter: Antipasti and home cooking
 title: "Tropea red onion frittata"
 italian_title: "Frittata con la cipolla rossa di Tropea"
-dialect: "frittata cu' a cipudda [TO BE VERIFIED]"
+dialect: "—"
 area: Vibo Valentia (Tropea)
 season: spring-summer
 serves: 4
@@ -23,7 +23,7 @@ status: draft EN block 4
 
 *Frittata con la cipolla rossa di Tropea · Vibo Valentia, Tropea · spring-summer*
 
-The red onion of Tropea is sweet, crisp and mild. It is often eaten raw, but cooked slowly in a pan it turns soft and almost caramelised. In this frittata it is the star: plenty of onion, few eggs, a little pecorino. It is supper for evenings when nobody feels like cooking, and a good lunch to take out between two slices of bread. The secret is to cook the onion patiently, over low heat, before adding the eggs. It is protected by a PGI, Cipolla Rossa di Tropea Calabria, grown along the Tyrrhenian coast across the provinces of Vibo Valentia, Cosenza and Catanzaro `[TO BE VERIFIED: area in the specification]`.
+The red onion of Tropea is sweet, crisp and mild. It is often eaten raw, but cooked slowly in a pan it turns soft and almost caramelised. In this frittata it is the star: plenty of onion, few eggs, a little pecorino. It is supper for evenings when nobody feels like cooking, and a good lunch to take out between two slices of bread. The secret is to cook the onion patiently, over low heat, before adding the eggs. It is protected by a PGI, Cipolla Rossa di Tropea Calabria, grown along the Tyrrhenian coast across the provinces of Vibo Valentia, Cosenza and Catanzaro.
 
 **Serves:** 4 · **Prep:** 15 minutes · **Cook:** 30 minutes · **Total:** 45 minutes · **Difficulty:** easy
 

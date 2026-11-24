@@ -2,8 +2,8 @@
 numero: 21
 capitolo: Antipasti e piatti di casa
 titolo: "Pitticelle di fiori di zucca"
-dialetto: "pitticeddi [DA VERIFICARE]"
-provincia: "Reggio Calabria [DA VERIFICARE]"
+dialetto: "—"
+provincia: "tutta la Calabria"
 stagione: estate (giugno-agosto)
 porzioni: "4 (circa 16 frittelle)"
 preparazione: 20 minuti
@@ -20,9 +20,9 @@ stato: bozza blocco 5
 
 # Pitticelle di fiori di zucca
 
-*Reggio Calabria · estate*
+*tutta la Calabria · estate*
 
-D'estate le piante di zucchine si riempiono di fiori gialli, e quelli che non diventeranno zucchine finiscono in cucina. Le pitticelle sono frittelle morbide e schiacciate, fatte con una pastella di farina e uova in cui i fiori si spezzano a pezzetti, insieme al pecorino e al prezzemolo. Si friggono a cucchiaiate e si mangiano subito, calde, come antipasto o come merenda. Il nome *pitticelle*, "piccole pitte", si usa per diverse frittelle salate, con verdure o con le alici `[DA VERIFICARE]`. Questa ricetta è la versione con i fiori, che dura solo poche settimane d'estate.
+D'estate le piante di zucchine si riempiono di fiori gialli, e quelli che non diventeranno zucchine finiscono in cucina. Le pitticelle sono frittelle morbide e schiacciate, fatte con una pastella di farina e uova in cui i fiori si spezzano a pezzetti, insieme al pecorino e al prezzemolo. Si friggono a cucchiaiate e si mangiano subito, calde, come antipasto o come merenda. Questa ricetta è la versione con i fiori, che dura solo poche settimane d'estate. Coglili al mattino, quando sono ben aperti, e usali in giornata.
 
 **Porzioni:** 4 (circa 16 frittelle) · **Preparazione:** 20 minuti · **Cottura:** 20 minuti · **Riposo:** 30 minuti · **Totale:** 1 ora e 10 minuti · **Difficoltà:** facile
 
@@ -61,7 +61,6 @@ D'estate le piante di zucchine si riempiono di fiori gialli, e quelli che non di
 - Non lasciare i fiori bagnati: diluiscono la pastella.
 
 ## Varianti locali
-- Con le alici fresche o salate al posto dei fiori `[DA VERIFICARE: nomi e zone]`.
 - Con le zucchine grattugiate, quando i fiori sono finiti.
 
 ## Conservazione

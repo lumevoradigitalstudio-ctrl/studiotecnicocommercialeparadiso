@@ -2,7 +2,7 @@
 numero: 46
 capitolo: Secondi di pesce
 titolo: "Stocco alla mammolese"
-dialetto: "stoccu a' mammolisi [DA VERIFICARE]"
+dialetto: "—"
 provincia: "Reggio Calabria (Mammola)"
 stagione: tutto l'anno
 porzioni: 4
@@ -45,7 +45,7 @@ Mammola è un paese dell'entroterra della Locride, lontano dal mare. Eppure il s
 
 **Se lo stocco è secco**
 1. Taglia lo stocco secco in pezzi con una sega da cucina o fattelo tagliare in pescheria.
-2. Mettilo a bagno in acqua fredda in frigorifero per 5-7 giorni, cambiando l'acqua 2 volte al giorno, finché è morbido e gonfio `[DA VERIFICARE: durata]`.
+2. Mettilo a bagno in acqua fredda in frigorifero per 5-7 giorni, cambiando l'acqua 2 volte al giorno, finché è morbido e gonfio.
 
 **Il piatto**
 3. Togli la pelle e le spine più grosse dallo stocco e taglialo a pezzi di 5-6 cm.

@@ -2,7 +2,7 @@
 numero: 7
 capitolo: Conserve e dispensa
 titolo: "Salsa di pomodoro di casa"
-dialetto: "'a sarsa [DA VERIFICARE]"
+dialetto: "—"
 provincia: tutta la Calabria
 stagione: agosto
 porzioni: "circa 6 bottiglie da 500 ml (da 5 kg di pomodori)"
@@ -20,7 +20,7 @@ stato: bozza blocco 3
 
 # Salsa di pomodoro di casa
 
-*'A sarsa · tutta la Calabria · agosto*
+*tutta la Calabria · agosto*
 
 Ad agosto, in molte famiglie calabresi, c'è un giorno dedicato alla salsa. Si comprano o si raccolgono le cassette di pomodori maturi, si accende il fuoco in cortile e tutti hanno un compito: chi lava, chi taglia, chi gira la manovella del passapomodoro, chi riempie le bottiglie. Alla fine della giornata la dispensa è piena di rosso, e il sugo della domenica è assicurato fino all'estate dopo. La ricetta è semplice, ma il pomodoro a volte non è acido abbastanza per una conserva sicura. Per questo qui si aggiunge un po' di succo di limone e le bottiglie si pastorizzano con i tempi indicati dall'ISS.
 
@@ -29,7 +29,7 @@ Ad agosto, in molte famiglie calabresi, c'è un giorno dedicato alla salsa. Si c
 ## Prima di cominciare: sicurezza
 
 - Usa solo pomodori sani e maturi, senza parti marce o ammaccate.
-- Aggiungi sempre l'acido: **30 ml di succo di limone in bottiglia oppure 2,5 g di acido citrico per ogni litro di salsa** (indicazione USDA). Alcune fonti italiane indicano dosi più basse: qui si usa la più prudente `[DA VERIFICARE con le linee guida ISS]`.
+- Aggiungi sempre l'acido: **30 ml di succo di limone in bottiglia oppure 2,5 g di acido citrico per ogni litro di salsa** (indicazione USDA). Alcune fonti italiane indicano dosi più basse: qui si usa la più prudente.
 - Usa bottiglie o vasetti integri e **tappi o capsule nuovi**.
 
 ## Ingredienti
@@ -75,10 +75,9 @@ Butta senza assaggiare se il tappo è gonfio, se vedi bollicine o schiuma, o se 
 
 ## Varianti locali
 - In molte case i pomodori si sbollentano interi prima di passarli, invece di cuocerli a pezzi.
-- Un tempo le bottiglie si facevano bollire tutte insieme in un grande bidone sul fuoco di legna. Il principio è lo stesso, ma i tempi vanno rispettati `[DA VERIFICARE]`.
 
 ## Conservazione
-- Bottiglie chiuse: al buio e al fresco, fino all'estate seguente `[DA VERIFICARE: durata indicata dall'ISS]`.
+- Bottiglie chiuse: al buio e al fresco, entro un anno.
 - Bottiglia aperta: in frigorifero, da consumare entro 4-5 giorni.
 
 ## Fuori dalla Calabria

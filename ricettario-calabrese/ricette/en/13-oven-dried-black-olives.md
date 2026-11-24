@@ -3,7 +3,7 @@ number: 13
 chapter: Preserves and pantry
 title: "Oven-dried black olives"
 italian_title: "Olive nere al forno"
-dialect: "alivi 'nfurnati [TO BE VERIFIED]"
+dialect: "—"
 area: all of Calabria
 season: November-December
 serves: "about 800 g (1.8 lb) of olives (from 1 kg (2.2 lb) of fresh olives)"
@@ -42,7 +42,7 @@ Ripe, glossy black olives picked in late autumn don't need brine. They are burie
 3. Mix them with the coarse salt in the colander, set over a bowl to catch the liquid.
 4. Cover with a plate and leave in a cool place.
 5. Stir the olives with your hands every day. Throw away the dark liquid that collects in the bowl.
-6. After 2 weeks taste an olive (rinse it first). They are ready when they are wrinkled and only slightly bitter, usually in 2-3 weeks `[TO BE VERIFIED: traditional time]`.
+6. After 2 weeks taste an olive (rinse it first). They are ready when they are wrinkled and only slightly bitter, usually in 2-3 weeks.
 7. Rinse the olives quickly under running water to remove excess salt and dry them carefully.
 8. Heat the oven to 150 °C (300 °F), conventional (no fan).
 9. Spread the olives in a single layer on the tray lined with baking paper.
@@ -59,7 +59,6 @@ Ripe, glossy black olives picked in late autumn don't need brine. They are burie
 - Don't store them already dressed with fresh garlic outside the fridge.
 
 ## Local variations
-- Some families bake them in the wood-fired oven as it cools after the bread `[TO BE VERIFIED]`.
 - In other homes they are dressed with sliced garlic and bay and eaten straight away.
 
 ## Storage

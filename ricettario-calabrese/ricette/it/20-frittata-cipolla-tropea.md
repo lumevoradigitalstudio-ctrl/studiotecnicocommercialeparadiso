@@ -2,7 +2,7 @@
 numero: 20
 capitolo: Antipasti e piatti di casa
 titolo: "Frittata con la cipolla rossa di Tropea"
-dialetto: "frittata cu' a cipudda [DA VERIFICARE]"
+dialetto: "—"
 provincia: Vibo Valentia (Tropea)
 stagione: primavera-estate
 porzioni: 4
@@ -22,7 +22,7 @@ stato: bozza blocco 5
 
 *Vibo Valentia, Tropea · primavera-estate*
 
-La cipolla rossa di Tropea è dolce, croccante e poco pungente. Si mangia anche cruda, ma cotta piano in padella diventa morbida, quasi caramellata. In questa frittata è la protagonista: tanta cipolla, poche uova, un po' di pecorino. È la cena delle sere in cui non si ha voglia di cucinare, e un buon pranzo da portare fuori casa tra due fette di pane. Il segreto è cuocere la cipolla con pazienza, a fuoco basso, prima di aggiungere le uova. La protegge un'IGP, la Cipolla Rossa di Tropea Calabria, che si coltiva lungo la costa tirrenica tra le province di Vibo Valentia, Cosenza e Catanzaro `[DA VERIFICARE: zona del disciplinare]`.
+La cipolla rossa di Tropea è dolce, croccante e poco pungente. Si mangia anche cruda, ma cotta piano in padella diventa morbida, quasi caramellata. In questa frittata è la protagonista: tanta cipolla, poche uova, un po' di pecorino. È la cena delle sere in cui non si ha voglia di cucinare, e un buon pranzo da portare fuori casa tra due fette di pane. Il segreto è cuocere la cipolla con pazienza, a fuoco basso, prima di aggiungere le uova. La protegge un'IGP, la Cipolla Rossa di Tropea Calabria, che si coltiva lungo la costa tirrenica tra le province di Vibo Valentia, Cosenza e Catanzaro.
 
 **Porzioni:** 4 · **Preparazione:** 15 minuti · **Cottura:** 30 minuti · **Totale:** 45 minuti · **Difficoltà:** facile
 

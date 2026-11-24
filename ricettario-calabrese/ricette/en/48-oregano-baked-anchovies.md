@@ -3,8 +3,8 @@ number: 48
 chapter: Fish main courses
 title: "Alici arriganate (oregano-baked anchovies)"
 italian_title: "Alici arriganate"
-dialect: "alici arriganati [TO BE VERIFIED]"
-area: "Crotone and the Ionian coast [TO BE VERIFIED]"
+dialect: "—"
+area: "the Calabrian coasts"
 season: "spring-summer"
 serves: 4
 prep: 30 minutes
@@ -21,9 +21,9 @@ status: draft EN block 8
 
 # Alici arriganate (oregano-baked anchovies)
 
-*Alici arriganate · Crotone and the Ionian coast · spring-summer*
+*Alici arriganate · the Calabrian coasts · spring-summer*
 
-*Arriganate* means "with oregano", and in this dish oregano is almost everything. Fresh anchovies, cleaned and opened flat, are layered in a baking dish and covered with breadcrumbs, garlic, oregano, parsley and olive oil, then baked. They come out golden on top and soft underneath, with the scent of dried oregano. It is a dish of oily fish from the Calabrian coasts `[TO BE VERIFIED: how common]`, cheap and quick. Sometimes cherry tomatoes or a little pecorino go into the same dish. The longest job is cleaning the anchovies: it is done with your fingers, in a few minutes, and becomes easy after the first few.
+*Arriganate* means "with oregano", and in this dish oregano is almost everything. Fresh anchovies, cleaned and opened flat, are layered in a baking dish and covered with breadcrumbs, garlic, oregano, parsley and olive oil, then baked. They come out golden on top and soft underneath, with the scent of dried oregano. Sometimes cherry tomatoes or a little pecorino go into the same dish. The longest job is cleaning the anchovies: it is done with your fingers, in a few minutes, and becomes easy after the first few.
 
 **Serves:** 4 · **Prep:** 30 minutes · **Cook:** 20 minutes · **Total:** 50 minutes · **Difficulty:** easy
 

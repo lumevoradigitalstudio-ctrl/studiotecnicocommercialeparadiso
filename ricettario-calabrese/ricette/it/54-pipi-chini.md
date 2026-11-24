@@ -22,7 +22,7 @@ stato: bozza blocco 11
 
 *Pipi chini · tutta la Calabria · estate*
 
-*Pipi chini* vuol dire peperoni pieni. Si riempiono con un impasto povero e saporito: mollica di pane raffermo ammollata e strizzata, formaggio grattugiato, capperi, basilico, aglio, a volte acciughe e un po' di salsa di pomodoro. Poi si cuociono in forno, o si friggono in padella nell'olio, come vuole la versione che molti considerano la più tradizionale. Escono morbidi, con la buccia un po' bruciacchiata e il ripieno dorato. Si mangiano caldi, tiepidi o freddi, anche il giorno dopo. Esiste anche la versione con la carne macinata, più ricca. Questa è quella di mollica, la più antica `[DA VERIFICARE]`.
+*Pipi chini* vuol dire peperoni pieni. Si riempiono con un impasto povero e saporito: mollica di pane raffermo ammollata e strizzata, formaggio grattugiato, capperi, basilico, aglio, a volte acciughe e un po' di salsa di pomodoro. Poi si cuociono in forno, o si friggono in padella nell'olio, come vuole la versione che molti considerano la più tradizionale. Escono morbidi, con la buccia un po' bruciacchiata e il ripieno dorato. Si mangiano caldi, tiepidi o freddi, anche il giorno dopo. Esiste anche la versione con la carne macinata, più ricca. 
 
 **Porzioni:** 4 · **Preparazione:** 30 minuti · **Cottura:** 40 minuti · **Totale:** 1 ora e 10 minuti · **Difficoltà:** facile
 

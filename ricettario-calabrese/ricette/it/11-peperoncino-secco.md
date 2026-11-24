@@ -2,7 +2,7 @@
 numero: 11
 capitolo: Conserve e dispensa
 titolo: "Peperoncino essiccato, in polvere e in olio"
-dialetto: "pipi o pipariaddu [DA VERIFICARE]"
+dialetto: "—"
 provincia: tutta la Calabria
 stagione: fine estate e autunno (agosto-ottobre)
 porzioni: "da 1 kg di peperoncini freschi: circa 150 g di peperoncino secco"
@@ -70,11 +70,11 @@ In Calabria il peperoncino non manca mai. A fine estate le collane di peperoncin
 
 ## Varianti locali
 - Si macinano insieme peperoncino piccante e peperone dolce secco, per una polvere più morbida, come quella usata per salumi e 'nduja.
-- In alcune case si fa la crema di peperoncino fresco sott'olio. È a rischio: se la fai, tienila in frigorifero e consumala in pochi giorni, oppure segui le regole delle conserve acide (aceto e pastorizzazione) `[DA VERIFICARE con le linee guida ISS]`.
+- In alcune case si fa la crema di peperoncino fresco sott'olio. È a rischio botulino: se la fai, tienila in frigorifero e consumala entro pochi giorni.
 
 ## Conservazione
 - Peperoncino secco intero o in polvere: in barattoli di vetro chiusi, al buio e all'asciutto, per circa un anno.
-- Olio piccante con peperoncino secco: al buio, in bottiglia chiusa, per 2-3 mesi `[DA VERIFICARE]`. Usa sempre un cucchiaio asciutto.
+- Olio piccante con peperoncino secco: al buio, in bottiglia chiusa, per 2-3 mesi. Usa sempre un cucchiaio asciutto.
 
 ## Fuori dalla Calabria
 Vanno bene tutti i peperoncini piccanti a buccia sottile, che seccano bene (tipo Cayenna).

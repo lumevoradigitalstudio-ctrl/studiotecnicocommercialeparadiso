@@ -31,7 +31,7 @@ Prima di cominciare, leggi le **regole di sicurezza** all'inizio del capitolo.
 ## Ingredienti
 
 - 1 capocollo di maiale intero, circa 2 kg, già rifilato dal macellaio
-- sale in tutto pari al 2,8% del peso della carne (56 g per 2 kg), di cui il sale nitritato calcolato come all'inizio del capitolo (limite 65 mg/kg) `[DA VERIFICARE: percentuale di sale totale]`
+- sale in tutto pari al 2,8% del peso della carne (56 g per 2 kg), di cui il sale nitritato calcolato come all'inizio del capitolo (dose 65 mg/kg)
 - 3 g di pepe nero macinato (per la salatura)
 - 250 ml di aceto di vino rosso
 - 30 g di pepe nero macinato grosso (per la copertura)
@@ -70,7 +70,7 @@ Prima di cominciare, leggi le **regole di sicurezza** all'inizio del capitolo.
 - La copertura può essere solo di pepe nero o di pepe e peperoncino.
 
 ## Conservazione
-Intero: appeso in un luogo fresco o in frigorifero, avvolto in carta, per 4-6 mesi `[DA VERIFICARE]`. Puoi anche metterlo sottovuoto. Una volta tagliato, copri il taglio con pellicola e consumalo in 3-4 settimane.
+Intero: appeso in un luogo fresco o in frigorifero, avvolto in carta, per 4-6 mesi. Puoi anche metterlo sottovuoto. Una volta tagliato, copri il taglio con pellicola e consumalo in 3-4 settimane.
 
 ## Fuori dalla Calabria
 Il capocollo si chiama anche *coppa* in molte regioni. Il crespone si trova dai macellai. In alternativa puoi usare un telo di garza per salumi.

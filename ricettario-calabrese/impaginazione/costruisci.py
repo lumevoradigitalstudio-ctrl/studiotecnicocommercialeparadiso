@@ -25,8 +25,9 @@ ANNO = 2026
 
 CONF = {
     'it': dict(
-        titolo='Ricettario calabrese',
-        sottotitolo='60 ricette di casa, dai salumi ai dolci delle feste',
+        titolo='Il libro di cucina della Putìga',
+        sottotitolo='60 ricette calabresi di casa, dai salumi ai dolci delle feste',
+        sopratitolo='Ricettario calabrese',
         file='Ricettario-Calabrese-A-Putiga-IT.pdf',
         indice='Indice', glossario='Glossario dei nomi in dialetto', conversioni='Tabella delle conversioni',
         ing_indice='Indice per ingredienti', didascalia='Immagine illustrativa generata con IA',
@@ -38,8 +39,9 @@ CONF = {
         cucchiai=[('1 cucchiaino', '5 ml'), ('1 cucchiaio', '15 ml'), ('1 bicchiere', '200 ml')],
         intest=('Peso', 'Volume', 'Temperatura del forno', 'Lunghezza')),
     'en': dict(
-        titolo='Calabrian Cookbook',
-        sottotitolo='60 home recipes, from cured meats to festive sweets',
+        titolo='The Putìga Cookbook',
+        sottotitolo='60 Calabrian home recipes, from cured meats to festive sweets',
+        sopratitolo='Calabrian home cooking',
         file='Calabrian-Cookbook-A-Putiga-EN.pdf',
         indice='Contents', glossario='Glossary of dialect names', conversioni='Conversion tables',
         ing_indice='Index by ingredient', didascalia='Illustrative image generated with AI',
@@ -125,7 +127,7 @@ def immagine(rel, classe, c):
     p = R / rel
     if p.exists():
         # principale 180 mm, passaggi 56 mm: circa 225-250 dpi
-        return f'<img class="{classe}" src="{ridotta(p, 1600 if classe == "foto" else 560).as_uri()}" alt="">'
+        return f'<img class="{classe}" src="{ridotta(p, {"sfondo": 2200, "foto": 1600}.get(classe, 560)).as_uri()}" alt="">'
     return f'<div class="{classe} segnaposto"><span>{c["mancante"]}<br>{html.escape(p.name)}</span></div>'
 
 
@@ -187,10 +189,10 @@ def costruisci(lingua, salva_html=False):
 
     # copertina
     autore = f'<p class="autore">{AUTORE}</p>' if AUTORE else ''
-    out = [f'''<section class="copertina">
-      <div class="cornice">{immagine(f"immagini/{next((R/'ricette'/'it').glob('05-*.md')).stem}/05-principale.jpg", "foto", c)}</div>
-      <h1 class="titolo-libro">{c["titolo"]}</h1><p class="sottotitolo">{c["sottotitolo"]}</p>
-      {autore}<p class="editore">{EDITORE}</p></section>''']
+    out = [f'''<section class="copertina">{immagine("immagini/copertina/copertina.jpg", "sfondo", c)}
+      <div class="testata"><p class="sopratitolo">{c["sopratitolo"]}</p><h1 class="titolo-libro">{c["titolo"]}</h1>
+      <p class="sottotitolo">{c["sottotitolo"]}</p>{autore}</div>
+      <div class="piede"><p class="editore">{EDITORE}</p><p class="nota-ia">{c["didascalia"]}</p></div></section>''']
     out.append(f'<section class="colophon">{testo("colophon")}</section>')
 
     # indice

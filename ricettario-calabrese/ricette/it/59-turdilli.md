@@ -74,7 +74,6 @@ Nel Cosentino il Natale profuma di fritto e di miele. I turdilli sono piccoli gn
 
 ## Varianti locali
 - Al posto del vino rosso, alcune famiglie usano vino bianco, moscato o vermut.
-- In alcune case si aggiungono uova o lievito all'impasto `[DA VERIFICARE: diffusione per zona]`.
 - Il miele di fichi si può sostituire con il miele d'api, e a volte si spolverano con zuccherini colorati.
 
 ## Conservazione

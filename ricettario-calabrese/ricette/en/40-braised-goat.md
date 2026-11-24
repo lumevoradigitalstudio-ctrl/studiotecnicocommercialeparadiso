@@ -3,8 +3,8 @@ number: 40
 chapter: Meat main courses
 title: "Goat braised with wine and tomato"
 italian_title: "Capra in umido con vino e pomodoro"
-dialect: "crapa [TO BE VERIFIED]"
-area: "Reggio Calabria (Aspromonte) [TO BE VERIFIED]"
+dialect: "—"
+area: "Reggio Calabria (Aspromonte)"
 season: "summer festivals and patron saints' days"
 serves: 6
 prep: 30 minutes
@@ -23,7 +23,7 @@ status: draft EN block 7
 
 *Capra in umido · Reggio Calabria, Aspromonte · summer festivals*
 
-In the Calabrian mountains, and above all in the Aspromonte, goat has always been the meat of shepherds and of feast days. It is a tasty, rather strong meat that needs long, patient cooking. For feast days it is cooked in large pots `[TO BE VERIFIED]`, and the sauce dresses the maccheroni (recipe 30) before the meat comes to the table. This recipe is a home version: the pieces of goat are browned while splashed with vinegar, then cooked for hours with wine, onion and tomato, over very low heat. The result is meat that falls off the bone and a thick, dark sauce.
+In the Calabrian mountains, and above all in the Aspromonte, goat has always been the meat of shepherds and of feast days. It is a tasty, rather strong meat that needs long, patient cooking. For feast days it is cooked in large pots, and the sauce dresses the maccheroni (recipe 30) before the meat comes to the table. This recipe is a home version: the pieces of goat are browned while splashed with vinegar, then cooked for hours with wine, onion and tomato, over very low heat. The result is meat that falls off the bone and a thick, dark sauce.
 
 **Serves:** 6 · **Prep:** 30 minutes · **Cook:** 3 hours 30 minutes-4 hours · **Rest:** 4 hours (optional) · **Difficulty:** medium
 
@@ -70,7 +70,6 @@ In the Calabrian mountains, and above all in the Aspromonte, goat has always bee
 ## Local variations
 - **Boiled goat:** the meat is blanched and then simmered for a long time in a broth of vegetables, herbs and wine. The broth is used for pasta.
 - **Easter kid**, in tomato sauce or plain, without tomato.
-- In some villages the meat cooks for many hours in closed copper or earthenware pots, over the festival fire `[TO BE VERIFIED: villages and names]`.
 
 ## Storage
 In the fridge for 3 days, in its sauce. In the freezer for 3 months.
