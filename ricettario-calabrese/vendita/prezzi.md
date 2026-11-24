@@ -7,7 +7,7 @@ Costruito con la skill offer-and-pricing. Tutte le commissioni sono stime da fon
 | Canale | Cosa contiene | Prezzo | Perché |
 |---|---|---|---|
 | Sito + Stripe | PDF A4 stampabile + EPUB, una lingua | **12,90 € (IT) / $14.99 (EN)** | Il canale dove guadagni di più per copia |
-| Etsy | PDF A4 stampabile + EPUB, una lingua | **12,90 € / $14.99** | Su Etsy chi compra un ricettario si aspetta il PDF da stampare |
+| Etsy (negozio in euro) | PDF A4 stampabile + EPUB, una lingua | **12,90 € (IT) / 13,90 € ≈ $14.99 (EN)** | Su Etsy chi compra un ricettario si aspetta il PDF da stampare |
 | Amazon KDP, Apple Books, Kobo, Google Play | Solo EPUB, una lingua | **9,99 € / $9.99** | Su Amazon sopra $9.99 la royalty scende dal 70% al 35% |
 
 Il prezzo più basso sugli store è giustificato: lì si compra solo l'EPUB, senza il PDF A4 stampabile. Amazon chiede che il suo prezzo non sia più alto di quello dello stesso ebook altrove: tieni l'EPUB a 9,99 su tutti gli store.
