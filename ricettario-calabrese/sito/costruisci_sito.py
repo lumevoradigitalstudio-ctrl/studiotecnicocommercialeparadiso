@@ -56,7 +56,7 @@ T = {
          ('Le ricette sono originali calabresi?', 'Certo. Sono piatti della cucina di casa calabrese, scelti zona per zona, dal Vibonese alla Sila, da Reggio al Cosentino, e controllati uno per uno su fonti calabresi: disciplinari DOP e IGP, elenchi dei prodotti tradizionali, testi di cucina regionale. I testi sono scritti da zero per questo libro.'),
          ('C\'è anche in inglese?', 'Sì, esiste un\'edizione inglese separata, con le misure americane (oz, cups, °F) accanto a quelle metriche.'),
          ('Posso chiedere il rimborso?', 'Per i contenuti digitali scaricati subito il diritto di recesso non si applica, come previsto dal Codice del Consumo. I dettagli sono nelle condizioni di vendita.')],
-    legali='Condizioni di vendita e privacy', legali_url='condizioni.html', nota_ia='Immagini illustrative generate con IA.',
+    legali='Condizioni di vendita e privacy', legali_url='condizioni.html',
     h_cond='Condizioni di vendita e privacy'),
  'en': dict(
     pdf='Calabrian-Cookbook-A-Putiga-EN.pdf', titolo='The Putìga Cookbook',
@@ -83,7 +83,7 @@ T = {
          ('Are these authentic Calabrian recipes?', 'Of course. They are Calabrian home-cooking dishes, chosen area by area, from Vibo Valentia to the Sila mountains, from Reggio to Cosenza, and checked one by one against Calabrian sources: PDO and PGI product specifications, official lists of traditional foods, regional cookbooks. The texts were written from scratch for this book.'),
          ('Are US measures included?', 'Yes: every quantity is in grams and millilitres with oz, cups and °F in brackets.'),
          ('Can I get a refund?', 'Digital content delivered immediately is not covered by the EU right of withdrawal. See the terms of sale for details.')],
-    legali='Terms of sale and privacy', legali_url='terms.html', nota_ia='Illustrative images generated with AI.',
+    legali='Terms of sale and privacy', legali_url='terms.html',
     h_cond='Terms of sale and privacy'),
 }
 
@@ -224,7 +224,7 @@ def pagina(lingua, info, img, capitoli):
 <section><h2 data-anim>{t["h_faq"]}</h2><div class="faq">{faq}</div></section>
 </main>
 <div class="barra-acquisto" aria-hidden="true"><span>{e(t["titolo"])} · {PREZZO[lingua]}</span><a class="bottone" href="{link}" tabindex="-1">{t["compra"]}</a></div>
-<footer><p>© {info["anno"]} {EDITORE}</p><p><a href="{t["legali_url"]}">{t["legali"]}</a> · {t["nota_ia"]}</p></footer>
+<footer><p>© {info["anno"]} {EDITORE}</p><p><a href="{t["legali_url"]}">{t["legali"]}</a></p></footer>
 <script src="{pre}animazioni.js" defer></script>
 </body></html>'''
 
