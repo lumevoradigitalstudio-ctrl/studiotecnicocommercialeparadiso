@@ -5,7 +5,9 @@ Restano solo le cose che può fare **solo il titolare** (pagamenti, identità, b
 
 ## Sessione unica al PC (circa 20 minuti)
 
-### 1. Sito — Aruba (10 minuti)
+### 1. Sito — ✅ FATTO: online su https://throbbing-wood-6161.giovannmasi.workers.dev/ (Cloudflare). Resta solo l'acquisto di prova.
+
+(Vecchio piano Aruba, non più necessario:)
 1. admin.aruba.it → aggiungi **Hosting Linux** (il più economico) al dominio **aputiga.it** e paga.
 2. Quando l'hosting è attivo, nel pannello: crea il sottodominio **ricettario** (ricettario.aputiga.it).
 3. Apri il **File Manager** della cartella del sottodominio → carica **sito-ricettario-aputiga.zip** → **Estrai**.
