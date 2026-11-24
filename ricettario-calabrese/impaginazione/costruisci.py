@@ -122,7 +122,7 @@ def ridotta(p, lato):
         with Image.open(p) as im:
             im = im.convert('RGB')
             im.thumbnail((lato, lato))
-            im.save(q, "JPEG", quality=76, optimize=True, progressive=True)
+            im.save(q, "JPEG", quality=70, optimize=True, progressive=True)
     return q
 
 
@@ -150,7 +150,7 @@ def immagine(rel, classe, c):
     p = R / rel
     if p.exists():
         # principale 180 mm, passaggi 56 mm: circa 225-250 dpi
-        q = ridotta(p, {"sfondo": 2200, "foto": 1600}.get(classe, 560))
+        q = ridotta(p, {"sfondo": 2000, "foto": 1300}.get(classe, 480))  # sotto i 25 MB per file (limite di Cloudflare Pages)
         return f'<img class="{classe}" src="{(sfumata(q) if classe == "sfondo" else q).as_uri()}" alt="">'
     return f'<div class="{classe} segnaposto"><span>{c["mancante"]}<br>{html.escape(p.name)}</span></div>'
 

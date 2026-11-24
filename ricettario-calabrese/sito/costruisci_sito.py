@@ -28,7 +28,7 @@ PREZZO = {'it': '12,90 €', 'en': '$14.99'}
 EMAIL = os.environ.get('CONTATTO_EMAIL', '')  # l'email di contatto la imposta il titolare: CONTATTO_EMAIL=... python3 sito/costruisci_sito.py
 CONTATTO = 'Tel. 376 0512942' + (f' · {EMAIL}' if EMAIL else '')
 DATI_VENDITORE = 'A Putiga di Giovanni Masi · Via Cristoforo Colombo 80, 88046 Lamezia Terme (CZ) · P. IVA 03856550797 · ' + CONTATTO
-DOMINIO = 'https://ricettario.aputiga.it'  # sottodominio da creare sul pannello del dominio aputiga.it
+DOMINIO = ''  # indirizzo definitivo del sito (es. https://ricettario-calabrese.pages.dev): serve solo per l'anteprima social
 # ---------------------------------------------------------------------------------------------
 
 SFOGLIA = [1, 10, 11, 21, 22, 70, 71]  # pagine del PDF nel libro da sfogliare (fronte/retro dei fogli)
