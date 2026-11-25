@@ -2,7 +2,7 @@
 """Edizione premium (anteprima) del ricettario, in italiano e in inglese. Non tocca il libro attuale né il sito.
 
 Uso (dalla cartella ricettario-calabrese):
-    python3 premium/costruisci_premium.py [it|en]    # PDF alta qualità + PDF leggero + copertina JPG (default: it)
+    python3 premium/costruisci_premium.py [it|en] [--solo-alta|--solo-vendita]  # PDF alta qualità + PDF da vendere (<20 MB) + copertina JPG
 Esce in output/premium/. Testi e ricette vengono da ricette/<lingua>/ senza modifiche di contenuto.
 """
 import html, io, json, math, pathlib, re, subprocess, sys, urllib.parse
@@ -33,7 +33,7 @@ T = {
                cred_testo="Le fotografie dei luoghi vengono da Wikimedia Commons e sono usate secondo le loro licenze, che permettono l'uso commerciale con attribuzione. "
                           "Le immagini dei piatti, dei passaggi e della copertina sono illustrazioni generate con l'intelligenza artificiale.",
                cred_mappa='Mappa: confini ISTAT, elaborazione openpolis (CC BY 4.0).',
-               file='Il-libro-di-cucina-della-Putiga-PREMIUM-IT', leggero='-leggero', copertina='copertina-premium'),
+               file='Il-libro-di-cucina-della-Putiga-PREMIUM-IT', vendita='Il-libro-di-cucina-della-Putiga-IT', copertina='copertina-premium'),
     'en': dict(porzioni='Serves', prep='Prep', cottura='Cook', riposo='Rest', totale='Total', diff='Difficulty',
                livelli={'easy': 1, 'medium': 2, 'challenging': 3}, nessuno=('none', '—'), tutta='all of',
                indice='Contents', capitolo='Chapter', foto='Photo', passi='Key steps', sicurezza='safety',
@@ -46,7 +46,7 @@ T = {
                cred_testo='The photographs of places come from Wikimedia Commons and are used under their licences, which allow commercial use with attribution. '
                           'The images of the dishes, the steps and the cover are illustrations generated with artificial intelligence.',
                cred_mappa='Map: ISTAT boundaries, processed by openpolis (CC BY 4.0).',
-               file='The-Putiga-Cookbook-PREMIUM-EN', leggero='-light', copertina='cover-premium-en'),
+               file='The-Putiga-Cookbook-PREMIUM-EN', vendita='The-Putiga-Cookbook-EN', copertina='cover-premium-en'),
 }[LINGUA]
 # campi della ricetta inglese -> nomi usati qui (gli stessi dell'edizione italiana)
 CAMPI_EN = dict(number='numero', chapter='capitolo', title='titolo', dialect='dialetto', area='provincia', season='stagione',
@@ -113,10 +113,14 @@ def mappa_url(q):
     return 'https://www.google.com/maps/search/?api=1&query=' + urllib.parse.quote(q)
 
 
+QUALITA = 80  # JPEG; la versione da vendere scende per stare sotto i 20 MB di Etsy
+LATO_FOTO_GRANDI = 2200  # aperture dei capitoli
+
+
 def foto(src, lato, grade=True, nome=None):
     """Copia ridotta e appena calibrata (calore e contrasto leggeri, uguali per tutte), in cache."""
     src = pathlib.Path(src)
-    d = OUT / f'.img-{lato}' / (nome or src.name)
+    d = OUT / f'.img-{lato}-{QUALITA}' / (nome or src.name)
     if not d.exists() or d.stat().st_mtime < src.stat().st_mtime:
         d.parent.mkdir(parents=True, exist_ok=True)
         with Image.open(src) as im:
@@ -127,7 +131,7 @@ def foto(src, lato, grade=True, nome=None):
                 im = ImageEnhance.Color(im).enhance(1.04)
                 r, g, b = im.split()
                 im = Image.merge('RGB', (r.point(lambda v: min(255, int(v * 1.02))), g, b.point(lambda v: int(v * 0.97))))
-            im.save(d, 'JPEG', quality=80, optimize=True, progressive=True)
+            im.save(d, 'JPEG', quality=QUALITA, optimize=True, progressive=True)
     return d.as_uri()
 
 
@@ -210,7 +214,7 @@ def ricetta(fm, corpo, k, liv, img_lato):
 
 def apertura(k, nome, testo, chiave):
     L = LUOGHI.get(chiave) or LUOGHI.get(RISERVA.get(chiave, '')) or SEGNAPOSTO
-    img = foto(P / 'dati' / 'luoghi' / L['file'], 2200, grade=False) if L['file'] else ''
+    img = foto(P / 'dati' / 'luoghi' / L['file'], LATO_FOTO_GRANDI, grade=False) if L['file'] else ''
     corpo = f'<div class="ap-testo">{testo}</div>' if testo else ''
     return (f'<section class="apertura" id="cap{k}"><figure class="ap-foto"><img src="{img}" alt="{html.escape(L["luogo"])}">'
             f'<div class="ap-velo"></div><div class="ap-titoli"><span class="ap-num">{T['capitolo']} {k}</span>'
@@ -250,7 +254,9 @@ def svg_mappa():
             f'<text x="{W * 0.86:.0f}" y="{H * 0.80:.0f}" class="mare">{T['ionio']}</text></svg>')
 
 
-def costruisci(img_lato, file_pdf, salva_html=False):
+def costruisci(img_lato, file_pdf, salva_html=False, qualita=80, lato_grandi=2200):
+    global QUALITA, LATO_FOTO_GRANDI
+    QUALITA, LATO_FOTO_GRANDI = qualita, lato_grandi
     cart = R / 'ricette' / LINGUA
     leggi = lambda p: (lambda fm, corpo: ({CAMPI_EN.get(k, k): v for k, v in fm.items()}, corpo))(*base.leggi(p))
     ricette = sorted((leggi(p) for p in cart.glob('[0-9][0-9]-*.md')), key=lambda x: x[0]['numero'])
@@ -264,7 +270,7 @@ def costruisci(img_lato, file_pdf, salva_html=False):
     sost = dict(titolo=TITOLO, sottotitolo=SOTTO, anno=base.ANNO, editore=base.EDITORE, autore='')
     testo = lambda nome: base.md((R / 'impaginazione' / 'testi' / LINGUA / f'{nome}.md').read_text(encoding='utf-8').format(**sost))
 
-    out = [f'''<section class="copertina"><img class="cop-foto" src="{foto(R / 'immagini' / 'copertina' / 'copertina.jpg', 2400, grade=False)}" alt="">
+    out = [f'''<section class="copertina"><img class="cop-foto" src="{foto(R / 'immagini' / 'copertina' / 'copertina.jpg', LATO_FOTO_GRANDI + 200, grade=False)}" alt="">
       <div class="cop-velo"></div><div class="cop-testa"><span class="cop-kicker">{T['kicker']}</span>
       <h1 class="cop-titolo">{T['cop_titolo']}</h1><span class="cop-filo"></span>
       <p class="cop-sotto">{T['cop_sotto']}</p></div>
@@ -335,8 +341,11 @@ def costruisci(img_lato, file_pdf, salva_html=False):
 
 
 if __name__ == '__main__':
-    alta = costruisci(1700, T['file'] + '.pdf', '--html' in sys.argv)
+    if '--solo-vendita' not in sys.argv:
+        alta = costruisci(1700, T['file'] + '.pdf', '--html' in sys.argv)
+        subprocess.run(['pdftoppm', '-f', '1', '-l', '1', '-r', '300', '-jpeg', '-jpegopt', 'quality=92', '-singlefile', str(alta), str(OUT / T['copertina'])], check=True)
+        print('copertina:', OUT / (T['copertina'] + '.jpg'))
     if '--solo-alta' not in sys.argv:
-        costruisci(1000, T['file'] + T['leggero'] + '.pdf')
-    subprocess.run(['pdftoppm', '-f', '1', '-l', '1', '-r', '300', '-jpeg', '-jpegopt', 'quality=92', '-singlefile', str(alta), str(OUT / T['copertina'])], check=True)
-    print('copertina:', OUT / (T['copertina'] + '.jpg'))
+        # versione da vendere (sito, Etsy): Etsy accetta file fino a 20 MB, Cloudflare fino a 25 MiB
+        v = costruisci(900, T['vendita'] + '.pdf', qualita=70, lato_grandi=1600)
+        assert v.stat().st_size < 19.5e6, f'{v.name}: {v.stat().st_size / 1e6:.1f} MB, troppo per Etsy'

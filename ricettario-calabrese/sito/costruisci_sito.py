@@ -2,7 +2,7 @@
 """Genera il sito di vendita statico (IT + EN) in sito/pubblico/.
 
 Uso (dalla cartella ricettario-calabrese):  python3 sito/costruisci_sito.py
-Prima rigenera i PDF (impaginazione/costruisci.py): pagine, peso, anteprime e ricetta omaggio vengono da lì.
+Prima rigenera i PDF (premium/costruisci_premium.py it|en --solo-vendita; EPUB da vendita/costruisci_vendita.py): pagine, peso, anteprime e ricetta omaggio vengono da lì.
 Il sito non usa cookie, statistiche né servizi esterni: si carica così com'è su qualsiasi hosting statico.
 Le animazioni sono in sito/animazioni.js e sito/stile.css e si spengono con "riduci movimento" del sistema.
 """
@@ -31,13 +31,15 @@ DATI_VENDITORE = 'A Putiga di Giovanni Masi · Via Cristoforo Colombo 80, 88046 
 DOMINIO = ''  # indirizzo definitivo del sito (es. https://ricettario-calabrese.pages.dev): serve solo per l'anteprima social
 # ---------------------------------------------------------------------------------------------
 
-SFOGLIA = [1, 10, 11, 21, 22, 70, 71]  # pagine del PDF nel libro da sfogliare (fronte/retro dei fogli)
-OMAGGIO = [1, 70, 71, 72]              # copertina + fileja con sugo di 'nduja (ricetta 29)
+# il libro venduto è l'edizione premium (premium/costruisci_premium.py --solo-vendita), sotto i 20 MB per Etsy;
+# l'EPUB resta quello del libro base: stessi testi
+CARTELLA_PDF = R / 'output' / 'premium'
+OMAGGIO_RICETTA = 29  # fileja con sugo di 'nduja: si regala con la copertina
 PIATTI = [5, 29, 7, 41, 55, 60, 9, 30, 45, 57, 19, 53]
 
 T = {
  'it': dict(
-    pdf='Ricettario-Calabrese-A-Putiga-IT.pdf', titolo='Il libro di cucina della Putìga',
+    pdf='Il-libro-di-cucina-della-Putiga-IT.pdf', epub='Ricettario-Calabrese-A-Putiga-IT.epub', titolo='Il libro di cucina della Putìga',
     sotto='60 ricette calabresi di casa, dai salumi ai dolci delle feste',
     gancio='I sapori di casa, anche lontano da casa.',
     meta='Ricettario digitale in PDF: 60 ricette di cucina calabrese di casa, con salumi, conserve sicure, pasta fatta a mano, secondi e dolci delle feste.',
@@ -64,7 +66,7 @@ T = {
     legali='Condizioni di vendita e privacy', legali_url='condizioni.html',
     h_cond='Condizioni di vendita e privacy'),
  'en': dict(
-    pdf='Calabrian-Cookbook-A-Putiga-EN.pdf', titolo='The Putìga Cookbook',
+    pdf='The-Putiga-Cookbook-EN.pdf', epub='Calabrian-Cookbook-A-Putiga-EN.epub', titolo='The Putìga Cookbook',
     sotto='60 Calabrian home recipes, from cured meats to festive sweets',
     gancio='The flavours of Calabria, in your own kitchen.',
     meta='Digital PDF cookbook: 60 Calabrian home recipes, with home-cured meats, safe preserves, hand-made pasta, main courses and festive sweets. US measures included.',
@@ -143,13 +145,24 @@ def pagine_pdf(pdf, numeri, cartella, prefisso):
     return nomi
 
 
-def omaggio(pdf, dest):
+def pagine_chiave(pdf):
+    """Numeri di pagina (da 1) letti dalle ancore del PDF, così valgono per ogni impaginazione e lingua."""
+    r = PdfReader(pdf)
+    pg = lambda nome: r.get_destination_page_number(r.named_destinations[nome]) + 1
+    n = OMAGGIO_RICETTA
+    omaggio = [1] + list(range(pg(f'r{n:02d}'), pg(f'r{n + 1:02d}')))
+    # fogli da sfogliare: copertina/mappa, apertura del capitolo 1/prima ricetta, ricetta omaggio
+    sfoglia = [1, pg('mappa'), pg('cap1'), pg('r01'), pg('r01') + 1, pg(f'r{n:02d}'), pg(f'r{n:02d}') + 1]
+    return sfoglia, omaggio
+
+
+def omaggio(pdf, dest, numeri):
     """Estratto di poche pagine. WeasyPrint mette tutte le immagini del libro nelle risorse condivise:
     ogni pagina tiene solo quelle che disegna, altrimenti l'estratto pesa quanto il libro."""
     from pypdf.generic import DictionaryObject, NameObject
     w = PdfWriter()
     r = PdfReader(pdf)
-    for n in OMAGGIO:
+    for n in numeri:
         pg = r.pages[n - 1]  # si sfoltisce la pagina letta, prima di copiarla: così le immagini inutili non entrano mai
         ris = DictionaryObject(pg['/Resources'].get_object())
         if '/XObject' in ris:
@@ -184,7 +197,8 @@ def pagina(lingua, info, img, capitoli):
     nastri = ''.join(f'<div class="nastro{" inverso" if k else ""}"><div class="scorre">'
                      + ''.join(f'<img src="{pre}img/{n}" alt="" loading="lazy" width="320" height="240">' for n in r * 2)
                      + '</div></div>' for k, r in enumerate(righe))
-    fogli = [(SFOGLIA[i], SFOGLIA[i + 1] if i + 1 < len(SFOGLIA) else None) for i in range(0, len(SFOGLIA), 2)]
+    sf = img['sfoglia']
+    fogli = [(sf[i], sf[i + 1] if i + 1 < len(sf) else None) for i in range(0, len(sf), 2)]
     libro = ''.join(f'<div class="foglio" style="--z:{len(fogli) - k}"><img class="fronte" src="{pre}img/{img["pagine"][a]}" alt="" loading="lazy">'
                     + (f'<img class="retro" src="{pre}img/{img["pagine"][b]}" alt="" loading="lazy">' if b else '<div class="retro vuoto"></div>')
                     + '</div>' for k, (a, b) in enumerate(fogli))
@@ -254,14 +268,14 @@ SCARICA = {
 
 def pagine_download():
     """Una cartella nascosta per edizione con PDF ed EPUB."""
-    file = {l: [T[l]['pdf'], T[l]['pdf'].replace('.pdf', '.epub')] for l in ('it', 'en')}
+    file = {l: [CARTELLA_PDF / T[l]['pdf'], R / 'output' / T[l]['epub']] for l in ('it', 'en')}
     for chiave in ('it', 'en'):
         cart = OUT / 'd' / DOWNLOAD[chiave]
         cart.mkdir(parents=True)
         voci = ''
         for f in file[chiave]:
-            shutil.copy(R / 'output' / f, cart / f)
-            voci += f'<li><a class="bottone" href="{f}" download>{f.rsplit(".", 1)[1].upper()} · {html.escape(T[chiave]["titolo"])}</a></li>'
+            shutil.copy(f, cart / f.name)
+            voci += f'<li><a class="bottone" href="{f.name}" download>{f.suffix[1:].upper()} · {html.escape(T[chiave]["titolo"])}</a></li>'
         lang = chiave
         tit, testo, aiuto = SCARICA[lang]
         (cart / 'index.html').write_text(f'''<!DOCTYPE html><html lang="{lang}"><head><meta charset="utf-8">
@@ -288,7 +302,8 @@ def main():
             shutil.copy(S / 'video' / f, OUT / 'video' / f)
         video = 'hero.mp4'
     for lingua, t in T.items():
-        pdf = R / 'output' / t['pdf']
+        pdf = CARTELLA_PDF / t['pdf']
+        sfoglia, pag_omaggio = pagine_chiave(pdf)
         info = dict(p=len(PdfReader(pdf).pages), anno=2026)
         chiavi = ('numero', 'capitolo', 'titolo') if lingua == 'it' else ('number', 'chapter', 'title')
         capitoli = []
@@ -297,12 +312,12 @@ def main():
             if not capitoli or capitoli[-1][0] != fm[chiavi[1]]:
                 capitoli.append((fm[chiavi[1]], []))
             capitoli[-1][1].append((fm[chiavi[0]], fm[chiavi[2]]))
-        pagine = pagine_pdf(pdf, sorted(set(SFOGLIA)), OUT / 'img', lingua)
+        pagine = pagine_pdf(pdf, sorted(set(sfoglia)), OUT / 'img', lingua)
         base = OUT if lingua == 'it' else OUT / 'en'  # il PDF omaggio sta accanto alla sua pagina
-        img = dict(sfondo=sfondo, video=video, copertina=pagine[1], pagine=pagine, piatti=piatti,
+        img = dict(sfoglia=sfoglia, sfondo=sfondo, video=video, copertina=pagine[1], pagine=pagine, piatti=piatti,
                    capitoli=[foto(principale(rr[len(rr) // 2][0]), OUT / 'img' / f'capitolo-{k + 1}.jpg', 640, 74)
                              for k, (_, rr) in enumerate(capitoli)],
-                   omaggio=omaggio(pdf, base / ('ricetta-omaggio.pdf' if lingua == 'it' else 'free-recipe.pdf')))
+                   omaggio=omaggio(pdf, base / ('ricetta-omaggio.pdf' if lingua == 'it' else 'free-recipe.pdf'), pag_omaggio))
         foto(OUT / 'img' / pagine[1], OUT / 'img' / f'copertina-{lingua}.jpg', 1200)
         (base / 'index.html').write_text(pagina(lingua, info, img, capitoli), encoding='utf-8')
         (base / t['legali_url']).write_text(condizioni(lingua, info), encoding='utf-8')
