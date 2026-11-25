@@ -21,7 +21,9 @@ TITOLO, SOTTO = C['titolo'], C['sottotitolo']
 AI = 'Immagine illustrativa generata con IA'
 
 # Foto del territorio: Wikimedia Commons, licenze che permettono l'uso commerciale (crediti in fondo al libro)
-LUOGHI = json.loads((P / 'dati' / 'luoghi.json').read_text(encoding='utf-8'))
+_lj = P / 'dati' / 'luoghi.json'
+LUOGHI = json.loads(_lj.read_text(encoding='utf-8')) if _lj.exists() else {}
+SEGNAPOSTO = dict(luogo='Foto del luogo in arrivo', mappa='Calabria', file=None, autore='—', licenza='—', titolo='', pagina='')
 # capitolo -> chiave del luogo per l'apertura
 APERTURE = ['sila', 'ulivi', 'tropea', 'gerace', 'costadeglidei', 'aspromonte', 'scilla', 'capovaticano', 'reggio']
 RISERVA = {'aspromonte': 'gerace', 'pizzo': 'costadeglidei'}  # se la foto non è disponibile si usa un altro luogo, con la sua didascalia vera
@@ -162,15 +164,15 @@ def ricetta(fm, corpo, k, liv, img_lato):
 
 
 def apertura(k, nome, testo, chiave):
-    L = LUOGHI.get(chiave) or LUOGHI[RISERVA[chiave]]
-    img = foto(P / 'dati' / 'luoghi' / L['file'], 2200, grade=False)
+    L = LUOGHI.get(chiave) or LUOGHI.get(RISERVA.get(chiave, '')) or SEGNAPOSTO
+    img = foto(P / 'dati' / 'luoghi' / L['file'], 2200, grade=False) if L['file'] else ''
     corpo = f'<div class="ap-testo">{testo}</div>' if testo else ''
     return (f'<section class="apertura" id="cap{k}"><figure class="ap-foto"><img src="{img}" alt="{html.escape(L["luogo"])}">'
             f'<div class="ap-velo"></div><div class="ap-titoli"><span class="ap-num">Capitolo {k}</span>'
             f'<h1 class="capitolo">{html.escape(nome)}</h1>'
             f'<a class="ap-luogo" href="{mappa_url(L["mappa"])}">{ico("pin")} {html.escape(L["luogo"])}</a></div>'
             f'<span class="ap-credito">Foto: {html.escape(L["autore"])} · {html.escape(L["licenza"])} · Wikimedia Commons</span></figure>'
-            f'</section>{corpo}')
+            f'</section><div class="capstr">{html.escape(nome)}</div>{corpo}')
 
 
 def svg_mappa():
@@ -228,11 +230,11 @@ def costruisci(img_lato, file_pdf, salva_html=False):
     finali = [('mappa', 'La Calabria in cucina: mappa'), ('glossario', C['glossario']), ('conversioni', C['conversioni']),
               ('ing-indice', C['ing_indice']), ('crediti', 'Crediti fotografici')]
     voci += ''.join(f'<li class="cap fin"><a href="#{i}">{t}</a></li>' for i, t in finali)
-    out.append(f'<section class="indice" id="indice"><span class="kick">Sommario</span><h1 class="indice">Indice</h1>'
+    out.append(f'<section class="indice" id="indice"><h1 class="indice">Indice</h1>'
                f'<ul><li class="cap fin"><a href="#intro">La cucina della putìga</a></li>{voci}</ul></section>')
     intro = testo('introduzione').replace('<h1>', '<h1 class="sez" id="intro">', 1)
-    U = LUOGHI['cipolla']
-    out.append(f'<section class="intro-p"><figure class="intro-foto"><img src="{foto(P / "dati" / "luoghi" / U["file"], 1600, grade=False)}" alt="">'
+    U = LUOGHI.get('cipolla', SEGNAPOSTO)
+    out.append(f'<section class="intro-p"><figure class="intro-foto"><img src="{foto(P / "dati" / "luoghi" / U["file"], 1600, grade=False) if U["file"] else ""}" alt="">'
                f'<figcaption>{html.escape(U["luogo"])} · Foto: {html.escape(U["autore"])}, {html.escape(U["licenza"])}</figcaption></figure>{intro}</section>')
     out.append(f'<section class="mappa-p" id="mappa"><span class="kick">Dove nascono i piatti</span><h1 class="sez">La Calabria in cucina</h1>'
                f'<p class="sub">Tocca un punto rosso per aprire la ricetta, un punto blu per vedere il luogo sulla mappa.</p>{svg_mappa()}'

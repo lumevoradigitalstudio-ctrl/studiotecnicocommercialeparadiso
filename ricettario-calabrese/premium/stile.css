@@ -137,10 +137,10 @@ aside.ingredienti p { margin: 1.5mm 0; }
 .metodo { font: 400 8.8pt/1.58 'Montserrat'; }
 .metodo p strong { display: block; font: 600 10.5pt 'Playfair'; color: var(--terra); margin-top: 2.5mm; }
 .metodo ol { list-style: none; padding: 0; margin: 0 0 2mm; }
-.metodo ol li { position: relative; padding: 0 0 1.6mm 8.5mm; }
-.metodo ol li::before { content: counter(list-item); position: absolute; left: 0; top: 0.2mm; width: 5.6mm; height: 5.6mm; border-radius: 50%;
-  background: var(--peperoncino); color: var(--crema); font: 700 7pt/5.6mm 'Montserrat'; text-align: center; }
-.metodo ul { padding-left: 4.5mm; }
+.metodo ol li { padding: 0 0 1.6mm 0; }
+.metodo ol li::before { content: counter(list-item); display: inline-block; width: 5.2mm; height: 5.2mm; margin-right: 2mm; vertical-align: 0.2mm; border-radius: 50%;
+  background: var(--peperoncino); color: var(--crema); font: 700 6.8pt/5.2mm 'Montserrat'; text-align: center; }
+.metodo ul { list-style-position: inside; padding-left: 0; }
 .passi { clear: both; break-inside: avoid; margin: 4mm 0 4mm; }
 .passi > div { display: flex; gap: 3mm; }
 .passi img { width: 56.6mm; height: 44mm; object-fit: cover; border-radius: 1mm; }
@@ -177,3 +177,5 @@ aside.ingredienti p { margin: 1.5mm 0; }
 .chiusura { break-before: page; text-align: center; padding-top: 95mm; }
 .chiusura h1 { font: 600 30pt 'Playfair'; color: var(--peperoncino); }
 .chiusura p { font: italic 11pt 'Lora'; max-width: 120mm; margin: 0 auto 3mm; }
+
+.capstr { string-set: cap content(); height: 0; overflow: hidden; font-size: 0; line-height: 0; margin: 0; }
