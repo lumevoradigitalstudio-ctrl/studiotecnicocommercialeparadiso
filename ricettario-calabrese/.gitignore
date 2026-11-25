@@ -3,3 +3,5 @@ output/*.html
 output/.immagini/
 sito/pubblico/d/
 output/*.zip
+output/premium/.img-*/
+output/premium/*.html
