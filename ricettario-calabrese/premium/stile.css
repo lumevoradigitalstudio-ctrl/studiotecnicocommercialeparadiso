@@ -1,0 +1,179 @@
+/* Edizione premium — A4. Direzione: Mediterraneo contemporaneo, editoria italiana, rustico raffinato.
+   Titoli Playfair Display · narrativa Lora · ingredienti e procedimenti Montserrat (tutti OFL). */
+@font-face { font-family: 'Playfair'; src: url('font/PlayfairDisplay.ttf'); font-weight: 400 900; }
+@font-face { font-family: 'Playfair'; src: url('font/PlayfairDisplay-Italic.ttf'); font-weight: 400 900; font-style: italic; }
+@font-face { font-family: 'Lora'; src: url('font/Lora.ttf'); font-weight: 400 700; }
+@font-face { font-family: 'Lora'; src: url('font/Lora-Italic.ttf'); font-weight: 400 700; font-style: italic; }
+@font-face { font-family: 'Montserrat'; src: url('font/Montserrat.ttf'); font-weight: 100 900; }
+
+:root { --peperoncino: #B0291E; --oliva: #5F6B3A; --terracotta: #C1663F; --sabbia: #E9DCC3; --crema: #FBF6EC;
+  --avorio: #F4EBD9; --terra: #4A3426; --mare: #2D5F7C; --bergamotto: #D9A92C; --ink: #2B211A; }
+
+@page { size: A4; margin: 17mm 18mm 19mm 18mm; background: var(--crema) url('carta.png');
+  @bottom-left { content: string(cap); font: 600 6.6pt 'Montserrat'; letter-spacing: 1.2pt; text-transform: uppercase; color: var(--terracotta); }
+  @bottom-right { content: counter(page); font: 500 8pt 'Montserrat'; color: var(--terra); } }
+@page piena { margin: 0; @bottom-left { content: none } @bottom-right { content: none } }
+@page :first { margin: 0; }
+
+html { font: 400 9.6pt/1.5 'Lora', serif; color: var(--ink); hyphens: auto; }
+body { margin: 0; }
+a { color: inherit; text-decoration: none; }
+h1, h2, h3 { font-weight: 600; hyphens: manual; }
+p { margin: 0 0 2.2mm; orphans: 2; widows: 2; }
+.ico { width: 3.9mm; height: 3.9mm; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; vertical-align: -0.8mm; margin-right: 1.4mm; }
+.invisibile { visibility: hidden; }
+.verif { font: 600 7pt 'Montserrat'; color: var(--peperoncino); }
+a.rif { color: var(--terracotta); border-bottom: 0.5pt solid var(--terracotta); }
+.kick { display: block; font: 600 7pt 'Montserrat'; letter-spacing: 2pt; text-transform: uppercase; color: var(--terracotta); margin-bottom: 2mm; }
+h1.sez { font: 600 26pt/1.08 'Playfair'; color: var(--terra); margin: 0 0 5mm; string-set: cap content(); bookmark-level: 1; }
+h1 { bookmark-level: 1; } h1.ricetta { bookmark-level: 2; } h1.cop-titolo, h1.indice { bookmark-level: none; }
+h2, h3 { bookmark-level: none; }
+
+/* ——— copertina ——— */
+.copertina { page: piena; position: relative; width: 210mm; height: 297mm; overflow: hidden; background: var(--terra); }
+.cop-foto { position: absolute; left: 0; bottom: 0; width: 210mm; height: 297mm; object-fit: cover; object-position: 50% 70%; }
+.cop-velo { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(251,246,236,1) 0%, rgba(251,246,236,1) 30%, rgba(251,246,236,0) 47%); }
+.cop-testa { position: absolute; top: 22mm; left: 0; right: 0; text-align: center; }
+.cop-kicker { font: 600 8.5pt 'Montserrat'; letter-spacing: 4pt; text-transform: uppercase; color: var(--peperoncino); }
+.cop-titolo { font: 600 43pt/1.02 'Playfair'; color: var(--terra); margin: 6mm 0 0; }
+.cop-titolo em { font-weight: 500; color: var(--peperoncino); }
+.cop-filo { display: block; width: 26mm; height: 0.8mm; background: var(--bergamotto); margin: 7mm auto 5mm; }
+.cop-sotto { font: italic 400 13pt 'Lora'; color: var(--terra); }
+.cop-piede { position: absolute; bottom: 0; left: 0; right: 0; padding: 6mm 0 7mm; text-align: center; background: linear-gradient(to top, rgba(43,33,26,.85), rgba(43,33,26,0)); }
+.cop-piede span { display: block; font: 600 9pt 'Montserrat'; letter-spacing: 3pt; text-transform: uppercase; color: var(--crema); }
+.cop-piede .cop-ia { font: italic 400 6.5pt 'Lora'; letter-spacing: 0; text-transform: none; color: var(--sabbia); margin-top: 1.5mm; }
+
+/* ——— pagine iniziali ——— */
+.colophon { break-before: page; font-size: 8.4pt; padding-top: 120mm; color: var(--terra); }
+.colophon strong { font-family: 'Montserrat'; font-weight: 600; }
+.nota-font { font-style: italic; }
+.indice { break-before: page; }
+h1.indice { font: 600 30pt 'Playfair'; color: var(--terra); margin: 0 0 6mm; }
+.indice ul { list-style: none; margin: 0; padding: 0; }
+.indice > ul { column-count: 2; column-gap: 9mm; }
+.indice li.cap { break-inside: avoid; margin-bottom: 3.2mm; }
+.indice li.cap > a { display: block; font: 600 11pt 'Playfair'; color: var(--peperoncino); border-bottom: 0.5pt solid var(--sabbia); padding-bottom: 0.8mm; margin-bottom: 1mm; }
+.indice li.fin > a { font-size: 10pt; color: var(--terra); }
+.indice .n { font: 600 7pt 'Montserrat'; color: var(--terracotta); display: inline-block; width: 6mm; }
+.indice li.cap li a { display: block; font: 400 8pt/1.55 'Montserrat'; color: var(--ink); }
+.indice a::after { content: leader(' ') target-counter(attr(href), page); font: 500 7.5pt 'Montserrat'; color: var(--terracotta); }
+
+.intro-p { break-before: page; }
+.intro-foto { margin: -17mm -18mm 6mm; height: 92mm; position: relative; }
+.intro-foto img { width: 100%; height: 92mm; object-fit: cover; }
+.intro-foto figcaption, .fonte { font: 400 6.3pt 'Montserrat'; color: #8a7a68; }
+.intro-foto figcaption { position: absolute; right: 18mm; bottom: -4.5mm; }
+.intro-p h1.sez { font-size: 24pt; }
+.intro-p h2 { font: 600 12pt 'Playfair'; color: var(--peperoncino); margin: 4mm 0 1.5mm; }
+.intro-p ul { padding-left: 4mm; margin: 0 0 2mm; } .intro-p li { margin-bottom: 0.8mm; }
+
+.mappa-p { break-before: page; text-align: center; }
+.mappa-p .sub { font: italic 9pt 'Lora'; color: var(--terra); }
+.mappa-svg { width: 150mm; height: 205mm; margin: 2mm auto 0; display: block; }
+.mappa-svg .lab { font: 600 15px 'Montserrat'; fill: var(--terra); }
+.mappa-svg .mare { font: italic 22px 'Playfair'; fill: var(--mare); opacity: .7; }
+
+/* ——— aperture di capitolo: foto del territorio a tutta pagina ——— */
+.apertura { page: piena; break-before: page; position: relative; width: 210mm; height: 297mm; }
+.ap-foto { position: absolute; inset: 0; margin: 0; }
+.ap-foto img { width: 210mm; height: 297mm; object-fit: cover; }
+.ap-velo { position: absolute; inset: 0; background: linear-gradient(to top, rgba(43,33,26,.82) 0%, rgba(43,33,26,.35) 38%, rgba(43,33,26,0) 60%); }
+.ap-titoli { position: absolute; left: 18mm; right: 18mm; bottom: 26mm; color: var(--crema); }
+.ap-num { font: 600 8pt 'Montserrat'; letter-spacing: 3pt; text-transform: uppercase; color: var(--bergamotto); }
+h1.capitolo { font: 600 40pt/1.02 'Playfair'; color: var(--crema); margin: 3mm 0 5mm; string-set: cap content(); }
+.ap-luogo { font: 500 8.5pt 'Montserrat'; color: var(--crema); border-bottom: 0.5pt solid rgba(251,246,236,.6); }
+.ap-credito { position: absolute; right: 6mm; bottom: 5mm; font: 400 5.6pt 'Montserrat'; color: rgba(251,246,236,.75); }
+.ap-testo { break-before: page; columns: 2; column-gap: 8mm; font-size: 9pt; }
+.ap-testo h2 { font: 600 12pt 'Playfair'; color: var(--peperoncino); column-span: all; margin: 0 0 2mm; }
+.ap-testo ol, .ap-testo ul { padding-left: 4.5mm; }
+
+/* ——— ricetta ——— */
+article.ricetta { break-before: page; }
+.kicker { display: flex; justify-content: space-between; font: 600 6.8pt 'Montserrat'; letter-spacing: 1.6pt; text-transform: uppercase; color: var(--terracotta); margin-bottom: 2mm; }
+.kicker .torna { color: var(--oliva); letter-spacing: 1pt; }
+.kicker .torna .ico { width: 3mm; height: 3mm; margin-right: 0.8mm; }
+h1.ricetta { font: 600 27pt/1.06 'Playfair'; color: var(--terra); margin: 0 0 1.5mm; }
+.dial { display: block; font: italic 400 10pt 'Playfair'; color: var(--peperoncino); margin-bottom: 2mm; }
+.luogo { font: 500 7.6pt 'Montserrat'; color: var(--oliva); display: flex; gap: 6mm; flex-wrap: wrap; }
+.luogo a { color: var(--oliva); border-bottom: 0.4pt dotted var(--oliva); }
+.hero { position: relative; margin: 0; }
+.hero img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.hero .ia { position: absolute; right: 2.5mm; bottom: 1.8mm; font: italic 400 5.6pt 'Lora'; color: rgba(255,255,255,.88); }
+/* variante 0: foto a pieno margine in alto */
+.v0 .hero.piena { margin: -17mm -18mm 6mm; height: 108mm; }
+/* variante 1: foto a destra fino al bordo, titoli a sinistra */
+.v1 .split { display: flex; gap: 7mm; margin: -17mm -18mm 6mm 0; height: 116mm; align-items: flex-end; }
+.v1 .split .titoli { flex: 0 0 72mm; padding-bottom: 2mm; }
+.v1 .hero.lato { flex: 1; height: 116mm; }
+.v1 h1.ricetta { font-size: 24pt; }
+/* variante 2: classica, foto incorniciata */
+.v2 .titoli.centro { text-align: center; } .v2 .titoli.centro .luogo { justify-content: center; }
+.v2 .kicker { justify-content: center; gap: 8mm; }
+.v2 .hero.cornice { height: 92mm; margin: 5mm 0 6mm; padding: 2.2mm; background: #fff; border: 0.5pt solid var(--sabbia); box-shadow: 0 1.5mm 4mm rgba(74,52,38,.18); }
+
+.intro { font: 400 10pt/1.6 'Lora'; color: var(--ink); margin-top: 4mm; }
+.intro p:first-child::first-letter { font: 600 30pt/0.9 'Playfair'; float: left; color: var(--peperoncino); margin: 1mm 1.8mm 0 0; }
+.meta { display: flex; flex-wrap: wrap; gap: 2mm 7mm; border-top: 0.6pt solid var(--sabbia); border-bottom: 0.6pt solid var(--sabbia); padding: 2.4mm 0; margin: 3mm 0 5mm; }
+.meta .m { display: flex; flex-direction: column; color: var(--terracotta); }
+.meta .m .ico { width: 4.4mm; height: 4.4mm; margin: 0 0 0.6mm; }
+.meta .ml { font: 600 5.8pt 'Montserrat'; letter-spacing: 1.2pt; text-transform: uppercase; color: var(--terracotta); }
+.meta .mv { font: 500 8pt 'Montserrat'; color: var(--ink); max-width: 46mm; }
+.punti i { display: inline-block; width: 1.8mm; height: 1.8mm; border-radius: 50%; border: 0.5pt solid var(--peperoncino); margin-right: 0.6mm; }
+.punti i.on { background: var(--peperoncino); }
+
+.riquadro { background: var(--avorio); border-left: 1.2mm solid var(--oliva); padding: 3mm 4mm 1.5mm; margin: 0 0 4mm; font: 400 8.4pt/1.5 'Montserrat'; break-inside: auto; }
+.riquadro > .ico { color: var(--oliva); float: left; width: 5mm; height: 5mm; }
+.riquadro h3 { font: 600 11pt 'Playfair'; color: var(--oliva); margin: 0 0 1.5mm; }
+.riquadro ul, .riquadro ol { padding-left: 4.5mm; margin: 0 0 1.5mm; }
+
+aside.ingredienti { float: left; width: 60mm; margin: 0 7mm 4mm 0; background: var(--sabbia); padding: 4mm 4.5mm 3mm; font: 400 8.3pt/1.5 'Montserrat'; color: var(--ink);
+  border-top: 1.4mm solid var(--terracotta); }
+aside.ingredienti h2, .metodo h2 { font: 600 13pt 'Playfair'; color: var(--peperoncino); margin: 0 0 2.5mm; }
+aside.ingredienti h3 { font: 600 6.8pt 'Montserrat'; letter-spacing: 1.2pt; text-transform: uppercase; color: var(--terra); margin: 2.5mm 0 1mm; }
+aside.ingredienti ul { list-style: none; margin: 0 0 1.5mm; padding: 0; }
+aside.ingredienti li { padding: 0.8mm 0 0.8mm 3.5mm; border-bottom: 0.3pt solid rgba(74,52,38,.15); position: relative; }
+aside.ingredienti li::before { content: ''; position: absolute; left: 0; top: 2.4mm; width: 1.4mm; height: 1.4mm; border-radius: 50%; background: var(--terracotta); }
+aside.ingredienti p { margin: 1.5mm 0; }
+.metodo { font: 400 8.8pt/1.58 'Montserrat'; }
+.metodo p strong { display: block; font: 600 10.5pt 'Playfair'; color: var(--terra); margin-top: 2.5mm; }
+.metodo ol { list-style: none; padding: 0; margin: 0 0 2mm; }
+.metodo ol li { position: relative; padding: 0 0 1.6mm 8.5mm; }
+.metodo ol li::before { content: counter(list-item); position: absolute; left: 0; top: 0.2mm; width: 5.6mm; height: 5.6mm; border-radius: 50%;
+  background: var(--peperoncino); color: var(--crema); font: 700 7pt/5.6mm 'Montserrat'; text-align: center; }
+.metodo ul { padding-left: 4.5mm; }
+.passi { clear: both; break-inside: avoid; margin: 4mm 0 4mm; }
+.passi > div { display: flex; gap: 3mm; }
+.passi img { width: 56.6mm; height: 44mm; object-fit: cover; border-radius: 1mm; }
+.passi figcaption { font: italic 400 6.3pt 'Lora'; color: #8a7a68; margin-top: 1mm; }
+.note { clear: both; columns: 2; column-gap: 7mm; font: 400 8.2pt/1.5 'Montserrat'; border-top: 0.6pt solid var(--sabbia); padding-top: 3mm; }
+.nota { break-inside: avoid-column; margin-bottom: 2.5mm; }
+.nota h3 { font: 600 10.5pt 'Playfair'; color: var(--oliva); margin: 0 0 1mm; }
+.nota h3 .ico { color: var(--terracotta); }
+.nota ul { padding-left: 4mm; margin: 0 0 1mm; } .nota p { margin-bottom: 1mm; }
+/* compattazione automatica per non lasciare pagine con poche righe */
+.liv1 .v0 .hero.piena, .liv1.v0 .hero.piena { height: 88mm; }
+.liv1.v1 .split, .liv1.v1 .hero.lato { height: 96mm; }
+.liv1.v2 .hero.cornice { height: 76mm; }
+.liv1 .passi img { height: 36mm; }
+.liv2.v0 .hero.piena { height: 74mm; } .liv2.v1 .split, .liv2.v1 .hero.lato { height: 84mm; } .liv2.v2 .hero.cornice { height: 64mm; }
+.liv2 .passi img { height: 30mm; } .liv2 .intro { font-size: 9.4pt; } .liv2 .note { font-size: 7.8pt; }
+
+/* ——— appendici ——— */
+.appendice { break-before: page; }
+.glossario { columns: 2; column-gap: 9mm; font: 400 8.6pt 'Montserrat'; }
+.glossario dt { font: italic 600 10.5pt 'Playfair'; color: var(--peperoncino); break-after: avoid; }
+.glossario dd { margin: 0 0 2.4mm 0; }
+.glossario a::after, .ing-indice a::after { content: ' · ' target-counter(attr(href), page); color: var(--terracotta); }
+.tabelle { display: flex; flex-wrap: wrap; gap: 7mm; }
+.tabelle table { width: 52mm; font: 400 8.6pt 'Montserrat'; border-collapse: collapse; }
+.tabelle th { font: 600 11pt 'Playfair'; color: var(--peperoncino); text-align: left; border-bottom: 1pt solid var(--terracotta); padding-bottom: 1mm; }
+.tabelle td { padding: 0.7mm 1mm 0.7mm 0; border-bottom: 0.3pt solid var(--sabbia); }
+.ing-indice { columns: 3; column-gap: 7mm; font: 400 7.8pt 'Montserrat'; }
+.ing-indice .voce { break-inside: avoid; margin-bottom: 2.5mm; }
+.ing-indice h3 { font: 600 10pt 'Playfair'; color: var(--peperoncino); margin: 0 0 0.6mm; }
+.ing-indice ul { list-style: none; padding: 0; margin: 0; }
+.crediti { font: 400 8pt/1.5 'Montserrat'; padding-left: 4mm; } .crediti li { margin-bottom: 1.6mm; }
+.crediti a { color: var(--mare); border-bottom: 0.4pt solid var(--mare); }
+.chiusura { break-before: page; text-align: center; padding-top: 95mm; }
+.chiusura h1 { font: 600 30pt 'Playfair'; color: var(--peperoncino); }
+.chiusura p { font: italic 11pt 'Lora'; max-width: 120mm; margin: 0 auto 3mm; }
