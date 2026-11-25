@@ -56,6 +56,7 @@ h1.indice { font: 600 30pt 'Playfair'; color: var(--terra); margin: 0 0 6mm; }
 .indice li.fin > a { font-size: 10pt; color: var(--terra); }
 .indice .n { font: 600 7pt 'Montserrat'; color: var(--terracotta); display: inline-block; width: 6mm; }
 .indice li.cap li a { display: block; font: 400 8pt/1.55 'Montserrat'; color: var(--ink); }
+html[lang="en"] .indice li.cap li a { line-height: 1.4; }  /* i titoli inglesi sono più lunghi: così l'indice resta in una pagina */
 .indice a::after { content: leader(' ') target-counter(attr(href), page); font: 500 7.5pt 'Montserrat'; color: var(--terracotta); }
 
 .intro-p { break-before: page; }
@@ -112,7 +113,7 @@ h1.ricetta { font: 600 27pt/1.06 'Playfair'; color: var(--terra); margin: 0 0 1.
 .v2 .hero.cornice { height: 92mm; margin: 5mm 0 6mm; padding: 2.2mm; background: #fff; border: 0.5pt solid var(--sabbia); box-shadow: 0 1.5mm 4mm rgba(74,52,38,.18); }
 
 .intro { font: 400 10pt/1.6 'Lora'; color: var(--ink); margin-top: 4mm; }
-.intro p:first-child::first-letter { font: 600 30pt/0.9 'Playfair'; float: left; color: var(--peperoncino); margin: 1mm 1.8mm 0 0; }
+.intro .capolettera { font: 600 30pt/0.9 'Playfair'; float: left; color: var(--peperoncino); margin: 1mm 1.8mm 0 0; }
 .meta { display: flex; flex-wrap: wrap; gap: 2mm 7mm; border-top: 0.6pt solid var(--sabbia); border-bottom: 0.6pt solid var(--sabbia); padding: 2.4mm 0; margin: 3mm 0 5mm; }
 .meta .m { display: flex; flex-direction: column; color: var(--terracotta); }
 .meta .m .ico { width: 4.4mm; height: 4.4mm; margin: 0 0 0.6mm; }
@@ -122,7 +123,7 @@ h1.ricetta { font: 600 27pt/1.06 'Playfair'; color: var(--terra); margin: 0 0 1.
 .punti i.on { background: var(--peperoncino); }
 
 .riquadro { background: var(--avorio); border-left: 1.2mm solid var(--oliva); padding: 3mm 4mm 1.5mm; margin: 0 0 4mm; font: 400 8.4pt/1.5 'Montserrat'; break-inside: auto; }
-.riquadro > .ico { color: var(--oliva); float: left; width: 5mm; height: 5mm; }
+.riquadro h3 .ico { color: var(--oliva); width: 4.6mm; height: 4.6mm; }
 .riquadro h3 { font: 600 11pt 'Playfair'; color: var(--oliva); margin: 0 0 1.5mm; }
 .riquadro ul, .riquadro ol { padding-left: 4.5mm; margin: 0 0 1.5mm; }
 

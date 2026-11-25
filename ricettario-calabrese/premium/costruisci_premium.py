@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Edizione premium (anteprima) del ricettario, solo italiano. Non tocca il libro attuale né il sito.
+"""Edizione premium (anteprima) del ricettario, in italiano e in inglese. Non tocca il libro attuale né il sito.
 
 Uso (dalla cartella ricettario-calabrese):
-    python3 premium/costruisci_premium.py            # PDF alta qualità + PDF leggero + copertina JPG
-Esce in output/premium/. Testi e ricette vengono da ricette/it/ senza modifiche di contenuto.
+    python3 premium/costruisci_premium.py [it|en]    # PDF alta qualità + PDF leggero + copertina JPG (default: it)
+Esce in output/premium/. Testi e ricette vengono da ricette/<lingua>/ senza modifiche di contenuto.
 """
 import html, io, json, math, pathlib, re, subprocess, sys, urllib.parse
 
@@ -15,10 +15,42 @@ P = R / 'premium'
 sys.path.insert(0, str(R / 'impaginazione'))
 import costruisci as base  # stessi testi, stesse ricette, stessi indici del libro attuale
 
-C = base.CONF['it']
 OUT = R / 'output' / 'premium'
-TITOLO, SOTTO = C['titolo'], C['sottotitolo']
-AI = 'Immagine illustrativa generata con IA'
+LINGUA = sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] in ('it', 'en') else 'it'
+C = base.CONF[LINGUA]
+TITOLO, SOTTO, AI = C['titolo'], C['sottotitolo'], C['didascalia']
+# testi fissi dell'impaginazione premium
+T = {
+    'it': dict(porzioni='Porzioni', prep='Preparazione', cottura='Cottura', riposo='Riposo', totale='Totale', diff='Difficoltà',
+               livelli={'facile': 1, 'media': 2, 'impegnativa': 3}, nessuno=('nessuna', 'nessuno', '—'), tutta='tutta',
+               indice='Indice', capitolo='Capitolo', foto='Foto', passi='I passaggi chiave', sicurezza='sicurezza',
+               tirreno='Mar Tirreno', ionio='Mar Ionio', kicker='Ricettario calabrese',
+               cop_titolo='Il libro di cucina<br><em>della Putìga</em>', cop_sotto='60 ricette di casa, dai salumi ai dolci delle feste',
+               nota_font='Caratteri di questa edizione: Playfair Display, Lora e Montserrat (SIL Open Font License 1.1). Foto dei luoghi: Wikimedia Commons, crediti a fine libro.',
+               mappa_voce='La Calabria in cucina: mappa', crediti='Crediti fotografici', map_kick='Dove nascono i piatti', map_tit='La Calabria in cucina',
+               map_sub='Tocca un punto rosso per aprire la ricetta, un punto blu per vedere il luogo sulla mappa.',
+               map_fonte='Confini delle province: ISTAT, elaborazione openpolis (CC BY 4.0). Posizioni indicative.',
+               cred_testo="Le fotografie dei luoghi vengono da Wikimedia Commons e sono usate secondo le loro licenze, che permettono l'uso commerciale con attribuzione. "
+                          "Le immagini dei piatti, dei passaggi e della copertina sono illustrazioni generate con l'intelligenza artificiale.",
+               cred_mappa='Mappa: confini ISTAT, elaborazione openpolis (CC BY 4.0).',
+               file='Il-libro-di-cucina-della-Putiga-PREMIUM-IT', leggero='-leggero', copertina='copertina-premium'),
+    'en': dict(porzioni='Serves', prep='Prep', cottura='Cook', riposo='Rest', totale='Total', diff='Difficulty',
+               livelli={'easy': 1, 'medium': 2, 'challenging': 3}, nessuno=('none', '—'), tutta='all of',
+               indice='Contents', capitolo='Chapter', foto='Photo', passi='Key steps', sicurezza='safety',
+               tirreno='Tyrrhenian Sea', ionio='Ionian Sea', kicker='Calabrian home cooking',
+               cop_titolo='The Putìga<br><em>Cookbook</em>', cop_sotto=C['sottotitolo'],
+               nota_font='Typefaces in this edition: Playfair Display, Lora and Montserrat (SIL Open Font License 1.1). Place photos: Wikimedia Commons, credits at the end of the book.',
+               mappa_voce='Calabria in the kitchen: map', crediti='Photo credits', map_kick='Where the dishes come from', map_tit='Calabria in the kitchen',
+               map_sub='Tap a red dot to open the recipe, a blue dot to see the place on the map.',
+               map_fonte='Province boundaries: ISTAT, processed by openpolis (CC BY 4.0). Positions are approximate.',
+               cred_testo='The photographs of places come from Wikimedia Commons and are used under their licences, which allow commercial use with attribution. '
+                          'The images of the dishes, the steps and the cover are illustrations generated with artificial intelligence.',
+               cred_mappa='Map: ISTAT boundaries, processed by openpolis (CC BY 4.0).',
+               file='The-Putiga-Cookbook-PREMIUM-EN', leggero='-light', copertina='cover-premium-en'),
+}[LINGUA]
+# campi della ricetta inglese -> nomi usati qui (gli stessi dell'edizione italiana)
+CAMPI_EN = dict(number='numero', chapter='capitolo', title='titolo', dialect='dialetto', area='provincia', season='stagione',
+                serves='porzioni', prep='preparazione', cook='cottura', rest='riposo', total='totale', difficulty='difficolta')
 
 # Foto del territorio: Wikimedia Commons, licenze che permettono l'uso commerciale (crediti in fondo al libro)
 _lj = P / 'dati' / 'luoghi.json'
@@ -26,6 +58,12 @@ LUOGHI = json.loads(_lj.read_text(encoding='utf-8')) if _lj.exists() else {}
 SEGNAPOSTO = dict(luogo='Foto del luogo in arrivo', mappa='Calabria', file=None, autore='—', licenza='—', titolo='', pagina='')
 # capitolo -> chiave del luogo per l'apertura
 APERTURE = ['sila', 'ulivi', 'tropea', 'gerace', 'costadeglidei', 'aspromonte', 'scilla', 'capovaticano', 'reggio']
+LUOGO_EN = {'gerace': 'Gerace, co-cathedral of Santa Maria Assunta (Reggio Calabria)', 'reggio': 'Reggio Calabria, Falcomatà seafront',
+            'costadeglidei': 'Costa degli Dei (Coast of the Gods), Capo Vaticano (Vibo Valentia)'}
+if LINGUA == 'en':
+    for _k, _v in LUOGO_EN.items():
+        if _k in LUOGHI:
+            LUOGHI[_k]['luogo'] = _v
 RISERVA = {'sila': 'gerace', 'ulivi': 'costadeglidei', 'tropea': 'capovaticano', 'aspromonte': 'reggio',
            'scilla': 'gerace', 'pizzo': 'costadeglidei'}  # se la foto non è disponibile si usa un altro luogo, con la sua didascalia vera
 
@@ -62,6 +100,10 @@ ICONE = {
     'mappa': '<path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15M15 6v15"/>',
 }
 
+for _en, _it in [('Tips', 'Consigli'), ('Common mistakes', 'Errori da evitare'), ('Local variations', 'Varianti locali'), ('Storage', 'Conservazione'),
+                 ('Substitutions', 'Fuori dalla Calabria'), ('Allergens', 'Allergeni'), ('PDO and PGI', 'DOP e IGP'), ('Wine', 'Vino')]:
+    ICONE[_en] = ICONE[_it]
+
 
 def ico(nome, classe='ico'):
     return f'<svg class="{classe}" viewBox="0 0 24 24" aria-hidden="true">{ICONE[nome]}</svg>'
@@ -95,19 +137,19 @@ def principale(n, quale='principale'):
 
 def collega_ricette(h):
     """'ricetta 06' nel testo diventa un link interno alla ricetta."""
-    return re.sub(r'\b(ricett[ae] )(\d{1,2})\b', lambda m: f'{m.group(1)}<a class="rif" href="#r{int(m.group(2)):02d}">{m.group(2)}</a>'
+    return re.sub(r'\b(ricett[ae] |[Rr]ecipes? )(\d{1,2})\b', lambda m: f'{m.group(1)}<a class="rif" href="#r{int(m.group(2)):02d}">{m.group(2)}</a>'
                   if 1 <= int(m.group(2)) <= 60 else m.group(0), h)
 
 
 def meta(fm):
-    voci = [('persone', 'Porzioni', fm.get('porzioni')), ('preparazione', 'Preparazione', fm.get('preparazione')),
-            ('cottura', 'Cottura', fm.get('cottura')), ('riposo', 'Riposo', fm.get('riposo')), ('totale', 'Totale', fm.get('totale'))]
+    voci = [('persone', T['porzioni'], fm.get('porzioni')), ('preparazione', T['prep'], fm.get('preparazione')),
+            ('cottura', T['cottura'], fm.get('cottura')), ('riposo', T['riposo'], fm.get('riposo')), ('totale', T['totale'], fm.get('totale'))]
     out = ''.join(f'<div class="m">{ico(i)}<span class="ml">{l}</span><span class="mv">{html.escape(str(v))}</span></div>'
-                  for i, l, v in voci if v and str(v).strip().lower() not in ('nessuna', 'nessuno', '—'))
-    livello = {'facile': 1, 'media': 2, 'impegnativa': 3}.get(str(fm.get('difficolta', '')).split()[0].lower(), 0)
+                  for i, l, v in voci if v and str(v).strip().lower() not in T['nessuno'])
+    livello = T['livelli'].get(str(fm.get('difficolta', '')).split()[0].lower(), 0)
     if livello:
         punti = ''.join(f'<i class="{"on" if k < livello else ""}"></i>' for k in range(3))
-        out += f'<div class="m">{ico("totale").replace("ico", "ico invisibile")}<span class="ml">Difficoltà</span><span class="mv"><span class="punti">{punti}</span> {html.escape(str(fm["difficolta"]))}</span></div>'
+        out += f'<div class="m">{ico("totale").replace("ico", "ico invisibile")}<span class="ml">{T['diff']}</span><span class="mv"><span class="punti">{punti}</span> {html.escape(str(fm["difficolta"]))}</span></div>'
     return f'<div class="meta">{out}</div>'
 
 
@@ -121,13 +163,15 @@ def ricetta(fm, corpo, k, liv, img_lato):
     # testa: sottotitolo in corsivo, introduzione, riga dei tempi (già mostrata con le icone)
     paragrafi = re.findall(r'<p>.*?</p>', testa, flags=re.S)
     intro = ''.join(p for p in paragrafi if not p.startswith('<p><em>') and not p.startswith('<p><strong>'))
+    # capolettera in uno span vero: ::first-letter flottante manda in errore WeasyPrint a fine pagina
+    intro = re.sub(r'^<p>([^<\s])', r'<p><span class="capolettera">\1</span>', intro)
     luogo = str(fm.get('provincia', ''))
     q = luogo.split('(')[0].split(';')[0].strip() or 'Calabria'
-    q = 'Calabria' if 'tutta' in q.lower() else q + ', Calabria'
+    q = 'Calabria' if T['tutta'] in q.lower() else q + ', Calabria'
     dial = str(fm.get('dialetto') or '').strip()
     dial = '' if dial in ('', '—') else f'<span class="dial">{html.escape(dial)}</span>'
     kicker = (f'<div class="kicker"><span>{html.escape(fm["capitolo"])} · {n:02d}</span>'
-              f'<a class="torna" href="#indice">{ico("indice")} Indice</a></div>')
+              f'<a class="torna" href="#indice">{ico("indice")} {T['indice']}</a></div>')
     riga = (f'<div class="luogo"><a href="{mappa_url(q)}">{ico("pin")} {html.escape(luogo)}</a>'
             f'<span>{ico("stagione")} {html.escape(str(fm.get("stagione", "")))}</span></div>')
     titoli = f'{kicker}<h1 class="ricetta" id="r{n:02d}">{tit}</h1>{dial}{riga}'
@@ -145,21 +189,21 @@ def ricetta(fm, corpo, k, liv, img_lato):
     for s in sezioni:
         t = re.match(r'<h2>(.*?)</h2>', s).group(1)
         corpo_s = s[s.index('</h2>') + 5:]
-        if t.startswith('Ingredienti'):
-            ingr.append(f'<h3>{t.replace("Ingredienti", "").strip(" ()") or ""}</h3>{corpo_s}' if t != 'Ingredienti' else corpo_s)
+        if t.startswith(C['ingredienti']):
+            ingr.append(f'<h3>{t.replace(C["ingredienti"], "").strip(" ()")}</h3>{corpo_s}' if t != C['ingredienti'] else corpo_s)
         elif t == C['metodo']:
             metodo, visto_metodo = corpo_s, True
         elif not visto_metodo:
-            pre.append(f'<div class="riquadro">{ico("sicurezza") if "sicurezza" in t.lower() else ""}<h3>{t}</h3>{corpo_s}</div>')
+            pre.append(f'<div class="riquadro"><h3>{ico("sicurezza") if T['sicurezza'] in t.lower() else ""}{t}</h3>{corpo_s}</div>')  # icona dentro il titolo: un'icona flottante manda in errore WeasyPrint quando il riquadro si spezza tra due pagine
         else:
             nome = t.split(' (')[0]
             icona = ico(nome) if nome in ICONE else ''
             post.append(f'<section class="nota"><h3>{icona}{t}</h3>{corpo_s}</section>')
     passi = ''.join(f'<img src="{foto(principale(n, f"passo-{j}"), max(500, img_lato // 3))}" alt="">' for j in (1, 2, 3))
     corpo_html = (f'<div class="intro">{intro}</div>{meta(fm)}{"".join(pre)}'
-                  f'<aside class="ingredienti"><h2>{ico("ingredienti")}Ingredienti</h2>{"".join(ingr)}</aside>'
-                  f'<section class="metodo"><h2>{ico("procedimento")}Procedimento</h2>{metodo}</section>'
-                  f'<figure class="passi"><div>{passi}</div><figcaption>I passaggi chiave · {AI.lower()}</figcaption></figure>'
+                  f'<aside class="ingredienti"><h2>{ico("ingredienti")}{C['ingredienti']}</h2>{"".join(ingr)}</aside>'
+                  f'<section class="metodo"><h2>{ico("procedimento")}{C['metodo']}</h2>{metodo}</section>'
+                  f'<figure class="passi"><div>{passi}</div><figcaption>{C['didascalia_passi']}</figcaption></figure>'
                   f'<div class="note">{"".join(post)}</div>')
     return collega_ricette(f'<article class="ricetta v{v} liv{liv}">{testata}{corpo_html}</article>')
 
@@ -169,10 +213,10 @@ def apertura(k, nome, testo, chiave):
     img = foto(P / 'dati' / 'luoghi' / L['file'], 2200, grade=False) if L['file'] else ''
     corpo = f'<div class="ap-testo">{testo}</div>' if testo else ''
     return (f'<section class="apertura" id="cap{k}"><figure class="ap-foto"><img src="{img}" alt="{html.escape(L["luogo"])}">'
-            f'<div class="ap-velo"></div><div class="ap-titoli"><span class="ap-num">Capitolo {k}</span>'
+            f'<div class="ap-velo"></div><div class="ap-titoli"><span class="ap-num">{T['capitolo']} {k}</span>'
             f'<h1 class="capitolo">{html.escape(nome)}</h1>'
             f'<a class="ap-luogo" href="{mappa_url(L["mappa"])}">{ico("pin")} {html.escape(L["luogo"])}</a></div>'
-            f'<span class="ap-credito">Foto: {html.escape(L["autore"])} · {html.escape(L["licenza"])} · Wikimedia Commons</span></figure>'
+            f'<span class="ap-credito">{T['foto']}: {html.escape(L["autore"])} · {html.escape(L["licenza"])} · Wikimedia Commons</span></figure>'
             f'</section><div class="capstr">{html.escape(nome)}</div>{corpo}')
 
 
@@ -202,45 +246,47 @@ def svg_mappa():
                   f'<text x="{x + dx:.1f}" y="{y + 5:.1f}" text-anchor="{anchor}" class="lab">{etichetta}</text></a>')
     return (f'<svg class="mappa-svg" viewBox="-60 -20 {W + 120:.0f} {H + 40:.0f}" xmlns="http://www.w3.org/2000/svg">'
             f'<path d="{" ".join(tracce)}" fill="#E9DCC3" stroke="#C1663F" stroke-width="1.6" stroke-linejoin="round"/>{perni}'
-            f'<text x="{W * 0.05:.0f}" y="{H * 0.55:.0f}" class="mare">Mar Tirreno</text>'
-            f'<text x="{W * 0.86:.0f}" y="{H * 0.80:.0f}" class="mare">Mar Ionio</text></svg>')
+            f'<text x="{W * 0.05:.0f}" y="{H * 0.55:.0f}" class="mare">{T['tirreno']}</text>'
+            f'<text x="{W * 0.86:.0f}" y="{H * 0.80:.0f}" class="mare">{T['ionio']}</text></svg>')
 
 
 def costruisci(img_lato, file_pdf, salva_html=False):
-    cart = R / 'ricette' / 'it'
-    ricette = sorted((base.leggi(p) for p in cart.glob('[0-9][0-9]-*.md')), key=lambda x: x[0]['numero'])
-    aperture = {fm['capitolo']: corpo for fm, corpo in (base.leggi(p) for p in cart.glob('c*-*.md'))}
+    cart = R / 'ricette' / LINGUA
+    leggi = lambda p: (lambda fm, corpo: ({CAMPI_EN.get(k, k): v for k, v in fm.items()}, corpo))(*base.leggi(p))
+    ricette = sorted((leggi(p) for p in cart.glob('[0-9][0-9]-*.md')), key=lambda x: x[0]['numero'])
+    assert len(ricette) == 60, len(ricette)
+    aperture = {fm['capitolo']: corpo for fm, corpo in (leggi(p) for p in cart.glob('c*-*.md'))}
     capitoli = []
     for fm, corpo in ricette:
         if not capitoli or capitoli[-1][0] != fm['capitolo']:
             capitoli.append((fm['capitolo'], []))
         capitoli[-1][1].append((fm, corpo))
     sost = dict(titolo=TITOLO, sottotitolo=SOTTO, anno=base.ANNO, editore=base.EDITORE, autore='')
-    testo = lambda nome: base.md((R / 'impaginazione' / 'testi' / 'it' / f'{nome}.md').read_text(encoding='utf-8').format(**sost))
+    testo = lambda nome: base.md((R / 'impaginazione' / 'testi' / LINGUA / f'{nome}.md').read_text(encoding='utf-8').format(**sost))
 
     out = [f'''<section class="copertina"><img class="cop-foto" src="{foto(R / 'immagini' / 'copertina' / 'copertina.jpg', 2400, grade=False)}" alt="">
-      <div class="cop-velo"></div><div class="cop-testa"><span class="cop-kicker">Ricettario calabrese</span>
-      <h1 class="cop-titolo">Il libro di cucina<br><em>della Putìga</em></h1><span class="cop-filo"></span>
-      <p class="cop-sotto">60 ricette di casa, dai salumi ai dolci delle feste</p></div>
+      <div class="cop-velo"></div><div class="cop-testa"><span class="cop-kicker">{T['kicker']}</span>
+      <h1 class="cop-titolo">{T['cop_titolo']}</h1><span class="cop-filo"></span>
+      <p class="cop-sotto">{T['cop_sotto']}</p></div>
       <div class="cop-piede"><span>{base.EDITORE}</span><span class="cop-ia">{AI}</span></div></section>''']
-    out.append(f'<section class="colophon">{testo("colophon")}<p class="nota-font">Caratteri di questa edizione: Playfair Display, Lora e Montserrat (SIL Open Font License 1.1). Foto dei luoghi: Wikimedia Commons, crediti a fine libro.</p></section>')
+    out.append(f'<section class="colophon">{testo("colophon")}<p class="nota-font">{T['nota_font']}</p></section>')
     voci = ''
     for k, (nome, rr) in enumerate(capitoli, 1):
         sotto = ''.join(f'<li><a href="#r{fm["numero"]:02d}"><span class="n">{fm["numero"]:02d}</span>{html.escape(fm["titolo"])}</a></li>' for fm, _ in rr)
         voci += f'<li class="cap"><a href="#cap{k}"><span class="n">{k}</span>{html.escape(nome)}</a><ul>{sotto}</ul></li>'
-    finali = [('mappa', 'La Calabria in cucina: mappa'), ('glossario', C['glossario']), ('conversioni', C['conversioni']),
-              ('ing-indice', C['ing_indice']), ('crediti', 'Crediti fotografici')]
+    finali = [('mappa', T['mappa_voce']), ('glossario', C['glossario']), ('conversioni', C['conversioni']),
+              ('ing-indice', C['ing_indice']), ('crediti', T['crediti'])]
     voci += ''.join(f'<li class="cap fin"><a href="#{i}">{t}</a></li>' for i, t in finali)
-    out.append(f'<section class="indice" id="indice"><h1 class="indice">Indice</h1>'
-               f'<ul><li class="cap fin"><a href="#intro">La cucina della putìga</a></li>{voci}</ul></section>')
+    out.append(f'<section class="indice" id="indice"><h1 class="indice">{T['indice']}</h1>'
+               f'<ul><li class="cap fin"><a href="#intro">{re.search(r"<h1>(.*?)</h1>", testo("introduzione")).group(1)}</a></li>{voci}</ul></section>')
     intro = testo('introduzione').replace('<h1>', '<h1 class="sez" id="intro">', 1)
     U = LUOGHI.get('cipolla')
     fig = (f'<figure class="intro-foto"><img src="{foto(P / "dati" / "luoghi" / U["file"], 1600, grade=False)}" alt="">'
-           f'<figcaption>{html.escape(U["luogo"])} · Foto: {html.escape(U["autore"])}, {html.escape(U["licenza"])}</figcaption></figure>') if U else ''
+           f'<figcaption>{html.escape(U["luogo"])} · {T['foto']}: {html.escape(U["autore"])}, {html.escape(U["licenza"])}</figcaption></figure>') if U else ''
     out.append(f'<section class="intro-p">{fig}{intro}</section>')
-    out.append(f'<section class="mappa-p" id="mappa"><span class="kick">Dove nascono i piatti</span><h1 class="sez">La Calabria in cucina</h1>'
-               f'<p class="sub">Tocca un punto rosso per aprire la ricetta, un punto blu per vedere il luogo sulla mappa.</p>{svg_mappa()}'
-               f'<p class="fonte">Confini delle province: ISTAT, elaborazione openpolis (CC BY 4.0). Posizioni indicative.</p></section>')
+    out.append(f'<section class="mappa-p" id="mappa"><span class="kick">{T['map_kick']}</span><h1 class="sez">{T['map_tit']}</h1>'
+               f'<p class="sub">{T['map_sub']}</p>{svg_mappa()}'
+               f'<p class="fonte">{T['map_fonte']}</p></section>')
     for k, (nome, rr) in enumerate(capitoli, 1):
         ap = aperture.get(nome)
         testo_ap = re.sub(r'<h1>.*?</h1>', '', base.md(ap), count=1) if ap else ''
@@ -252,24 +298,24 @@ def costruisci(img_lato, file_pdf, salva_html=False):
     out.append(f'<section class="appendice" id="glossario"><h1 class="sez">{C["glossario"]}</h1><p>{C["nota_gloss"]}</p><dl class="glossario">{"".join(v for _, v in gloss)}</dl></section>')
     out.append(base.conversioni(C).replace('<h1 class="appendice">', '<h1 class="sez">'))
     righe = []
-    for voce in sorted(base.INGREDIENTI, key=lambda v: base.chiave(v[0])):
-        trovate = [fm for fm, corpo in ricette if re.search(voce[1], base.ingredienti_md(corpo, C))]
+    i_lab, i_re = (0, 1) if LINGUA == 'it' else (2, 3)
+    for voce in sorted(base.INGREDIENTI, key=lambda v: base.chiave(v[i_lab])):
+        trovate = [fm for fm, corpo in ricette if re.search(voce[i_re], base.ingredienti_md(corpo, C))]
         if trovate:
-            righe.append(f'<div class="voce"><h3>{voce[0]}</h3><ul>' + ''.join(f'<li><a href="#r{fm["numero"]:02d}">{html.escape(fm["titolo"])}</a></li>' for fm in trovate) + '</ul></div>')
+            righe.append(f'<div class="voce"><h3>{voce[i_lab]}</h3><ul>' + ''.join(f'<li><a href="#r{fm["numero"]:02d}">{html.escape(fm["titolo"])}</a></li>' for fm in trovate) + '</ul></div>')
     out.append(f'<section class="appendice" id="ing-indice"><h1 class="sez">{C["ing_indice"]}</h1><div class="ing-indice">{"".join(righe)}</div></section>')
     crediti = ''.join(f'<li><b>{html.escape(L["luogo"])}</b> — {html.escape(L["autore"])}, {html.escape(L["licenza"])}. '
                       f'<a href="{L["pagina"]}">{html.escape(L["titolo"])}</a></li>' for L in LUOGHI.values())
-    out.append(f'<section class="appendice" id="crediti"><h1 class="sez">Crediti fotografici</h1>'
-               f'<p>Le fotografie dei luoghi vengono da Wikimedia Commons e sono usate secondo le loro licenze, che permettono l\'uso commerciale con attribuzione. '
-               f'Le immagini dei piatti, dei passaggi e della copertina sono illustrazioni generate con l\'intelligenza artificiale.</p><ul class="crediti">{crediti}</ul>'
-               f'<p class="fonte">Mappa: confini ISTAT, elaborazione openpolis (CC BY 4.0).</p></section>')
+    out.append(f'<section class="appendice" id="crediti"><h1 class="sez">{T['crediti']}</h1>'
+               f'<p>{T['cred_testo']}</p><ul class="crediti">{crediti}</ul>'
+               f'<p class="fonte">{T['cred_mappa']}</p></section>')
     out.append(f'<section class="chiusura">{testo("chiusura")}</section>')
 
     css = (P / 'stile.css').as_uri()
     livelli = {}
     for giro in range(5):
         corpo_doc = ''.join(ricetta(x[1], x[2], x[1]['numero'] - 1, livelli.get(x[1]['numero'], 0), img_lato) if isinstance(x, tuple) else x for x in out)
-        doc = (f'<!DOCTYPE html><html lang="it"><head><meta charset="utf-8"><title>{TITOLO}</title>'
+        doc = (f'<!DOCTYPE html><html lang="{LINGUA}"><head><meta charset="utf-8"><title>{TITOLO}</title>'
                f'<meta name="author" content="{base.EDITORE}"><link rel="stylesheet" href="{css}"></head><body>{corpo_doc}</body></html>')
         reso = HTML(string=doc, base_url=str(R)).render()
         pdf = reso.write_pdf()
@@ -282,15 +328,15 @@ def costruisci(img_lato, file_pdf, salva_html=False):
             livelli[n] = livelli.get(n, 0) + 1
     OUT.mkdir(parents=True, exist_ok=True)
     if salva_html:
-        (OUT / 'premium.html').write_text(doc, encoding='utf-8')
+        (OUT / f'premium-{LINGUA}.html').write_text(doc, encoding='utf-8')
     (OUT / file_pdf).write_bytes(pdf)
     print(f'{file_pdf}: {len(reso.pages)} pagine, {len(pdf) / 1e6:.1f} MB, compattate {len(livelli)}, corte {sorted(base.corte(pdf, starts, soglia=500))}')
     return OUT / file_pdf
 
 
 if __name__ == '__main__':
-    alta = costruisci(1700, 'Il-libro-di-cucina-della-Putiga-PREMIUM-IT.pdf', '--html' in sys.argv)
+    alta = costruisci(1700, T['file'] + '.pdf', '--html' in sys.argv)
     if '--solo-alta' not in sys.argv:
-        costruisci(1000, 'Il-libro-di-cucina-della-Putiga-PREMIUM-IT-leggero.pdf')
-    subprocess.run(['pdftoppm', '-f', '1', '-l', '1', '-r', '300', '-jpeg', '-jpegopt', 'quality=92', '-singlefile', str(alta), str(OUT / 'copertina-premium')], check=True)
-    print('copertina:', OUT / 'copertina-premium.jpg')
+        costruisci(1000, T['file'] + T['leggero'] + '.pdf')
+    subprocess.run(['pdftoppm', '-f', '1', '-l', '1', '-r', '300', '-jpeg', '-jpegopt', 'quality=92', '-singlefile', str(alta), str(OUT / T['copertina'])], check=True)
+    print('copertina:', OUT / (T['copertina'] + '.jpg'))
