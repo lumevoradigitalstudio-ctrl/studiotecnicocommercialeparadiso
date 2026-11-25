@@ -83,3 +83,4 @@ Tutte risolte il 24/11 (Fase 5). Come:
 - Per l'EPUB uso pandoc, già installato.
 - Per rasterizzare le pagine nei controlli uso `pdftoppm`, già installato (non serve PyMuPDF).
 - La skill frontend-design non c'è: applico a mano le stesse regole di impaginazione.
+- 25/11: ✅ **Edizione premium ufficiale** (IT ed EN, 147 pagine ciascuna): `premium/costruisci_premium.py it|en`. Si vende la versione da 18,3 MB (`output/premium/Il-libro-di-cucina-della-Putiga-IT.pdf`, `The-Putiga-Cookbook-EN.pdf`, sotto i 20 MB di Etsy); in alta qualità restano i PDF `…PREMIUM-…` da 42 MB. Il sito (`sito/costruisci_sito.py`) usa i nuovi PDF; pacchetto `output/sito-ricettario.zip`. Caricamento su Cloudflare e aggiornamento di Etsy affidati alla sessione sul PC dell'utente. Mancano: 5 foto dei luoghi (Wikimedia rifiuta i download, sostituite da altri luoghi con didascalia vera); l'EPUB è ancora quello del libro base (stessi testi).
