@@ -26,7 +26,8 @@ LUOGHI = json.loads(_lj.read_text(encoding='utf-8')) if _lj.exists() else {}
 SEGNAPOSTO = dict(luogo='Foto del luogo in arrivo', mappa='Calabria', file=None, autore='—', licenza='—', titolo='', pagina='')
 # capitolo -> chiave del luogo per l'apertura
 APERTURE = ['sila', 'ulivi', 'tropea', 'gerace', 'costadeglidei', 'aspromonte', 'scilla', 'capovaticano', 'reggio']
-RISERVA = {'aspromonte': 'gerace', 'pizzo': 'costadeglidei'}  # se la foto non è disponibile si usa un altro luogo, con la sua didascalia vera
+RISERVA = {'sila': 'gerace', 'ulivi': 'costadeglidei', 'tropea': 'capovaticano', 'aspromonte': 'reggio',
+           'scilla': 'gerace', 'pizzo': 'costadeglidei'}  # se la foto non è disponibile si usa un altro luogo, con la sua didascalia vera
 
 # mappa gastronomica: (nome, lat, lon, ricetta o None, lato dell'etichetta)
 MAPPA = [
@@ -233,9 +234,10 @@ def costruisci(img_lato, file_pdf, salva_html=False):
     out.append(f'<section class="indice" id="indice"><h1 class="indice">Indice</h1>'
                f'<ul><li class="cap fin"><a href="#intro">La cucina della putìga</a></li>{voci}</ul></section>')
     intro = testo('introduzione').replace('<h1>', '<h1 class="sez" id="intro">', 1)
-    U = LUOGHI.get('cipolla', SEGNAPOSTO)
-    out.append(f'<section class="intro-p"><figure class="intro-foto"><img src="{foto(P / "dati" / "luoghi" / U["file"], 1600, grade=False) if U["file"] else ""}" alt="">'
-               f'<figcaption>{html.escape(U["luogo"])} · Foto: {html.escape(U["autore"])}, {html.escape(U["licenza"])}</figcaption></figure>{intro}</section>')
+    U = LUOGHI.get('cipolla')
+    fig = (f'<figure class="intro-foto"><img src="{foto(P / "dati" / "luoghi" / U["file"], 1600, grade=False)}" alt="">'
+           f'<figcaption>{html.escape(U["luogo"])} · Foto: {html.escape(U["autore"])}, {html.escape(U["licenza"])}</figcaption></figure>') if U else ''
+    out.append(f'<section class="intro-p">{fig}{intro}</section>')
     out.append(f'<section class="mappa-p" id="mappa"><span class="kick">Dove nascono i piatti</span><h1 class="sez">La Calabria in cucina</h1>'
                f'<p class="sub">Tocca un punto rosso per aprire la ricetta, un punto blu per vedere il luogo sulla mappa.</p>{svg_mappa()}'
                f'<p class="fonte">Confini delle province: ISTAT, elaborazione openpolis (CC BY 4.0). Posizioni indicative.</p></section>')
