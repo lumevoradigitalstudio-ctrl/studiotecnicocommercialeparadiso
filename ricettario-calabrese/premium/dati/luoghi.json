@@ -1,1 +1,38 @@
-{}
+{
+ "capovaticano": {
+  "luogo": "Capo Vaticano, Ricadi (Vibo Valentia)",
+  "mappa": "Capo Vaticano, Ricadi",
+  "file": "capovaticano.jpg",
+  "autore": "Benjamin Smith",
+  "licenza": "CC BY-SA 4.0",
+  "titolo": "File:Ricadi - Capo Vaticano - 06.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Ricadi_-_Capo_Vaticano_-_06.jpg"
+ },
+ "costadeglidei": {
+  "luogo": "Costa degli Dei, Capo Vaticano (Vibo Valentia)",
+  "mappa": "Capo Vaticano, Ricadi",
+  "file": "costadeglidei.jpg",
+  "autore": "Benjamin Smith",
+  "licenza": "CC BY-SA 4.0",
+  "titolo": "File:Ricadi - Capo Vaticano - 07.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Ricadi_-_Capo_Vaticano_-_07.jpg"
+ },
+ "reggio": {
+  "luogo": "Reggio Calabria, Lungomare Falcomatà",
+  "mappa": "Lungomare Falcomatà, Reggio Calabria",
+  "file": "reggio.jpg",
+  "autore": "Jacopo Werther",
+  "licenza": "CC BY-SA 4.0",
+  "titolo": "File:Lidi - Lungomare Falcomatà (Reggio Calabria) - Italy - 30 Sept. 2017 - (2).jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Lidi_-_Lungomare_Falcomat%C3%A0_(Reggio_Calabria)_-_Italy_-_30_Sept._2017_-_(2).jpg"
+ },
+ "gerace": {
+  "luogo": "Gerace, concattedrale di Santa Maria Assunta (Reggio Calabria)",
+  "mappa": "Cattedrale di Gerace",
+  "file": "gerace.jpg",
+  "autore": "Benjamin Smith",
+  "licenza": "CC BY-SA 4.0",
+  "titolo": "File:Gerace - Basilica concattedrale di Santa Maria Assunta - Esteriore - 2.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Gerace_-_Basilica_concattedrale_di_Santa_Maria_Assunta_-_Esteriore_-_2.jpg"
+ }
+}
